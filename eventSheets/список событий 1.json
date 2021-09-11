@@ -5,11 +5,11 @@
 			"eventType": "variable",
 			"name": "s",
 			"type": "number",
-			"initialValue": "8",
+			"initialValue": "12",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
-			"sid": 920655996721538
+			"sid": 197008744622422
 		},
 		{
 			"eventType": "variable",
@@ -229,6 +229,156 @@
 				}
 			],
 			"sid": 319867128057853
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Мышь",
+					"sid": 225719523776988,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "3DФигуры5"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-angle-of-motion",
+					"objectClass": "3DФигуры",
+					"sid": 227872477035826,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"angle": "180"
+					}
+				},
+				{
+					"id": "set-angle-of-motion",
+					"objectClass": "3DФигуры2",
+					"sid": 514975074493188,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"angle": "0"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "3DФигуры",
+					"sid": 290574212358485,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "3DФигуры2",
+					"sid": 218303746667834,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 831078051156066,
+					"parameters": {
+						"seconds": "3"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "3DФигуры",
+					"sid": 773548572533457,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "3DФигуры2",
+					"sid": 672298166590567,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 584945744488512,
+					"parameters": {
+						"seconds": "6"
+					}
+				},
+				{
+					"id": "set-angle-of-motion",
+					"objectClass": "3DФигуры",
+					"sid": 293443130391138,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"angle": "0"
+					}
+				},
+				{
+					"id": "set-angle-of-motion",
+					"objectClass": "3DФигуры2",
+					"sid": 600611324848097,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"angle": "180"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "3DФигуры",
+					"sid": 406139795582818,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "3DФигуры2",
+					"sid": 902626483661179,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 757230683310680,
+					"parameters": {
+						"seconds": "3"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "3DФигуры",
+					"sid": 783081275093759,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "3DФигуры2",
+					"sid": 788767224584785,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"state": "disabled"
+					}
+				}
+			],
+			"sid": 128398754969498
 		}
 	],
 	"sid": 706146788539766

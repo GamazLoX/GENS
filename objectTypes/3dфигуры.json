@@ -9,6 +9,11 @@
 			"behaviorId": "solid",
 			"name": "Твердый",
 			"sid": 648855595176081
+		},
+		{
+			"behaviorId": "Bullet",
+			"name": "Пуля",
+			"sid": 951216834014241
 		}
 	],
 	"animations": {
