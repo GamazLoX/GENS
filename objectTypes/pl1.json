@@ -9,11 +9,6 @@
 			"behaviorId": "Car",
 			"name": "Машина",
 			"sid": 778006823282013
-		},
-		{
-			"behaviorId": "Physics",
-			"name": "Физика",
-			"sid": 835218041557860
 		}
 	],
 	"effectTypes": [],

@@ -30,20 +30,6 @@
 								"default-controls": true,
 								"enabled": true
 							}
-						},
-						"Физика": {
-							"properties": {
-								"immovable": false,
-								"collision-mask": "use-collision-polygon",
-								"prevent-rotation": false,
-								"density": 1,
-								"friction": 0.5,
-								"elasticity": 0.2,
-								"linear-damping": 0,
-								"angular-damping": 0.01,
-								"bullet": false,
-								"enabled": true
-							}
 						}
 					},
 					"world": {
@@ -51,6 +37,46 @@
 						"y": 112,
 						"width": 32,
 						"height": 32,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "3DФигуры3",
+					"properties": {
+						"shape": "box",
+						"z-height": 15,
+						"initially-visible": true,
+						"face-back": false,
+						"face-front": true,
+						"face-left": true,
+						"face-right": true,
+						"face-top": true,
+						"face-bottom": true,
+						"z-tiling-factor": 8,
+						"object-back": -1,
+						"object-front": -1,
+						"object-left": -1,
+						"object-right": -1,
+						"object-top": -1,
+						"object-bottom": -1
+					},
+					"uid": 457,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 64,
+						"y": 16,
+						"width": 128,
+						"height": 16,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -85,10 +111,57 @@
 					},
 					"uid": 453,
 					"instanceVariables": {},
+					"behaviors": {
+						"Твердый": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"world": {
+						"x": 176,
+						"y": 16,
+						"width": 80,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "3DФигуры3",
+					"properties": {
+						"shape": "box",
+						"z-height": 15,
+						"initially-visible": true,
+						"face-back": false,
+						"face-front": true,
+						"face-left": true,
+						"face-right": true,
+						"face-top": true,
+						"face-bottom": true,
+						"z-tiling-factor": 8,
+						"object-back": -1,
+						"object-front": -1,
+						"object-left": -1,
+						"object-right": -1,
+						"object-top": -1,
+						"object-bottom": -1
+					},
+					"uid": 455,
+					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 64,
-						"y": -272,
+						"x": 576,
+						"y": 8,
 						"width": 128,
 						"height": 16,
 						"originX": 0.5,
@@ -123,54 +196,21 @@
 						"object-top": -1,
 						"object-bottom": -1
 					},
-					"uid": 455,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 192,
-						"y": -272,
-						"width": 128,
-						"height": 16,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "3DФигуры3",
-					"properties": {
-						"shape": "box",
-						"z-height": 15,
-						"initially-visible": true,
-						"face-back": false,
-						"face-front": true,
-						"face-left": true,
-						"face-right": true,
-						"face-top": true,
-						"face-bottom": true,
-						"z-tiling-factor": 8,
-						"object-back": -1,
-						"object-front": -1,
-						"object-left": -1,
-						"object-right": -1,
-						"object-top": -1,
-						"object-bottom": -1
-					},
 					"uid": 456,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Твердый": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
 					"world": {
-						"x": 64,
-						"y": 4,
-						"width": 128,
-						"height": 0,
+						"x": 472,
+						"y": 8,
+						"width": 80,
+						"height": 16,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [

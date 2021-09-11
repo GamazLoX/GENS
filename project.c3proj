@@ -120,16 +120,16 @@
 		},
 		{
 			"type": "behavior",
-			"id": "Physics",
-			"name": "Физика",
+			"id": "scrollto",
+			"name": "Следить за",
 			"author": "Scirra",
 			"version": "r262",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
-			"id": "scrollto",
-			"name": "Следить за",
+			"id": "Physics",
+			"name": "Физика",
 			"author": "Scirra",
 			"version": "r262",
 			"bundled": false
