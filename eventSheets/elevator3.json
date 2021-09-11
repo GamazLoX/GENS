@@ -1,0 +1,189 @@
+{
+	"name": "elevator3",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 500782240034348,
+					"parameters": {
+						"variable": "eleators_b1",
+						"comparison": 0,
+						"value": "1"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 243987684964016
+				}
+			],
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 379918655316375,
+					"parameters": {
+						"seconds": "1"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 968778754228052,
+					"parameters": {
+						"audio-file": "NKM-G-30-1585-2906851853-0-36523904-69-172-2-2898-46-0-1-101-1-161-34-202-35-504-87-308-571",
+						"loop": "looping",
+						"volume": "0",
+						"tag-optional": "\"s\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 305512303557358,
+					"parameters": {
+						"seconds": "3"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 387842936919478,
+					"parameters": {
+						"variable": "eleators_b1",
+						"value": "2"
+					}
+				}
+			],
+			"sid": 311736885639568
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 645804802194652,
+					"parameters": {
+						"variable": "eleators_b1",
+						"comparison": 0,
+						"value": "2"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 768089291668170
+				}
+			],
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 649176976051485,
+					"parameters": {
+						"seconds": "random(60)"
+					}
+				},
+				{
+					"id": "fade-volume",
+					"objectClass": "Audio",
+					"sid": 484894399414620,
+					"parameters": {
+						"tag": "\"s\"",
+						"db": "-100",
+						"duration": "5",
+						"ending": "stop"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 517795081735449,
+					"parameters": {
+						"variable": "eleators",
+						"value": "2"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 607156572325423,
+					"parameters": {
+						"seconds": "3"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 330131123879953,
+					"parameters": {
+						"variable": "eleators_b1",
+						"value": "0"
+					}
+				}
+			],
+			"sid": 909409280656825
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 643080794866952,
+					"parameters": {
+						"variable": "eleators_b1",
+						"comparison": 0,
+						"value": "2"
+					}
+				},
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 929263279592422,
+					"parameters": {
+						"interval-seconds": "1.0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 747180505236954,
+					"parameters": {
+						"object-to-create": "r01",
+						"layer": "0",
+						"x": "random(244, 392)",
+						"y": "60",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "set-angle-of-motion",
+					"objectClass": "r01",
+					"sid": 816945485982333,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"angle": "90"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "r01",
+					"sid": 983477895372247,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"state": "enabled"
+					}
+				}
+			],
+			"sid": 373583071411325
+		}
+	],
+	"sid": 323608498137550
+}

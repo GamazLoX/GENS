@@ -1,0 +1,114 @@
+{
+	"name": "start2",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 988996549636957
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "a1",
+					"sid": 127290349828447,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 524839664555389,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "a1",
+					"sid": 567914210477559,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "restart-fade",
+					"objectClass": "a1",
+					"sid": 898798766858532,
+					"behaviorType": "Угасание"
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 662161591264983,
+					"parameters": {
+						"seconds": "1"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "a2",
+					"sid": 188301748105761,
+					"parameters": {
+						"text": "\"Нажмите <<<Пробел>>> для продолжения \""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 814908252862148,
+					"parameters": {
+						"seconds": "9"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 513393037820400,
+					"parameters": {
+						"layout": "start3"
+					}
+				}
+			],
+			"sid": 318398629615977
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 196762271615145,
+					"parameters": {
+						"key": 32
+					}
+				},
+				{
+					"id": "compare-text",
+					"objectClass": "a2",
+					"sid": 583780836067092,
+					"parameters": {
+						"text-to-compare": "\"Нажмите <<<Пробел>>> для продолжения \"",
+						"case-sensitivity": "ignore-case"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 717074640070728,
+					"parameters": {
+						"layout": "start3"
+					}
+				}
+			],
+			"sid": 840165792308378
+		}
+	],
+	"sid": 291631940186381
+}

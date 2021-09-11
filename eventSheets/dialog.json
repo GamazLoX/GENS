@@ -1,0 +1,459 @@
+{
+	"name": "dialog",
+	"events": [
+		{
+			"functionName": "TypeText",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [
+				{
+					"name": "Текст",
+					"type": "string",
+					"initialValue": "",
+					"comment": "",
+					"sid": 235608368273947
+				},
+				{
+					"name": "Скорость",
+					"type": "number",
+					"initialValue": "0",
+					"comment": "",
+					"sid": 976390097216731
+				},
+				{
+					"name": "ДиалогПеременная",
+					"type": "number",
+					"initialValue": "0",
+					"comment": "",
+					"sid": 967420320747517
+				},
+				{
+					"name": "блокировка",
+					"type": "number",
+					"initialValue": "0",
+					"comment": "",
+					"sid": 711983536062172
+				}
+			],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "set-instvar-value",
+					"objectClass": "dialog",
+					"sid": 990872257378535,
+					"parameters": {
+						"instance-variable": "TypeLen",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "TextSample",
+					"sid": 103885612722149,
+					"parameters": {
+						"text": "Текст"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "dialog",
+					"sid": 872266799343997,
+					"parameters": {
+						"instance-variable": "TypeSpeed",
+						"value": "Скорость"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "dialog",
+					"sid": 121910856506563,
+					"parameters": {
+						"instance-variable": "d",
+						"value": "ДиалогПеременная"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 791049762458402,
+					"parameters": {
+						"variable": "lol",
+						"value": "Блокировка"
+					}
+				}
+			],
+			"sid": 821927796682318,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "dialog",
+							"sid": 211972628301635,
+							"parameters": {
+								"instance-variable": "IsTyping"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "dialog",
+							"sid": 786635454311992,
+							"parameters": {
+								"instance-variable": "IsTyping",
+								"value": "true"
+							}
+						}
+					],
+					"sid": 642468769430398
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 808213629528117
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "dialog",
+							"sid": 281065584429153,
+							"parameters": {
+								"instance-variable": "IsTyping",
+								"value": "false"
+							}
+						}
+					],
+					"sid": 735315360422551
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "dialog",
+					"sid": 881909150198731,
+					"parameters": {
+						"instance-variable": "IsTyping"
+					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "dialog",
+					"sid": 803644025866174,
+					"parameters": {
+						"instance-variable": "TypeLen",
+						"comparison": 3,
+						"value": "len(TextSample.Text)"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 344286830882152,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 322050333247205,
+							"parameters": {
+								"interval-seconds": "Dialog.TypeSpeed"
+							}
+						},
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 774829178857947,
+							"parameters": {
+								"interval-seconds": "Dialog.TypeSpeed"
+							}
+						}
+					],
+					"actions": [
+						{
+							"type": "comment",
+							"text": "Check TextSample from the left, Dialog.TypenLen checks how many character from the left to take in account)"
+						},
+						{
+							"id": "set-text",
+							"objectClass": "dialog",
+							"sid": 260074822024418,
+							"parameters": {
+								"text": "left(TextSample.Text, Self.TypeLen)"
+							}
+						},
+						{
+							"type": "comment",
+							"text": "Increase TypeLen to update the progression"
+						},
+						{
+							"id": "add-to-instvar",
+							"objectClass": "dialog",
+							"sid": 308178591546431,
+							"parameters": {
+								"instance-variable": "TypeLen",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 609431779180519,
+					"children": [
+						{
+							"eventType": "comment",
+							"text": "Play a sound by checking TextSample from the right; If last character is not a blank space, it plays a sound"
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "dialog",
+									"sid": 594823713997117,
+									"parameters": {
+										"instance-variable": "d",
+										"comparison": 0,
+										"value": "0"
+									}
+								},
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 884074244391287,
+									"parameters": {
+										"first-value": "right(Dialog.Text, 1)",
+										"comparison": 1,
+										"second-value": "\"\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "Спрайт4",
+									"sid": 582642611105110,
+									"parameters": {
+										"animation": "\"a1\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 765737463600106,
+									"parameters": {
+										"audio-file": "SFX",
+										"loop": "not-looping",
+										"volume": "0",
+										"tag-optional": "\"s2\""
+									}
+								}
+							],
+							"sid": 952384671840685
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "dialog",
+									"sid": 812578133533741,
+									"parameters": {
+										"instance-variable": "d",
+										"comparison": 0,
+										"value": "1"
+									}
+								},
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 420908332749505,
+									"parameters": {
+										"first-value": "right(Dialog.Text, 1)",
+										"comparison": 1,
+										"second-value": "\"\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "Спрайт4",
+									"sid": 619929189502185,
+									"parameters": {
+										"animation": "\"a2\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 297216232137801,
+									"parameters": {
+										"audio-file": "text",
+										"loop": "not-looping",
+										"volume": "0",
+										"tag-optional": "\"s2\""
+									}
+								}
+							],
+							"sid": 437801510041275
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "dialog",
+									"sid": 104920577643957,
+									"parameters": {
+										"instance-variable": "d",
+										"comparison": 0,
+										"value": "2"
+									}
+								},
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 206039008486419,
+									"parameters": {
+										"first-value": "right(Dialog.Text, 1)",
+										"comparison": 1,
+										"second-value": "\"\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "Спрайт4",
+									"sid": 727640083665784,
+									"parameters": {
+										"animation": "\"a3\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 111470200733321,
+									"parameters": {
+										"audio-file": "text2",
+										"loop": "not-looping",
+										"volume": "0",
+										"tag-optional": "\"s2\""
+									}
+								}
+							],
+							"sid": 238059341306669
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "dialog",
+									"sid": 836604142785084,
+									"parameters": {
+										"instance-variable": "d",
+										"comparison": 0,
+										"value": "3"
+									}
+								},
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 553815485529837,
+									"parameters": {
+										"first-value": "right(Dialog.Text, 1)",
+										"comparison": 1,
+										"second-value": "\"\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "Спрайт4",
+									"sid": 748458511563511,
+									"parameters": {
+										"animation": "\"a4\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 653994010158243,
+									"parameters": {
+										"audio-file": "text3",
+										"loop": "not-looping",
+										"volume": "0",
+										"tag-optional": "\"s2\""
+									}
+								}
+							],
+							"sid": 384089678334174
+						}
+					]
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 517578094461196,
+					"parameters": {
+						"key": 32
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 707695964487530,
+					"parameters": {
+						"variable": "lol",
+						"comparison": 0,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "dialog",
+					"sid": 229769956028559,
+					"parameters": {
+						"instance-variable": "IsTyping",
+						"value": "false"
+					}
+				},
+				{
+					"id": "signal",
+					"objectClass": "System",
+					"sid": 898155187639536,
+					"parameters": {
+						"tag": "\"Go\""
+					}
+				}
+			],
+			"sid": 445355989897474
+		}
+	],
+	"sid": 364032950707502
+}

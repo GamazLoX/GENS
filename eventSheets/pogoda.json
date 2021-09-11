@@ -1,0 +1,300 @@
+{
+	"name": "pogoda",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "pogoda",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 496072380736015
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 698837728361085
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "pogoda_text",
+					"sid": 433910578982792,
+					"parameters": {
+						"text": "\"Ясно\""
+					}
+				}
+			],
+			"sid": 735147721035467
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 877652522331712,
+					"parameters": {
+						"variable": "pogoda",
+						"comparison": 0,
+						"value": "0"
+					}
+				},
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 984533594362145,
+					"parameters": {
+						"interval-seconds": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 258811685146088,
+					"parameters": {
+						"variable": "pogoda",
+						"value": "floor(random(1, 5))"
+					}
+				}
+			],
+			"sid": 782677942504516
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 395006587172649,
+					"parameters": {
+						"variable": "pogoda",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 638340502191802,
+					"parameters": {
+						"variable": "pogoda",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "pogoda_text",
+					"sid": 967160414279915,
+					"parameters": {
+						"text": "\"Ясно\""
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "pogoda",
+					"sid": 618262226091719,
+					"parameters": {
+						"animation": "\"a1\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 967697962248693
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 353094727080740,
+					"parameters": {
+						"variable": "pogoda",
+						"comparison": 0,
+						"value": "2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 844458583118727,
+					"parameters": {
+						"variable": "pogoda",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "pogoda_text",
+					"sid": 415183919680173,
+					"parameters": {
+						"text": "\"Малооблочно\""
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "pogoda",
+					"sid": 917527117868064,
+					"parameters": {
+						"animation": "\"a1\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 763898124468453
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 568163107848942,
+					"parameters": {
+						"variable": "pogoda",
+						"comparison": 0,
+						"value": "3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 561063102784785,
+					"parameters": {
+						"variable": "pogoda",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "pogoda_text",
+					"sid": 209021735407812,
+					"parameters": {
+						"text": "\"Облачно с прояснениями\""
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "pogoda",
+					"sid": 782850580354434,
+					"parameters": {
+						"animation": "\"a2\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 620247248947834
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 364143447177405,
+					"parameters": {
+						"variable": "pogoda",
+						"comparison": 0,
+						"value": "4"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "pogoda_text",
+					"sid": 204433451914649,
+					"parameters": {
+						"text": "\"Облачно с прояснениями небольшой дождь\""
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "pogoda",
+					"sid": 982102711818350,
+					"parameters": {
+						"animation": "\"a3\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 780547915415026,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 467031847455682,
+							"parameters": {
+								"interval-seconds": "random(0.016)"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 785298468928776,
+							"parameters": {
+								"object-to-create": "Спрайт21",
+								"layer": "\"pogoda\"",
+								"x": "random(1000)",
+								"y": "-16",
+								"create-hierarchy": false
+							}
+						},
+						{
+							"id": "set-angle-of-motion",
+							"objectClass": "Спрайт21",
+							"sid": 925507559107320,
+							"behaviorType": "Пуля",
+							"parameters": {
+								"angle": "90"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "Спрайт21",
+							"sid": 517349580719971,
+							"behaviorType": "Пуля",
+							"parameters": {
+								"state": "enabled"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 313897655597507,
+							"parameters": {
+								"seconds": "4"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "Спрайт21",
+							"sid": 500599062651061
+						}
+					],
+					"sid": 794348423800275
+				}
+			]
+		}
+	],
+	"sid": 626396969496535
+}

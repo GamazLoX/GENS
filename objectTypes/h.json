@@ -1,0 +1,63 @@
+{
+	"name": "H",
+	"plugin-id": "Sprite",
+	"sid": 579134240723834,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Sin",
+			"name": "Синусоид",
+			"sid": 260163833118864
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 278,
+						"height": 300,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1800812,
+						"collisionPoly": {
+							"points": [
+								0.21987016652554334,
+								0.21987016652554334,
+								0.5,
+								0.0838272650296359,
+								0.80383855489698,
+								0.19587919841941856,
+								0.8820208862545865,
+								0.5,
+								0.8820208862545865,
+								0.8820208862545865,
+								0.5,
+								0.9336720293536551,
+								0.200959638724245,
+								0.7987581145921535,
+								0.11374541349139147,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 987665268147477,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

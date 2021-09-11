@@ -1,0 +1,922 @@
+{
+	"name": "start",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "lol",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 718185844665441
+		},
+		{
+			"eventType": "variable",
+			"name": "lol2",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 670422161882164
+		},
+		{
+			"eventType": "variable",
+			"name": "newopt",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 835846200407551
+		},
+		{
+			"eventType": "variable",
+			"name": "menu_bl",
+			"type": "number",
+			"initialValue": "1",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 746494351733443
+		},
+		{
+			"eventType": "group",
+			"disabled": true,
+			"title": "old",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 830881841398957
+						}
+					],
+					"actions": [
+						{
+							"id": "set-enabled",
+							"objectClass": "player",
+							"sid": 107959030860864,
+							"behaviorType": "Физика",
+							"parameters": {
+								"mode": "disabled"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 891377016952513,
+							"parameters": {
+								"seconds": "5"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 758044106791509,
+							"parameters": {
+								"audio-file": "ef",
+								"loop": "not-looping",
+								"volume": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 633232564442444,
+							"parameters": {
+								"object-to-create": "Спрайт2",
+								"layer": "0",
+								"x": "0",
+								"y": "0",
+								"create-hierarchy": false
+							}
+						},
+						{
+							"id": "start-fade",
+							"objectClass": "Спрайт2",
+							"sid": 213700470944501,
+							"behaviorType": "Угасание"
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "player",
+							"sid": 253919988392809,
+							"behaviorType": "Физика",
+							"parameters": {
+								"mode": "enabled"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 933710031129864,
+							"parameters": {
+								"seconds": "8"
+							}
+						},
+						{
+							"id": "set-angle",
+							"objectClass": "player",
+							"sid": 957159323461797,
+							"parameters": {
+								"angle": "0"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 758210514448067,
+							"parameters": {
+								"seconds": "4"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "a1",
+							"sid": 216261838505113,
+							"parameters": {
+								"text": "\"...\""
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 338024500761841,
+							"parameters": {
+								"seconds": "2"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "a1",
+							"sid": 263912744977421,
+							"parameters": {
+								"text": "\"Гд... Где я?\""
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 214456353930381,
+							"parameters": {
+								"seconds": "4"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "a1",
+							"sid": 257678629397483,
+							"parameters": {
+								"text": "\"Ч... Чт... Что со мной???\""
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 414697402812616,
+							"parameters": {
+								"seconds": "4"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "a1",
+							"sid": 620049618932521,
+							"parameters": {
+								"text": "\"\""
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 447826162294137,
+							"parameters": {
+								"audio-file": "p1",
+								"loop": "not-looping",
+								"volume": "0",
+								"tag-optional": "\"s\""
+							}
+						},
+						{
+							"id": "wait-for-signal",
+							"objectClass": "System",
+							"sid": 322734659346153,
+							"parameters": {
+								"tag": "\"go\""
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "a1",
+							"sid": 512898942801612,
+							"parameters": {
+								"text": "\"ЧТО???\""
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 408883467354692,
+							"parameters": {
+								"seconds": "4"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "a1",
+							"sid": 337965094689010,
+							"parameters": {
+								"text": "\"Откуда этот голос???\""
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 472964567480217,
+							"parameters": {
+								"seconds": "4"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "a1",
+							"sid": 493793872189610,
+							"parameters": {
+								"text": "\"\""
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "a1",
+							"sid": 818278018941554,
+							"parameters": {
+								"text": "\"===Управление стрелками===\""
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "player",
+							"sid": 559119226919426,
+							"behaviorType": "Платформер",
+							"parameters": {
+								"state": "enabled"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 470833333090433,
+							"parameters": {
+								"seconds": "8"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "a1",
+							"sid": 421428962732062,
+							"parameters": {
+								"text": "\"\""
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 347226837330383,
+							"parameters": {
+								"audio-file": "p2",
+								"loop": "not-looping",
+								"volume": "0",
+								"tag-optional": "\"s\""
+							}
+						},
+						{
+							"id": "wait-for-signal",
+							"objectClass": "System",
+							"sid": 669567724237285,
+							"parameters": {
+								"tag": "\"go\""
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "a1",
+							"sid": 796062621841873,
+							"parameters": {
+								"text": "\"Что присходит???\""
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 574836465352682,
+							"parameters": {
+								"seconds": "4"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "g1",
+							"sid": 901569600168943,
+							"parameters": {
+								"instance-variable": "s",
+								"value": "1"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "a1",
+							"sid": 761618615271586,
+							"parameters": {
+								"text": "\"\""
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 618593176273753,
+							"parameters": {
+								"seconds": "4"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 815478607063538,
+							"parameters": {
+								"audio-file": "p3",
+								"loop": "not-looping",
+								"volume": "0",
+								"tag-optional": "\"s\""
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 203586601615947,
+							"parameters": {
+								"seconds": "4"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "a1",
+							"sid": 177266709632173,
+							"parameters": {
+								"text": "\"Э... Это что или кто?\""
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 320765961799436,
+							"parameters": {
+								"seconds": "4"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "a1",
+							"sid": 148623523119934,
+							"parameters": {
+								"text": "\"Она ещё растёт???\""
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 603148390421466,
+							"parameters": {
+								"seconds": "4"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "a1",
+							"sid": 758568330677135,
+							"parameters": {
+								"text": "\"И ещё говорит???\""
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 954575507731941,
+							"parameters": {
+								"seconds": "4"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "a1",
+							"sid": 279466495113396,
+							"parameters": {
+								"text": "\"Или не говорит???\""
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 667549337539390,
+							"parameters": {
+								"seconds": "4"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "a1",
+							"sid": 302365985082309,
+							"parameters": {
+								"text": "\"ЧТО???\""
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 347159400763805,
+							"parameters": {
+								"seconds": "4"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "a1",
+							"sid": 202583392106663,
+							"parameters": {
+								"text": "\"\""
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 373300565194534,
+							"parameters": {
+								"seconds": "20"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "g1",
+							"sid": 189033557783405,
+							"parameters": {
+								"instance-variable": "s",
+								"value": "2"
+							}
+						}
+					],
+					"sid": 643451071346240,
+					"disabled": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-ended",
+							"objectClass": "Audio",
+							"sid": 862756111813056,
+							"parameters": {
+								"tag": "\"s\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "signal",
+							"objectClass": "System",
+							"sid": 318906050022112,
+							"parameters": {
+								"tag": "\"go\""
+							}
+						}
+					],
+					"sid": 146448606415868,
+					"disabled": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "g1",
+							"sid": 788446915524963,
+							"parameters": {
+								"instance-variable": "s",
+								"comparison": 0,
+								"value": "1"
+							}
+						},
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 652827286625622,
+							"parameters": {
+								"interval-seconds": "0.1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-size",
+							"objectClass": "g1",
+							"sid": 293710960530862,
+							"parameters": {
+								"width": "g1.Width+0.5",
+								"height": "g1.Height+0.5"
+							}
+						}
+					],
+					"sid": 317864253698017,
+					"disabled": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 783346365740870
+						}
+					],
+					"actions": [
+						{
+							"id": "rotate-counter-clockwise",
+							"objectClass": "g1",
+							"sid": 537369755044503,
+							"parameters": {
+								"degrees": "1"
+							}
+						}
+					],
+					"sid": 268404564170318,
+					"disabled": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "player",
+							"sid": 964046533704666,
+							"parameters": {
+								"object": "g1"
+							}
+						},
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "g1",
+							"sid": 737764391587393,
+							"parameters": {
+								"instance-variable": "s",
+								"comparison": 0,
+								"value": "2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "player",
+							"sid": 374747893013423,
+							"parameters": {
+								"x": "g1.X",
+								"y": "g1.Y"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "player",
+							"sid": 141741383238846,
+							"behaviorType": "Физика",
+							"parameters": {
+								"mode": "disabled"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "player",
+							"sid": 994650363324846,
+							"behaviorType": "Платформер",
+							"parameters": {
+								"state": "disabled"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "g1",
+							"sid": 756644649008723,
+							"parameters": {
+								"instance-variable": "s",
+								"value": "3"
+							}
+						}
+					],
+					"sid": 359605618420064,
+					"disabled": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "g1",
+							"sid": 565439987574779,
+							"parameters": {
+								"instance-variable": "s",
+								"comparison": 0,
+								"value": "3"
+							}
+						},
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 264643996854022,
+							"parameters": {
+								"interval-seconds": "0.1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-size",
+							"objectClass": "player",
+							"sid": 827215042215024,
+							"parameters": {
+								"width": "player.Width-0.1",
+								"height": "player.Height-0.5"
+							}
+						}
+					],
+					"sid": 750680423163248,
+					"disabled": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "g1",
+							"sid": 631341250822700,
+							"parameters": {
+								"instance-variable": "s",
+								"comparison": 0,
+								"value": "3"
+							}
+						},
+						{
+							"id": "compare-width",
+							"objectClass": "player",
+							"sid": 915073840643323,
+							"parameters": {
+								"comparison": 3,
+								"width": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-size",
+							"objectClass": "player",
+							"sid": 317580179789109,
+							"parameters": {
+								"width": "0",
+								"height": "0"
+							}
+						}
+					],
+					"sid": 566961551539831,
+					"disabled": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "g1",
+							"sid": 910469464400051,
+							"parameters": {
+								"instance-variable": "s",
+								"comparison": 0,
+								"value": "3"
+							}
+						},
+						{
+							"id": "compare-height",
+							"objectClass": "player",
+							"sid": 158215213178379,
+							"parameters": {
+								"comparison": 3,
+								"height": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-size",
+							"objectClass": "player",
+							"sid": 127400543113238,
+							"parameters": {
+								"width": "0",
+								"height": "0"
+							}
+						}
+					],
+					"sid": 696517206373494,
+					"disabled": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "g1",
+							"sid": 589699530458385,
+							"parameters": {
+								"instance-variable": "s",
+								"comparison": 0,
+								"value": "3"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "rotate-counter-clockwise",
+							"objectClass": "player",
+							"sid": 792180310132733,
+							"parameters": {
+								"degrees": "5"
+							}
+						}
+					],
+					"sid": 641682939381216,
+					"disabled": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "g1",
+							"sid": 797001562623387,
+							"parameters": {
+								"instance-variable": "s",
+								"comparison": 0,
+								"value": "3"
+							}
+						},
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 913050138467233
+						}
+					],
+					"actions": [
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 607890268731771,
+							"parameters": {
+								"seconds": "5"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 290494401288430,
+							"parameters": {
+								"audio-file": "p4",
+								"loop": "not-looping",
+								"volume": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 180783554642727,
+							"parameters": {
+								"seconds": "12"
+							}
+						},
+						{
+							"id": "set-fade-out-time",
+							"objectClass": "Спрайт2",
+							"sid": 289815175519553,
+							"behaviorType": "Угасание",
+							"parameters": {
+								"fade-out-time": "0"
+							}
+						},
+						{
+							"id": "set-fade-in-time",
+							"objectClass": "Спрайт2",
+							"sid": 865259595053860,
+							"behaviorType": "Угасание",
+							"parameters": {
+								"fade-in-time": "20"
+							}
+						},
+						{
+							"id": "start-fade",
+							"objectClass": "Спрайт2",
+							"sid": 287930875558442,
+							"behaviorType": "Угасание"
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 691819150078610,
+							"parameters": {
+								"seconds": "24"
+							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 267922534547626,
+							"parameters": {
+								"layout": "menu"
+							}
+						}
+					],
+					"sid": 461127800500529,
+					"disabled": true
+				}
+			],
+			"sid": 890532883529368
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 792235450053092
+				}
+			],
+			"actions": [
+				{
+					"id": "stop-all",
+					"objectClass": "Audio",
+					"sid": 368853409477276
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 272997638686794,
+					"parameters": {
+						"seconds": "8"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "a2",
+					"sid": 306287180155758,
+					"parameters": {
+						"text": "\"Нажмите <<<Пробел>>> для продолжения \""
+					}
+				}
+			],
+			"sid": 812021356786202
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 385263763596113,
+					"parameters": {
+						"key": 32
+					}
+				},
+				{
+					"id": "compare-text",
+					"objectClass": "a2",
+					"sid": 363955905832775,
+					"parameters": {
+						"text-to-compare": "\"Нажмите <<<Пробел>>> для продолжения \"",
+						"case-sensitivity": "ignore-case"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 141657008954908,
+					"parameters": {
+						"layout": "start2"
+					}
+				}
+			],
+			"sid": 476979318496855
+		}
+	],
+	"sid": 378921878584294
+}

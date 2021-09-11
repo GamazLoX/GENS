@@ -1,0 +1,26 @@
+{
+	"name": "9патч2",
+	"plugin-id": "NinePatch",
+	"sid": 927045171771905,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Bullet",
+			"name": "Пуля",
+			"sid": 439310612879334
+		}
+	],
+	"effectTypes": [],
+	"image": {
+		"width": 250,
+		"height": 250,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "png",
+		"exportQuality": 0.8,
+		"imageSpriteId": 278350,
+		"useCollisionPoly": true
+	}
+}

@@ -1,0 +1,399 @@
+{
+	"name": "car_menu",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "car",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 197735822383725
+		},
+		{
+			"eventType": "variable",
+			"name": "cargo",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 108436148710824
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-at-offset",
+					"objectClass": "player",
+					"sid": 968079008334403,
+					"parameters": {
+						"object": "carmenu",
+						"offset-x": "-6",
+						"offset-y": "-20"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 685405507892832,
+					"parameters": {
+						"layer": "\"menu\"",
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 127858013918860
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-at-offset",
+					"objectClass": "player",
+					"sid": 384324361118668,
+					"parameters": {
+						"object": "carmenu",
+						"offset-x": "-6",
+						"offset-y": "-20"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 411855076764348,
+					"parameters": {
+						"layer": "\"menu\"",
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 444731679652543
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 730412537355514,
+					"parameters": {
+						"key": 49
+					}
+				},
+				{
+					"id": "layer-is-visible",
+					"objectClass": "System",
+					"sid": 838012140331322,
+					"parameters": {
+						"layer": "\"menu\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 220919452232604,
+					"parameters": {
+						"layer": "\"menu\"",
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "player",
+					"sid": 292154567366191
+				}
+			],
+			"sid": 684737067861946,
+			"disabled": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 904104860307067,
+					"parameters": {
+						"key": 50
+					}
+				},
+				{
+					"id": "layer-is-visible",
+					"objectClass": "System",
+					"sid": 881407405603141,
+					"parameters": {
+						"layer": "\"menu\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 995662253536920,
+					"parameters": {
+						"layer": "\"menu\"",
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "player",
+					"sid": 933309690377109
+				}
+			],
+			"sid": 976131796183008,
+			"disabled": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 816033987002735,
+					"parameters": {
+						"key": 51
+					}
+				},
+				{
+					"id": "layer-is-visible",
+					"objectClass": "System",
+					"sid": 504447144114282,
+					"parameters": {
+						"layer": "\"menu\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 504045200318748,
+					"parameters": {
+						"layer": "\"menu\"",
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "player",
+					"sid": 603784422154555
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 547884095566619,
+					"parameters": {
+						"seconds": "4"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 853498243149731,
+					"parameters": {
+						"variable": "car",
+						"value": "3"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 369169448464597,
+					"parameters": {
+						"variable": "cargo",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 387826249692838
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 175737460804030,
+					"parameters": {
+						"variable": "cargo",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "carmenu",
+					"sid": 439216559922704,
+					"behaviorType": "Машина",
+					"parameters": {
+						"control": "accelerate"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 777427253787990,
+					"parameters": {
+						"seconds": "12"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "carmenu",
+					"sid": 580750876032072
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 339208482484327,
+					"parameters": {
+						"layer": "\"ui\"",
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 755995552658284
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 151395445661748,
+					"parameters": {
+						"variable": "car",
+						"comparison": 0,
+						"value": "1"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 534443759407366
+				}
+			],
+			"actions": [],
+			"sid": 388742720154859
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 319655203317547,
+					"parameters": {
+						"variable": "car",
+						"comparison": 0,
+						"value": "2"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 352130812894164
+				}
+			],
+			"actions": [],
+			"sid": 323131358908130
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 422603595958518,
+					"parameters": {
+						"variable": "car",
+						"comparison": 0,
+						"value": "3"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 944597026223229
+				}
+			],
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 211720325719744,
+					"parameters": {
+						"seconds": "12"
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 840477338747748,
+					"parameters": {
+						"object-to-create": "ef",
+						"layer": "\"ef\"",
+						"x": "0",
+						"y": "0",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "set-fade-in-time",
+					"objectClass": "ef",
+					"sid": 434376898102455,
+					"behaviorType": "Угасание",
+					"parameters": {
+						"fade-in-time": "4"
+					}
+				},
+				{
+					"id": "restart-fade",
+					"objectClass": "ef",
+					"sid": 842700695389178,
+					"behaviorType": "Угасание"
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 241258477337951,
+					"parameters": {
+						"seconds": "5"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 825366886750475,
+					"parameters": {
+						"variable": "cargo",
+						"value": "0"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 445844841255706,
+					"parameters": {
+						"layout": "start"
+					}
+				}
+			],
+			"sid": 174991075314539
+		}
+	],
+	"sid": 459215077463324
+}

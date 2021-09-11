@@ -1,0 +1,2915 @@
+{
+	"name": "elevator",
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "elevator2"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "elevator3"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "rubs"
+		},
+		{
+			"eventType": "variable",
+			"name": "eleators",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 284275767775822
+		},
+		{
+			"eventType": "variable",
+			"name": "eleators_st",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 769396588251418
+		},
+		{
+			"eventType": "variable",
+			"name": "eleator_lol",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 267750224350170
+		},
+		{
+			"eventType": "variable",
+			"name": "eleators_b1",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 541584129152719
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 257293615236854
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 411607630756196,
+					"parameters": {
+						"variable": "eleators",
+						"value": "9999"
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 959176483449372,
+					"parameters": {
+						"object-to-create": "ef",
+						"layer": "\"ef\"",
+						"x": "0",
+						"y": "0",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "ElevatorLogo",
+					"sid": 242394735330028,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 136676541001233,
+					"parameters": {
+						"seconds": "4"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "ElevatorLogo",
+					"sid": 314485764666973,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-fade-in-time",
+					"objectClass": "ElevatorLogo",
+					"sid": 913273531855573,
+					"behaviorType": "Угасание",
+					"parameters": {
+						"fade-in-time": "4"
+					}
+				},
+				{
+					"id": "restart-fade",
+					"objectClass": "ElevatorLogo",
+					"sid": 840837079077891,
+					"behaviorType": "Угасание"
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 296688099710100,
+					"parameters": {
+						"seconds": "6"
+					}
+				},
+				{
+					"id": "set-fade-in-time",
+					"objectClass": "ef",
+					"sid": 115242497294605,
+					"behaviorType": "Угасание",
+					"parameters": {
+						"fade-in-time": "0"
+					}
+				},
+				{
+					"id": "set-fade-out-time",
+					"objectClass": "ef",
+					"sid": 398345378594488,
+					"behaviorType": "Угасание",
+					"parameters": {
+						"fade-out-time": "4"
+					}
+				},
+				{
+					"id": "restart-fade",
+					"objectClass": "ef",
+					"sid": 658046727992829,
+					"behaviorType": "Угасание"
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 988477067899962,
+					"parameters": {
+						"seconds": "6"
+					}
+				},
+				{
+					"id": "set-fade-in-time",
+					"objectClass": "ElevatorLogo",
+					"sid": 260281920780659,
+					"behaviorType": "Угасание",
+					"parameters": {
+						"fade-in-time": "0"
+					}
+				},
+				{
+					"id": "set-fade-out-time",
+					"objectClass": "ElevatorLogo",
+					"sid": 552568369124229,
+					"behaviorType": "Угасание",
+					"parameters": {
+						"fade-out-time": "4"
+					}
+				},
+				{
+					"id": "restart-fade",
+					"objectClass": "ElevatorLogo",
+					"sid": 444851674097112,
+					"behaviorType": "Угасание"
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 898593645666944,
+					"parameters": {
+						"seconds": "5"
+					}
+				},
+				{
+					"id": "move-to-bottom",
+					"objectClass": "Видео",
+					"sid": 371745224010398
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 242757557551900,
+					"parameters": {
+						"variable": "eleators",
+						"value": "0"
+					}
+				}
+			],
+			"sid": 617937145531530
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 559957386364377,
+					"parameters": {
+						"variable": "eleators",
+						"comparison": 0,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Спрайт20",
+					"sid": 611555379643554,
+					"parameters": {
+						"animation": "\"a1\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 937520860866974
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 435828165758338,
+					"parameters": {
+						"variable": "eleators",
+						"comparison": 1,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Спрайт20",
+					"sid": 389454957660883,
+					"parameters": {
+						"animation": "\"a2\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 105530574665300
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Мышь",
+					"sid": 212330611180769,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "Спрайт20"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 674702001667329,
+					"parameters": {
+						"variable": "eleators",
+						"comparison": 0,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 412079758133202,
+					"parameters": {
+						"audio-file": "4ffe6003574e08f",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 451929060948533,
+					"parameters": {
+						"variable": "eleators",
+						"value": "4444"
+					}
+				}
+			],
+			"sid": 452095680360099
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 387657649571870,
+					"parameters": {
+						"variable": "eleators",
+						"comparison": 0,
+						"value": "4444"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 101642980599518
+				}
+			],
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 995161289826190,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 360100629850645,
+					"parameters": {
+						"variable": "eleators",
+						"value": "choose(2, 4, 5, 6, 12)"
+					}
+				}
+			],
+			"sid": 611857011554028
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 907586051829028,
+					"parameters": {
+						"variable": "eleators",
+						"comparison": 0,
+						"value": "1"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 974312923979412
+				}
+			],
+			"actions": [
+				{
+					"id": "set-angle-of-motion",
+					"objectClass": "Спрайт16",
+					"sid": 606046069717329,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"angle": "0"
+					}
+				},
+				{
+					"id": "set-angle-of-motion",
+					"objectClass": "Спрайт18",
+					"sid": 955489900546146,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"angle": "180"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Спрайт16",
+					"sid": 800847009745212,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Спрайт18",
+					"sid": 803418828048830,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 770670424216236,
+					"parameters": {
+						"audio-file": "4b8046c49836303",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"s\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 697332698628217,
+					"parameters": {
+						"seconds": "4.4"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Спрайт16",
+					"sid": 466759575183289,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Спрайт18",
+					"sid": 980643137408344,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 326359526309509,
+					"parameters": {
+						"variable": "eleators",
+						"value": "0"
+					}
+				}
+			],
+			"sid": 950549504328384
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 980418064622477,
+					"parameters": {
+						"variable": "eleators",
+						"comparison": 0,
+						"value": "2"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 111621543283343
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "Спрайт16",
+					"sid": 170370145255496,
+					"parameters": {
+						"x": "408",
+						"y": "76"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "Спрайт18",
+					"sid": 465951113919692,
+					"parameters": {
+						"x": "136",
+						"y": "76"
+					}
+				},
+				{
+					"id": "set-angle-of-motion",
+					"objectClass": "Спрайт16",
+					"sid": 394162959160745,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"angle": "180"
+					}
+				},
+				{
+					"id": "set-angle-of-motion",
+					"objectClass": "Спрайт18",
+					"sid": 421110981963316,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"angle": "0"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Спрайт16",
+					"sid": 800396596771181,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Спрайт18",
+					"sid": 394975351500713,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 956444640064831,
+					"parameters": {
+						"audio-file": "4b8046c49836303",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"s\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 342762413374496,
+					"parameters": {
+						"seconds": "4.4"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Спрайт16",
+					"sid": 684345413512521,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Спрайт18",
+					"sid": 918070679825328,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 996259756806187,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 244122808787300,
+					"parameters": {
+						"variable": "eleators",
+						"value": "choose(3, 3, 3, 3, 3, 3, 3, 3, 999)"
+					}
+				}
+			],
+			"sid": 774549969526832
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 964270932653581,
+					"parameters": {
+						"variable": "eleators",
+						"comparison": 0,
+						"value": "3"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 402991124846595
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 844450135712094,
+					"parameters": {
+						"audio-file": "jjjas",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"s\""
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 964983875078945,
+					"parameters": {
+						"variable": "eleator_lol",
+						"value": "3"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 390788222183956,
+					"parameters": {
+						"seconds": "25"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 237016120091461,
+					"parameters": {
+						"variable": "eleator_lol",
+						"value": "0"
+					}
+				},
+				{
+					"id": "scroll-to-position",
+					"objectClass": "System",
+					"sid": 344760602854741,
+					"parameters": {
+						"x": "320",
+						"y": "240"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 878398066236767,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 129983824363469,
+					"parameters": {
+						"variable": "eleators",
+						"value": "choose(999, 1000, 1000, 1000, 1000)"
+					}
+				}
+			],
+			"sid": 809099724093716
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 155172800408762,
+					"parameters": {
+						"variable": "eleators",
+						"comparison": 0,
+						"value": "4"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 348159338502872
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 826916154603895,
+					"parameters": {
+						"variable": "eleators",
+						"value": "222"
+					}
+				},
+				{
+					"id": "set-angle-of-motion",
+					"objectClass": "Спрайт16",
+					"sid": 927429155192625,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"angle": "180"
+					}
+				},
+				{
+					"id": "set-angle-of-motion",
+					"objectClass": "Спрайт18",
+					"sid": 804831246429887,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"angle": "0"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Спрайт16",
+					"sid": 621265523795105,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Спрайт18",
+					"sid": 389744318761513,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 207509713823489,
+					"parameters": {
+						"audio-file": "4b8046c49836303",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"s\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 870403152712134,
+					"parameters": {
+						"seconds": "1"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Спрайт16",
+					"sid": 756079297310063,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Спрайт18",
+					"sid": 517735087670903,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "stop-all",
+					"objectClass": "Audio",
+					"sid": 690919535009324
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 699948747962148,
+					"parameters": {
+						"seconds": "0.2"
+					}
+				},
+				{
+					"id": "set-angle-of-motion",
+					"objectClass": "Спрайт16",
+					"sid": 833423696068968,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"angle": "0"
+					}
+				},
+				{
+					"id": "set-angle-of-motion",
+					"objectClass": "Спрайт18",
+					"sid": 391623074796811,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"angle": "180"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Спрайт16",
+					"sid": 710886039625788,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Спрайт18",
+					"sid": 234602954119932,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 580438025923704,
+					"parameters": {
+						"audio-file": "4b8046c49836303",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"s\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 728003095099077,
+					"parameters": {
+						"seconds": "1"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Спрайт16",
+					"sid": 999376079035908,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Спрайт18",
+					"sid": 500140791160615,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "stop-all",
+					"objectClass": "Audio",
+					"sid": 492346110384650
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 565297418086958,
+					"parameters": {
+						"variable": "eleators",
+						"value": "choose(0, 2, 4, 5)"
+					}
+				}
+			],
+			"sid": 182533680941337
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 214858622152766,
+					"parameters": {
+						"variable": "eleators",
+						"comparison": 0,
+						"value": "5"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 935596418582193
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "Спрайт16",
+					"sid": 945195786162866,
+					"parameters": {
+						"x": "408",
+						"y": "76"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "Спрайт18",
+					"sid": 570622944610456,
+					"parameters": {
+						"x": "136",
+						"y": "76"
+					}
+				},
+				{
+					"id": "set-angle-of-motion",
+					"objectClass": "Спрайт16",
+					"sid": 308025036220271,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"angle": "180"
+					}
+				},
+				{
+					"id": "set-angle-of-motion",
+					"objectClass": "Спрайт18",
+					"sid": 489769517218461,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"angle": "0"
+					}
+				},
+				{
+					"id": "set-speed",
+					"objectClass": "Спрайт16",
+					"sid": 604643131699943,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"speed": "180"
+					}
+				},
+				{
+					"id": "set-speed",
+					"objectClass": "Спрайт18",
+					"sid": 424376264615096,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"speed": "180"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Спрайт16",
+					"sid": 750209444922014,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Спрайт18",
+					"sid": 526966023773136,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 699929670479809,
+					"parameters": {
+						"seconds": "0.484"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 819682127483186,
+					"parameters": {
+						"audio-file": "Single z_uk-padajuschij-lift-z_uk-potishe",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"s\""
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Спрайт16",
+					"sid": 483696680431605,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Спрайт18",
+					"sid": 261961844108664,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 262762768589959,
+					"parameters": {
+						"variable": "eleator_lol",
+						"value": "1"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 410462847516863,
+					"parameters": {
+						"seconds": "0.2"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 962220151079768,
+					"parameters": {
+						"variable": "eleator_lol",
+						"value": "0"
+					}
+				},
+				{
+					"id": "scroll-to-position",
+					"objectClass": "System",
+					"sid": 350613947852844,
+					"parameters": {
+						"x": "320",
+						"y": "240"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 902565971553502,
+					"parameters": {
+						"seconds": "3"
+					}
+				},
+				{
+					"id": "set-speed",
+					"objectClass": "Спрайт16",
+					"sid": 273411923178237,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"speed": "20"
+					}
+				},
+				{
+					"id": "set-speed",
+					"objectClass": "Спрайт18",
+					"sid": 376247428544342,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"speed": "20"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 197960511965450,
+					"parameters": {
+						"seconds": "random(2)"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 410663150432610,
+					"parameters": {
+						"variable": "eleators",
+						"value": "999"
+					}
+				}
+			],
+			"sid": 558372483521029
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 200136451596340,
+					"parameters": {
+						"variable": "eleators",
+						"comparison": 0,
+						"value": "6"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 869442836062475
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 630698077005226,
+					"parameters": {
+						"audio-file": "z_uk-padajuschij-lift-z_uk-potishe",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"s\""
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 680807308909682,
+					"parameters": {
+						"variable": "eleator_lol",
+						"value": "1"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 409283760582738,
+					"parameters": {
+						"seconds": "0.2"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 665790267294532,
+					"parameters": {
+						"variable": "eleator_lol",
+						"value": "0"
+					}
+				},
+				{
+					"id": "scroll-to-position",
+					"objectClass": "System",
+					"sid": 802697550735244,
+					"parameters": {
+						"x": "320",
+						"y": "240"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 548434864916740,
+					"parameters": {
+						"seconds": "3"
+					}
+				},
+				{
+					"id": "stop-all",
+					"objectClass": "Audio",
+					"sid": 159010954559167
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 464386102853070,
+					"parameters": {
+						"variable": "eleators",
+						"value": "choose(0, 2, 4, 5, 12)"
+					}
+				}
+			],
+			"sid": 384358595031262
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 213889132086368,
+					"parameters": {
+						"variable": "eleators",
+						"comparison": 0,
+						"value": "7"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 430608998571645
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 413315298602205,
+					"parameters": {
+						"audio-file": "z_uk-padajuschij-lift-z_uk-potishe",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"s\""
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 273083423784436,
+					"parameters": {
+						"variable": "eleator_lol",
+						"value": "1"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 752742880729879,
+					"parameters": {
+						"seconds": "0.2"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 225171196362489,
+					"parameters": {
+						"variable": "eleator_lol",
+						"value": "0"
+					}
+				},
+				{
+					"id": "scroll-to-position",
+					"objectClass": "System",
+					"sid": 314858304374860,
+					"parameters": {
+						"x": "320",
+						"y": "240"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 660581621557007,
+					"parameters": {
+						"seconds": "3"
+					}
+				},
+				{
+					"id": "stop-all",
+					"objectClass": "Audio",
+					"sid": 824137620274086
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 308853842716379,
+					"parameters": {
+						"seconds": "random(2)"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 202851567520190,
+					"parameters": {
+						"variable": "eleators",
+						"value": "999"
+					}
+				}
+			],
+			"sid": 279331652949320
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 123907274891600,
+					"parameters": {
+						"variable": "eleators",
+						"comparison": 0,
+						"value": "8"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 686979834337015
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 670239327715569,
+					"parameters": {
+						"audio-file": "Single z_uk-padajuschij-lift-z_uk-potishe",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"s\""
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 538244898513519,
+					"parameters": {
+						"variable": "eleator_lol",
+						"value": "1"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 113683622769935,
+					"parameters": {
+						"seconds": "0.2"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 412405241660350,
+					"parameters": {
+						"variable": "eleator_lol",
+						"value": "0"
+					}
+				},
+				{
+					"id": "scroll-to-position",
+					"objectClass": "System",
+					"sid": 472443630523278,
+					"parameters": {
+						"x": "320",
+						"y": "240"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 591607572393924,
+					"parameters": {
+						"seconds": "random(1)"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 583382655711889,
+					"parameters": {
+						"audio-file": "Single z_uk-padajuschij-lift-z_uk-potishe",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"s\""
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 176152930098688,
+					"parameters": {
+						"variable": "eleator_lol",
+						"value": "1"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 314292853254687,
+					"parameters": {
+						"seconds": "0.2"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 529843761842356,
+					"parameters": {
+						"variable": "eleator_lol",
+						"value": "0"
+					}
+				},
+				{
+					"id": "scroll-to-position",
+					"objectClass": "System",
+					"sid": 657283271870507,
+					"parameters": {
+						"x": "320",
+						"y": "240"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 436775905755984,
+					"parameters": {
+						"seconds": "random(2)"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 607022353393467,
+					"parameters": {
+						"variable": "eleators",
+						"value": "999"
+					}
+				}
+			],
+			"sid": 595253628217516
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 425320389356553,
+					"parameters": {
+						"variable": "eleators",
+						"comparison": 0,
+						"value": "9"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 901710731687882
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 338777881811634,
+					"parameters": {
+						"audio-file": "jjjas",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"s\""
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 303659379679187,
+					"parameters": {
+						"variable": "eleator_lol",
+						"value": "3"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 584854974418163,
+					"parameters": {
+						"seconds": "random(20)"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 522050956192750,
+					"parameters": {
+						"variable": "eleator_lol",
+						"value": "0"
+					}
+				},
+				{
+					"id": "scroll-to-position",
+					"objectClass": "System",
+					"sid": 620597905305472,
+					"parameters": {
+						"x": "320",
+						"y": "240"
+					}
+				},
+				{
+					"id": "stop-all",
+					"objectClass": "Audio",
+					"sid": 411811258490937
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 969783916306899,
+					"parameters": {
+						"variable": "eleators",
+						"value": "choose(7, 8)"
+					}
+				}
+			],
+			"sid": 590213402383428
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 672751920400126,
+					"parameters": {
+						"variable": "eleators",
+						"comparison": 0,
+						"value": "10"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 155776579534194
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 285693442899824,
+					"parameters": {
+						"variable": "eleators",
+						"value": "222"
+					}
+				},
+				{
+					"id": "set-angle-of-motion",
+					"objectClass": "Спрайт16",
+					"sid": 427978402790151,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"angle": "0"
+					}
+				},
+				{
+					"id": "set-angle-of-motion",
+					"objectClass": "Спрайт18",
+					"sid": 524658503943679,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"angle": "180"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Спрайт16",
+					"sid": 825178475623447,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Спрайт18",
+					"sid": 333032133378103,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 639421063424890,
+					"parameters": {
+						"audio-file": "4b8046c49836303",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"s\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 884411106678113,
+					"parameters": {
+						"seconds": "1"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Спрайт16",
+					"sid": 914151045053375,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Спрайт18",
+					"sid": 250628133283599,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "stop-all",
+					"objectClass": "Audio",
+					"sid": 508086957063153
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 742027452353204,
+					"parameters": {
+						"seconds": "0.2"
+					}
+				},
+				{
+					"id": "set-angle-of-motion",
+					"objectClass": "Спрайт16",
+					"sid": 163676055535771,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"angle": "180"
+					}
+				},
+				{
+					"id": "set-angle-of-motion",
+					"objectClass": "Спрайт18",
+					"sid": 666027945789191,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"angle": "0"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Спрайт16",
+					"sid": 480778291441595,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Спрайт18",
+					"sid": 919829188184018,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 830999523689671,
+					"parameters": {
+						"audio-file": "4b8046c49836303",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"s\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 809924541193526,
+					"parameters": {
+						"seconds": "1"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Спрайт16",
+					"sid": 861022338107710,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Спрайт18",
+					"sid": 833570673783040,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "stop-all",
+					"objectClass": "Audio",
+					"sid": 544888138248014
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 834457575980581,
+					"parameters": {
+						"variable": "eleators",
+						"value": "choose(1, 10, 11)"
+					}
+				}
+			],
+			"sid": 223382655969590
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 208040017018719,
+					"parameters": {
+						"variable": "eleators",
+						"comparison": 0,
+						"value": "11"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 134592775868099
+				}
+			],
+			"actions": [
+				{
+					"id": "set-angle-of-motion",
+					"objectClass": "Спрайт16",
+					"sid": 150826472956032,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"angle": "0"
+					}
+				},
+				{
+					"id": "set-angle-of-motion",
+					"objectClass": "Спрайт18",
+					"sid": 468773812521229,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"angle": "180"
+					}
+				},
+				{
+					"id": "set-speed",
+					"objectClass": "Спрайт16",
+					"sid": 209412480009911,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"speed": "180"
+					}
+				},
+				{
+					"id": "set-speed",
+					"objectClass": "Спрайт18",
+					"sid": 701190170853999,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"speed": "180"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Спрайт16",
+					"sid": 840681394330632,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Спрайт18",
+					"sid": 891197709918832,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 711869353121262,
+					"parameters": {
+						"seconds": "0.484"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 336837414527845,
+					"parameters": {
+						"audio-file": "Single z_uk-padajuschij-lift-z_uk-potishe",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"s\""
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Спрайт16",
+					"sid": 397073633406442,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Спрайт18",
+					"sid": 743294666791409,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 662287652932515,
+					"parameters": {
+						"variable": "eleator_lol",
+						"value": "1"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 468256179691071,
+					"parameters": {
+						"seconds": "0.2"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 398170275232679,
+					"parameters": {
+						"variable": "eleator_lol",
+						"value": "0"
+					}
+				},
+				{
+					"id": "scroll-to-position",
+					"objectClass": "System",
+					"sid": 769618095720723,
+					"parameters": {
+						"x": "320",
+						"y": "240"
+					}
+				},
+				{
+					"id": "set-speed",
+					"objectClass": "Спрайт16",
+					"sid": 444674722678426,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"speed": "20"
+					}
+				},
+				{
+					"id": "set-speed",
+					"objectClass": "Спрайт18",
+					"sid": 828223524971342,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"speed": "20"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 191328268780880,
+					"parameters": {
+						"seconds": "random(2)"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 924849472364933,
+					"parameters": {
+						"variable": "eleators",
+						"value": "choose(0, 2, 4, 5)"
+					}
+				}
+			],
+			"sid": 357476849615105
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 142871094029563,
+					"parameters": {
+						"variable": "eleators",
+						"comparison": 0,
+						"value": "12"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 687415177694384
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "Спрайт16",
+					"sid": 941692195333214,
+					"parameters": {
+						"x": "408",
+						"y": "76"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "Спрайт18",
+					"sid": 493277340832665,
+					"parameters": {
+						"x": "136",
+						"y": "76"
+					}
+				},
+				{
+					"id": "set-angle-of-motion",
+					"objectClass": "Спрайт16",
+					"sid": 204055983728115,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"angle": "180"
+					}
+				},
+				{
+					"id": "set-angle-of-motion",
+					"objectClass": "Спрайт18",
+					"sid": 292257500565896,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"angle": "0"
+					}
+				},
+				{
+					"id": "set-speed",
+					"objectClass": "Спрайт16",
+					"sid": 766153776982254,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"speed": "180"
+					}
+				},
+				{
+					"id": "set-speed",
+					"objectClass": "Спрайт18",
+					"sid": 550005625644320,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"speed": "180"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Спрайт16",
+					"sid": 944017092721361,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Спрайт18",
+					"sid": 337469953550487,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 834408306364607,
+					"parameters": {
+						"seconds": "0.484"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 168041720672040,
+					"parameters": {
+						"audio-file": "Single z_uk-padajuschij-lift-z_uk-potishe",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"s\""
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Спрайт16",
+					"sid": 832189256586730,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Спрайт18",
+					"sid": 569901013345090,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 172403271748797,
+					"parameters": {
+						"variable": "eleator_lol",
+						"value": "1"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 380693071427653,
+					"parameters": {
+						"seconds": "0.2"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 235242015932947,
+					"parameters": {
+						"variable": "eleator_lol",
+						"value": "0"
+					}
+				},
+				{
+					"id": "scroll-to-position",
+					"objectClass": "System",
+					"sid": 744538961825598,
+					"parameters": {
+						"x": "320",
+						"y": "240"
+					}
+				},
+				{
+					"id": "set-speed",
+					"objectClass": "Спрайт16",
+					"sid": 177074736402424,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"speed": "20"
+					}
+				},
+				{
+					"id": "set-speed",
+					"objectClass": "Спрайт18",
+					"sid": 431089549382329,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"speed": "20"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 919522419363471,
+					"parameters": {
+						"seconds": "random(2)"
+					}
+				},
+				{
+					"id": "set-angle-of-motion",
+					"objectClass": "Спрайт16",
+					"sid": 492513239786014,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"angle": "0"
+					}
+				},
+				{
+					"id": "set-angle-of-motion",
+					"objectClass": "Спрайт18",
+					"sid": 428792874254366,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"angle": "180"
+					}
+				},
+				{
+					"id": "set-speed",
+					"objectClass": "Спрайт16",
+					"sid": 966436986449232,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"speed": "180"
+					}
+				},
+				{
+					"id": "set-speed",
+					"objectClass": "Спрайт18",
+					"sid": 656837489061413,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"speed": "180"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Спрайт16",
+					"sid": 911423484235542,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Спрайт18",
+					"sid": 787901399191449,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 676277681550522,
+					"parameters": {
+						"seconds": "0.484"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 360697816374651,
+					"parameters": {
+						"audio-file": "Single z_uk-padajuschij-lift-z_uk-potishe",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"s\""
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Спрайт16",
+					"sid": 559988882828578,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Спрайт18",
+					"sid": 748001400971823,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 279703649231316,
+					"parameters": {
+						"variable": "eleator_lol",
+						"value": "1"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 562045360949729,
+					"parameters": {
+						"seconds": "0.2"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 688035757091105,
+					"parameters": {
+						"variable": "eleator_lol",
+						"value": "0"
+					}
+				},
+				{
+					"id": "scroll-to-position",
+					"objectClass": "System",
+					"sid": 389128085735296,
+					"parameters": {
+						"x": "320",
+						"y": "240"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 552760326315159,
+					"parameters": {
+						"seconds": "random(2)"
+					}
+				},
+				{
+					"id": "set-speed",
+					"objectClass": "Спрайт16",
+					"sid": 295499663981614,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"speed": "20"
+					}
+				},
+				{
+					"id": "set-speed",
+					"objectClass": "Спрайт18",
+					"sid": 279751076961888,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"speed": "20"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 132840687626676,
+					"parameters": {
+						"variable": "eleators",
+						"value": "choose(0, 2, 4, 5)"
+					}
+				}
+			],
+			"sid": 988879466482099
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 421845453290827,
+					"parameters": {
+						"variable": "eleators",
+						"comparison": 0,
+						"value": "13"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 878005915731011
+				}
+			],
+			"actions": [
+				{
+					"id": "set-angle-of-motion",
+					"objectClass": "Спрайт16",
+					"sid": 213761405387187,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"angle": "0"
+					}
+				},
+				{
+					"id": "set-angle-of-motion",
+					"objectClass": "Спрайт18",
+					"sid": 489419508699158,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"angle": "180"
+					}
+				},
+				{
+					"id": "set-speed",
+					"objectClass": "Спрайт16",
+					"sid": 854647428947280,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"speed": "180"
+					}
+				},
+				{
+					"id": "set-speed",
+					"objectClass": "Спрайт18",
+					"sid": 657245303471628,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"speed": "180"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Спрайт16",
+					"sid": 788649397385658,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Спрайт18",
+					"sid": 915666324439562,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 931478241525573,
+					"parameters": {
+						"seconds": "0.484"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 740149974815435,
+					"parameters": {
+						"audio-file": "Single z_uk-padajuschij-lift-z_uk-potishe",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"s\""
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Спрайт16",
+					"sid": 434980005173308,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Спрайт18",
+					"sid": 143684149250822,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 341741871587870,
+					"parameters": {
+						"variable": "eleator_lol",
+						"value": "1"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 459543560874545,
+					"parameters": {
+						"seconds": "0.2"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 333414010474660,
+					"parameters": {
+						"variable": "eleator_lol",
+						"value": "0"
+					}
+				},
+				{
+					"id": "scroll-to-position",
+					"objectClass": "System",
+					"sid": 174129971219203,
+					"parameters": {
+						"x": "320",
+						"y": "240"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "Спрайт16",
+					"sid": 790541915296095,
+					"parameters": {
+						"x": "408",
+						"y": "76"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "Спрайт18",
+					"sid": 214226693144890,
+					"parameters": {
+						"x": "136",
+						"y": "76"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 497187167910725,
+					"parameters": {
+						"seconds": "random(2)"
+					}
+				},
+				{
+					"id": "set-speed",
+					"objectClass": "Спрайт16",
+					"sid": 130633622659337,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"speed": "20"
+					}
+				},
+				{
+					"id": "set-speed",
+					"objectClass": "Спрайт18",
+					"sid": 568402629693672,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"speed": "20"
+					}
+				},
+				{
+					"id": "set-angle-of-motion",
+					"objectClass": "Спрайт16",
+					"sid": 613787384667756,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"angle": "180"
+					}
+				},
+				{
+					"id": "set-angle-of-motion",
+					"objectClass": "Спрайт18",
+					"sid": 581613316058748,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"angle": "0"
+					}
+				},
+				{
+					"id": "set-speed",
+					"objectClass": "Спрайт16",
+					"sid": 769620373833432,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"speed": "180"
+					}
+				},
+				{
+					"id": "set-speed",
+					"objectClass": "Спрайт18",
+					"sid": 588501597881125,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"speed": "180"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Спрайт16",
+					"sid": 136480084560626,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Спрайт18",
+					"sid": 746237484306528,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 412439159591302,
+					"parameters": {
+						"seconds": "0.483"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 310519071131220,
+					"parameters": {
+						"audio-file": "Single z_uk-padajuschij-lift-z_uk-potishe",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"s\""
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Спрайт16",
+					"sid": 379778112870259,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Спрайт18",
+					"sid": 237377496358573,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 968173880820888,
+					"parameters": {
+						"variable": "eleator_lol",
+						"value": "1"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 546206745736662,
+					"parameters": {
+						"seconds": "0.2"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 613385152019444,
+					"parameters": {
+						"variable": "eleator_lol",
+						"value": "0"
+					}
+				},
+				{
+					"id": "scroll-to-position",
+					"objectClass": "System",
+					"sid": 828296656349083,
+					"parameters": {
+						"x": "320",
+						"y": "240"
+					}
+				},
+				{
+					"id": "set-speed",
+					"objectClass": "Спрайт16",
+					"sid": 418733673420179,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"speed": "20"
+					}
+				},
+				{
+					"id": "set-speed",
+					"objectClass": "Спрайт18",
+					"sid": 470602410258065,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"speed": "20"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 941723799936512,
+					"parameters": {
+						"seconds": "random(2)"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 185156422478735,
+					"parameters": {
+						"variable": "eleators",
+						"value": "999"
+					}
+				}
+			],
+			"sid": 747404651865865
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 856005058721460,
+					"parameters": {
+						"variable": "eleators",
+						"comparison": 0,
+						"value": "999"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 589550004950962
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 774463281775000,
+					"parameters": {
+						"variable": "eleators_st",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-source",
+					"objectClass": "Видео",
+					"sid": 557761885640311,
+					"parameters": {
+						"webm-source": "\"\"",
+						"ogg-theora-source": "\"\"",
+						"h264-source": "\"\""
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Видео",
+					"sid": 767011285934169
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 255489622146063,
+					"parameters": {
+						"variable": "eleators",
+						"value": "choose(1, 3, 7, 8, 10, 11, 13, 1000, 1000,  1000,  1000,  1000,  1000,  1000,  1000, 1001)"
+					}
+				}
+			],
+			"sid": 772601643699611
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 761429545695757,
+					"parameters": {
+						"variable": "eleators",
+						"comparison": 0,
+						"value": "1000"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 927170209232471
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 980554901010759,
+					"parameters": {
+						"variable": "eleators_st",
+						"value": "choose(1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 3, 4, 5, 6, 7)"
+					}
+				}
+			],
+			"sid": 146609494757394
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 250815303385439,
+					"parameters": {
+						"variable": "eleators",
+						"comparison": 0,
+						"value": "1001"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 536956332139883
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 974460258448852,
+					"parameters": {
+						"variable": "eleators_b1",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-angle-of-motion",
+					"objectClass": "Спрайт16",
+					"sid": 173446006477200,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"angle": "0"
+					}
+				},
+				{
+					"id": "set-angle-of-motion",
+					"objectClass": "Спрайт18",
+					"sid": 288149737613804,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"angle": "180"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Спрайт16",
+					"sid": 381331232707637,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Спрайт18",
+					"sid": 839689847618468,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 695846187606499,
+					"parameters": {
+						"audio-file": "4b8046c49836303",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"s\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 135414574592659,
+					"parameters": {
+						"seconds": "4.4"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Спрайт16",
+					"sid": 335152487565339,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Спрайт18",
+					"sid": 414172040820426,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"state": "disabled"
+					}
+				}
+			],
+			"sid": 849488852139412
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "has-ended",
+					"objectClass": "Видео",
+					"sid": 481024241447786
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 652239099900138
+				}
+			],
+			"actions": [
+				{
+					"id": "set-layout-scale",
+					"objectClass": "System",
+					"sid": 353339154753910,
+					"parameters": {
+						"scale": "1"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 450181094479633,
+					"parameters": {
+						"variable": "eleators",
+						"value": "choose(2, 4, 5)"
+					}
+				}
+			],
+			"sid": 116878541366582
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 790587354458648,
+					"parameters": {
+						"variable": "eleator_lol",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "scroll-to-position",
+					"objectClass": "System",
+					"sid": 220250980840362,
+					"parameters": {
+						"x": "random(315, 325)",
+						"y": "random(215, 255)"
+					}
+				}
+			],
+			"sid": 908120886013819
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 149477473500073,
+					"parameters": {
+						"variable": "eleator_lol",
+						"comparison": 0,
+						"value": "2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "scroll-to-position",
+					"objectClass": "System",
+					"sid": 975930964513260,
+					"parameters": {
+						"x": "random(300, 340)",
+						"y": "random(220, 260)"
+					}
+				}
+			],
+			"sid": 274653058476040
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 978994873344840,
+					"parameters": {
+						"variable": "eleator_lol",
+						"comparison": 0,
+						"value": "3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "scroll-to-position",
+					"objectClass": "System",
+					"sid": 896006461825266,
+					"parameters": {
+						"x": "320",
+						"y": "random(239, 241)"
+					}
+				}
+			],
+			"sid": 396551802624539
+		}
+	],
+	"sid": 147324458999803
+}

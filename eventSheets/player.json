@@ -1,0 +1,28 @@
+{
+	"name": "player",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 542332753276994
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "player",
+					"sid": 945893689023350,
+					"parameters": {
+						"x": "random(1000)",
+						"y": "random(1000)"
+					}
+				}
+			],
+			"sid": 824240625351397
+		}
+	],
+	"sid": 930395320231832
+}

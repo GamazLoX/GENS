@@ -1,0 +1,16 @@
+{
+	"name": "rub_s",
+	"plugin-id": "Text",
+	"sid": 960317460049314,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "rub_s",
+			"type": "number",
+			"desc": "",
+			"sid": 892854991865383
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": []
+}

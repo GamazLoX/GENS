@@ -1,0 +1,56 @@
+{
+	"name": "train1",
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "keyb"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "player",
+					"sid": 745931731746368,
+					"parameters": {
+						"object": "episode"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 319862335556830,
+					"parameters": {
+						"layout": "story"
+					}
+				}
+			],
+			"sid": 488515154687214
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 790074875644954
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "player",
+					"sid": 708031464143801,
+					"behaviorType": "Физика",
+					"parameters": {
+						"mode": "disabled"
+					}
+				}
+			],
+			"sid": 700313018211636
+		}
+	],
+	"sid": 115119313233340
+}

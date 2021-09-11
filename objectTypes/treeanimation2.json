@@ -1,0 +1,63 @@
+{
+	"name": "treeanimation2",
+	"plugin-id": "Sprite",
+	"sid": 208119716894662,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Fade",
+			"name": "Угасание",
+			"sid": 274282225269121
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2132989,
+						"collisionPoly": {
+							"points": [
+								0.28,
+								0.28,
+								0.5,
+								0.032,
+								0.756,
+								0.24,
+								0.756,
+								0.5,
+								0.664,
+								0.664,
+								0.5,
+								0.996,
+								0.34,
+								0.656,
+								0.28,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 351017741785357,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

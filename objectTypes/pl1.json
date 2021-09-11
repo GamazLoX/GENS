@@ -1,0 +1,48 @@
+{
+	"name": "pl1",
+	"plugin-id": "Sprite",
+	"sid": 997986505483966,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Car",
+			"name": "Машина",
+			"sid": 778006823282013
+		},
+		{
+			"behaviorId": "Physics",
+			"name": "Физика",
+			"sid": 835218041557860
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 32,
+						"height": 32,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3075569,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 401443342263266,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

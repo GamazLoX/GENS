@@ -1,0 +1,207 @@
+{
+	"name": "menu_g",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "car_bot",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 390074079561055
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 845935372383213,
+					"parameters": {
+						"interval-seconds": "random(1.5, 5)"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 947118713113124,
+					"parameters": {
+						"variable": "car_bot",
+						"value": "floor(random(1, 3))"
+					}
+				}
+			],
+			"sid": 639162864114916
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 243826240742423,
+					"parameters": {
+						"variable": "car_bot",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 298030797513464,
+					"parameters": {
+						"variable": "car_bot",
+						"value": "0"
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 366506011991377,
+					"parameters": {
+						"object-to-create": "car1",
+						"layer": "0",
+						"x": "-96",
+						"y": "408",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "car1",
+					"sid": 732401774504724,
+					"behaviorType": "Машина",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 431576043981341,
+					"parameters": {
+						"seconds": "12"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "car1",
+					"sid": 661608725293577
+				}
+			],
+			"sid": 346325875284285
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 466902252114387,
+					"parameters": {
+						"variable": "car_bot",
+						"comparison": 0,
+						"value": "2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 975310085199065,
+					"parameters": {
+						"variable": "car_bot",
+						"value": "0"
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 510077247701512,
+					"parameters": {
+						"object-to-create": "car2",
+						"layer": "0",
+						"x": "752",
+						"y": "368",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "car2",
+					"sid": 746401379230058,
+					"behaviorType": "Машина",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 514676190386938,
+					"parameters": {
+						"seconds": "12"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "car2",
+					"sid": 525083204101006
+				}
+			],
+			"sid": 716288528373947
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 957237563046951
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "car1",
+					"sid": 553507441315078,
+					"behaviorType": "Машина",
+					"parameters": {
+						"control": "accelerate"
+					}
+				}
+			],
+			"sid": 965163593859353
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 847830144791907
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "car2",
+					"sid": 264339610108910,
+					"behaviorType": "Машина",
+					"parameters": {
+						"control": "accelerate"
+					}
+				}
+			],
+			"sid": 428675671302513
+		}
+	],
+	"sid": 568584547515693
+}

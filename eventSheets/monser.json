@@ -1,0 +1,329 @@
+{
+	"name": "monser",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "monster1",
+					"sid": 375250529034991,
+					"parameters": {
+						"instance-variable": "monster1",
+						"comparison": 0,
+						"value": "1"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 240889206198414
+				}
+			],
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 538943672311211,
+					"parameters": {
+						"seconds": "random(5)"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "monster1",
+					"sid": 210402587793987,
+					"parameters": {
+						"instance-variable": "monster1",
+						"value": "2"
+					}
+				}
+			],
+			"sid": 339410328489504
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "monster1",
+					"sid": 852810400630226,
+					"parameters": {
+						"instance-variable": "monster1",
+						"comparison": 0,
+						"value": "2"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 526220092916494
+				}
+			],
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 750668711091376,
+					"parameters": {
+						"seconds": "random(50)"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "monster1",
+					"sid": 648103386368529,
+					"parameters": {
+						"instance-variable": "monster1",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 864340639344366
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "monster1",
+					"sid": 699742553565258,
+					"parameters": {
+						"instance-variable": "monster1",
+						"comparison": 0,
+						"value": "2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "monster1",
+					"sid": 578130625772321,
+					"behaviorType": "Машина",
+					"parameters": {
+						"control": "accelerate"
+					}
+				}
+			],
+			"sid": 500032316033100
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "monster1",
+					"sid": 140611432491657,
+					"parameters": {
+						"instance-variable": "monster1",
+						"comparison": 0,
+						"value": "2"
+					}
+				},
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 516327415128711,
+					"parameters": {
+						"interval-seconds": "random(20)"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-instvar-value",
+					"objectClass": "monster1",
+					"sid": 662886460257639,
+					"parameters": {
+						"instance-variable": "momster1_upr",
+						"value": "choose(1, 2)"
+					}
+				}
+			],
+			"sid": 855374680257721
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "monster1",
+					"sid": 488318444338359,
+					"parameters": {
+						"instance-variable": "momster1_upr",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "monster1",
+					"sid": 700134269978811,
+					"behaviorType": "Машина",
+					"parameters": {
+						"control": "steer-left"
+					}
+				}
+			],
+			"sid": 596935212860902
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "monster1",
+					"sid": 558426631379726,
+					"parameters": {
+						"instance-variable": "momster1_upr",
+						"comparison": 0,
+						"value": "1"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 872055672046164
+				}
+			],
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 212925874286733,
+					"parameters": {
+						"seconds": "random(3)"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "monster1",
+					"sid": 933533558371958,
+					"parameters": {
+						"instance-variable": "momster1_upr",
+						"value": "0"
+					}
+				}
+			],
+			"sid": 378803678933311
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "monster1",
+					"sid": 254688779037073,
+					"parameters": {
+						"instance-variable": "momster1_upr",
+						"comparison": 0,
+						"value": "2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "monster1",
+					"sid": 673652210195846,
+					"behaviorType": "Машина",
+					"parameters": {
+						"control": "steer-right"
+					}
+				}
+			],
+			"sid": 449657476093017
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "monster1",
+					"sid": 739028244006849,
+					"parameters": {
+						"instance-variable": "momster1_upr",
+						"comparison": 0,
+						"value": "2"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 105966132131382
+				}
+			],
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 375075172934066,
+					"parameters": {
+						"seconds": "random(3)"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "monster1",
+					"sid": 243215648197396,
+					"parameters": {
+						"instance-variable": "momster1_upr",
+						"value": "0"
+					}
+				}
+			],
+			"sid": 464776931008222
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-moving",
+					"objectClass": "monster1",
+					"sid": 471741503790369,
+					"behaviorType": "Машина"
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "monster1",
+					"sid": 739140810778665,
+					"parameters": {
+						"animation": "\"a2\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 818544214946992
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-moving",
+					"objectClass": "monster1",
+					"sid": 712202599779603,
+					"behaviorType": "Машина",
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "monster1",
+					"sid": 756404994408305,
+					"parameters": {
+						"animation": "\"a1\"",
+						"from": "current-frame"
+					}
+				}
+			],
+			"sid": 411752110846566
+		}
+	],
+	"sid": 173523326984280
+}

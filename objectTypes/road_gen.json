@@ -1,0 +1,44 @@
+{
+	"name": "road_gen",
+	"plugin-id": "Sprite",
+	"sid": 208973287201796,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "raad_gen",
+			"type": "number",
+			"desc": "",
+			"sid": 493310926885923
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 32,
+						"height": 32,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5840849,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 453263108399164,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

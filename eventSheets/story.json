@@ -1,0 +1,2327 @@
+{
+	"name": "story",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "storelol",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 317620770867739
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 562732226894890
+				}
+			],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 930277874630673,
+					"parameters": {
+						"object-to-create": "ef",
+						"layer": "\"ef\"",
+						"x": "0",
+						"y": "0",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 706020151645636,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "set-fade-out-time",
+					"objectClass": "ef",
+					"sid": 238620059086139,
+					"behaviorType": "Угасание",
+					"parameters": {
+						"fade-out-time": "4"
+					}
+				},
+				{
+					"id": "restart-fade",
+					"objectClass": "ef",
+					"sid": 302676967882290,
+					"behaviorType": "Угасание"
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 293064400241151,
+					"parameters": {
+						"seconds": "5"
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 582351118684827,
+					"parameters": {
+						"layer": "\"002\"",
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 158432299672979,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Спрайт9",
+					"sid": 799584780315591,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 649410419812599,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 362590097789510,
+					"parameters": {
+						"layer": "\"002\"",
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 162007129375607,
+					"parameters": {
+						"seconds": "0.2"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "storytext",
+					"sid": 117542707621167,
+					"parameters": {
+						"text": "\"Привет\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 434557491231763,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "storytext",
+					"sid": 782348301536675,
+					"parameters": {
+						"text": "\"\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 587374254432753,
+					"parameters": {
+						"seconds": "0.2"
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 626688208928439,
+					"parameters": {
+						"layer": "\"002\"",
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 932040053995835,
+					"parameters": {
+						"seconds": "0.2"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "storytext",
+					"sid": 279044912976884,
+					"parameters": {
+						"text": "\"О привет...\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 142640804708250,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "storytext",
+					"sid": 931683962440200,
+					"parameters": {
+						"text": "\"\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 721244762141752,
+					"parameters": {
+						"seconds": "0.2"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "storytext",
+					"sid": 224452701789281,
+					"parameters": {
+						"text": "\"Как твои дела?\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 191202211320478,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "storytext",
+					"sid": 915671448143914,
+					"parameters": {
+						"text": "\"\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 844066726525632,
+					"parameters": {
+						"seconds": "0.2"
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 911921746238276,
+					"parameters": {
+						"layer": "\"002\"",
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 122394344431314,
+					"parameters": {
+						"seconds": "0.2"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "storytext",
+					"sid": 839530066383412,
+					"parameters": {
+						"text": "\"Я замечательно.\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 470939215209553,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "storytext",
+					"sid": 549912377053585,
+					"parameters": {
+						"text": "\"\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 209902629880834,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Спрайт10",
+					"sid": 666757846472073,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 299715682598575,
+					"parameters": {
+						"seconds": "0.5"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Спрайт10",
+					"sid": 717335858039840,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 773753590836034,
+					"parameters": {
+						"seconds": "3"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "storytext",
+					"sid": 796838488234810,
+					"parameters": {
+						"text": "\"...\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 160656984441357,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "storytext",
+					"sid": 961853695833505,
+					"parameters": {
+						"text": "\"\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 397429506914364,
+					"parameters": {
+						"seconds": "0.2"
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 752482512005074,
+					"parameters": {
+						"layer": "\"002\"",
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 553952286435199,
+					"parameters": {
+						"seconds": "0.2"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "storytext",
+					"sid": 904769725649424,
+					"parameters": {
+						"text": "\"Ты чего там...\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 381902266946385,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "storytext",
+					"sid": 490837097326924,
+					"parameters": {
+						"text": "\"\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 698312294369885,
+					"parameters": {
+						"seconds": "0.2"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "storytext",
+					"sid": 682689306921329,
+					"parameters": {
+						"text": "\"Что-то случилось?\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 895552145313804,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "storytext",
+					"sid": 390289731082417,
+					"parameters": {
+						"text": "\"\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 272826346474303,
+					"parameters": {
+						"seconds": "0.2"
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 459698594524414,
+					"parameters": {
+						"layer": "\"002\"",
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 188836648632838,
+					"parameters": {
+						"seconds": "0.2"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "storytext",
+					"sid": 359038701659692,
+					"parameters": {
+						"text": "\"Да нет... Привидилось\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 757127549789915,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "storytext",
+					"sid": 241211252479300,
+					"parameters": {
+						"text": "\"\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 784376228214751,
+					"parameters": {
+						"seconds": "0.2"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "storytext",
+					"sid": 901015568856439,
+					"parameters": {
+						"text": "\"Я хочу чтобы ты приехала ко мне надо тебе кое что подарить\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 401579037495731,
+					"parameters": {
+						"seconds": "5"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "storytext",
+					"sid": 486206234495018,
+					"parameters": {
+						"text": "\"\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 553668773158014,
+					"parameters": {
+						"seconds": "0.2"
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 290595723173344,
+					"parameters": {
+						"layer": "\"002\"",
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 967278864688148,
+					"parameters": {
+						"seconds": "0.2"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "storytext",
+					"sid": 337152277131608,
+					"parameters": {
+						"text": "\"О...\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 110059716609834,
+					"parameters": {
+						"seconds": "1"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "storytext",
+					"sid": 434007464656251,
+					"parameters": {
+						"text": "\"\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 886789185821016,
+					"parameters": {
+						"seconds": "0.2"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "storytext",
+					"sid": 684093533101738,
+					"parameters": {
+						"text": "\"Я обизательно приеду... Но надо найти время...\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 153096492999048,
+					"parameters": {
+						"seconds": "4"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "storytext",
+					"sid": 190275100603152,
+					"parameters": {
+						"text": "\"\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 395955204864433,
+					"parameters": {
+						"seconds": "1"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 574732438688417,
+					"parameters": {
+						"variable": "storelol",
+						"value": "1"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 736351748659461,
+					"parameters": {
+						"seconds": "1"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 669108571149580,
+					"parameters": {
+						"variable": "storelol",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "Спрайт9",
+					"sid": 182610634663748,
+					"parameters": {
+						"x": "320",
+						"y": "144"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 515759481902658,
+					"parameters": {
+						"seconds": "4"
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 417115698563477,
+					"parameters": {
+						"layer": "\"002\"",
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 737175349491733,
+					"parameters": {
+						"seconds": "0.2"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "storytext",
+					"sid": 374956293742370,
+					"parameters": {
+						"text": "\"Ты чего шатаешься\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 924972832145732,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "storytext",
+					"sid": 637145085418254,
+					"parameters": {
+						"text": "\"\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 204733993340824,
+					"parameters": {
+						"seconds": "0.2"
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 264512215820309,
+					"parameters": {
+						"layer": "\"002\"",
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 993735145976486,
+					"parameters": {
+						"seconds": "0.2"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "storytext",
+					"sid": 623948509925413,
+					"parameters": {
+						"text": "\"Я???\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 896547559623601,
+					"parameters": {
+						"seconds": "1"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "storytext",
+					"sid": 279926189024137,
+					"parameters": {
+						"text": "\"\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 968201283063638,
+					"parameters": {
+						"seconds": "0.2"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "storytext",
+					"sid": 485221953480812,
+					"parameters": {
+						"text": "\"С тобой там всё хорошо???\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 500480950751184,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "storytext",
+					"sid": 529722823156599,
+					"parameters": {
+						"text": "\"\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 695962272078671,
+					"parameters": {
+						"seconds": "0.2"
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 927986292102540,
+					"parameters": {
+						"layer": "\"002\"",
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 995803160549489,
+					"parameters": {
+						"seconds": "0.2"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "storytext",
+					"sid": 460524843999794,
+					"parameters": {
+						"text": "\"Да нет... Ничего...\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 255887266579250,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "storytext",
+					"sid": 950847644919634,
+					"parameters": {
+						"text": "\"\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 194080471390001,
+					"parameters": {
+						"seconds": "0.2"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "storytext",
+					"sid": 970169511297736,
+					"parameters": {
+						"text": "\"Похоже опять привидилось\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 904702364636657,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "storytext",
+					"sid": 229624466887880,
+					"parameters": {
+						"text": "\"\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 477978828370530,
+					"parameters": {
+						"seconds": "0.2"
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 262521229083303,
+					"parameters": {
+						"layer": "\"002\"",
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 856904967941368,
+					"parameters": {
+						"seconds": "0.2"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "storytext",
+					"sid": 549782193299609,
+					"parameters": {
+						"text": "\"Тебе нужно полежать\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 201502426848273,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "storytext",
+					"sid": 946734836006553,
+					"parameters": {
+						"text": "\"\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 524447933191209,
+					"parameters": {
+						"seconds": "0.2"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "storytext",
+					"sid": 394734531303439,
+					"parameters": {
+						"text": "\"Я скоро обязательно приеду\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 753084183720850,
+					"parameters": {
+						"seconds": "1"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Спрайт9",
+					"sid": 948814520034850,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 512815360877046,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "storytext",
+					"sid": 434677029937289,
+					"parameters": {
+						"text": "\"\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 647875231226745,
+					"parameters": {
+						"seconds": "4"
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 311279680689970,
+					"parameters": {
+						"layer": "\"002\"",
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 365062799236577,
+					"parameters": {
+						"seconds": "0.2"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "storytext",
+					"sid": 414208825090895,
+					"parameters": {
+						"text": "\"Ей...\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 477592131354288,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "storytext",
+					"sid": 183712766657974,
+					"parameters": {
+						"text": "\"\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 663797303570890,
+					"parameters": {
+						"seconds": "0.2"
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 354659953143939,
+					"parameters": {
+						"layer": "\"002\"",
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 890567893168554,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 856059472799909,
+					"parameters": {
+						"layer": "\"002\"",
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 302942287332952,
+					"parameters": {
+						"seconds": "0.2"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "storytext",
+					"sid": 147304596536634,
+					"parameters": {
+						"text": "\"Ты куда пропала...\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 326336771707579,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "storytext",
+					"sid": 598400603619559,
+					"parameters": {
+						"text": "\"\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 197412861354163,
+					"parameters": {
+						"seconds": "0.2"
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 900905622456860,
+					"parameters": {
+						"layer": "\"002\"",
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 582882211509803,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 712103581161419,
+					"parameters": {
+						"layer": "\"002\"",
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 361659992811469,
+					"parameters": {
+						"seconds": "0.2"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "storytext",
+					"sid": 653307312285546,
+					"parameters": {
+						"text": "\"АЛЛО\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 206876301739458,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "storytext",
+					"sid": 853719145723178,
+					"parameters": {
+						"text": "\"\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 919621425206065,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "storytext",
+					"sid": 689700359457426,
+					"parameters": {
+						"text": "\"Что присходит\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 334480532964008,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "storytext",
+					"sid": 393136930753045,
+					"parameters": {
+						"text": "\"\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 888184524131608,
+					"parameters": {
+						"seconds": "0.2"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "storytext",
+					"sid": 227712850599643,
+					"parameters": {
+						"text": "\"Ей ответь\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 659294717912989,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "storytext",
+					"sid": 236394884443766,
+					"parameters": {
+						"text": "\"\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 366565959583584,
+					"parameters": {
+						"seconds": "0.5"
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 554490339708632,
+					"parameters": {
+						"layer": "\"002\"",
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 552471336229950,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "set-font-color",
+					"objectClass": "storytext",
+					"sid": 435410199209163,
+					"parameters": {
+						"color": "rgbEx(0, 0, 255)"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "storytext",
+					"sid": 511687234766230,
+					"parameters": {
+						"text": "\"БУДУЩЕЕ\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 125395667444029,
+					"parameters": {
+						"seconds": "3"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "storytext",
+					"sid": 585007567922853,
+					"parameters": {
+						"text": "\"\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 753400862164675,
+					"parameters": {
+						"seconds": "0.5"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "storytext",
+					"sid": 334609900927957,
+					"parameters": {
+						"text": "\"Которое ты ждёшь\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 988177754899500,
+					"parameters": {
+						"seconds": "3"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "storytext",
+					"sid": 552307704858389,
+					"parameters": {
+						"text": "\"\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 996153240254205,
+					"parameters": {
+						"seconds": "0.5"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "storytext",
+					"sid": 800145713982709,
+					"parameters": {
+						"text": "\"Которое ты хочешь\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 154078793279859,
+					"parameters": {
+						"seconds": "3"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "storytext",
+					"sid": 985061874712313,
+					"parameters": {
+						"text": "\"\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 233590908856665,
+					"parameters": {
+						"seconds": "0.5"
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 356961727713170,
+					"parameters": {
+						"layer": "\"002\"",
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 365416624629400,
+					"parameters": {
+						"seconds": "0.2"
+					}
+				},
+				{
+					"id": "set-font-color",
+					"objectClass": "storytext",
+					"sid": 631149500552343,
+					"parameters": {
+						"color": "rgbEx(255, 255, 255)"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "storytext",
+					"sid": 806891943904023,
+					"parameters": {
+						"text": "\"Что присходит???\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 224580099161210,
+					"parameters": {
+						"seconds": "3"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "storytext",
+					"sid": 404017404386874,
+					"parameters": {
+						"text": "\"\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 265854219924948,
+					"parameters": {
+						"seconds": "0.2"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "storytext",
+					"sid": 782354009325381,
+					"parameters": {
+						"text": "\"Кто сдесь\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 862787696486785,
+					"parameters": {
+						"seconds": "3"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "storytext",
+					"sid": 538979730173507,
+					"parameters": {
+						"text": "\"\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 977309203765766,
+					"parameters": {
+						"seconds": "0.2"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "storytext",
+					"sid": 606299299347766,
+					"parameters": {
+						"text": "\"Доорогая это ты???\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 371992278136408,
+					"parameters": {
+						"seconds": "3"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "storytext",
+					"sid": 924357913363363,
+					"parameters": {
+						"text": "\"\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 908112658849592,
+					"parameters": {
+						"seconds": "0.2"
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 125549638909111,
+					"parameters": {
+						"layer": "\"002\"",
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-font-color",
+					"objectClass": "storytext",
+					"sid": 377780337431327,
+					"parameters": {
+						"color": "rgbEx(0, 0, 255)"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 283836131000464,
+					"parameters": {
+						"seconds": "0.5"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "storytext",
+					"sid": 446972563142171,
+					"parameters": {
+						"text": "\"Он тебя знает\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 802121848174729,
+					"parameters": {
+						"seconds": "3"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "storytext",
+					"sid": 820437611551735,
+					"parameters": {
+						"text": "\"\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 746322538412852,
+					"parameters": {
+						"seconds": "0.5"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "storytext",
+					"sid": 323900947710918,
+					"parameters": {
+						"text": "\"Он тебя ищет\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 602144782425807,
+					"parameters": {
+						"seconds": "3"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "storytext",
+					"sid": 140555726230939,
+					"parameters": {
+						"text": "\"\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 695865289672933,
+					"parameters": {
+						"seconds": "0.5"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "storytext",
+					"sid": 108092858400868,
+					"parameters": {
+						"text": "\"Он тебя ждёт\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 873453104460897,
+					"parameters": {
+						"seconds": "3"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "storytext",
+					"sid": 488757672406294,
+					"parameters": {
+						"text": "\"\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 760233182602005,
+					"parameters": {
+						"seconds": "0.5"
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 263820992449108,
+					"parameters": {
+						"layer": "\"002\"",
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 618270757844829,
+					"parameters": {
+						"seconds": "0.2"
+					}
+				},
+				{
+					"id": "set-font-color",
+					"objectClass": "storytext",
+					"sid": 945557465067550,
+					"parameters": {
+						"color": "rgbEx(255, 255, 255)"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "storytext",
+					"sid": 964505388116433,
+					"parameters": {
+						"text": "\"ЧТО???\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 783751135024353,
+					"parameters": {
+						"seconds": "3"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "storytext",
+					"sid": 413882518231793,
+					"parameters": {
+						"text": "\"\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 361301348787658,
+					"parameters": {
+						"seconds": "0.2"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "storytext",
+					"sid": 241016378118296,
+					"parameters": {
+						"text": "\"ТЫ КТО ИЛИ ЧТО???\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 719116968352246,
+					"parameters": {
+						"seconds": "3"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "storytext",
+					"sid": 325872511199356,
+					"parameters": {
+						"text": "\"\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 316297307313796,
+					"parameters": {
+						"seconds": "0.2"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "storytext",
+					"sid": 515014871370743,
+					"parameters": {
+						"text": "\"ЧТО ТЕБЕ НУЖНО???\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 241992524755801,
+					"parameters": {
+						"seconds": "3"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "storytext",
+					"sid": 526591849057342,
+					"parameters": {
+						"text": "\"\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 351598576720093,
+					"parameters": {
+						"seconds": "0.2"
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 818968187756343,
+					"parameters": {
+						"layer": "\"002\"",
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-font-color",
+					"objectClass": "storytext",
+					"sid": 845553816232722,
+					"parameters": {
+						"color": "rgbEx(0, 0, 255)"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 171482125278704,
+					"parameters": {
+						"seconds": "0.5"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "storytext",
+					"sid": 799860616454328,
+					"parameters": {
+						"text": "\"Ты ждал этого\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 710881336092769,
+					"parameters": {
+						"seconds": "3"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "storytext",
+					"sid": 842679411216489,
+					"parameters": {
+						"text": "\"\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 132456191088822,
+					"parameters": {
+						"seconds": "0.5"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "storytext",
+					"sid": 533812441531061,
+					"parameters": {
+						"text": "\"Это твоё чужо\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 874769379014235,
+					"parameters": {
+						"seconds": "4"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "storytext",
+					"sid": 607832906252289,
+					"parameters": {
+						"text": "\"\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 733075331638485,
+					"parameters": {
+						"seconds": "0.8"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "storytext",
+					"sid": 660100869092316,
+					"parameters": {
+						"text": "\"Которое затянет тебя на вечно\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 905311128301244,
+					"parameters": {
+						"seconds": "6"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "storytext",
+					"sid": 891398020040586,
+					"parameters": {
+						"text": "\"\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 344436127412892,
+					"parameters": {
+						"seconds": "1.5"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "storytext",
+					"sid": 991389065134525,
+					"parameters": {
+						"text": "\"Твои приключения началались\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 793227390038309,
+					"parameters": {
+						"seconds": "6"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "storytext",
+					"sid": 405009843937460,
+					"parameters": {
+						"text": "\"\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 494764209162621,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 905336009814781,
+					"parameters": {
+						"layer": "\"002\"",
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 963939893867063,
+					"parameters": {
+						"variable": "storelol",
+						"value": "2"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 990158985481377,
+					"parameters": {
+						"seconds": "0.2"
+					}
+				},
+				{
+					"id": "set-font-color",
+					"objectClass": "storytext",
+					"sid": 211915977775806,
+					"parameters": {
+						"color": "rgbEx(255, 255, 255)"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "storytext",
+					"sid": 521588816900090,
+					"parameters": {
+						"text": "\"ЧТО???\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 816978275787664,
+					"parameters": {
+						"seconds": "3"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "storytext",
+					"sid": 354725963048047,
+					"parameters": {
+						"text": "\"\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 543886493112387,
+					"parameters": {
+						"seconds": "0.2"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "storytext",
+					"sid": 854669555297480,
+					"parameters": {
+						"text": "\"НЕ ТРОГАЯ МЕНЯ\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 137873363236329,
+					"parameters": {
+						"seconds": "3"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "storytext",
+					"sid": 386688978042722,
+					"parameters": {
+						"text": "\"\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 825556517744358,
+					"parameters": {
+						"seconds": "0.2"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "storytext",
+					"sid": 741609652191638,
+					"parameters": {
+						"text": "\"НА ПОМОШЬ\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 704584945954714,
+					"parameters": {
+						"seconds": "3"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "storytext",
+					"sid": 423583189319297,
+					"parameters": {
+						"text": "\"\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 548288536352656,
+					"parameters": {
+						"seconds": "3"
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 638039316668842,
+					"parameters": {
+						"layer": "\"002\"",
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "move-to-layer",
+					"objectClass": "Спрайт6",
+					"sid": 465584337577733,
+					"parameters": {
+						"layer": "\"002\""
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Спрайт6",
+					"sid": 194867358390015,
+					"parameters": {
+						"animation": "\"a2\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 117343799548174,
+					"parameters": {
+						"variable": "storelol",
+						"value": "3"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 253852298825075,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Спрайт6",
+					"sid": 843863696374681,
+					"parameters": {
+						"animation": "\"a3\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 156546945424252,
+					"parameters": {
+						"seconds": "1"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "storytext",
+					"sid": 371049787969812,
+					"parameters": {
+						"text": "\"ПОМОГИТЕ\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 272044309819986,
+					"parameters": {
+						"seconds": "3"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "storytext",
+					"sid": 609307595033284,
+					"parameters": {
+						"text": "\"\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 837726475495835,
+					"parameters": {
+						"seconds": "0.2"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "storytext",
+					"sid": 582890435450000,
+					"parameters": {
+						"text": "\"КУДА Я ЛЕЧУ\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 211203947413413,
+					"parameters": {
+						"seconds": "3"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "storytext",
+					"sid": 423621581278465,
+					"parameters": {
+						"text": "\"\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 891238313259359,
+					"parameters": {
+						"seconds": "0.2"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "storytext",
+					"sid": 148846940457141,
+					"parameters": {
+						"text": "\"НЕЕЕЕЕЕЕЕТ!!!\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 439861147825314,
+					"parameters": {
+						"seconds": "6"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "storytext",
+					"sid": 250175754885781,
+					"parameters": {
+						"text": "\"\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 503563973283341,
+					"parameters": {
+						"seconds": "0.2"
+					}
+				}
+			],
+			"sid": 325998898279770
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 463930570170539,
+					"parameters": {
+						"variable": "storelol",
+						"comparison": 0,
+						"value": "1"
+					}
+				},
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 917995642444824,
+					"parameters": {
+						"interval-seconds": "0.05"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "Спрайт9",
+					"sid": 909078874799578,
+					"parameters": {
+						"x": "random(640)",
+						"y": "random(480)"
+					}
+				}
+			],
+			"sid": 927343450254209
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 884196177636249,
+					"parameters": {
+						"variable": "storelol",
+						"comparison": 0,
+						"value": "2"
+					}
+				},
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 213153638001024,
+					"parameters": {
+						"interval-seconds": "0.01"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "Спрайт6",
+					"sid": 128290270465107,
+					"parameters": {
+						"width": "Self.Width+0.3",
+						"height": "Self.Height+0.3"
+					}
+				}
+			],
+			"sid": 630517521030381
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 910378887904264,
+					"parameters": {
+						"variable": "storelol",
+						"comparison": 0,
+						"value": "3"
+					}
+				},
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 687284746902326,
+					"parameters": {
+						"interval-seconds": "0.01"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "Спрайт6",
+					"sid": 774418394830276,
+					"parameters": {
+						"width": "Self.Width-0.3",
+						"height": "Self.Height-0.3"
+					}
+				}
+			],
+			"sid": 376485897334876
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-height",
+					"objectClass": "Спрайт6",
+					"sid": 798300491827428,
+					"parameters": {
+						"comparison": 2,
+						"height": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 523485276375822,
+					"parameters": {
+						"variable": "storelol",
+						"value": "4"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "Спрайт6",
+					"sid": 903355918632395,
+					"parameters": {
+						"width": "0",
+						"height": "0"
+					}
+				}
+			],
+			"sid": 968788562445067
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-width",
+					"objectClass": "Спрайт6",
+					"sid": 357101853671044,
+					"parameters": {
+						"comparison": 2,
+						"width": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 361015900903226,
+					"parameters": {
+						"variable": "storelol",
+						"value": "4"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "Спрайт6",
+					"sid": 624932519652694,
+					"parameters": {
+						"width": "0",
+						"height": "0"
+					}
+				}
+			],
+			"sid": 480916410965945
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 864278463242984,
+					"parameters": {
+						"variable": "storelol",
+						"comparison": 0,
+						"value": "4"
+					}
+				},
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 565319578380700,
+					"parameters": {
+						"interval-seconds": "0.03"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-layout-scale",
+					"objectClass": "System",
+					"sid": 157007064031527,
+					"parameters": {
+						"scale": "LayoutScale+0.01"
+					}
+				},
+				{
+					"id": "scroll-to-y",
+					"objectClass": "System",
+					"sid": 996225874530952,
+					"parameters": {
+						"y": "scrolly-0.4"
+					}
+				}
+			],
+			"sid": 497964954699879
+		}
+	],
+	"sid": 951812617417266
+}

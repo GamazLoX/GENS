@@ -1,0 +1,258 @@
+{
+	"name": "map_gen",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 792892667751651,
+					"parameters": {
+						"variable": "map_bl",
+						"comparison": 0,
+						"value": "1"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 862246860008324
+				},
+				{
+					"id": "repeat",
+					"objectClass": "System",
+					"sid": 760550355258082,
+					"parameters": {
+						"count": "floor(random(20))"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 316043036571921,
+					"parameters": {
+						"object-to-create": "treeanimation",
+						"layer": "0",
+						"x": "random(1000)",
+						"y": "random(1000)",
+						"create-hierarchy": false
+					}
+				}
+			],
+			"sid": 529045845319621
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 300983395994616,
+					"parameters": {
+						"variable": "map_bl",
+						"comparison": 0,
+						"value": "1"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 500955354517799
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "map_loading",
+					"sid": 620393129602579,
+					"parameters": {
+						"text": "\"Создаём деревья...\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 406493239558225,
+					"parameters": {
+						"seconds": "1"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 138655808829109,
+					"parameters": {
+						"variable": "map_bl",
+						"value": "2"
+					}
+				}
+			],
+			"sid": 271103479556049
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 807941963993206,
+					"parameters": {
+						"variable": "map_bl",
+						"comparison": 0,
+						"value": "2"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 712683807216960
+				},
+				{
+					"id": "repeat",
+					"objectClass": "System",
+					"sid": 993195521077090,
+					"parameters": {
+						"count": "floor(random(20))"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 630780619260879,
+					"parameters": {
+						"object-to-create": "r01",
+						"layer": "0",
+						"x": "random(1000)",
+						"y": "random(1000)",
+						"create-hierarchy": false
+					}
+				}
+			],
+			"sid": 995396282764113
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 981903082352059,
+					"parameters": {
+						"variable": "map_bl",
+						"comparison": 0,
+						"value": "2"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 189578191500512
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "map_loading",
+					"sid": 406830764544239,
+					"parameters": {
+						"text": "\"Создаём деньги...\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 695161419663224,
+					"parameters": {
+						"seconds": "1"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 967569839787818,
+					"parameters": {
+						"variable": "map_bl",
+						"value": "3"
+					}
+				}
+			],
+			"sid": 739514661311961
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 357356068144052,
+					"parameters": {
+						"variable": "map_bl",
+						"comparison": 0,
+						"value": "3"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 205375139289543
+				},
+				{
+					"id": "repeat",
+					"objectClass": "System",
+					"sid": 465196007016164,
+					"parameters": {
+						"count": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 883606434296461,
+					"parameters": {
+						"object-to-create": "monster1",
+						"layer": "0",
+						"x": "random(1000)",
+						"y": "random(1000)",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "monster1",
+					"sid": 730645857813181,
+					"parameters": {
+						"instance-variable": "monster1",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 306473478785694,
+					"parameters": {
+						"variable": "map_bl",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 219183440736982,
+					"parameters": {
+						"variable": "map_bl",
+						"value": "0"
+					}
+				}
+			],
+			"sid": 919041386244298
+		}
+	],
+	"sid": 744938558512938
+}

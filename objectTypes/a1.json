@@ -1,0 +1,15 @@
+{
+	"name": "a1",
+	"plugin-id": "Text",
+	"sid": 170241945808589,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Fade",
+			"name": "Угасание",
+			"sid": 224899491140105
+		}
+	],
+	"effectTypes": []
+}

@@ -1,0 +1,15 @@
+{
+	"name": "ElevatorLogo",
+	"plugin-id": "Text",
+	"sid": 414587019050828,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Fade",
+			"name": "Угасание",
+			"sid": 607089719815121
+		}
+	],
+	"effectTypes": []
+}

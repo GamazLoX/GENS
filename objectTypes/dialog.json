@@ -1,0 +1,34 @@
+{
+	"name": "dialog",
+	"plugin-id": "Text",
+	"sid": 904157627665557,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "TypeSpeed",
+			"type": "number",
+			"desc": "",
+			"sid": 667917268119578
+		},
+		{
+			"name": "TypeLen",
+			"type": "number",
+			"desc": "",
+			"sid": 159666646774034
+		},
+		{
+			"name": "IsTyping",
+			"type": "boolean",
+			"desc": "",
+			"sid": 329685273498946
+		},
+		{
+			"name": "d",
+			"type": "number",
+			"desc": "",
+			"sid": 415654979290018
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": []
+}

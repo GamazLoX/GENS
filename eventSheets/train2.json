@@ -1,0 +1,32 @@
+{
+	"name": "train2",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 657245789950152
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "player",
+					"sid": 457848155269625,
+					"behaviorType": "Физика",
+					"parameters": {
+						"mode": "disabled"
+					}
+				}
+			],
+			"sid": 772729210076214
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "keyb"
+		}
+	],
+	"sid": 827339016898014
+}

@@ -1,0 +1,50 @@
+{
+	"name": "g1",
+	"plugin-id": "Sprite",
+	"sid": 680600697548894,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "s",
+			"type": "number",
+			"desc": "",
+			"sid": 615823436843527
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Bullet",
+			"name": "Пуля",
+			"sid": 323024419925851
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 32,
+						"height": 32,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3382278,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 445422723769284,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

@@ -1,0 +1,661 @@
+{
+	"name": "menu",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "X",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 784970058757646
+		},
+		{
+			"eventType": "variable",
+			"name": "Y",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 233602743898152
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "dialog"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "rub"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "blocer"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "car_menu"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "menu_g"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "elevatorscrips"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 901665263404145
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "player",
+					"sid": 676099899866044,
+					"behaviorType": "Физика",
+					"parameters": {
+						"mode": "disabled"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "player",
+					"sid": 302304654018549,
+					"behaviorType": "8Направлений",
+					"parameters": {
+						"state": "disabled"
+					}
+				}
+			],
+			"sid": 763626500722981
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 481920306131674
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 779907148774898,
+					"parameters": {
+						"variable": "menu_bl",
+						"comparison": 0,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "ef",
+					"sid": 811254267711712,
+					"parameters": {
+						"x": "0",
+						"y": "0"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 942369606199896,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "restart-fade",
+					"objectClass": "ef",
+					"sid": 735895232674433,
+					"behaviorType": "Угасание"
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 576974864278096,
+					"parameters": {
+						"seconds": "4"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "ef",
+					"sid": 599567886355799
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 352781953288987,
+					"parameters": {
+						"object-to-create": "ef",
+						"layer": "\"ef\"",
+						"x": "0",
+						"y": "0",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 862342986028569,
+					"parameters": {
+						"seconds": "1"
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 864403905053381,
+					"parameters": {
+						"layer": "\"Dialog\"",
+						"visibility": "visible"
+					}
+				},
+				{
+					"callFunction": "TypeText",
+					"sid": 267445576321502,
+					"parameters": [
+						"\"Ей...\"",
+						"0.1",
+						"2",
+						"0"
+					]
+				},
+				{
+					"id": "wait-for-signal",
+					"objectClass": "System",
+					"sid": 715229854724378,
+					"parameters": {
+						"tag": "\"go\""
+					}
+				},
+				{
+					"callFunction": "TypeText",
+					"sid": 182299479922287,
+					"parameters": [
+						"\"Знаю знаю... Но это важно...\"",
+						"0.1",
+						"2",
+						"0"
+					]
+				},
+				{
+					"id": "wait-for-signal",
+					"objectClass": "System",
+					"sid": 991464481584125,
+					"parameters": {
+						"tag": "\"go\""
+					}
+				},
+				{
+					"callFunction": "TypeText",
+					"sid": 872630919579466,
+					"parameters": [
+						"\"Пожалуйста...\"",
+						"0.1",
+						"2",
+						"0"
+					]
+				},
+				{
+					"id": "wait-for-signal",
+					"objectClass": "System",
+					"sid": 992322461020832,
+					"parameters": {
+						"tag": "\"go\""
+					}
+				},
+				{
+					"callFunction": "TypeText",
+					"sid": 109059589763550,
+					"parameters": [
+						"\"Будь осторожен...\"",
+						"0.1",
+						"2",
+						"0"
+					]
+				},
+				{
+					"id": "wait-for-signal",
+					"objectClass": "System",
+					"sid": 273385078505320,
+					"parameters": {
+						"tag": "\"go\""
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 365498507928910,
+					"parameters": {
+						"layer": "\"Dialog\"",
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 809480124355898,
+					"parameters": {
+						"seconds": "0.2"
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 175767499856315,
+					"parameters": {
+						"layer": "\"Dialog\"",
+						"visibility": "visible"
+					}
+				},
+				{
+					"callFunction": "TypeText",
+					"sid": 384902898955303,
+					"parameters": [
+						"\"Да и ещё...\"",
+						"0.1",
+						"2",
+						"0"
+					]
+				},
+				{
+					"id": "wait-for-signal",
+					"objectClass": "System",
+					"sid": 405811105536634,
+					"parameters": {
+						"tag": "\"go\""
+					}
+				},
+				{
+					"callFunction": "TypeText",
+					"sid": 945567493597923,
+					"parameters": [
+						"\"...\"",
+						"0.1",
+						"2",
+						"0"
+					]
+				},
+				{
+					"id": "wait-for-signal",
+					"objectClass": "System",
+					"sid": 157000597674680,
+					"parameters": {
+						"tag": "\"go\""
+					}
+				},
+				{
+					"callFunction": "TypeText",
+					"sid": 715148122495005,
+					"parameters": [
+						"\"Не делай глупостей...\"",
+						"0.1",
+						"2",
+						"0"
+					]
+				},
+				{
+					"id": "wait-for-signal",
+					"objectClass": "System",
+					"sid": 731193926476158,
+					"parameters": {
+						"tag": "\"go\""
+					}
+				},
+				{
+					"callFunction": "TypeText",
+					"sid": 978964669378469,
+					"parameters": [
+						"\"...\"",
+						"0.1",
+						"2",
+						"0"
+					]
+				},
+				{
+					"id": "wait-for-signal",
+					"objectClass": "System",
+					"sid": 850418640875456,
+					"parameters": {
+						"tag": "\"go\""
+					}
+				},
+				{
+					"callFunction": "TypeText",
+					"sid": 609926657128963,
+					"parameters": [
+						"\"Хотя...\"",
+						"0.1",
+						"2",
+						"0"
+					]
+				},
+				{
+					"id": "wait-for-signal",
+					"objectClass": "System",
+					"sid": 336945321813274,
+					"parameters": {
+						"tag": "\"go\""
+					}
+				},
+				{
+					"callFunction": "TypeText",
+					"sid": 382544450068488,
+					"parameters": [
+						"\"...\"",
+						"0.1",
+						"2",
+						"0"
+					]
+				},
+				{
+					"id": "wait-for-signal",
+					"objectClass": "System",
+					"sid": 756235248532430,
+					"parameters": {
+						"tag": "\"go\""
+					}
+				},
+				{
+					"callFunction": "TypeText",
+					"sid": 218429395906623,
+					"parameters": [
+						"\"Делай вид чтоя не говорил тебе этого...\"",
+						"0.1",
+						"2",
+						"0"
+					]
+				},
+				{
+					"id": "wait-for-signal",
+					"objectClass": "System",
+					"sid": 116705251604223,
+					"parameters": {
+						"tag": "\"go\""
+					}
+				},
+				{
+					"callFunction": "TypeText",
+					"sid": 268167573188546,
+					"parameters": [
+						"\"Я хотел сказать это не тебе\"",
+						"0.1",
+						"2",
+						"0"
+					]
+				},
+				{
+					"id": "wait-for-signal",
+					"objectClass": "System",
+					"sid": 680906911255370,
+					"parameters": {
+						"tag": "\"go\""
+					}
+				},
+				{
+					"callFunction": "TypeText",
+					"sid": 551030074484013,
+					"parameters": [
+						"\"Удачи!\"",
+						"0.1",
+						"2",
+						"0"
+					]
+				},
+				{
+					"id": "wait-for-signal",
+					"objectClass": "System",
+					"sid": 248315355075622,
+					"parameters": {
+						"tag": "\"go\""
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 312436435707617,
+					"parameters": {
+						"layer": "\"Dialog\"",
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 986651957151701,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "set-fade-out-time",
+					"objectClass": "ef",
+					"sid": 867927431912200,
+					"behaviorType": "Угасание",
+					"parameters": {
+						"fade-out-time": "1"
+					}
+				},
+				{
+					"id": "restart-fade",
+					"objectClass": "ef",
+					"sid": 335038074748646,
+					"behaviorType": "Угасание"
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 797402144765826,
+					"parameters": {
+						"seconds": "1"
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 558598041754843,
+					"parameters": {
+						"layer": "\"ui\"",
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "player",
+					"sid": 311636717817501,
+					"behaviorType": "8Направлений",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 871410699897486,
+					"parameters": {
+						"audio-file": "BeepBox-Song",
+						"loop": "looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 947170116634016
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 329028361979024
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 865309436182005,
+					"parameters": {
+						"variable": "menu_bl",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 369818785544269,
+					"parameters": {
+						"object-to-create": "ef",
+						"layer": "\"ef\"",
+						"x": "0",
+						"y": "0",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 824501817502167,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "set-fade-out-time",
+					"objectClass": "ef",
+					"sid": 254807908069190,
+					"behaviorType": "Угасание",
+					"parameters": {
+						"fade-out-time": "1"
+					}
+				},
+				{
+					"id": "restart-fade",
+					"objectClass": "ef",
+					"sid": 663665595145094,
+					"behaviorType": "Угасание"
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 944029104257189,
+					"parameters": {
+						"seconds": "1"
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 986329414509465,
+					"parameters": {
+						"layer": "\"ui\"",
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "player",
+					"sid": 763620729058028,
+					"behaviorType": "8Направлений",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 655839446541922,
+					"parameters": {
+						"audio-file": "BeepBox-Song",
+						"loop": "looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 520044631799161
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "player",
+					"sid": 565693333689048,
+					"parameters": {
+						"object": "episode"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 426689731488550,
+					"parameters": {
+						"layer": "\"ui\"",
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 397884121787169,
+					"parameters": {
+						"object-to-create": "ef",
+						"layer": "\"ef\"",
+						"x": "0",
+						"y": "0",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "set-fade-in-time",
+					"objectClass": "ef",
+					"sid": 463154794688120,
+					"behaviorType": "Угасание",
+					"parameters": {
+						"fade-in-time": "4"
+					}
+				},
+				{
+					"id": "restart-fade",
+					"objectClass": "ef",
+					"sid": 667215734271520,
+					"behaviorType": "Угасание"
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 486896172671580,
+					"parameters": {
+						"seconds": "5"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 921815030962492,
+					"parameters": {
+						"layout": "story"
+					}
+				}
+			],
+			"sid": 191528378900472
+		}
+	],
+	"sid": 312753333687752
+}

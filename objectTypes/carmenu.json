@@ -1,0 +1,68 @@
+{
+	"name": "carmenu",
+	"plugin-id": "Sprite",
+	"sid": 474399055067262,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Твердый",
+			"sid": 954406401040307
+		},
+		{
+			"behaviorId": "Car",
+			"name": "Машина",
+			"sid": 320943490608675
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 200,
+						"height": 200,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6260554,
+						"collisionPoly": {
+							"points": [
+								0.325,
+								0.325,
+								0.5,
+								0.325,
+								0.67,
+								0.325,
+								0.96,
+								0.5,
+								0.63,
+								0.63,
+								0.5,
+								0.63,
+								0.365,
+								0.63,
+								0.015,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 319063049617324,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

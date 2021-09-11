@@ -1,0 +1,44 @@
+{
+	"name": "rub",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "player",
+					"sid": 476701432877090,
+					"parameters": {
+						"object": "rub"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "rub",
+					"sid": 313615678835100
+				},
+				{
+					"id": "add-to-instvar",
+					"objectClass": "rub_s",
+					"sid": 729224732305654,
+					"parameters": {
+						"instance-variable": "rub_s",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "rub_s",
+					"sid": 837753982901632,
+					"parameters": {
+						"text": "rub_s.rub_s"
+					}
+				}
+			],
+			"sid": 795655329630108
+		}
+	],
+	"sid": 630575548103927
+}

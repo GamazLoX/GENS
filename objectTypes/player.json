@@ -1,0 +1,87 @@
+{
+	"name": "player",
+	"plugin-id": "Sprite",
+	"sid": 743489201614066,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "lol",
+			"type": "number",
+			"desc": "",
+			"sid": 742044010516597
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Твердый",
+			"sid": 432091423646729
+		},
+		{
+			"behaviorId": "scrollto",
+			"name": "СледитьЗа",
+			"sid": 378551905721958
+		},
+		{
+			"behaviorId": "Physics",
+			"name": "Физика",
+			"sid": 568752542318145
+		},
+		{
+			"behaviorId": "Platform",
+			"name": "Платформер",
+			"sid": 631688245169285
+		},
+		{
+			"behaviorId": "Bullet",
+			"name": "Пуля",
+			"sid": 941506700630839
+		},
+		{
+			"behaviorId": "EightDir",
+			"name": "8Направлений",
+			"sid": 426997566100468
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 66,
+						"height": 62,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 717284,
+						"collisionPoly": {
+							"points": [
+								0.7119370791245794,
+								0.7901545698924729,
+								0.6675610269360264,
+								0.9846270161290319,
+								0.32980850168350206,
+								0.9842349910394265,
+								0.2856428872053874,
+								0.7904625896057351
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 352635747861257,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

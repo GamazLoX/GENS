@@ -1,0 +1,55 @@
+{
+	"name": "treeanimation",
+	"plugin-id": "Sprite",
+	"sid": 607759282915940,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Твердый",
+			"sid": 315097090517829
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5635664,
+						"collisionPoly": {
+							"points": [
+								0.3500000000000001,
+								0.654,
+								0.6639999999999997,
+								0.6579999999999999,
+								0.6739999999999999,
+								1,
+								0.35599999999999987,
+								1
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 971429136803157,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

@@ -1,0 +1,390 @@
+{
+	"name": "blocer",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "bl1",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 837207141922742
+		},
+		{
+			"eventType": "variable",
+			"name": "bl2",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 931561406484725
+		},
+		{
+			"eventType": "variable",
+			"name": "bl3",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 344318507238107
+		},
+		{
+			"eventType": "variable",
+			"name": "bl4",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 698502459434302
+		},
+		{
+			"eventType": "variable",
+			"name": "bl_player",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 740340122163770
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "player",
+					"sid": 625690902662812,
+					"parameters": {
+						"object": "blocer3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 327914182698585,
+					"parameters": {
+						"variable": "bl1",
+						"value": "120"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 936293113056998,
+					"parameters": {
+						"variable": "bl_player",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 562020939043716
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "player",
+					"sid": 820672005314604,
+					"parameters": {
+						"object": "blocer4"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 357195073533051,
+					"parameters": {
+						"variable": "bl2",
+						"value": "120"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 903718483011883,
+					"parameters": {
+						"variable": "bl_player",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 435768712143232
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "player",
+					"sid": 470384485992543,
+					"parameters": {
+						"object": "blocer1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 940232136047205,
+					"parameters": {
+						"variable": "bl3",
+						"value": "128"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 305093651708569,
+					"parameters": {
+						"variable": "bl_player",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 381176766072806
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "player",
+					"sid": 599050003968098,
+					"parameters": {
+						"object": "blocer2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 872436932625599,
+					"parameters": {
+						"variable": "bl4",
+						"value": "128"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 304419370829904,
+					"parameters": {
+						"variable": "bl_player",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 863781525460884
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 239141631742303,
+					"parameters": {
+						"variable": "bl1",
+						"comparison": 1,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "scroll-to-y",
+					"objectClass": "System",
+					"sid": 279625541231642,
+					"parameters": {
+						"y": "scrolly-4"
+					}
+				},
+				{
+					"id": "subtract-from-eventvar",
+					"objectClass": "System",
+					"sid": 237225335065851,
+					"parameters": {
+						"variable": "bl1",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 138533122981975
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 171121185551486,
+					"parameters": {
+						"variable": "bl2",
+						"comparison": 1,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "scroll-to-y",
+					"objectClass": "System",
+					"sid": 764460890629304,
+					"parameters": {
+						"y": "scrolly+4"
+					}
+				},
+				{
+					"id": "subtract-from-eventvar",
+					"objectClass": "System",
+					"sid": 264576488290074,
+					"parameters": {
+						"variable": "bl2",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 140167260379822
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 196458931564643,
+					"parameters": {
+						"variable": "bl3",
+						"comparison": 1,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "scroll-to-x",
+					"objectClass": "System",
+					"sid": 111359284795425,
+					"parameters": {
+						"x": "scrollx-5"
+					}
+				},
+				{
+					"id": "subtract-from-eventvar",
+					"objectClass": "System",
+					"sid": 941426265374826,
+					"parameters": {
+						"variable": "bl3",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 122847469135362
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 247622072756753,
+					"parameters": {
+						"variable": "bl4",
+						"comparison": 1,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "scroll-to-x",
+					"objectClass": "System",
+					"sid": 399970459631313,
+					"parameters": {
+						"x": "scrollx+5"
+					}
+				},
+				{
+					"id": "subtract-from-eventvar",
+					"objectClass": "System",
+					"sid": 939239143787412,
+					"parameters": {
+						"variable": "bl4",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 370429868933053
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 984357407840341,
+					"parameters": {
+						"variable": "bl_player",
+						"comparison": 0,
+						"value": "1"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 788491841274718
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "player",
+					"sid": 406883525012731,
+					"behaviorType": "8Направлений",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 781058417554029,
+					"parameters": {
+						"seconds": "2.1"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "player",
+					"sid": 678696717002254,
+					"behaviorType": "8Направлений",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 869144450402615,
+					"parameters": {
+						"variable": "bl_player",
+						"value": "0"
+					}
+				}
+			],
+			"sid": 714638234499568
+		}
+	],
+	"sid": 433908875663647
+}

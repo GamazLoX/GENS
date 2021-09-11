@@ -1,0 +1,235 @@
+{
+	"name": "Список событий 1",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "s",
+			"type": "number",
+			"initialValue": "8",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 920655996721538
+		},
+		{
+			"eventType": "variable",
+			"name": "s2",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 130488161208907
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 780859489789518
+				}
+			],
+			"actions": [
+				{
+					"id": "look-parallel-to-layout",
+					"objectClass": "3DCamera",
+					"sid": 899684405424185,
+					"parameters": {
+						"cam-x": "pl1.X",
+						"cam-y": "pl1.Y",
+						"cam-z": "s",
+						"look-angle": "pl1.Angle"
+					}
+				}
+			],
+			"sid": 203119052497004
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "pl1",
+					"sid": 188680685855633,
+					"parameters": {
+						"object": "3DФигуры4"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 724341306590268,
+					"parameters": {
+						"variable": "s2",
+						"comparison": 0,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 541202812806144,
+					"parameters": {
+						"variable": "s2",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 847347907707006
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 650873865777383,
+					"parameters": {
+						"variable": "s2",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-z-elevation",
+					"objectClass": "3DФигуры4",
+					"sid": 273725853529183,
+					"parameters": {
+						"z": "3DФигуры4.ZElevation+0.22"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 361025852891699,
+					"parameters": {
+						"variable": "s",
+						"value": "s+0.22"
+					}
+				}
+			],
+			"sid": 138494601355766
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 898797894593991,
+					"parameters": {
+						"variable": "s2",
+						"comparison": 0,
+						"value": "1"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 528569242321018
+				}
+			],
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 956562324759662,
+					"parameters": {
+						"seconds": "5"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 539978163055598,
+					"parameters": {
+						"variable": "s2",
+						"value": "2"
+					}
+				}
+			],
+			"sid": 870843988918417
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 923555649303417,
+					"parameters": {
+						"variable": "s2",
+						"comparison": 0,
+						"value": "2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-z-elevation",
+					"objectClass": "3DФигуры4",
+					"sid": 502783402339819,
+					"parameters": {
+						"z": "3DФигуры4.ZElevation-0.22"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 820854684564252,
+					"parameters": {
+						"variable": "s",
+						"value": "s-0.22"
+					}
+				}
+			],
+			"sid": 771203640102970
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 196066255404359,
+					"parameters": {
+						"variable": "s2",
+						"comparison": 0,
+						"value": "2"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 131617387169384
+				}
+			],
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 876286392138094,
+					"parameters": {
+						"seconds": "5"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 552228538693694,
+					"parameters": {
+						"variable": "s2",
+						"value": "0"
+					}
+				}
+			],
+			"sid": 319867128057853
+		}
+	],
+	"sid": 706146788539766
+}

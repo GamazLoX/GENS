@@ -1,0 +1,849 @@
+{
+	"projectFormatVersion": 1,
+	"savedWithRelease": 26200,
+	"name": "GENS 0.029",
+	"runtime": "c3",
+	"useWorker": "auto",
+	"bundleAddons": false,
+	"usedAddons": [
+		{
+			"type": "plugin",
+			"id": "Sprite",
+			"name": "Спрайт",
+			"author": "Scirra",
+			"version": "r262",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Text",
+			"name": "Текст",
+			"author": "Scirra",
+			"version": "r262",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "NinePatch",
+			"name": "9-патч",
+			"author": "Scirra",
+			"version": "r262",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Audio",
+			"name": "Аудио",
+			"author": "Scirra",
+			"version": "r262",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Keyboard",
+			"name": "Клавиатура",
+			"author": "Scirra",
+			"version": "r262",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Mouse",
+			"name": "Мышь",
+			"author": "Scirra",
+			"version": "r262",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Camera3D",
+			"name": "[3D camera]",
+			"author": "Scirra",
+			"version": "r262",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "video",
+			"name": "Видео",
+			"author": "Scirra",
+			"version": "r262",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Shape3D",
+			"name": "3D фигуры",
+			"author": "Scirra",
+			"version": "r262",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Bullet",
+			"name": "Пуля",
+			"author": "Scirra",
+			"version": "r262",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Fade",
+			"name": "Угасание",
+			"author": "Scirra",
+			"version": "r262",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Sin",
+			"name": "Синусоид",
+			"author": "Scirra",
+			"version": "r262",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "solid",
+			"name": "Твердый",
+			"author": "Scirra",
+			"version": "r262",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Car",
+			"name": "Машина",
+			"author": "Scirra",
+			"version": "r262",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Physics",
+			"name": "Физика",
+			"author": "Scirra",
+			"version": "r262",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "scrollto",
+			"name": "Следить за",
+			"author": "Scirra",
+			"version": "r262",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Platform",
+			"name": "Платформер",
+			"author": "Scirra",
+			"version": "r262",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "EightDir",
+			"name": "8 Направлений",
+			"author": "Scirra",
+			"version": "r262",
+			"bundled": false
+		}
+	],
+	"uniqueId": "3319mv9k7e5",
+	"objectTypes": {
+		"items": [
+			"player",
+			"Спрайт",
+			"Спрайт2",
+			"a1",
+			"g1",
+			"a",
+			"map",
+			"treeanimation",
+			"TextSample",
+			"Спрайт3",
+			"Спрайт4",
+			"Спрайт5",
+			"a2",
+			"Названия",
+			"treeanimation2",
+			"Спрайт8",
+			"Спрайт11",
+			"Спрайт12",
+			"Спрайт13",
+			"Спрайт14",
+			"Спрайт15",
+			"Видео",
+			"elevatorscrips",
+			"elevatorscrips2",
+			"monster1",
+			"3DФигуры",
+			"3DФигуры2",
+			"Спрайт23",
+			"3DФигуры3",
+			"Спрайт24",
+			"3DФигуры4"
+		],
+		"subfolders": [
+			{
+				"items": [
+					"rub_inv",
+					"inv",
+					"rub_s",
+					"rub"
+				],
+				"subfolders": [],
+				"name": "ui"
+			},
+			{
+				"items": [
+					"menu_door1",
+					"menu_door2",
+					"menu_door3",
+					"episode",
+					"d1",
+					"d2"
+				],
+				"subfolders": [],
+				"name": "_menu_door"
+			},
+			{
+				"items": [
+					"9патч",
+					"9патч2",
+					"dialog"
+				],
+				"subfolders": [],
+				"name": "dialog"
+			},
+			{
+				"items": [
+					"Audio",
+					"Keyboard",
+					"Мышь"
+				],
+				"subfolders": [],
+				"name": "system"
+			},
+			{
+				"items": [
+					"storytext",
+					"Спрайт6",
+					"Спрайт7",
+					"Спрайт9",
+					"Спрайт10"
+				],
+				"subfolders": [],
+				"name": "story"
+			},
+			{
+				"items": [
+					"ef",
+					"lol"
+				],
+				"subfolders": [],
+				"name": "ef"
+			},
+			{
+				"items": [
+					"blocer1",
+					"blocer2",
+					"blocer3",
+					"blocer4"
+				],
+				"subfolders": [],
+				"name": "blocer"
+			},
+			{
+				"items": [
+					"E",
+					"H",
+					"S",
+					"G"
+				],
+				"subfolders": [],
+				"name": "logo"
+			},
+			{
+				"items": [],
+				"subfolders": [
+					{
+						"items": [
+							"Спрайт17",
+							"text_logo",
+							"v1",
+							"v2",
+							"v3"
+						],
+						"subfolders": [],
+						"name": "car"
+					}
+				],
+				"name": "menu"
+			},
+			{
+				"items": [
+					"carmenu",
+					"car1",
+					"car2"
+				],
+				"subfolders": [],
+				"name": "car"
+			},
+			{
+				"items": [
+					"Спрайт16",
+					"Спрайт18",
+					"Спрайт19",
+					"Спрайт20",
+					"Спрайт22",
+					"ElevatorLogo"
+				],
+				"subfolders": [],
+				"name": "elevator"
+			},
+			{
+				"items": [
+					"pogoda",
+					"pogoda_text",
+					"Спрайт21"
+				],
+				"subfolders": [],
+				"name": "pogoda"
+			},
+			{
+				"items": [
+					"r01",
+					"r02",
+					"r03",
+					"r04",
+					"r05",
+					"r06",
+					"r07",
+					"r08",
+					"r09",
+					"r10",
+					"r11",
+					"r12",
+					"r14",
+					"r15",
+					"r17",
+					"r13",
+					"r16"
+				],
+				"subfolders": [],
+				"name": "rubs"
+			},
+			{
+				"items": [
+					"map_loading"
+				],
+				"subfolders": [],
+				"name": "loading"
+			},
+			{
+				"items": [],
+				"subfolders": [
+					{
+						"items": [
+							"road1",
+							"road2",
+							"road_gen",
+							"road3",
+							"road4",
+							"road5",
+							"road6"
+						],
+						"subfolders": [],
+						"name": "map1"
+					}
+				],
+				"name": "generator"
+			},
+			{
+				"items": [
+					"3DCamera",
+					"pl1"
+				],
+				"subfolders": [],
+				"name": "3d"
+			}
+		]
+	},
+	"autosaveData": null,
+	"containers": [],
+	"families": {
+		"items": [],
+		"subfolders": []
+	},
+	"layouts": {
+		"items": [
+			"story"
+		],
+		"subfolders": [
+			{
+				"items": [
+					"start",
+					"start2",
+					"start3",
+					"start4",
+					"menu",
+					"FPS"
+				],
+				"subfolders": [],
+				"name": "start"
+			},
+			{
+				"items": [
+					"_tmp",
+					"generator"
+				],
+				"subfolders": [],
+				"name": "tmp"
+			},
+			{
+				"items": [
+					"map1"
+				],
+				"subfolders": [],
+				"name": "map"
+			},
+			{
+				"items": [
+					"elevator"
+				],
+				"subfolders": [],
+				"name": "elevator"
+			}
+		]
+	},
+	"eventSheets": {
+		"items": [
+			"rubs",
+			"Список событий 1"
+		],
+		"subfolders": [
+			{
+				"items": [
+					"menu_g",
+					"player",
+					"pogoda"
+				],
+				"subfolders": [
+					{
+						"items": [
+							"map_gen",
+							"monser",
+							"map_road"
+						],
+						"subfolders": [],
+						"name": "map"
+					}
+				],
+				"name": "generator"
+			},
+			{
+				"items": [
+					"blocer",
+					"dialog",
+					"keyb",
+					"rub"
+				],
+				"subfolders": [],
+				"name": "system"
+			},
+			{
+				"items": [
+					"menu_train",
+					"story",
+					"train1",
+					"train2"
+				],
+				"subfolders": [],
+				"name": "tmp"
+			},
+			{
+				"items": [
+					"car_menu",
+					"menu",
+					"elevatorscrips"
+				],
+				"subfolders": [],
+				"name": "menu"
+			},
+			{
+				"items": [
+					"start",
+					"start2",
+					"start3",
+					"start4"
+				],
+				"subfolders": [],
+				"name": "start"
+			},
+			{
+				"items": [
+					"map1"
+				],
+				"subfolders": [],
+				"name": "map"
+			},
+			{
+				"items": [
+					"elevator",
+					"elevator2",
+					"elevator3"
+				],
+				"subfolders": [],
+				"name": "elevator"
+			}
+		]
+	},
+	"rootFileFolders": {
+		"script": {
+			"items": [],
+			"subfolders": []
+		},
+		"sound": {
+			"items": [
+				{
+					"name": "p1.mp3",
+					"type": "audio/mpeg",
+					"sid": 899982062129855
+				},
+				{
+					"name": "p2.mp3",
+					"type": "audio/mpeg",
+					"sid": 655653021064843
+				},
+				{
+					"name": "p3.mp3",
+					"type": "audio/mpeg",
+					"sid": 800007703270771
+				},
+				{
+					"name": "p4.mp3",
+					"type": "audio/mpeg",
+					"sid": 307689022451775
+				},
+				{
+					"name": "SFX.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 599824298541171
+				},
+				{
+					"name": "samolet.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 412887007658232
+				},
+				{
+					"name": "tel.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 335756853832168
+				},
+				{
+					"name": "zapusk.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 974886820346263
+				},
+				{
+					"name": "bax.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 892753469050798
+				},
+				{
+					"name": "bax2.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 607411038920551
+				},
+				{
+					"name": "p5.mp3",
+					"type": "audio/mpeg",
+					"sid": 821562283839879
+				},
+				{
+					"name": "text.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 307598880406543
+				},
+				{
+					"name": "text2.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 841869774298238
+				},
+				{
+					"name": "text3.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 722439993930074
+				},
+				{
+					"name": "dr2.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 907431686984735
+				},
+				{
+					"name": "ef.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 295222030895120
+				},
+				{
+					"name": "6610.mp3",
+					"type": "audio/mpeg",
+					"sid": 264789678956087
+				},
+				{
+					"name": "samalot.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 964823115236210
+				},
+				{
+					"name": "453ec44415174e0.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 217594801003540
+				},
+				{
+					"name": "Single z_uk-padajuschij-lift-z_uk-potishe.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 457142216333397
+				},
+				{
+					"name": "BeepBox-Song (2).webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 286831031998979
+				},
+				{
+					"name": "BeepBox-Song (1).webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 823294678481751
+				},
+				{
+					"name": "BeepBox-Song.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 728295809600938
+				},
+				{
+					"name": "NKM-G-30-1585-2906851853-0-36523904-69-172-2-2898-46-0-1-101-1-161-34-202-35-504-87-308-571.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 890909734746520
+				},
+				{
+					"name": "smb_coin.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 673450427759243
+				}
+			],
+			"subfolders": [
+				{
+					"items": [
+						{
+							"name": "jjjas.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 401996095842469
+						},
+						{
+							"name": "4b8046c49836303.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 715233040628694
+						},
+						{
+							"name": "df2e21299d554e4.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 368854670012763
+						},
+						{
+							"name": "z_uk-padajuschij-lift-z_uk-potishe.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 701437696058445
+						},
+						{
+							"name": "2f84256441ad528.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 828793259037335
+						},
+						{
+							"name": "4ffe6003574e08f.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 394316026241968
+						},
+						{
+							"name": "jg-032316-sfx-elevator-button.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 572637120932974
+						}
+					],
+					"subfolders": [],
+					"name": "elevator"
+				}
+			]
+		},
+		"music": {
+			"items": [],
+			"subfolders": []
+		},
+		"video": {
+			"items": [
+				{
+					"name": "a1.mp4",
+					"type": "video/mp4",
+					"sid": 805114007360541
+				},
+				{
+					"name": "a2.mp4",
+					"type": "video/mp4",
+					"sid": 962167504478364
+				},
+				{
+					"name": "b2.mp4",
+					"type": "video/mp4",
+					"sid": 728000951333063
+				},
+				{
+					"name": "b1.mp4",
+					"type": "video/mp4",
+					"sid": 488307683937935
+				},
+				{
+					"name": "rek.mp4",
+					"type": "video/mp4",
+					"sid": 312769124103331
+				}
+			],
+			"subfolders": []
+		},
+		"font": {
+			"items": [
+				{
+					"name": "Retro.otf",
+					"type": "application/font-sfnt",
+					"sid": 105382593805469
+				}
+			],
+			"subfolders": []
+		},
+		"icon": {
+			"items": [
+				{
+					"name": "Загрузка-логотипа.png",
+					"type": "image/png",
+					"sid": 455650210406060,
+					"icon-info": {
+						"purpose": "loading-logo"
+					}
+				},
+				{
+					"name": "Иконка-16.png",
+					"type": "image/png",
+					"sid": 522128857301915,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "Иконка-64.png",
+					"type": "image/png",
+					"sid": 771373672334614,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "Иконка-512.png",
+					"type": "image/png",
+					"sid": 448567129429024,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "Иконка-128.png",
+					"type": "image/png",
+					"sid": 270205106989182,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "Иконка-256.png",
+					"type": "image/png",
+					"sid": 522859991833459,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "Иконка-32.png",
+					"type": "image/png",
+					"sid": 768997744708622,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				}
+			],
+			"subfolders": []
+		},
+		"general": {
+			"items": [],
+			"subfolders": []
+		}
+	},
+	"timelines": {
+		"items": [],
+		"subfolders": [
+			{
+				"items": [],
+				"subfolders": []
+			}
+		]
+	},
+	"properties": {
+		"description": "",
+		"version": "1.0.0.0",
+		"author": "",
+		"authorEmail": "",
+		"authorWebsite": "",
+		"appId": "",
+		"pixelRounding": false,
+		"useLoaderLayout": false,
+		"fullscreenMode": "letterbox-scale",
+		"fullscreenQuality": "high",
+		"viewportFit": "auto",
+		"backgroundColor": [
+			0,
+			0,
+			0,
+			0
+		],
+		"splashColor": [
+			1,
+			1,
+			1,
+			0
+		],
+		"useThemeColor": false,
+		"themeColor": [
+			1,
+			1,
+			1,
+			0
+		],
+		"orientations": "landscape",
+		"gpuPreference": "high-performance",
+		"scriptsType": "module",
+		"framerateMode": "vsync",
+		"compositingMode": "standard",
+		"sampling": "trilinear",
+		"downscaling": "medium",
+		"renderingMode": "auto",
+		"anisotropicFiltering": "auto",
+		"maxSpriteSheetSize": 2048,
+		"loaderStyle": "splash",
+		"preloadSounds": true,
+		"cordovaiOSScheme": "app",
+		"cordovaAndroidScheme": "file"
+	},
+	"viewportWidth": 640,
+	"viewportHeight": 480,
+	"firstLayout": null
+}

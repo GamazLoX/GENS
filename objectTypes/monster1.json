@@ -1,0 +1,103 @@
+{
+	"name": "monster1",
+	"plugin-id": "Sprite",
+	"sid": 899057524132912,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "monster1",
+			"type": "number",
+			"desc": "",
+			"sid": 202208747264754
+		},
+		{
+			"name": "momster1_upr",
+			"type": "number",
+			"desc": "",
+			"sid": 307576891093128
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Car",
+			"name": "Машина",
+			"sid": 186947021119068
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 16,
+						"height": 16,
+						"originX": 0.25,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1025300,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 680951739739212,
+				"name": "a1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 16,
+						"height": 16,
+						"originX": 0.25,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1712746,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 16,
+						"height": 16,
+						"originX": 0.25,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4633846,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 16,
+						"height": 16,
+						"originX": 0.25,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9207789,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 398016575301776,
+				"name": "a2",
+				"isLooping": true,
+				"isPingPong": true,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 8
+			}
+		],
+		"subfolders": []
+	}
+}

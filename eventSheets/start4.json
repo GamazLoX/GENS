@@ -1,0 +1,488 @@
+{
+	"name": "start4",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 951431916481651
+				}
+			],
+			"actions": [
+				{
+					"id": "stop-all",
+					"objectClass": "Audio",
+					"sid": 471188318050406
+				}
+			],
+			"sid": 387421169723873
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Мышь",
+					"sid": 709216464451635,
+					"parameters": {
+						"object": "a1"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 346118686086801,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-text",
+							"objectClass": "a1",
+							"sid": 395184057542647,
+							"parameters": {
+								"text-to-compare": "\"Я хочу посмотреть всё начало\"",
+								"case-sensitivity": "ignore-case"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-font-color",
+							"objectClass": "a1",
+							"sid": 293695059191611,
+							"parameters": {
+								"color": "rgbEx(0, 255, 0)"
+							}
+						}
+					],
+					"sid": 867781210100270,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "mouse-button-is-down",
+									"objectClass": "Мышь",
+									"sid": 594160245948447,
+									"parameters": {
+										"mouse-button": "left"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-font-color",
+									"objectClass": "a1",
+									"sid": 553573651201598,
+									"parameters": {
+										"color": "rgbEx(255, 0, 0)"
+									}
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 748359815801910,
+									"parameters": {
+										"audio-file": "453ec44415174e0",
+										"loop": "not-looping",
+										"volume": "0",
+										"tag-optional": "\"\""
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 491317169663683,
+									"parameters": {
+										"variable": "menu_bl",
+										"value": "0"
+									}
+								},
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 648194669936934,
+									"parameters": {
+										"layout": "start3"
+									}
+								}
+							],
+							"sid": 441466613556773
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-text",
+							"objectClass": "a1",
+							"sid": 485255473358235,
+							"parameters": {
+								"text-to-compare": "\"Я хочу сразу перейти в меню\"",
+								"case-sensitivity": "ignore-case"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-font-color",
+							"objectClass": "a1",
+							"sid": 458131220350895,
+							"parameters": {
+								"color": "rgbEx(0, 255, 0)"
+							}
+						}
+					],
+					"sid": 624898494759644,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "mouse-button-is-down",
+									"objectClass": "Мышь",
+									"sid": 595730745084139,
+									"parameters": {
+										"mouse-button": "left"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-font-color",
+									"objectClass": "a1",
+									"sid": 616104418709722,
+									"parameters": {
+										"color": "rgbEx(255, 0, 0)"
+									}
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 413298809907422,
+									"parameters": {
+										"audio-file": "453ec44415174e0",
+										"loop": "not-looping",
+										"volume": "0",
+										"tag-optional": "\"\""
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 449601640212127,
+									"parameters": {
+										"variable": "menu_bl",
+										"value": "1"
+									}
+								},
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 298185969467706,
+									"parameters": {
+										"layout": "menu"
+									}
+								}
+							],
+							"sid": 144186313082293
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-text",
+							"objectClass": "a1",
+							"sid": 155640191661368,
+							"parameters": {
+								"text-to-compare": "\"Я хочу посмотреть всё начало но при этом не смотреть предупреждения в меню\"",
+								"case-sensitivity": "ignore-case"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-font-color",
+							"objectClass": "a1",
+							"sid": 579840693665961,
+							"parameters": {
+								"color": "rgbEx(0, 255, 0)"
+							}
+						}
+					],
+					"sid": 326392961938254,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "mouse-button-is-down",
+									"objectClass": "Мышь",
+									"sid": 219244586215524,
+									"parameters": {
+										"mouse-button": "left"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 659236810959162,
+									"parameters": {
+										"audio-file": "453ec44415174e0",
+										"loop": "not-looping",
+										"volume": "0",
+										"tag-optional": "\"\""
+									}
+								},
+								{
+									"id": "set-font-color",
+									"objectClass": "a1",
+									"sid": 286667398632748,
+									"parameters": {
+										"color": "rgbEx(255, 0, 0)"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 774909040775376,
+									"parameters": {
+										"variable": "menu_bl",
+										"value": "0"
+									}
+								},
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 527772285150913,
+									"parameters": {
+										"layout": "start3"
+									}
+								}
+							],
+							"sid": 828663651949770,
+							"disabled": true
+						}
+					]
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Мышь",
+					"sid": 455121384397443,
+					"parameters": {
+						"object": "a1"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 130656529273391,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-text",
+							"objectClass": "a1",
+							"sid": 548862885734066,
+							"parameters": {
+								"text-to-compare": "\"Я хочу посмотреть всё начало\"",
+								"case-sensitivity": "ignore-case"
+							}
+						},
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 251221475642679
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 657617865000846,
+							"parameters": {
+								"audio-file": "text3",
+								"loop": "not-looping",
+								"volume": "0",
+								"tag-optional": "\"\""
+							}
+						}
+					],
+					"sid": 884651647863620
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-text",
+							"objectClass": "a1",
+							"sid": 438639591524632,
+							"parameters": {
+								"text-to-compare": "\"Я хочу сразу перейти в меню\"",
+								"case-sensitivity": "ignore-case"
+							}
+						},
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 423170293774970
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 815938784022482,
+							"parameters": {
+								"audio-file": "text3",
+								"loop": "not-looping",
+								"volume": "0",
+								"tag-optional": "\"\""
+							}
+						}
+					],
+					"sid": 120131996734538
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-text",
+							"objectClass": "a1",
+							"sid": 214466508066442,
+							"parameters": {
+								"text-to-compare": "\"Я хочу посмотреть всё начало но при этом не смотреть предупреждения в меню\"",
+								"case-sensitivity": "ignore-case"
+							}
+						},
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 129675742701701
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 200505418500943,
+							"parameters": {
+								"audio-file": "text3",
+								"loop": "not-looping",
+								"volume": "0",
+								"tag-optional": "\"\""
+							}
+						}
+					],
+					"sid": 637210759452111
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Мышь",
+					"sid": 470643395932108,
+					"parameters": {
+						"object": "a1"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [],
+			"sid": 671713933867646,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-text",
+							"objectClass": "a1",
+							"sid": 286712503052702,
+							"parameters": {
+								"text-to-compare": "\"Я хочу посмотреть всё начало\"",
+								"case-sensitivity": "ignore-case"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-font-color",
+							"objectClass": "a1",
+							"sid": 763897043868010,
+							"parameters": {
+								"color": "rgbEx(255, 255, 255)"
+							}
+						}
+					],
+					"sid": 491183116400252
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-text",
+							"objectClass": "a1",
+							"sid": 919617089402778,
+							"parameters": {
+								"text-to-compare": "\"Я хочу сразу перейти в меню\"",
+								"case-sensitivity": "ignore-case"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-font-color",
+							"objectClass": "a1",
+							"sid": 214157180466296,
+							"parameters": {
+								"color": "rgbEx(255, 255, 255)"
+							}
+						}
+					],
+					"sid": 263385764061863
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-text",
+							"objectClass": "a1",
+							"sid": 671469602594805,
+							"parameters": {
+								"text-to-compare": "\"Я хочу посмотреть всё начало но при этом не смотреть предупреждения в меню\"",
+								"case-sensitivity": "ignore-case"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-font-color",
+							"objectClass": "a1",
+							"sid": 508841936100341,
+							"parameters": {
+								"color": "rgbEx(255, 255, 255)"
+							}
+						}
+					],
+					"sid": 988520351141966
+				}
+			]
+		}
+	],
+	"sid": 964434592495978
+}

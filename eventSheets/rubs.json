@@ -1,0 +1,121 @@
+{
+	"name": "rubs",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "rubs",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 392648487551812
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Мышь",
+					"sid": 834886569979871,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "r01"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "r01",
+					"sid": 806072878559587
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 837865416782727,
+					"parameters": {
+						"audio-file": "smb_coin",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 265367185480036,
+					"parameters": {
+						"variable": "rubs",
+						"value": "0.01"
+					}
+				}
+			],
+			"sid": 809483830832431
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "player",
+					"sid": 183810262028003,
+					"parameters": {
+						"object": "r01"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "r01",
+					"sid": 938981379405672
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 371266666780781,
+					"parameters": {
+						"audio-file": "smb_coin",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 436066513693411,
+					"parameters": {
+						"variable": "rubs",
+						"value": "0.01"
+					}
+				}
+			],
+			"sid": 563754570070758
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 402617178453700
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "rub_s",
+					"sid": 271560571175219,
+					"parameters": {
+						"text": "rubs"
+					}
+				}
+			],
+			"sid": 936987847340190
+		}
+	],
+	"sid": 663120954501495
+}

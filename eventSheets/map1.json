@@ -1,0 +1,108 @@
+{
+	"name": "map1",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "map_bl",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 528861131623849
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "player"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "map_gen"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "rubs"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "monser"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 812794999607947
+				}
+			],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 387193543750050,
+					"parameters": {
+						"object-to-create": "ef",
+						"layer": "\"ef\"",
+						"x": "0",
+						"y": "0",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 929920729370692,
+					"parameters": {
+						"variable": "map_bl",
+						"value": "1"
+					}
+				},
+				{
+					"id": "wait-for-signal",
+					"objectClass": "System",
+					"sid": 224347040979855,
+					"parameters": {
+						"tag": "\"start\""
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "map_loading",
+					"sid": 663552555910697,
+					"parameters": {
+						"text": "\"\""
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "ef",
+					"sid": 310064610209913
+				}
+			],
+			"sid": 204455544327896
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 416810343726670,
+					"parameters": {
+						"key": 82
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 575040920495272
+				}
+			],
+			"sid": 813937671950588
+		}
+	],
+	"sid": 471144593671933
+}
