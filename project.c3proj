@@ -185,7 +185,8 @@
 			"3DФигуры3",
 			"Спрайт24",
 			"3DФигуры4",
-			"3DФигуры5"
+			"3DФигуры5",
+			"Текст"
 		],
 		"subfolders": [
 			{
@@ -242,7 +243,8 @@
 			{
 				"items": [
 					"ef",
-					"lol"
+					"lol",
+					"ef2"
 				],
 				"subfolders": [],
 				"name": "ef"
@@ -633,6 +635,41 @@
 					"name": "smb_coin.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 673450427759243
+				},
+				{
+					"name": "001.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 645219717252177
+				},
+				{
+					"name": "002.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 445715987237607
+				},
+				{
+					"name": "003.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 902623691071879
+				},
+				{
+					"name": "004.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 125666268970983
+				},
+				{
+					"name": "005.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 556625854759705
+				},
+				{
+					"name": "01854.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 602001313706814
+				},
+				{
+					"name": "tragicheskaya_muzyka_-_svechi_(Gybka.com).webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 785376413607880
 				}
 			],
 			"subfolders": [

@@ -1,0 +1,15 @@
+{
+	"name": "Текст",
+	"plugin-id": "Text",
+	"sid": 127488893894966,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Bullet",
+			"name": "Пуля",
+			"sid": 400761525048100
+		}
+	],
+	"effectTypes": []
+}

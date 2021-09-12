@@ -482,11 +482,11 @@
 				{
 					"id": "play",
 					"objectClass": "Audio",
-					"sid": 871410699897486,
+					"sid": 198138823383698,
 					"parameters": {
 						"audio-file": "BeepBox-Song",
 						"loop": "looping",
-						"volume": "0",
+						"volume": "-9",
 						"tag-optional": "\"\""
 					}
 				}
@@ -577,11 +577,11 @@
 				{
 					"id": "play",
 					"objectClass": "Audio",
-					"sid": 655839446541922,
+					"sid": 154024312032689,
 					"parameters": {
 						"audio-file": "BeepBox-Song",
 						"loop": "looping",
-						"volume": "0",
+						"volume": "-9",
 						"tag-optional": "\"\""
 					}
 				}
@@ -655,6 +655,80 @@
 				}
 			],
 			"sid": 191528378900472
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "player",
+					"sid": 881303033448320,
+					"parameters": {
+						"object": "car1"
+					}
+				},
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "player",
+					"sid": 839098575785504,
+					"parameters": {
+						"object": "car2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "stop-all",
+					"objectClass": "Audio",
+					"sid": 275500105835049
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 489070347987965,
+					"parameters": {
+						"audio-file": "004",
+						"loop": "not-looping",
+						"volume": "40",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "player",
+					"sid": 349916594430478
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 492442606842581,
+					"parameters": {
+						"object-to-create": "ef",
+						"layer": "\"ef\"",
+						"x": "0",
+						"y": "0",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 437695199441507,
+					"parameters": {
+						"seconds": "4"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 969575846153851,
+					"parameters": {
+						"layout": "FPS"
+					}
+				}
+			],
+			"sid": 681571638745221,
+			"isOrBlock": true
 		}
 	],
 	"sid": 312753333687752
