@@ -157,6 +157,15 @@
         "preloadAsMusic": false,
         "preloadAsSound": false,
         "userAdded": true
+      },
+      {
+        "file": "003.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "003.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -179,6 +188,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/start2"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/start4"
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
