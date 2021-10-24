@@ -148,6 +148,15 @@
         "metadata": "",
         "name": "a1.json",
         "userAdded": true
+      },
+      {
+        "file": "mus_cymbal.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "name": "mus_cymbal.ogg",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
