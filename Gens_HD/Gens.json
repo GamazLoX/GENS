@@ -142,14 +142,6 @@
         "userAdded": true
       },
       {
-        "disablePreload": false,
-        "file": "a1.json",
-        "kind": "json",
-        "metadata": "",
-        "name": "a1.json",
-        "userAdded": true
-      },
-      {
         "file": "mus_cymbal.ogg",
         "kind": "audio",
         "metadata": "",
@@ -166,6 +158,14 @@
         "preloadAsMusic": false,
         "preloadAsSound": false,
         "userAdded": false
+      },
+      {
+        "disablePreload": false,
+        "file": "a1.json",
+        "kind": "json",
+        "metadata": "",
+        "name": "a1.json",
+        "userAdded": true
       }
     ],
     "resourceFolders": []

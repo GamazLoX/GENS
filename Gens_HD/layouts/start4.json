@@ -323,11 +323,32 @@
         {
           "type": {
             "inverted": false,
+            "value": "PauseTimer"
+          },
+          "parameters": [
+            "",
+            "\"la\""
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
             "value": "DialogueTree::LoadDialogueFromJsonFile"
           },
           "parameters": [
             "",
             "a1.json"
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "DialogueTree::StartDialogueFromBranch"
+          },
+          "parameters": [
+            "\"start2\""
           ],
           "subInstructions": []
         },
@@ -366,17 +387,6 @@
             "0"
           ],
           "subInstructions": []
-        },
-        {
-          "type": {
-            "inverted": false,
-            "value": "ResetTimer"
-          },
-          "parameters": [
-            "",
-            "\"lol\""
-          ],
-          "subInstructions": []
         }
       ],
       "events": []
@@ -412,6 +422,25 @@
           "subInstructions": []
         }
       ],
+      "events": []
+    },
+    {
+      "disabled": false,
+      "folded": false,
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "DialogueTree::IsDialogueLineType"
+          },
+          "parameters": [
+            "\"text\""
+          ],
+          "subInstructions": []
+        }
+      ],
+      "actions": [],
       "events": []
     },
     {
@@ -578,18 +607,6 @@
             "\"lol\""
           ],
           "subInstructions": []
-        },
-        {
-          "type": {
-            "inverted": true,
-            "value": "Timer"
-          },
-          "parameters": [
-            "",
-            "35",
-            "\"lol\""
-          ],
-          "subInstructions": []
         }
       ],
       "actions": [
@@ -601,10 +618,66 @@
           "parameters": [
             "dialog",
             "=",
-            "\"lol1\""
+            "DialogueTree::LineText()"
           ],
           "subInstructions": []
         },
+        {
+          "type": {
+            "inverted": false,
+            "value": "PauseTimer"
+          },
+          "parameters": [
+            "",
+            "\"lol\""
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "UnPauseTimer"
+          },
+          "parameters": [
+            "",
+            "\"la\""
+          ],
+          "subInstructions": []
+        }
+      ],
+      "events": []
+    },
+    {
+      "disabled": false,
+      "folded": false,
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "Timer"
+          },
+          "parameters": [
+            "",
+            "1",
+            "\"la\""
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": true,
+            "value": "Timer"
+          },
+          "parameters": [
+            "",
+            "4",
+            "\"la\""
+          ],
+          "subInstructions": []
+        }
+      ],
+      "actions": [
         {
           "type": {
             "inverted": false,
@@ -632,8 +705,8 @@
           },
           "parameters": [
             "",
-            "35",
-            "\"lol\""
+            "6",
+            "\"la\""
           ],
           "subInstructions": []
         },
@@ -644,8 +717,8 @@
           },
           "parameters": [
             "",
-            "40",
-            "\"lol\""
+            "9",
+            "\"la\""
           ],
           "subInstructions": []
         }
@@ -678,20 +751,8 @@
           },
           "parameters": [
             "",
-            "40",
-            "\"lol\""
-          ],
-          "subInstructions": []
-        },
-        {
-          "type": {
-            "inverted": true,
-            "value": "Timer"
-          },
-          "parameters": [
-            "",
-            "45",
-            "\"lol\""
+            "12",
+            "\"la\""
           ],
           "subInstructions": []
         }
@@ -700,56 +761,51 @@
         {
           "type": {
             "inverted": false,
-            "value": "BBText::SetBBText"
+            "value": "DialogueTree::GoToNextLine"
+          },
+          "parameters": [],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "ResetTimer"
+          },
+          "parameters": [
+            "dialog",
+            "\"la\""
+          ],
+          "subInstructions": []
+        }
+      ],
+      "events": []
+    },
+    {
+      "disabled": false,
+      "folded": false,
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "BBText::IsOpacity"
+          },
+          "parameters": [
+            "dialog",
+            ">=",
+            "50"
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "BBText::IsBBText"
           },
           "parameters": [
             "dialog",
             "=",
-            "\"lol2\""
-          ],
-          "subInstructions": []
-        },
-        {
-          "type": {
-            "inverted": false,
-            "value": "BBText::SetOpacity"
-          },
-          "parameters": [
-            "dialog",
-            "+",
-            "2"
-          ],
-          "subInstructions": []
-        }
-      ],
-      "events": []
-    },
-    {
-      "disabled": false,
-      "folded": false,
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "inverted": false,
-            "value": "Timer"
-          },
-          "parameters": [
-            "",
-            "45",
-            "\"lol\""
-          ],
-          "subInstructions": []
-        },
-        {
-          "type": {
-            "inverted": true,
-            "value": "Timer"
-          },
-          "parameters": [
-            "",
-            "50",
-            "\"lol\""
+            "\"Твоё будущее начинается.\""
           ],
           "subInstructions": []
         }
@@ -758,128 +814,15 @@
         {
           "type": {
             "inverted": false,
-            "value": "BBText::SetOpacity"
-          },
-          "parameters": [
-            "dialog",
-            "-",
-            "2"
-          ],
-          "subInstructions": []
-        }
-      ],
-      "events": []
-    },
-    {
-      "disabled": false,
-      "folded": false,
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "inverted": false,
-            "value": "Timer"
+            "value": "PauseTimer"
           },
           "parameters": [
             "",
-            "50",
-            "\"lol\""
-          ],
-          "subInstructions": []
-        },
-        {
-          "type": {
-            "inverted": true,
-            "value": "Timer"
-          },
-          "parameters": [
-            "",
-            "55",
-            "\"lol\""
+            "\"la\""
           ],
           "subInstructions": []
         }
       ],
-      "actions": [
-        {
-          "type": {
-            "inverted": false,
-            "value": "BBText::SetBBText"
-          },
-          "parameters": [
-            "dialog",
-            "=",
-            "\"lol5\""
-          ],
-          "subInstructions": []
-        },
-        {
-          "type": {
-            "inverted": false,
-            "value": "BBText::SetOpacity"
-          },
-          "parameters": [
-            "dialog",
-            "+",
-            "2"
-          ],
-          "subInstructions": []
-        }
-      ],
-      "events": []
-    },
-    {
-      "disabled": false,
-      "folded": false,
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "inverted": false,
-            "value": "Timer"
-          },
-          "parameters": [
-            "",
-            "55",
-            "\"lol\""
-          ],
-          "subInstructions": []
-        },
-        {
-          "type": {
-            "inverted": true,
-            "value": "Timer"
-          },
-          "parameters": [
-            "",
-            "60",
-            "\"lol\""
-          ],
-          "subInstructions": []
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "inverted": false,
-            "value": "BBText::SetOpacity"
-          },
-          "parameters": [
-            "dialog",
-            "-",
-            "2"
-          ],
-          "subInstructions": []
-        }
-      ],
-      "events": []
-    },
-    {
-      "disabled": false,
-      "folded": false,
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [],
-      "actions": [],
       "events": []
     }
   ],
