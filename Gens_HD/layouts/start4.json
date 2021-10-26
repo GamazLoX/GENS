@@ -21,7 +21,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.7,
+    "zoomFactor": 0.72,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -31,7 +31,7 @@
       "angle": 0,
       "customSize": true,
       "height": 32,
-      "layer": "dialog",
+      "layer": "",
       "locked": false,
       "name": "dialog",
       "persistentUuid": "24a7e2fe-ef86-4d38-b422-a523f9635158",
@@ -87,6 +87,38 @@
       "x": 0,
       "y": -608,
       "zOrder": 6,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 144,
+      "layer": "dialog",
+      "locked": false,
+      "name": "NewObject",
+      "persistentUuid": "e8b6bd26-1302-4469-902e-625e3a3aa1eb",
+      "width": 768,
+      "x": 16,
+      "y": 448,
+      "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 112,
+      "layer": "dialog",
+      "locked": false,
+      "name": "dialog2",
+      "persistentUuid": "1685363f-5e74-4f4f-b0f0-32937566c725",
+      "width": 732,
+      "x": 36,
+      "y": 464,
+      "zOrder": 9,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -192,7 +224,7 @@
       }
     },
     {
-      "name": "logo2",
+      "name": "dialog2",
       "tags": "",
       "type": "BBText::BBText",
       "variables": [],
@@ -201,7 +233,7 @@
       "content": {
         "text": "",
         "opacity": 255,
-        "fontSize": 12,
+        "fontSize": 32,
         "visible": true,
         "color": "255;255;255",
         "fontFamily": "retro.otf",
@@ -300,6 +332,22 @@
           ]
         }
       ]
+    },
+    {
+      "bottomMargin": 0,
+      "height": 32,
+      "leftMargin": 20,
+      "name": "NewObject",
+      "rightMargin": 20,
+      "tags": "",
+      "texture": "9патч.png",
+      "tiled": false,
+      "topMargin": 0,
+      "type": "PanelSpriteObject::PanelSprite",
+      "width": 32,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
     }
   ],
   "events": [
@@ -323,6 +371,28 @@
         {
           "type": {
             "inverted": false,
+            "value": "DialogueTree::LoadDialogueFromJsonFile"
+          },
+          "parameters": [
+            "",
+            "a1.json"
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "HideLayer"
+          },
+          "parameters": [
+            "",
+            "\"dialog\""
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
             "value": "PauseTimer"
           },
           "parameters": [
@@ -334,11 +404,33 @@
         {
           "type": {
             "inverted": false,
-            "value": "DialogueTree::LoadDialogueFromJsonFile"
+            "value": "PauseTimer"
           },
           "parameters": [
             "",
-            "a1.json"
+            "\"la2\""
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "PauseTimer"
+          },
+          "parameters": [
+            "",
+            "\"la3\""
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "PauseTimer"
+          },
+          "parameters": [
+            "",
+            "\"tt\""
           ],
           "subInstructions": []
         },
@@ -569,7 +661,7 @@
           },
           "parameters": [
             "",
-            "30",
+            "24",
             "\"lol\""
           ],
           "subInstructions": []
@@ -603,25 +695,13 @@
           },
           "parameters": [
             "",
-            "30",
+            "24",
             "\"lol\""
           ],
           "subInstructions": []
         }
       ],
       "actions": [
-        {
-          "type": {
-            "inverted": false,
-            "value": "BBText::SetBBText"
-          },
-          "parameters": [
-            "dialog",
-            "=",
-            "DialogueTree::LineText()"
-          ],
-          "subInstructions": []
-        },
         {
           "type": {
             "inverted": false,
@@ -636,11 +716,23 @@
         {
           "type": {
             "inverted": false,
+            "value": "BBText::SetBBText"
+          },
+          "parameters": [
+            "dialog2",
+            "=",
+            "DialogueTree::ClippedLineText()"
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
             "value": "UnPauseTimer"
           },
           "parameters": [
             "",
-            "\"la\""
+            "\"la2\""
           ],
           "subInstructions": []
         }
@@ -686,7 +778,7 @@
           "parameters": [
             "dialog",
             "+",
-            "2"
+            "5"
           ],
           "subInstructions": []
         }
@@ -705,7 +797,7 @@
           },
           "parameters": [
             "",
-            "6",
+            "4",
             "\"la\""
           ],
           "subInstructions": []
@@ -717,7 +809,7 @@
           },
           "parameters": [
             "",
-            "9",
+            "5",
             "\"la\""
           ],
           "subInstructions": []
@@ -732,7 +824,7 @@
           "parameters": [
             "dialog",
             "-",
-            "2"
+            "5"
           ],
           "subInstructions": []
         }
@@ -751,7 +843,7 @@
           },
           "parameters": [
             "",
-            "12",
+            "5",
             "\"la\""
           ],
           "subInstructions": []
@@ -788,18 +880,6 @@
         {
           "type": {
             "inverted": false,
-            "value": "BBText::IsOpacity"
-          },
-          "parameters": [
-            "dialog",
-            ">=",
-            "50"
-          ],
-          "subInstructions": []
-        },
-        {
-          "type": {
-            "inverted": false,
             "value": "BBText::IsBBText"
           },
           "parameters": [
@@ -807,6 +887,26 @@
             "=",
             "\"Твоё будущее начинается.\""
           ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "BBText::IsOpacity"
+          },
+          "parameters": [
+            "dialog",
+            ">=",
+            "90"
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": [],
           "subInstructions": []
         }
       ],
@@ -820,6 +920,406 @@
             "",
             "\"la\""
           ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "RemoveTimer"
+          },
+          "parameters": [
+            "",
+            "\"la\""
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "BBText::SetBBText"
+          },
+          "parameters": [
+            "dialog",
+            "=",
+            "\"Твоё будущее начинается.\""
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "UnPauseTimer"
+          },
+          "parameters": [
+            "",
+            "\"la2\""
+          ],
+          "subInstructions": []
+        }
+      ],
+      "events": []
+    },
+    {
+      "disabled": false,
+      "folded": false,
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "Timer"
+          },
+          "parameters": [
+            "",
+            "1",
+            "\"la2\""
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": true,
+            "value": "Timer"
+          },
+          "parameters": [
+            "",
+            "3",
+            "\"la2\""
+          ],
+          "subInstructions": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "MettreX"
+          },
+          "parameters": [
+            "g1",
+            "-",
+            "5"
+          ],
+          "subInstructions": []
+        }
+      ],
+      "events": []
+    },
+    {
+      "disabled": false,
+      "folded": false,
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "Timer"
+          },
+          "parameters": [
+            "",
+            "1\n",
+            "\"la2\""
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": [],
+          "subInstructions": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "PlaySoundCanal"
+          },
+          "parameters": [
+            "",
+            "NewFile.wav",
+            "1",
+            "",
+            "",
+            "0.5"
+          ],
+          "subInstructions": []
+        }
+      ],
+      "events": []
+    },
+    {
+      "disabled": false,
+      "folded": false,
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "Timer"
+          },
+          "parameters": [
+            "",
+            "4",
+            "\"la2\""
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": [],
+          "subInstructions": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "PauseTimer"
+          },
+          "parameters": [
+            "",
+            "\"la2\""
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "DialogueTree::StartDialogueFromBranch"
+          },
+          "parameters": [
+            "\"start3\""
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "ShowLayer"
+          },
+          "parameters": [
+            "",
+            "\"dialog\""
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "UnPauseTimer"
+          },
+          "parameters": [
+            "",
+            "\"tt\""
+          ],
+          "subInstructions": []
+        }
+      ],
+      "events": []
+    },
+    {
+      "disabled": false,
+      "folded": false,
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "Timer"
+          },
+          "parameters": [
+            "",
+            "GlobalVariable(speed)",
+            "\"tt\""
+          ],
+          "subInstructions": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "DialogueTree::ScrollClippedText"
+          },
+          "parameters": [],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "ResetTimer"
+          },
+          "parameters": [
+            "",
+            "\"tt\""
+          ],
+          "subInstructions": []
+        }
+      ],
+      "events": [
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "DialogueTree::HasClippedTextScrollingCompleted"
+              },
+              "parameters": [],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Egal"
+              },
+              "parameters": [
+                "StrFindFrom(DialogueTree::ClippedLineText(),\" \",StrLength(DialogueTree::ClippedLineText())-1)",
+                "=",
+                "-1 "
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "PlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "NewFile2.wav",
+                "7",
+                "",
+                "",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        }
+      ]
+    },
+    {
+      "disabled": false,
+      "folded": false,
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "DialogueTree::HasClippedTextScrollingCompleted"
+          },
+          "parameters": [],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "KeyPressed"
+          },
+          "parameters": [
+            "",
+            "Space"
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": [],
+          "subInstructions": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "DialogueTree::ClearState"
+          },
+          "parameters": [],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "DialogueTree::GoToNextLine"
+          },
+          "parameters": [],
+          "subInstructions": []
+        }
+      ],
+      "events": []
+    },
+    {
+      "disabled": false,
+      "folded": false,
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "DialogueTree::IsCommandCalled"
+          },
+          "parameters": [
+            "\"speed\""
+          ],
+          "subInstructions": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "ModVarGlobal"
+          },
+          "parameters": [
+            "speed",
+            "=",
+            "ToNumber(DialogueTree::CommandParameter(0))"
+          ],
+          "subInstructions": []
+        }
+      ],
+      "events": []
+    },
+    {
+      "disabled": false,
+      "folded": false,
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "BBText::IsBBText"
+          },
+          "parameters": [
+            "dialog2",
+            "=",
+            "\"УЛЬТ...\""
+          ],
+          "subInstructions": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "DialogueTree::GoToNextLine"
+          },
+          "parameters": [],
           "subInstructions": []
         }
       ],
