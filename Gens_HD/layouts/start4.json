@@ -716,23 +716,11 @@
         {
           "type": {
             "inverted": false,
-            "value": "BBText::SetBBText"
-          },
-          "parameters": [
-            "dialog2",
-            "=",
-            "DialogueTree::ClippedLineText()"
-          ],
-          "subInstructions": []
-        },
-        {
-          "type": {
-            "inverted": false,
             "value": "UnPauseTimer"
           },
           "parameters": [
             "",
-            "\"la2\""
+            "\"la\""
           ],
           "subInstructions": []
         }
@@ -847,9 +835,45 @@
             "\"la\""
           ],
           "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": true,
+            "value": "BBText::IsBBText"
+          },
+          "parameters": [
+            "dialog",
+            "=",
+            "\"Твоё будущее начинается.\""
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": true,
+            "value": "BBText::IsOpacity"
+          },
+          "parameters": [
+            "dialog",
+            ">=",
+            "90"
+          ],
+          "subInstructions": []
         }
       ],
       "actions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "BBText::SetBBText"
+          },
+          "parameters": [
+            "dialog",
+            "=",
+            "DialogueTree::LineText()"
+          ],
+          "subInstructions": []
+        },
         {
           "type": {
             "inverted": false,
@@ -880,6 +904,18 @@
         {
           "type": {
             "inverted": false,
+            "value": "Timer"
+          },
+          "parameters": [
+            "",
+            "4",
+            "\"la\""
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
             "value": "BBText::IsBBText"
           },
           "parameters": [
@@ -899,14 +935,6 @@
             ">=",
             "90"
           ],
-          "subInstructions": []
-        },
-        {
-          "type": {
-            "inverted": false,
-            "value": "BuiltinCommonInstructions::Once"
-          },
-          "parameters": [],
           "subInstructions": []
         }
       ],
@@ -930,18 +958,6 @@
           "parameters": [
             "",
             "\"la\""
-          ],
-          "subInstructions": []
-        },
-        {
-          "type": {
-            "inverted": false,
-            "value": "BBText::SetBBText"
-          },
-          "parameters": [
-            "dialog",
-            "=",
-            "\"Твоё будущее начинается.\""
           ],
           "subInstructions": []
         },
@@ -1080,32 +1096,10 @@
         {
           "type": {
             "inverted": false,
-            "value": "PauseTimer"
-          },
-          "parameters": [
-            "",
-            "\"la2\""
-          ],
-          "subInstructions": []
-        },
-        {
-          "type": {
-            "inverted": false,
             "value": "DialogueTree::StartDialogueFromBranch"
           },
           "parameters": [
             "\"start3\""
-          ],
-          "subInstructions": []
-        },
-        {
-          "type": {
-            "inverted": false,
-            "value": "ShowLayer"
-          },
-          "parameters": [
-            "",
-            "\"dialog\""
           ],
           "subInstructions": []
         },
@@ -1131,6 +1125,26 @@
         {
           "type": {
             "inverted": false,
+            "value": "DialogueTree::IsDialogueRunning"
+          },
+          "parameters": [],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "Timer"
+          },
+          "parameters": [
+            "",
+            "4",
+            "\"la2\""
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
             "value": "Timer"
           },
           "parameters": [
@@ -1142,6 +1156,52 @@
         }
       ],
       "actions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "BBText::SetBBText"
+          },
+          "parameters": [
+            "dialog",
+            "=",
+            "\"Твоё будущее начинается.\""
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "BBText::SetBBText"
+          },
+          "parameters": [
+            "dialog2",
+            "=",
+            "DialogueTree::ClippedLineText()"
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "ShowLayer"
+          },
+          "parameters": [
+            "",
+            "\"dialog\""
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "PauseTimer"
+          },
+          "parameters": [
+            "",
+            "\"la2\""
+          ],
+          "subInstructions": []
+        },
         {
           "type": {
             "inverted": false,
@@ -1323,6 +1383,382 @@
           "subInstructions": []
         }
       ],
+      "events": []
+    },
+    {
+      "disabled": false,
+      "folded": false,
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": true,
+            "value": "DialogueTree::IsDialogueRunning"
+          },
+          "parameters": [],
+          "subInstructions": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "StopSoundCanal"
+          },
+          "parameters": [
+            "",
+            "7"
+          ],
+          "subInstructions": []
+        }
+      ],
+      "events": []
+    },
+    {
+      "disabled": false,
+      "folded": false,
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": true,
+            "value": "DialogueTree::IsDialogueRunning"
+          },
+          "parameters": [],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "KeyPressed"
+          },
+          "parameters": [
+            "",
+            "Space"
+          ],
+          "subInstructions": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "HideLayer"
+          },
+          "parameters": [
+            "",
+            "\"dialog\""
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "UnPauseTimer"
+          },
+          "parameters": [
+            "",
+            "\"la3\""
+          ],
+          "subInstructions": []
+        }
+      ],
+      "events": []
+    },
+    {
+      "disabled": false,
+      "folded": false,
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "Timer"
+          },
+          "parameters": [
+            "",
+            "1",
+            "\"la3\""
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": true,
+            "value": "Timer"
+          },
+          "parameters": [
+            "",
+            "4",
+            "\"la3\""
+          ],
+          "subInstructions": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "MettreX"
+          },
+          "parameters": [
+            "g1",
+            "+",
+            "2"
+          ],
+          "subInstructions": []
+        }
+      ],
+      "events": []
+    },
+    {
+      "disabled": false,
+      "folded": false,
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "Timer"
+          },
+          "parameters": [
+            "",
+            "1\n",
+            "\"la3\""
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": [],
+          "subInstructions": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "PlaySoundCanal"
+          },
+          "parameters": [
+            "",
+            "NewFile3.wav",
+            "1",
+            "",
+            "",
+            "0.5"
+          ],
+          "subInstructions": []
+        }
+      ],
+      "events": []
+    },
+    {
+      "disabled": false,
+      "folded": false,
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "Timer"
+          },
+          "parameters": [
+            "",
+            "5",
+            "\"la3\""
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": true,
+            "value": "Timer"
+          },
+          "parameters": [
+            "",
+            "7",
+            "\"la3\""
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": [],
+          "subInstructions": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "StopSoundCanal"
+          },
+          "parameters": [
+            "",
+            "1"
+          ],
+          "subInstructions": []
+        }
+      ],
+      "events": []
+    },
+    {
+      "disabled": false,
+      "folded": false,
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "Timer"
+          },
+          "parameters": [
+            "",
+            "8",
+            "\"la3\""
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": true,
+            "value": "Timer"
+          },
+          "parameters": [
+            "",
+            "9",
+            "\"la3\""
+          ],
+          "subInstructions": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "MettreX"
+          },
+          "parameters": [
+            "g1",
+            "+",
+            "5"
+          ],
+          "subInstructions": []
+        }
+      ],
+      "events": []
+    },
+    {
+      "disabled": false,
+      "folded": false,
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "Timer"
+          },
+          "parameters": [
+            "",
+            "8\n\n",
+            "\"la3\""
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": [],
+          "subInstructions": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "PlaySoundCanal"
+          },
+          "parameters": [
+            "",
+            "NewFile3.wav",
+            "1",
+            "",
+            "",
+            "1"
+          ],
+          "subInstructions": []
+        }
+      ],
+      "events": []
+    },
+    {
+      "disabled": false,
+      "folded": false,
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "Timer"
+          },
+          "parameters": [
+            "",
+            "9",
+            "\"la3\""
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": true,
+            "value": "Timer"
+          },
+          "parameters": [
+            "",
+            "10",
+            "\"la3\""
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": [],
+          "subInstructions": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "StopSoundCanal"
+          },
+          "parameters": [
+            "",
+            "1"
+          ],
+          "subInstructions": []
+        }
+      ],
+      "events": []
+    },
+    {
+      "disabled": false,
+      "folded": false,
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [],
       "events": []
     }
   ],
