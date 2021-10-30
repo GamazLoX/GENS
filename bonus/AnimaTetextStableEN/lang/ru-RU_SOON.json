@@ -4,19 +4,19 @@
   "text": {
     "behaviors": {
       "skymen_skymen_spritefontdx": {
-        "name": "Animate Text",
-        "description": "A behavior that extends the animation capabilities of Spritefont and text",
-        "help-url": "https://github.com/armandoalonso/c3IDE",
+        "name": "Аниматор Текста",
+        "description": "Мощный плагин для лёгкого создания плагина. Теперь вам не придётся вручную например создавать много кода для того чтобы сделать "<<Печатная машинка>>. В плагине имеется много всего. Наслаждайтесь",
+        "help-url": "Скоро",
         "properties": {
           "tw-params": {
-            "name": "Typewriter Params",
+            "name": "Печатная Машинка",
             "desc": "Separated by ';'. 'value [a/x/y/o] <number>' or 'duration [type/fade] <number>'"
           },
           "tw-easing": {
-            "name": "Typewriter Easing",
-            "desc": "The interpolation method used to ease the fading",
+            "name": "Эффект плавности",
+            "desc": "Выбор режима плавности",
             "items": {
-              "linear": "linear",
+              "linear": "Линейная",
               "easeInQuad": "easeInQuad",
               "easeOutQuad": "easeOutQuad",
               "easeInOutQuad": "easeInOutQuad",
@@ -54,12 +54,12 @@
             }
           },
           "tw-custom-easing": {
-            "name": "Custom Easing",
-            "desc": "Set an easing by name, or use Easings created using C3's easings editor"
+            "name": "Пользователский эффект плавности",
+            "desc": "Создайте плавность по имени или используйте изменения, созданные с помощью редактора плавности в C3"
           },
           "enable-default-functions": {
-            "name": "Default Aliases",
-            "desc": "If checked, the behavior will automatically add default alias functions (wave, shake, swing)"
+            "name": "Псевдонимы по умолчанию",
+            "desc": "Если этот флажок установлен, поведение будет автоматически добавлять функции псевдонима по умолчанию (волна, встряска, качание)"
           }
         },
         "aceCategories": {
