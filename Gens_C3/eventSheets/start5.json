@@ -24,7 +24,7 @@
 			"conditions": [
 				{
 					"id": "cursor-is-over-object",
-					"objectClass": "Мышь",
+					"objectClass": "mouse",
 					"sid": 709216464451635,
 					"parameters": {
 						"object": "a1"
@@ -64,7 +64,7 @@
 							"conditions": [
 								{
 									"id": "mouse-button-is-down",
-									"objectClass": "Мышь",
+									"objectClass": "mouse",
 									"sid": 594160245948447,
 									"parameters": {
 										"mouse-button": "left"
@@ -143,7 +143,7 @@
 							"conditions": [
 								{
 									"id": "mouse-button-is-down",
-									"objectClass": "Мышь",
+									"objectClass": "mouse",
 									"sid": 595730745084139,
 									"parameters": {
 										"mouse-button": "left"
@@ -222,7 +222,7 @@
 							"conditions": [
 								{
 									"id": "mouse-button-is-down",
-									"objectClass": "Мышь",
+									"objectClass": "mouse",
 									"sid": 219244586215524,
 									"parameters": {
 										"mouse-button": "left"
@@ -279,7 +279,7 @@
 			"conditions": [
 				{
 					"id": "cursor-is-over-object",
-					"objectClass": "Мышь",
+					"objectClass": "mouse",
 					"sid": 455121384397443,
 					"parameters": {
 						"object": "a1"
@@ -395,7 +395,7 @@
 			"conditions": [
 				{
 					"id": "cursor-is-over-object",
-					"objectClass": "Мышь",
+					"objectClass": "mouse",
 					"sid": 470643395932108,
 					"parameters": {
 						"object": "a1"

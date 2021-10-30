@@ -48,11 +48,11 @@
 				},
 				{
 					"id": "pin-to-object-properties",
-					"objectClass": "Спрайт4",
+					"objectClass": "d_a3",
 					"sid": 492269983843851,
 					"behaviorType": "Прикрепить",
 					"parameters": {
-						"pin-to": "9патч",
+						"pin-to": "d_a1",
 						"x": true,
 						"y": true,
 						"angle": true,
@@ -63,11 +63,11 @@
 				},
 				{
 					"id": "pin-to-object-properties",
-					"objectClass": "dialog",
+					"objectClass": "d_a2",
 					"sid": 170091716252959,
 					"behaviorType": "Прикрепить",
 					"parameters": {
-						"pin-to": "9патч",
+						"pin-to": "d_a1",
 						"x": true,
 						"y": true,
 						"angle": true,
@@ -386,7 +386,7 @@
 				},
 				{
 					"id": "tween-one-property",
-					"objectClass": "9патч",
+					"objectClass": "d_a1",
 					"sid": 377357500151784,
 					"behaviorType": "Твинанимация",
 					"parameters": {
@@ -500,7 +500,7 @@
 				},
 				{
 					"id": "tween-one-property",
-					"objectClass": "9патч",
+					"objectClass": "d_a1",
 					"sid": 144842876410471,
 					"behaviorType": "Твинанимация",
 					"parameters": {
@@ -938,7 +938,7 @@
 				},
 				{
 					"id": "tween-one-property",
-					"objectClass": "9патч",
+					"objectClass": "d_a1",
 					"sid": 176106188930518,
 					"behaviorType": "Твинанимация",
 					"parameters": {
@@ -1165,7 +1165,7 @@
 				},
 				{
 					"id": "tween-one-property",
-					"objectClass": "9патч",
+					"objectClass": "d_a1",
 					"sid": 881556235394898,
 					"behaviorType": "Твинанимация",
 					"parameters": {
@@ -1199,7 +1199,7 @@
 				},
 				{
 					"id": "tween-one-property",
-					"objectClass": "9патч",
+					"objectClass": "d_a1",
 					"sid": 559418288615602,
 					"behaviorType": "Твинанимация",
 					"parameters": {
@@ -1319,7 +1319,7 @@
 				},
 				{
 					"id": "tween-one-property",
-					"objectClass": "9патч",
+					"objectClass": "d_a1",
 					"sid": 221524682238104,
 					"behaviorType": "Твинанимация",
 					"parameters": {

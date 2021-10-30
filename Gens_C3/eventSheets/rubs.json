@@ -16,7 +16,7 @@
 			"conditions": [
 				{
 					"id": "on-object-clicked",
-					"objectClass": "Мышь",
+					"objectClass": "mouse",
 					"sid": 834886569979871,
 					"parameters": {
 						"mouse-button": "left",

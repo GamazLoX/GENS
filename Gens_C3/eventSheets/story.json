@@ -83,7 +83,7 @@
 				},
 				{
 					"id": "set-visible",
-					"objectClass": "Спрайт9",
+					"objectClass": "NpcStory",
 					"sid": 799584780315591,
 					"parameters": {
 						"visibility": "visible"
@@ -278,7 +278,7 @@
 				},
 				{
 					"id": "set-visible",
-					"objectClass": "Спрайт10",
+					"objectClass": "error",
 					"sid": 666757846472073,
 					"parameters": {
 						"visibility": "visible"
@@ -294,7 +294,7 @@
 				},
 				{
 					"id": "set-visible",
-					"objectClass": "Спрайт10",
+					"objectClass": "error",
 					"sid": 717335858039840,
 					"parameters": {
 						"visibility": "invisible"
@@ -611,7 +611,7 @@
 				},
 				{
 					"id": "set-position",
-					"objectClass": "Спрайт9",
+					"objectClass": "NpcStory",
 					"sid": 182610634663748,
 					"parameters": {
 						"x": "320",
@@ -904,7 +904,7 @@
 				},
 				{
 					"id": "set-visible",
-					"objectClass": "Спрайт9",
+					"objectClass": "NpcStory",
 					"sid": 948814520034850,
 					"parameters": {
 						"visibility": "invisible"
@@ -1957,7 +1957,7 @@
 				},
 				{
 					"id": "move-to-layer",
-					"objectClass": "Спрайт6",
+					"objectClass": "PlayerStory",
 					"sid": 465584337577733,
 					"parameters": {
 						"layer": "\"002\""
@@ -1965,7 +1965,7 @@
 				},
 				{
 					"id": "set-animation",
-					"objectClass": "Спрайт6",
+					"objectClass": "PlayerStory",
 					"sid": 194867358390015,
 					"parameters": {
 						"animation": "\"a2\"",
@@ -1991,7 +1991,7 @@
 				},
 				{
 					"id": "set-animation",
-					"objectClass": "Спрайт6",
+					"objectClass": "PlayerStory",
 					"sid": 843863696374681,
 					"parameters": {
 						"animation": "\"a3\"",
@@ -2130,7 +2130,7 @@
 			"actions": [
 				{
 					"id": "set-position",
-					"objectClass": "Спрайт9",
+					"objectClass": "NpcStory",
 					"sid": 909078874799578,
 					"parameters": {
 						"x": "random(640)",
@@ -2165,7 +2165,7 @@
 			"actions": [
 				{
 					"id": "set-size",
-					"objectClass": "Спрайт6",
+					"objectClass": "PlayerStory",
 					"sid": 128290270465107,
 					"parameters": {
 						"width": "Self.Width+0.3",
@@ -2200,7 +2200,7 @@
 			"actions": [
 				{
 					"id": "set-size",
-					"objectClass": "Спрайт6",
+					"objectClass": "PlayerStory",
 					"sid": 774418394830276,
 					"parameters": {
 						"width": "Self.Width-0.3",
@@ -2215,7 +2215,7 @@
 			"conditions": [
 				{
 					"id": "compare-height",
-					"objectClass": "Спрайт6",
+					"objectClass": "PlayerStory",
 					"sid": 798300491827428,
 					"parameters": {
 						"comparison": 2,
@@ -2235,7 +2235,7 @@
 				},
 				{
 					"id": "set-size",
-					"objectClass": "Спрайт6",
+					"objectClass": "PlayerStory",
 					"sid": 903355918632395,
 					"parameters": {
 						"width": "0",
@@ -2250,7 +2250,7 @@
 			"conditions": [
 				{
 					"id": "compare-width",
-					"objectClass": "Спрайт6",
+					"objectClass": "PlayerStory",
 					"sid": 357101853671044,
 					"parameters": {
 						"comparison": 2,
@@ -2270,7 +2270,7 @@
 				},
 				{
 					"id": "set-size",
-					"objectClass": "Спрайт6",
+					"objectClass": "PlayerStory",
 					"sid": 624932519652694,
 					"parameters": {
 						"width": "0",

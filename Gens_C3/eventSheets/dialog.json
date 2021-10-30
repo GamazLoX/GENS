@@ -42,7 +42,7 @@
 			"actions": [
 				{
 					"id": "set-instvar-value",
-					"objectClass": "dialog",
+					"objectClass": "d_a2",
 					"sid": 990872257378535,
 					"parameters": {
 						"instance-variable": "TypeLen",
@@ -59,7 +59,7 @@
 				},
 				{
 					"id": "set-instvar-value",
-					"objectClass": "dialog",
+					"objectClass": "d_a2",
 					"sid": 872266799343997,
 					"parameters": {
 						"instance-variable": "TypeSpeed",
@@ -68,7 +68,7 @@
 				},
 				{
 					"id": "set-instvar-value",
-					"objectClass": "dialog",
+					"objectClass": "d_a2",
 					"sid": 121910856506563,
 					"parameters": {
 						"instance-variable": "d",
@@ -92,7 +92,7 @@
 					"conditions": [
 						{
 							"id": "is-boolean-instance-variable-set",
-							"objectClass": "dialog",
+							"objectClass": "d_a2",
 							"sid": 211972628301635,
 							"parameters": {
 								"instance-variable": "IsTyping"
@@ -103,7 +103,7 @@
 					"actions": [
 						{
 							"id": "set-boolean-instvar",
-							"objectClass": "dialog",
+							"objectClass": "d_a2",
 							"sid": 786635454311992,
 							"parameters": {
 								"instance-variable": "IsTyping",
@@ -125,7 +125,7 @@
 					"actions": [
 						{
 							"id": "set-boolean-instvar",
-							"objectClass": "dialog",
+							"objectClass": "d_a2",
 							"sid": 281065584429153,
 							"parameters": {
 								"instance-variable": "IsTyping",
@@ -142,7 +142,7 @@
 			"conditions": [
 				{
 					"id": "is-boolean-instance-variable-set",
-					"objectClass": "dialog",
+					"objectClass": "d_a2",
 					"sid": 881909150198731,
 					"parameters": {
 						"instance-variable": "IsTyping"
@@ -150,7 +150,7 @@
 				},
 				{
 					"id": "compare-instance-variable",
-					"objectClass": "dialog",
+					"objectClass": "d_a2",
 					"sid": 803644025866174,
 					"parameters": {
 						"instance-variable": "TypeLen",
@@ -170,7 +170,7 @@
 							"objectClass": "System",
 							"sid": 322050333247205,
 							"parameters": {
-								"interval-seconds": "Dialog.TypeSpeed"
+								"interval-seconds": "d_a2.TypeSpeed"
 							}
 						},
 						{
@@ -178,7 +178,7 @@
 							"objectClass": "System",
 							"sid": 774829178857947,
 							"parameters": {
-								"interval-seconds": "Dialog.TypeSpeed"
+								"interval-seconds": "d_a2.TypeSpeed"
 							}
 						}
 					],
@@ -189,7 +189,7 @@
 						},
 						{
 							"id": "set-text",
-							"objectClass": "dialog",
+							"objectClass": "d_a2",
 							"sid": 260074822024418,
 							"parameters": {
 								"text": "left(TextSample.Text, Self.TypeLen)"
@@ -201,7 +201,7 @@
 						},
 						{
 							"id": "add-to-instvar",
-							"objectClass": "dialog",
+							"objectClass": "d_a2",
 							"sid": 308178591546431,
 							"parameters": {
 								"instance-variable": "TypeLen",
@@ -220,7 +220,7 @@
 							"conditions": [
 								{
 									"id": "compare-instance-variable",
-									"objectClass": "dialog",
+									"objectClass": "d_a2",
 									"sid": 594823713997117,
 									"parameters": {
 										"instance-variable": "d",
@@ -233,7 +233,7 @@
 									"objectClass": "System",
 									"sid": 884074244391287,
 									"parameters": {
-										"first-value": "right(Dialog.Text, 1)",
+										"first-value": "right(d_a2.Text, 1)",
 										"comparison": 1,
 										"second-value": "\"\""
 									}
@@ -242,7 +242,7 @@
 							"actions": [
 								{
 									"id": "set-animation",
-									"objectClass": "Спрайт4",
+									"objectClass": "d_a3",
 									"sid": 582642611105110,
 									"parameters": {
 										"animation": "\"a1\"",
@@ -268,7 +268,7 @@
 							"conditions": [
 								{
 									"id": "compare-instance-variable",
-									"objectClass": "dialog",
+									"objectClass": "d_a2",
 									"sid": 812578133533741,
 									"parameters": {
 										"instance-variable": "d",
@@ -281,7 +281,7 @@
 									"objectClass": "System",
 									"sid": 420908332749505,
 									"parameters": {
-										"first-value": "right(Dialog.Text, 1)",
+										"first-value": "right(d_a2.Text, 1)",
 										"comparison": 1,
 										"second-value": "\"\""
 									}
@@ -290,7 +290,7 @@
 							"actions": [
 								{
 									"id": "set-animation",
-									"objectClass": "Спрайт4",
+									"objectClass": "d_a3",
 									"sid": 619929189502185,
 									"parameters": {
 										"animation": "\"a2\"",
@@ -316,7 +316,7 @@
 							"conditions": [
 								{
 									"id": "compare-instance-variable",
-									"objectClass": "dialog",
+									"objectClass": "d_a2",
 									"sid": 104920577643957,
 									"parameters": {
 										"instance-variable": "d",
@@ -329,7 +329,7 @@
 									"objectClass": "System",
 									"sid": 206039008486419,
 									"parameters": {
-										"first-value": "right(Dialog.Text, 1)",
+										"first-value": "right(d_a2.Text, 1)",
 										"comparison": 1,
 										"second-value": "\"\""
 									}
@@ -338,7 +338,7 @@
 							"actions": [
 								{
 									"id": "set-animation",
-									"objectClass": "Спрайт4",
+									"objectClass": "d_a3",
 									"sid": 727640083665784,
 									"parameters": {
 										"animation": "\"a3\"",
@@ -364,7 +364,7 @@
 							"conditions": [
 								{
 									"id": "compare-instance-variable",
-									"objectClass": "dialog",
+									"objectClass": "d_a2",
 									"sid": 836604142785084,
 									"parameters": {
 										"instance-variable": "d",
@@ -377,7 +377,7 @@
 									"objectClass": "System",
 									"sid": 553815485529837,
 									"parameters": {
-										"first-value": "right(Dialog.Text, 1)",
+										"first-value": "right(d_a2.Text, 1)",
 										"comparison": 1,
 										"second-value": "\"\""
 									}
@@ -386,7 +386,7 @@
 							"actions": [
 								{
 									"id": "set-animation",
-									"objectClass": "Спрайт4",
+									"objectClass": "d_a3",
 									"sid": 748458511563511,
 									"parameters": {
 										"animation": "\"a4\"",
@@ -416,7 +416,7 @@
 			"conditions": [
 				{
 					"id": "on-key-pressed",
-					"objectClass": "Keyboard",
+					"objectClass": "Key",
 					"sid": 517578094461196,
 					"parameters": {
 						"key": 32
@@ -424,7 +424,7 @@
 				},
 				{
 					"id": "compare-y",
-					"objectClass": "9патч",
+					"objectClass": "d_a1",
 					"sid": 694642717048677,
 					"parameters": {
 						"comparison": 0,
@@ -445,7 +445,7 @@
 			"actions": [
 				{
 					"id": "set-boolean-instvar",
-					"objectClass": "dialog",
+					"objectClass": "d_a2",
 					"sid": 229769956028559,
 					"parameters": {
 						"instance-variable": "IsTyping",

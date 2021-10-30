@@ -1,7 +1,7 @@
 {
-	"name": "Спрайт19",
+	"name": "car_b",
 	"plugin-id": "Sprite",
-	"sid": 310740645114273,
+	"sid": 800669900313383,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -11,30 +11,30 @@
 			{
 				"frames": [
 					{
-						"width": 377,
+						"width": 640,
 						"height": 240,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 5024,
+						"imageSpriteId": 4907360,
 						"collisionPoly": {
 							"points": [
 								0,
 								0,
 								0.5,
 								0,
-								0.998046875,
+								0.9984375,
 								0,
-								0.998046875,
+								0.9984375,
 								0.5,
-								0.998046875,
-								0.9975609756097561,
+								0.9984375,
+								0.9958333333333333,
 								0.5,
-								0.9975609756097561,
+								0.9958333333333333,
 								0,
-								0.9975609756097561,
+								0.9958333333333333,
 								0,
 								0.5
 							]
@@ -43,7 +43,7 @@
 						"duration": 1
 					}
 				],
-				"sid": 283956444511345,
+				"sid": 821605915109926,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

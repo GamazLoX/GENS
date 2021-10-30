@@ -513,7 +513,7 @@
 				},
 				{
 					"id": "set-boolean-instvar",
-					"objectClass": "dialog",
+					"objectClass": "d_a2",
 					"sid": 485845782864917,
 					"parameters": {
 						"instance-variable": "IsTyping",
@@ -558,7 +558,7 @@
 				},
 				{
 					"id": "set-boolean-instvar",
-					"objectClass": "dialog",
+					"objectClass": "d_a2",
 					"sid": 100595770801493,
 					"parameters": {
 						"instance-variable": "IsTyping",
@@ -689,7 +689,7 @@
 				},
 				{
 					"id": "set-angle-of-motion",
-					"objectClass": "Спрайт16",
+					"objectClass": "lift2",
 					"sid": 496647002638228,
 					"behaviorType": "Пуля",
 					"parameters": {
@@ -698,7 +698,7 @@
 				},
 				{
 					"id": "set-angle-of-motion",
-					"objectClass": "Спрайт18",
+					"objectClass": "lift1",
 					"sid": 570766308895025,
 					"behaviorType": "Пуля",
 					"parameters": {
@@ -707,7 +707,7 @@
 				},
 				{
 					"id": "set-speed",
-					"objectClass": "Спрайт16",
+					"objectClass": "lift2",
 					"sid": 977860083767554,
 					"behaviorType": "Пуля",
 					"parameters": {
@@ -716,7 +716,7 @@
 				},
 				{
 					"id": "set-speed",
-					"objectClass": "Спрайт18",
+					"objectClass": "lift1",
 					"sid": 951189698136616,
 					"behaviorType": "Пуля",
 					"parameters": {
@@ -725,7 +725,7 @@
 				},
 				{
 					"id": "set-enabled",
-					"objectClass": "Спрайт16",
+					"objectClass": "lift2",
 					"sid": 669300554878242,
 					"behaviorType": "Пуля",
 					"parameters": {
@@ -734,7 +734,7 @@
 				},
 				{
 					"id": "set-enabled",
-					"objectClass": "Спрайт18",
+					"objectClass": "lift1",
 					"sid": 756499492835831,
 					"behaviorType": "Пуля",
 					"parameters": {
@@ -762,7 +762,7 @@
 				},
 				{
 					"id": "set-enabled",
-					"objectClass": "Спрайт16",
+					"objectClass": "lift2",
 					"sid": 109476795165839,
 					"behaviorType": "Пуля",
 					"parameters": {
@@ -771,7 +771,7 @@
 				},
 				{
 					"id": "set-enabled",
-					"objectClass": "Спрайт18",
+					"objectClass": "lift1",
 					"sid": 532255714428642,
 					"behaviorType": "Пуля",
 					"parameters": {
@@ -1353,7 +1353,7 @@
 				},
 				{
 					"id": "set-speed",
-					"objectClass": "Спрайт16",
+					"objectClass": "lift2",
 					"sid": 173322495448803,
 					"behaviorType": "Пуля",
 					"parameters": {
@@ -1362,7 +1362,7 @@
 				},
 				{
 					"id": "set-speed",
-					"objectClass": "Спрайт18",
+					"objectClass": "lift1",
 					"sid": 988794684279850,
 					"behaviorType": "Пуля",
 					"parameters": {
@@ -1371,7 +1371,7 @@
 				},
 				{
 					"id": "set-enabled",
-					"objectClass": "Спрайт16",
+					"objectClass": "lift2",
 					"sid": 597912200831380,
 					"behaviorType": "Пуля",
 					"parameters": {
@@ -1380,7 +1380,7 @@
 				},
 				{
 					"id": "set-enabled",
-					"objectClass": "Спрайт18",
+					"objectClass": "lift1",
 					"sid": 844308601425060,
 					"behaviorType": "Пуля",
 					"parameters": {
@@ -1408,7 +1408,7 @@
 				},
 				{
 					"id": "set-enabled",
-					"objectClass": "Спрайт16",
+					"objectClass": "lift2",
 					"sid": 319725433280135,
 					"behaviorType": "Пуля",
 					"parameters": {
@@ -1417,7 +1417,7 @@
 				},
 				{
 					"id": "set-enabled",
-					"objectClass": "Спрайт18",
+					"objectClass": "lift1",
 					"sid": 684299659185377,
 					"behaviorType": "Пуля",
 					"parameters": {

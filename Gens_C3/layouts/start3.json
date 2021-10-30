@@ -192,7 +192,7 @@
 			"overriden": 0,
 			"instances": [
 				{
-					"type": "9патч",
+					"type": "d_a1",
 					"properties": {
 						"left-margin": 16,
 						"right-margin": 16,
@@ -236,7 +236,7 @@
 					}
 				},
 				{
-					"type": "dialog",
+					"type": "d_a2",
 					"properties": {
 						"text": "",
 						"enable-bbcode": true,
@@ -331,7 +331,7 @@
 					}
 				},
 				{
-					"type": "Спрайт4",
+					"type": "d_a3",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "a3",
@@ -366,7 +366,7 @@
 					}
 				},
 				{
-					"type": "dialog",
+					"type": "d_a2",
 					"properties": {
 						"text": "",
 						"enable-bbcode": true,

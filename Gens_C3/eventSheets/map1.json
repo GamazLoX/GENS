@@ -87,7 +87,7 @@
 			"conditions": [
 				{
 					"id": "on-key-pressed",
-					"objectClass": "Keyboard",
+					"objectClass": "Key",
 					"sid": 416810343726670,
 					"parameters": {
 						"key": 82

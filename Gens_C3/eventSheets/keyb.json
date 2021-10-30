@@ -13,7 +13,7 @@
 					"conditions": [
 						{
 							"id": "key-is-down",
-							"objectClass": "Keyboard",
+							"objectClass": "Key",
 							"sid": 779223263488216,
 							"parameters": {
 								"key": 87
@@ -38,7 +38,7 @@
 					"conditions": [
 						{
 							"id": "key-is-down",
-							"objectClass": "Keyboard",
+							"objectClass": "Key",
 							"sid": 821220655389190,
 							"parameters": {
 								"key": 65
@@ -63,7 +63,7 @@
 					"conditions": [
 						{
 							"id": "key-is-down",
-							"objectClass": "Keyboard",
+							"objectClass": "Key",
 							"sid": 989354999338489,
 							"parameters": {
 								"key": 83
@@ -88,7 +88,7 @@
 					"conditions": [
 						{
 							"id": "key-is-down",
-							"objectClass": "Keyboard",
+							"objectClass": "Key",
 							"sid": 379045658841846,
 							"parameters": {
 								"key": 68

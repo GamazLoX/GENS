@@ -3390,7 +3390,7 @@
 					}
 				},
 				{
-					"type": "carmenu",
+					"type": "Car_player",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -11645,7 +11645,7 @@
 					}
 				},
 				{
-					"type": "Спрайт16",
+					"type": "lift2",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -11686,7 +11686,7 @@
 					}
 				},
 				{
-					"type": "Спрайт18",
+					"type": "lift1",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -12137,7 +12137,7 @@
 					}
 				},
 				{
-					"type": "Спрайт22",
+					"type": "lift3",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -12214,7 +12214,7 @@
 					}
 				},
 				{
-					"type": "lol",
+					"type": "sten",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -12243,7 +12243,7 @@
 					}
 				},
 				{
-					"type": "lol",
+					"type": "sten",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -12590,7 +12590,7 @@
 			"overriden": 0,
 			"instances": [
 				{
-					"type": "Спрайт17",
+					"type": "car_b",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -12898,7 +12898,7 @@
 					}
 				},
 				{
-					"type": "9патч",
+					"type": "d_a1",
 					"properties": {
 						"left-margin": 16,
 						"right-margin": 16,
@@ -12942,7 +12942,7 @@
 					}
 				},
 				{
-					"type": "dialog",
+					"type": "d_a2",
 					"properties": {
 						"text": "",
 						"enable-bbcode": true,
@@ -13037,7 +13037,7 @@
 					}
 				},
 				{
-					"type": "Спрайт4",
+					"type": "d_a3",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "a3",
@@ -13072,7 +13072,7 @@
 					}
 				},
 				{
-					"type": "dialog",
+					"type": "d_a2",
 					"properties": {
 						"text": "",
 						"enable-bbcode": true,

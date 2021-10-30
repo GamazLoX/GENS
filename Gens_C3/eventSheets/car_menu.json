@@ -29,7 +29,7 @@
 					"objectClass": "player",
 					"sid": 968079008334403,
 					"parameters": {
-						"object": "carmenu",
+						"object": "Car_player",
 						"offset-x": "-6",
 						"offset-y": "-20"
 					}
@@ -56,7 +56,7 @@
 					"objectClass": "player",
 					"sid": 384324361118668,
 					"parameters": {
-						"object": "carmenu",
+						"object": "Car_player",
 						"offset-x": "-6",
 						"offset-y": "-20"
 					},
@@ -81,7 +81,7 @@
 			"conditions": [
 				{
 					"id": "on-key-pressed",
-					"objectClass": "Keyboard",
+					"objectClass": "Key",
 					"sid": 730412537355514,
 					"parameters": {
 						"key": 49
@@ -120,7 +120,7 @@
 			"conditions": [
 				{
 					"id": "on-key-pressed",
-					"objectClass": "Keyboard",
+					"objectClass": "Key",
 					"sid": 904104860307067,
 					"parameters": {
 						"key": 50
@@ -159,7 +159,7 @@
 			"conditions": [
 				{
 					"id": "on-key-pressed",
-					"objectClass": "Keyboard",
+					"objectClass": "Key",
 					"sid": 816033987002735,
 					"parameters": {
 						"key": 51
@@ -235,7 +235,7 @@
 			"actions": [
 				{
 					"id": "simulate-control",
-					"objectClass": "carmenu",
+					"objectClass": "Car_player",
 					"sid": 439216559922704,
 					"behaviorType": "Машина",
 					"parameters": {
@@ -252,7 +252,7 @@
 				},
 				{
 					"id": "destroy",
-					"objectClass": "carmenu",
+					"objectClass": "Car_player",
 					"sid": 580750876032072
 				},
 				{

@@ -1,7 +1,7 @@
 {
-	"name": "Спрайт17",
+	"name": "NpcStory",
 	"plugin-id": "Sprite",
-	"sid": 800669900313383,
+	"sid": 602836633160448,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -11,31 +11,31 @@
 			{
 				"frames": [
 					{
-						"width": 640,
-						"height": 240,
+						"width": 128,
+						"height": 128,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 4907360,
+						"imageSpriteId": 5232714,
 						"collisionPoly": {
 							"points": [
-								0,
-								0,
+								0.1796875,
+								0.1796875,
 								0.5,
 								0,
-								0.9984375,
-								0,
-								0.9984375,
+								0.8203125,
+								0.171875,
+								0.859375,
 								0.5,
-								0.9984375,
-								0.9958333333333333,
+								0.75,
+								0.75,
 								0.5,
-								0.9958333333333333,
-								0,
-								0.9958333333333333,
-								0,
+								0.9921875,
+								0.203125,
+								0.7890625,
+								0.1171875,
 								0.5
 							]
 						},
@@ -43,7 +43,7 @@
 						"duration": 1
 					}
 				],
-				"sid": 821605915109926,
+				"sid": 608348682217003,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

@@ -942,7 +942,7 @@
 				},
 				{
 					"id": "set-boolean-instvar",
-					"objectClass": "dialog",
+					"objectClass": "d_a2",
 					"sid": 565541077425046,
 					"parameters": {
 						"instance-variable": "IsTyping",
@@ -1370,7 +1370,7 @@
 			"conditions": [
 				{
 					"id": "on-key-pressed",
-					"objectClass": "Keyboard",
+					"objectClass": "Key",
 					"sid": 694730750318856,
 					"parameters": {
 						"key": 32
@@ -1394,7 +1394,7 @@
 			"conditions": [
 				{
 					"id": "on-key-pressed",
-					"objectClass": "Keyboard",
+					"objectClass": "Key",
 					"sid": 411243359815734,
 					"parameters": {
 						"key": 13

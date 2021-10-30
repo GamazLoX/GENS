@@ -183,8 +183,7 @@
 				"items": [
 					"rub_inv",
 					"inv",
-					"rub_s",
-					"rub"
+					"rub_s"
 				],
 				"subfolders": [],
 				"name": "_ui"
@@ -203,10 +202,10 @@
 			},
 			{
 				"items": [
-					"9патч",
+					"d_a1",
 					"9патч2",
-					"dialog",
-					"Спрайт4"
+					"d_a2",
+					"d_a3"
 				],
 				"subfolders": [],
 				"name": "_dialog"
@@ -214,9 +213,9 @@
 			{
 				"items": [
 					"Audio",
-					"Keyboard",
-					"Мышь",
-					"Видео"
+					"Key",
+					"mouse",
+					"video"
 				],
 				"subfolders": [],
 				"name": "_system"
@@ -224,10 +223,10 @@
 			{
 				"items": [
 					"storytext",
-					"Спрайт6",
-					"Спрайт7",
-					"Спрайт9",
-					"Спрайт10"
+					"PlayerStory",
+					"TelStory",
+					"NpcStory",
+					"error"
 				],
 				"subfolders": [],
 				"name": "story"
@@ -235,11 +234,11 @@
 			{
 				"items": [
 					"ef",
-					"lol",
+					"sten",
 					"ef2"
 				],
 				"subfolders": [],
-				"name": "ef"
+				"name": "_ef"
 			},
 			{
 				"items": [
@@ -259,18 +258,27 @@
 					"G"
 				],
 				"subfolders": [],
-				"name": "logo"
+				"name": "_GamesLogoo"
 			},
 			{
 				"items": [],
 				"subfolders": [
 					{
 						"items": [
-							"Спрайт17",
+							"car_b",
 							"text_logo",
 							"v1",
 							"v2",
 							"v3"
+						],
+						"subfolders": [],
+						"name": "car_menu"
+					},
+					{
+						"items": [
+							"Car_player",
+							"car1",
+							"car2"
 						],
 						"subfolders": [],
 						"name": "car"
@@ -280,20 +288,11 @@
 			},
 			{
 				"items": [
-					"carmenu",
-					"car1",
-					"car2"
-				],
-				"subfolders": [],
-				"name": "car"
-			},
-			{
-				"items": [
-					"Спрайт16",
-					"Спрайт18",
-					"Спрайт19",
-					"Спрайт20",
-					"Спрайт22",
+					"lift2",
+					"lift1",
+					"lift4",
+					"lift5",
+					"lift3",
 					"ElevatorLogo"
 				],
 				"subfolders": [],
@@ -368,7 +367,7 @@
 					"3DФигуры5"
 				],
 				"subfolders": [],
-				"name": "FPS"
+				"name": "_FPS"
 			},
 			{
 				"items": [
@@ -406,7 +405,8 @@
 					"Спрайт3",
 					"Спрайт5",
 					"Спрайт8",
-					"Текст"
+					"Текст",
+					"rub"
 				],
 				"subfolders": [],
 				"name": "ot"
@@ -514,7 +514,6 @@
 			{
 				"items": [
 					"menu_train",
-					"story",
 					"train1",
 					"train2"
 				],
@@ -563,6 +562,13 @@
 				],
 				"subfolders": [],
 				"name": "FPS"
+			},
+			{
+				"items": [
+					"story"
+				],
+				"subfolders": [],
+				"name": "story"
 			}
 		]
 	},
@@ -813,34 +819,40 @@
 			"subfolders": []
 		},
 		"video": {
-			"items": [
+			"items": [],
+			"subfolders": [
 				{
-					"name": "a1.mp4",
-					"type": "video/mp4",
-					"sid": 805114007360541
-				},
-				{
-					"name": "a2.mp4",
-					"type": "video/mp4",
-					"sid": 962167504478364
-				},
-				{
-					"name": "b2.mp4",
-					"type": "video/mp4",
-					"sid": 728000951333063
-				},
-				{
-					"name": "b1.mp4",
-					"type": "video/mp4",
-					"sid": 488307683937935
-				},
-				{
-					"name": "rek.mp4",
-					"type": "video/mp4",
-					"sid": 312769124103331
+					"items": [
+						{
+							"name": "a1.mp4",
+							"type": "video/mp4",
+							"sid": 805114007360541
+						},
+						{
+							"name": "a2.mp4",
+							"type": "video/mp4",
+							"sid": 962167504478364
+						},
+						{
+							"name": "b1.mp4",
+							"type": "video/mp4",
+							"sid": 488307683937935
+						},
+						{
+							"name": "b2.mp4",
+							"type": "video/mp4",
+							"sid": 728000951333063
+						},
+						{
+							"name": "rek.mp4",
+							"type": "video/mp4",
+							"sid": 312769124103331
+						}
+					],
+					"subfolders": [],
+					"name": "elevator"
 				}
-			],
-			"subfolders": []
+			]
 		},
 		"font": {
 			"items": [

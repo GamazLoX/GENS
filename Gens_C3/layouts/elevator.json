@@ -133,7 +133,7 @@
 					}
 				},
 				{
-					"type": "Спрайт16",
+					"type": "lift2",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -174,7 +174,7 @@
 					}
 				},
 				{
-					"type": "Спрайт18",
+					"type": "lift1",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -215,7 +215,7 @@
 					}
 				},
 				{
-					"type": "Видео",
+					"type": "video",
 					"properties": {
 						"webm-source": "",
 						"ogg-theora-source": "",
@@ -275,7 +275,7 @@
 			"overriden": 0,
 			"instances": [
 				{
-					"type": "Спрайт19",
+					"type": "lift4",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -304,7 +304,7 @@
 					}
 				},
 				{
-					"type": "Спрайт20",
+					"type": "lift5",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "a1",

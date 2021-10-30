@@ -262,7 +262,7 @@
 			"actions": [
 				{
 					"id": "set-cursor-style",
-					"objectClass": "Мышь",
+					"objectClass": "mouse",
 					"sid": 655210980198475,
 					"parameters": {
 						"cursor-style": "none"
@@ -351,7 +351,7 @@
 				},
 				{
 					"id": "set-cursor-style",
-					"objectClass": "Мышь",
+					"objectClass": "mouse",
 					"sid": 682636274429238,
 					"parameters": {
 						"cursor-style": "crosshair"
@@ -365,7 +365,7 @@
 			"conditions": [
 				{
 					"id": "on-object-clicked",
-					"objectClass": "Мышь",
+					"objectClass": "mouse",
 					"sid": 191780262474130,
 					"parameters": {
 						"mouse-button": "left",
@@ -387,7 +387,7 @@
 			"actions": [
 				{
 					"id": "set-cursor-style",
-					"objectClass": "Мышь",
+					"objectClass": "mouse",
 					"sid": 306440573513642,
 					"parameters": {
 						"cursor-style": "none"

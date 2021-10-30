@@ -1,46 +1,40 @@
 {
-	"name": "Спрайт16",
+	"name": "TelStory",
 	"plugin-id": "Sprite",
-	"sid": 236668469294353,
+	"sid": 578008374646686,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [
-		{
-			"behaviorId": "Bullet",
-			"name": "Пуля",
-			"sid": 230801736475755
-		}
-	],
+	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
 		"items": [
 			{
 				"frames": [
 					{
-						"width": 127,
-						"height": 512,
-						"originX": 0,
-						"originY": 0,
+						"width": 200,
+						"height": 172,
+						"originX": 0.5,
+						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 9881956,
+						"imageSpriteId": 2662031,
 						"collisionPoly": {
 							"points": [
 								0,
 								0,
 								0.5,
 								0,
-								0.996031746031746,
+								0.995,
 								0,
-								0.996031746031746,
+								0.995,
 								0.5,
-								0.996031746031746,
-								0.998046875,
+								0.995,
+								0.9941860465116279,
 								0.5,
-								0.998046875,
+								0.9941860465116279,
 								0,
-								0.998046875,
+								0.9941860465116279,
 								0,
 								0.5
 							]
@@ -49,7 +43,7 @@
 						"duration": 1
 					}
 				],
-				"sid": 738737508004197,
+				"sid": 556102073047434,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

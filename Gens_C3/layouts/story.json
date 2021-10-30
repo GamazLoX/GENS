@@ -6,7 +6,7 @@
 			"overriden": 0,
 			"instances": [
 				{
-					"type": "Спрайт6",
+					"type": "PlayerStory",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "a1",
@@ -96,7 +96,7 @@
 					}
 				},
 				{
-					"type": "Спрайт7",
+					"type": "TelStory",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -125,7 +125,7 @@
 					}
 				},
 				{
-					"type": "Спрайт9",
+					"type": "NpcStory",
 					"properties": {
 						"initially-visible": false,
 						"initial-animation": "Animation 1",
@@ -186,7 +186,7 @@
 			"overriden": 0,
 			"instances": [
 				{
-					"type": "dialog",
+					"type": "d_a2",
 					"properties": {
 						"text": "",
 						"enable-bbcode": true,
@@ -313,7 +313,7 @@
 			"overriden": 0,
 			"instances": [
 				{
-					"type": "Спрайт10",
+					"type": "error",
 					"properties": {
 						"initially-visible": false,
 						"initial-animation": "Animation 1",

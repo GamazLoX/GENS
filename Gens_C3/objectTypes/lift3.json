@@ -1,7 +1,7 @@
 {
-	"name": "lol",
+	"name": "lift3",
 	"plugin-id": "Sprite",
-	"sid": 786607932817174,
+	"sid": 519704077065821,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -11,19 +11,39 @@
 			{
 				"frames": [
 					{
-						"width": 250,
-						"height": 250,
+						"width": 157,
+						"height": 230,
 						"originX": 0,
 						"originY": 0,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 4067907,
+						"imageSpriteId": 7324793,
+						"collisionPoly": {
+							"points": [
+								0,
+								0,
+								0.5,
+								0,
+								1,
+								0,
+								1,
+								0.5,
+								1,
+								1,
+								0.5,
+								1,
+								0,
+								1,
+								0,
+								0.5
+							]
+						},
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 707252715662318,
+				"sid": 740777190059673,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,
