@@ -79,6 +79,11 @@
 								"enabled": false,
 								"live-preview": false
 							}
+						},
+						"Твинанимация": {
+							"properties": {
+								"enabled": true
+							}
 						}
 					},
 					"world": {
@@ -165,7 +170,13 @@
 					},
 					"uid": 30,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Твинанимация": {
+							"properties": {
+								"enabled": true
+							}
+						}
+					},
 					"world": {
 						"x": 0,
 						"y": 448,
@@ -216,6 +227,11 @@
 								"destroy": false,
 								"enabled": false,
 								"live-preview": false
+							}
+						},
+						"Твинанимация": {
+							"properties": {
+								"enabled": true
 							}
 						}
 					},
@@ -270,6 +286,11 @@
 								"enabled": false,
 								"live-preview": false
 							}
+						},
+						"Твинанимация": {
+							"properties": {
+								"enabled": true
+							}
 						}
 					},
 					"world": {
@@ -322,6 +343,11 @@
 								"destroy": false,
 								"enabled": false,
 								"live-preview": false
+							}
+						},
+						"Твинанимация": {
+							"properties": {
+								"enabled": true
 							}
 						}
 					},
@@ -410,5 +436,6 @@
 	"unboundedScrolling": false,
 	"vpX": 0.5,
 	"vpY": 0.5,
+	"projection": "perspective",
 	"eventSheet": "start4"
 }

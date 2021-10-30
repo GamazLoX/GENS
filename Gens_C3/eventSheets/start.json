@@ -866,19 +866,51 @@
 					"sid": 368853409477276
 				},
 				{
+					"id": "tween-one-property",
+					"objectClass": "a1",
+					"sid": 777666025678673,
+					"behaviorType": "Твинанимация",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "offsetY",
+						"end-value": "140",
+						"time": "4",
+						"ease": "easeoutelastic",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				},
+				{
 					"id": "wait",
 					"objectClass": "System",
-					"sid": 272997638686794,
+					"sid": 836606921664848,
 					"parameters": {
-						"seconds": "8"
+						"seconds": "5"
 					}
 				},
 				{
 					"id": "set-text",
 					"objectClass": "a2",
-					"sid": 306287180155758,
+					"sid": 861349890388723,
 					"parameters": {
-						"text": "\"Нажмите <<<Пробел>>> для продолжения \""
+						"text": "\"Нажми <<Пробел>> и мы начнём\""
+					}
+				},
+				{
+					"id": "tween-one-property",
+					"objectClass": "a2",
+					"sid": 178968181598473,
+					"behaviorType": "Твинанимация",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "offsetX",
+						"end-value": "368",
+						"time": "1",
+						"ease": "easeoutbounce",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
 					}
 				}
 			],
@@ -898,14 +930,83 @@
 				{
 					"id": "compare-text",
 					"objectClass": "a2",
-					"sid": 363955905832775,
+					"sid": 945079407791879,
 					"parameters": {
-						"text-to-compare": "\"Нажмите <<<Пробел>>> для продолжения \"",
+						"text-to-compare": "\"Нажми <<Пробел>> и мы начнём\"",
 						"case-sensitivity": "ignore-case"
 					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "a2",
+					"sid": 357975436680700
 				}
 			],
 			"actions": [
+				{
+					"id": "tween-one-property",
+					"objectClass": "a2",
+					"sid": 407149433687751,
+					"behaviorType": "Твинанимация",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "offsetOpacity",
+						"end-value": "0",
+						"time": "1",
+						"ease": "easeinoutcirc",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 894229546126822,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "tween-one-property",
+					"objectClass": "a1",
+					"sid": 663416020793549,
+					"behaviorType": "Твинанимация",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "offsetOpacity",
+						"end-value": "0",
+						"time": "5",
+						"ease": "easeoutsine",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				},
+				{
+					"id": "tween-one-property",
+					"objectClass": "a1",
+					"sid": 982955439631695,
+					"behaviorType": "Твинанимация",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "offsetY",
+						"end-value": "-200",
+						"time": "4",
+						"ease": "easeinsine",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 914886508878025,
+					"parameters": {
+						"seconds": "5"
+					}
+				},
 				{
 					"id": "go-to-layout",
 					"objectClass": "System",

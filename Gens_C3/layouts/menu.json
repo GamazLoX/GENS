@@ -12971,7 +12971,13 @@
 					},
 					"uid": 38,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Твинанимация": {
+							"properties": {
+								"enabled": true
+							}
+						}
+					},
 					"world": {
 						"x": 0,
 						"y": 448,
@@ -13224,5 +13230,6 @@
 	"unboundedScrolling": true,
 	"vpX": 0.5,
 	"vpY": 0.5,
+	"projection": "perspective",
 	"eventSheet": "menu"
 }

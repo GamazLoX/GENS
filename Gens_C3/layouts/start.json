@@ -75,15 +75,20 @@
 								"fade-in-time": 0,
 								"wait-time": 0,
 								"fade-out-time": 0,
-								"destroy": true,
-								"enabled": true,
+								"destroy": false,
+								"enabled": false,
 								"live-preview": false
+							}
+						},
+						"Твинанимация": {
+							"properties": {
+								"enabled": true
 							}
 						}
 					},
 					"world": {
 						"x": 0,
-						"y": 144,
+						"y": -160,
 						"width": 640,
 						"height": 160,
 						"originX": 0,
@@ -144,7 +149,7 @@
 				{
 					"type": "a2",
 					"properties": {
-						"text": "...",
+						"text": "Нажми \"Пробел\" И мы начнём",
 						"enable-bbcode": true,
 						"font": "Arial",
 						"size": 12,
@@ -165,11 +170,17 @@
 					},
 					"uid": 2,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Твинанимация": {
+							"properties": {
+								"enabled": true
+							}
+						}
+					},
 					"world": {
-						"x": 0,
+						"x": 640,
 						"y": 448,
-						"width": 640,
+						"width": 272,
 						"height": 32,
 						"originX": 0,
 						"originY": 0,
@@ -220,5 +231,6 @@
 	"unboundedScrolling": false,
 	"vpX": 0.5,
 	"vpY": 0.5,
+	"projection": "perspective",
 	"eventSheet": "start"
 }

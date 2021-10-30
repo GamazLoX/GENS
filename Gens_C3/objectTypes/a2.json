@@ -4,6 +4,12 @@
 	"sid": 648900313388505,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Tween",
+			"name": "Твинанимация",
+			"sid": 184730274149699
+		}
+	],
 	"effectTypes": []
 }

@@ -1,6 +1,6 @@
 {
 	"projectFormatVersion": 1,
-	"savedWithRelease": 26200,
+	"savedWithRelease": 26900,
 	"name": "GENS 0.030",
 	"runtime": "c3",
 	"useWorker": "auto",
@@ -11,7 +11,7 @@
 			"id": "Sprite",
 			"name": "Спрайт",
 			"author": "Scirra",
-			"version": "r262",
+			"version": "r269",
 			"bundled": false
 		},
 		{
@@ -19,7 +19,7 @@
 			"id": "Text",
 			"name": "Текст",
 			"author": "Scirra",
-			"version": "r262",
+			"version": "r269",
 			"bundled": false
 		},
 		{
@@ -27,7 +27,7 @@
 			"id": "NinePatch",
 			"name": "9-патч",
 			"author": "Scirra",
-			"version": "r262",
+			"version": "r269",
 			"bundled": false
 		},
 		{
@@ -35,7 +35,7 @@
 			"id": "Audio",
 			"name": "Аудио",
 			"author": "Scirra",
-			"version": "r262",
+			"version": "r269",
 			"bundled": false
 		},
 		{
@@ -43,7 +43,7 @@
 			"id": "Keyboard",
 			"name": "Клавиатура",
 			"author": "Scirra",
-			"version": "r262",
+			"version": "r269",
 			"bundled": false
 		},
 		{
@@ -51,15 +51,15 @@
 			"id": "Mouse",
 			"name": "Мышь",
 			"author": "Scirra",
-			"version": "r262",
+			"version": "r269",
 			"bundled": false
 		},
 		{
 			"type": "plugin",
 			"id": "Camera3D",
-			"name": "[3D camera]",
+			"name": "3D камера",
 			"author": "Scirra",
-			"version": "r262",
+			"version": "r269",
 			"bundled": false
 		},
 		{
@@ -67,7 +67,7 @@
 			"id": "video",
 			"name": "Видео",
 			"author": "Scirra",
-			"version": "r262",
+			"version": "r269",
 			"bundled": false
 		},
 		{
@@ -75,7 +75,7 @@
 			"id": "Shape3D",
 			"name": "3D фигуры",
 			"author": "Scirra",
-			"version": "r262",
+			"version": "r269",
 			"bundled": false
 		},
 		{
@@ -83,7 +83,7 @@
 			"id": "Bullet",
 			"name": "Пуля",
 			"author": "Scirra",
-			"version": "r262",
+			"version": "r269",
 			"bundled": false
 		},
 		{
@@ -91,7 +91,7 @@
 			"id": "Fade",
 			"name": "Угасание",
 			"author": "Scirra",
-			"version": "r262",
+			"version": "r269",
 			"bundled": false
 		},
 		{
@@ -99,7 +99,7 @@
 			"id": "Sin",
 			"name": "Синусоид",
 			"author": "Scirra",
-			"version": "r262",
+			"version": "r269",
 			"bundled": false
 		},
 		{
@@ -107,7 +107,7 @@
 			"id": "solid",
 			"name": "Твердый",
 			"author": "Scirra",
-			"version": "r262",
+			"version": "r269",
 			"bundled": false
 		},
 		{
@@ -115,7 +115,7 @@
 			"id": "Car",
 			"name": "Машина",
 			"author": "Scirra",
-			"version": "r262",
+			"version": "r269",
 			"bundled": false
 		},
 		{
@@ -123,7 +123,7 @@
 			"id": "scrollto",
 			"name": "Следить за",
 			"author": "Scirra",
-			"version": "r262",
+			"version": "r269",
 			"bundled": false
 		},
 		{
@@ -131,7 +131,7 @@
 			"id": "Physics",
 			"name": "Физика",
 			"author": "Scirra",
-			"version": "r262",
+			"version": "r269",
 			"bundled": false
 		},
 		{
@@ -139,7 +139,7 @@
 			"id": "Platform",
 			"name": "Платформер",
 			"author": "Scirra",
-			"version": "r262",
+			"version": "r269",
 			"bundled": false
 		},
 		{
@@ -147,7 +147,15 @@
 			"id": "EightDir",
 			"name": "8 Направлений",
 			"author": "Scirra",
-			"version": "r262",
+			"version": "r269",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Tween",
+			"name": "Твин-анимация",
+			"author": "Scirra",
+			"version": "r269",
 			"bundled": false
 		}
 	],
@@ -867,6 +875,7 @@
 			0
 		],
 		"orientations": "landscape",
+		"webgpu": "auto",
 		"gpuPreference": "high-performance",
 		"scriptsType": "module",
 		"framerateMode": "vsync",
