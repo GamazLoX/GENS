@@ -1,12 +1,12 @@
 {
-  "languageTag": "en-US",
+  "languageTag": "ru-RU",
   "fileDescription": "Strings for Animate Text Plugin",
   "text": {
     "behaviors": {
       "skymen_skymen_spritefontdx": {
         "name": "Аниматор Текста",
         "description": "Мощный плагин для лёгкого создания плагина. Теперь вам не придётся вручную например создавать много кода для того чтобы сделать <<Печатная машинка>>. В плагине имеется много всего. Наслаждайтесь",
-        "help-url": "Скоро",
+        "help-url": "http://",
         "properties": {
           "tw-params": {
             "name": "Печатная Машинка",
