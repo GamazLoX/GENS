@@ -1,0 +1,256 @@
+{
+  "general": {
+    "conditions": [],
+    "actions": [
+      {
+        "id": "set-alias",
+        "scriptName": "SetAlias",
+        "highlight": false,
+        "params": [
+          {
+            "id": "name",
+            "type": "string"
+          },
+          {
+            "id": "params",
+            "type": "string"
+          },
+          {
+            "id": "body",
+            "type": "string"
+          }
+        ]
+      },
+      {
+        "id": "set-text",
+        "scriptName": "SetText",
+        "highlight": true,
+        "params": [
+          {
+            "id": "text",
+            "type": "string"
+          }
+        ]
+      },
+      {
+        "id": "link-dictionary",
+        "scriptName": "LinkDictionary",
+        "highlight": false,
+        "params": [
+          {
+            "id": "dictionary",
+            "type": "object",
+            "allowedPluginIds": [
+              "Dictionary"
+            ]
+          }
+        ]
+      }
+    ],
+    "expressions": [
+      {
+        "id": "c2-str-to-c3-str",
+        "expressionName": "C2StrToC3Str",
+        "returnType": "string",
+        "params": [
+          {
+            "id": "text",
+            "type": "string"
+          }
+        ]
+      }
+    ]
+  },
+  "typewriter": {
+    "conditions": [
+      {
+        "id": "is-typing",
+        "scriptName": "IsTyping",
+        "highlight": true
+      },
+      {
+        "id": "on-letter-typed",
+        "scriptName": "OnLetterTyped",
+        "highlight": false,
+        "isTrigger": true,
+        "isInvertible": false,
+        "isCompatibleWithTriggers": false
+      },
+      {
+        "id": "on-tw-pause",
+        "scriptName": "OnTwPause",
+        "highlight": false,
+        "isTrigger": true,
+        "isInvertible": false,
+        "isCompatibleWithTriggers": false
+      },
+      {
+        "id": "on-tw-resume",
+        "scriptName": "OnTwResume",
+        "highlight": false,
+        "isTrigger": true,
+        "isInvertible": false,
+        "isCompatibleWithTriggers": false
+      },
+      {
+        "id": "on-tw-start",
+        "scriptName": "OnTwStart",
+        "highlight": true,
+        "isTrigger": true,
+        "isInvertible": false,
+        "isCompatibleWithTriggers": false
+      },
+      {
+        "id": "on-tw-stop",
+        "scriptName": "OnTwStop",
+        "highlight": true,
+        "isTrigger": true,
+        "isInvertible": false,
+        "isCompatibleWithTriggers": false
+      }
+    ],
+    "actions": [
+      {
+        "id": "pause-tw",
+        "scriptName": "PauseTw",
+        "highlight": false
+      },
+      {
+        "id": "resume-tw",
+        "scriptName": "ResumeTw",
+        "highlight": false
+      },
+      {
+        "id": "set-tw-easing",
+        "scriptName": "SetTwEasing",
+        "highlight": false,
+        "params": [
+          {
+            "id": "easing",
+            "type": "combo",
+            "initialValue": "linear",
+            "items": [
+              "linear",
+              "easeInQuad",
+              "easeOutQuad",
+              "easeInOutQuad",
+              "easeInCubic",
+              "easeOutCubic",
+              "easeInOutCubic",
+              "easeInQuart",
+              "easeOutQuart",
+              "easeInOutQuart",
+              "easeInQuint",
+              "easeOutQuint",
+              "easeInOutQuint",
+              "easeInSine",
+              "easeOutSine",
+              "easeInOutSine",
+              "easeInExpo",
+              "easeOutExpo",
+              "easeInOutExpo",
+              "easeInCirc",
+              "easeOutCirc",
+              "easeInOutCirc",
+              "easeOutBounce",
+              "easeInBack",
+              "easeOutBack",
+              "easeInOutBack",
+              "elastic",
+              "swingFromTo",
+              "swingFrom",
+              "swingTo",
+              "bounce",
+              "bouncePast",
+              "easeFromTo",
+              "easeFrom",
+              "easeTo"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "set-tw-params",
+        "scriptName": "SetTwParams",
+        "highlight": false,
+        "params": [
+          {
+            "id": "params",
+            "type": "string"
+          }
+        ]
+      },
+      {
+        "id": "skip-tw",
+        "scriptName": "SkipTw",
+        "highlight": false,
+        "params": [
+          {
+            "id": "mode",
+            "type": "combo",
+            "initialValue": "to-end",
+            "items": [
+              "to-end",
+              "to-next"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "typewrite",
+        "scriptName": "Typewrite",
+        "highlight": true,
+        "params": [
+          {
+            "id": "text",
+            "type": "string"
+          }
+        ]
+      },
+      {
+        "id": "set-tw-easing-string",
+        "scriptName": "SetTwEasingString",
+        "highlight": false,
+        "params": [
+          {
+            "id": "easing",
+            "type": "string",
+            "initialValue": ""
+          }
+        ]
+      }
+    ],
+    "expressions": [
+      {
+        "id": "last-letter-id",
+        "expressionName": "LastLetterIndex",
+        "returnType": "number"
+      },
+      {
+        "id": "tw-easing",
+        "expressionName": "TypewriterEasing",
+        "returnType": "string"
+      },
+      {
+        "id": "tw-params",
+        "expressionName": "TypewriterParams",
+        "returnType": "string"
+      },
+      {
+        "id": "typed-text-width",
+        "expressionName": "TypedTextWidth",
+        "returnType": "number"
+      },
+      {
+        "id": "typed-text-height",
+        "expressionName": "TypedTextHeight",
+        "returnType": "number"
+      },
+      {
+        "id": "last-letter",
+        "expressionName": "LastLetter",
+        "returnType": "string"
+      }
+    ]
+  }
+}

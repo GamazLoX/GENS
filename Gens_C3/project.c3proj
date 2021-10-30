@@ -424,21 +424,25 @@
 		"subfolders": [
 			{
 				"items": [
-					"start1",
-					"start2",
-					"start3",
-					"start5"
-				],
-				"subfolders": [],
-				"name": "start"
-			},
-			{
-				"items": [
 					"_tmp",
 					"generator"
 				],
 				"subfolders": [],
-				"name": "tmp"
+				"name": "_tmp"
+			},
+			{
+				"items": [
+					"elevator"
+				],
+				"subfolders": [],
+				"name": "elevator"
+			},
+			{
+				"items": [
+					"FPS"
+				],
+				"subfolders": [],
+				"name": "FPS"
 			},
 			{
 				"items": [
@@ -450,10 +454,20 @@
 			},
 			{
 				"items": [
-					"elevator"
+					"menu"
 				],
 				"subfolders": [],
-				"name": "elevator"
+				"name": "menu"
+			},
+			{
+				"items": [
+					"start1",
+					"start2",
+					"start3",
+					"start5"
+				],
+				"subfolders": [],
+				"name": "start"
 			},
 			{
 				"items": [
@@ -461,20 +475,6 @@
 				],
 				"subfolders": [],
 				"name": "story"
-			},
-			{
-				"items": [
-					"FPS"
-				],
-				"subfolders": [],
-				"name": "FPS"
-			},
-			{
-				"items": [
-					"menu"
-				],
-				"subfolders": [],
-				"name": "menu"
 			}
 		]
 	},
