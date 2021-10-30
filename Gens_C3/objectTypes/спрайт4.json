@@ -4,7 +4,13 @@
 	"sid": 902369133638391,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Pin",
+			"name": "Прикрепить",
+			"sid": 440088049595538
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [

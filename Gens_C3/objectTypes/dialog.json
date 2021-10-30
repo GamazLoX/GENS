@@ -29,6 +29,12 @@
 			"sid": 415654979290018
 		}
 	],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Pin",
+			"name": "Прикрепить",
+			"sid": 161883172430168
+		}
+	],
 	"effectTypes": []
 }

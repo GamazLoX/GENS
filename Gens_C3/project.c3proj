@@ -80,8 +80,24 @@
 		},
 		{
 			"type": "behavior",
+			"id": "Tween",
+			"name": "Твин-анимация",
+			"author": "Scirra",
+			"version": "r269",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "Bullet",
 			"name": "Пуля",
+			"author": "Scirra",
+			"version": "r269",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Pin",
+			"name": "Прикрепить",
 			"author": "Scirra",
 			"version": "r269",
 			"bundled": false
@@ -151,10 +167,10 @@
 			"bundled": false
 		},
 		{
-			"type": "behavior",
-			"id": "Tween",
-			"name": "Твин-анимация",
-			"author": "Scirra",
+			"type": "effect",
+			"id": "pulse",
+			"name": "Пульс",
+			"author": "Danguafer/Silexars",
 			"version": "r269",
 			"bundled": false
 		}
@@ -194,7 +210,9 @@
 			"Спрайт24",
 			"3DФигуры4",
 			"3DФигуры5",
-			"Текст"
+			"Текст",
+			"Спрайт25",
+			"Спрайт26"
 		],
 		"subfolders": [
 			{
@@ -396,12 +414,13 @@
 		"subfolders": [
 			{
 				"items": [
-					"start",
+					"start1",
 					"start2",
 					"start3",
 					"start4",
 					"menu",
-					"FPS"
+					"FPS",
+					"start_map"
 				],
 				"subfolders": [],
 				"name": "start"
@@ -509,6 +528,13 @@
 				],
 				"subfolders": [],
 				"name": "elevator"
+			},
+			{
+				"items": [
+					"start_map"
+				],
+				"subfolders": [],
+				"name": "start_map"
 			}
 		]
 	},

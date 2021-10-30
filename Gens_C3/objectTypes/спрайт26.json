@@ -1,0 +1,106 @@
+{
+	"name": "Спрайт26",
+	"plugin-id": "Sprite",
+	"sid": 349448573161361,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Tween",
+			"name": "Твинанимация",
+			"sid": 489978169398498
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 66,
+						"height": 62,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 276077,
+						"collisionPoly": {
+							"points": [
+								0.2878787878787879,
+								0.3064516129032258,
+								0.5,
+								0.016129032258064516,
+								0.696969696969697,
+								0.3064516129032258,
+								0.8484848484848485,
+								0.5,
+								0.696969696969697,
+								0.6774193548387096,
+								0.5,
+								0.7741935483870968,
+								0.2878787878787879,
+								0.6774193548387096,
+								0.13636363636363635,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 838491216038221,
+				"name": "a1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 66,
+						"height": 62,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3922864,
+						"collisionPoly": {
+							"points": [
+								0.2878787878787879,
+								0.3064516129032258,
+								0.5,
+								0.016129032258064516,
+								0.696969696969697,
+								0.3064516129032258,
+								0.8484848484848485,
+								0.5,
+								0.696969696969697,
+								0.6774193548387096,
+								0.5,
+								0.7741935483870968,
+								0.2878787878787879,
+								0.6774193548387096,
+								0.13636363636363635,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 208620028027758,
+				"name": "a2",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

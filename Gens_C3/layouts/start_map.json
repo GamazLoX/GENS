@@ -1,5 +1,5 @@
 {
-	"name": "start3",
+	"name": "start_map",
 	"layers": [
 		{
 			"name": "Слой 0",
@@ -14,7 +14,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 28,
+					"uid": 8,
 					"instanceVariables": {
 						"s": 0
 					},
@@ -25,7 +25,7 @@
 								"acceleration": 0,
 								"gravity": 0,
 								"bounce-off-solids": false,
-								"set-angle": false,
+								"set-angle": true,
 								"step": false,
 								"enabled": false
 							}
@@ -37,10 +37,10 @@
 						}
 					},
 					"world": {
-						"x": 704,
-						"y": 0,
-						"width": 48,
-						"height": 48,
+						"x": 320,
+						"y": 160,
+						"width": 0,
+						"height": 0,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -54,91 +54,26 @@
 					}
 				},
 				{
-					"type": "a1",
+					"type": "Спрайт25",
 					"properties": {
-						"text": "",
-						"enable-bbcode": false,
-						"font": "Retro",
-						"size": 50,
-						"line-height": 0,
-						"bold": false,
-						"italic": false,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"horizontal-alignment": "center",
-						"vertical-alignment": "top",
-						"wrapping": "word",
 						"initially-visible": true,
-						"origin": "top-left"
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
 					},
-					"uid": 31,
+					"uid": 2,
 					"instanceVariables": {},
-					"behaviors": {
-						"Угасание": {
-							"properties": {
-								"fade-in-time": 1,
-								"wait-time": 0.5,
-								"fade-out-time": 1,
-								"destroy": false,
-								"enabled": false,
-								"live-preview": false
-							}
-						},
-						"Твинанимация": {
-							"properties": {
-								"enabled": true
-							}
-						}
-					},
-					"world": {
-						"x": 0,
-						"y": 144,
-						"width": 640,
-						"height": 160,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "a2",
-					"properties": {
-						"text": "Если не хотите ждать нажмите ENTER",
-						"enable-bbcode": true,
-						"font": "Arial",
-						"size": 6,
-						"line-height": 0,
-						"bold": true,
-						"italic": false,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"horizontal-alignment": "right",
-						"vertical-alignment": "top",
-						"wrapping": "word",
-						"initially-visible": true,
-						"origin": "top-left"
-					},
-					"uid": 32,
-					"instanceVariables": {},
-					"behaviors": {
-						"Твинанимация": {
-							"properties": {
-								"enabled": true
+					"behaviors": {},
+					"effects": {
+						"Пульс": {
+							"parameters": {
+								"intensity": 1,
+								"lighting": 0.5,
+								"speed": 1,
+								"frequency": 200,
+								"center-x": 0.5,
+								"center-y": 0.5
 							}
 						}
 					},
@@ -146,7 +81,7 @@
 						"x": 0,
 						"y": 0,
 						"width": 640,
-						"height": 16,
+						"height": 480,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -160,7 +95,7 @@
 					}
 				}
 			],
-			"sid": 322051337759794,
+			"sid": 922288140309784,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"color": [
@@ -176,6 +111,104 @@
 				1
 			],
 			"isTransparent": false,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		},
+		{
+			"name": "ef",
+			"overriden": 0,
+			"instances": [],
+			"sid": 818016670065443,
+			"effectTypes": [],
+			"isInitiallyVisible": false,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				1,
+				1,
+				1,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		},
+		{
+			"name": "player",
+			"overriden": 0,
+			"instances": [
+				{
+					"type": "Спрайт26",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "a1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 7,
+					"instanceVariables": {},
+					"behaviors": {
+						"Твинанимация": {
+							"properties": {
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 304,
+						"y": 664,
+						"width": 272,
+						"height": 384,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 350796738458362,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				1,
+				1,
+				1,
+				1
+			],
+			"isTransparent": true,
 			"parallaxX": 1,
 			"parallaxY": 1,
 			"scaleRate": 1,
@@ -204,7 +237,7 @@
 						"origin": "top-left",
 						"seams": "overlap"
 					},
-					"uid": 17,
+					"uid": 4,
 					"instanceVariables": {},
 					"behaviors": {
 						"Твинанимация": {
@@ -215,104 +248,9 @@
 					},
 					"world": {
 						"x": 0,
-						"y": 368,
+						"y": 480,
 						"width": 640,
 						"height": 112,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "dialog",
-					"properties": {
-						"text": "",
-						"enable-bbcode": true,
-						"font": "Arial",
-						"size": 12,
-						"line-height": 0,
-						"bold": true,
-						"italic": false,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"horizontal-alignment": "left",
-						"vertical-alignment": "top",
-						"wrapping": "word",
-						"initially-visible": true,
-						"origin": "top-left"
-					},
-					"uid": 18,
-					"instanceVariables": {
-						"TypeSpeed": 0.2,
-						"TypeLen": 1,
-						"IsTyping": false,
-						"d": 0
-					},
-					"behaviors": {
-						"Прикрепить": {
-							"properties": {
-								"destroy": false
-							}
-						}
-					},
-					"world": {
-						"x": 80,
-						"y": 480,
-						"width": 512,
-						"height": 80,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "TextSample",
-					"properties": {
-						"text": "This is an example text",
-						"enable-bbcode": true,
-						"font": "Arial",
-						"size": 12,
-						"line-height": 0,
-						"bold": false,
-						"italic": false,
-						"color": [
-							0,
-							0,
-							0,
-							1
-						],
-						"horizontal-alignment": "left",
-						"vertical-alignment": "top",
-						"wrapping": "word",
-						"initially-visible": true,
-						"origin": "top-left"
-					},
-					"uid": 19,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 96,
-						"y": 512,
-						"width": 200,
-						"height": 30,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -334,7 +272,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 23,
+					"uid": 475,
 					"instanceVariables": {},
 					"behaviors": {
 						"Прикрепить": {
@@ -345,7 +283,7 @@
 					},
 					"world": {
 						"x": 528,
-						"y": 384,
+						"y": 496,
 						"width": 96,
 						"height": 80,
 						"originX": 0,
@@ -382,7 +320,7 @@
 						"initially-visible": true,
 						"origin": "top-left"
 					},
-					"uid": 12,
+					"uid": 476,
 					"instanceVariables": {
 						"TypeSpeed": 0.2,
 						"TypeLen": 1,
@@ -398,7 +336,7 @@
 					},
 					"world": {
 						"x": 16,
-						"y": 384,
+						"y": 496,
 						"width": 512,
 						"height": 80,
 						"originX": 0,
@@ -414,9 +352,9 @@
 					}
 				}
 			],
-			"sid": 702454985040029,
+			"sid": 115142095703147,
 			"effectTypes": [],
-			"isInitiallyVisible": false,
+			"isInitiallyVisible": true,
 			"color": [
 				1,
 				1,
@@ -442,7 +380,7 @@
 			"global": false
 		}
 	],
-	"sid": 253343004122106,
+	"sid": 532180714876822,
 	"nonworld-instances": [],
 	"effectTypes": [],
 	"width": 640,
@@ -451,5 +389,5 @@
 	"vpX": 0.5,
 	"vpY": 0.5,
 	"projection": "perspective",
-	"eventSheet": "start3"
+	"eventSheet": "start_map"
 }

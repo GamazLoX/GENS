@@ -16,6 +16,11 @@
 			"behaviorId": "Bullet",
 			"name": "Пуля",
 			"sid": 323024419925851
+		},
+		{
+			"behaviorId": "Tween",
+			"name": "Твинанимация",
+			"sid": 264094933626577
 		}
 	],
 	"effectTypes": [],
@@ -26,13 +31,20 @@
 					{
 						"width": 32,
 						"height": 32,
-						"originX": 0,
-						"originY": 0,
+						"originX": 0.5,
+						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
 						"imageSpriteId": 3382278,
 						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Точка спрайта 1",
+								"x": 0.5,
+								"y": 0.5
+							}
+						],
 						"duration": 1
 					}
 				],

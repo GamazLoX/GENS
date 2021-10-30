@@ -388,7 +388,7 @@
 					"objectClass": "System",
 					"sid": 445844841255706,
 					"parameters": {
-						"layout": "start"
+						"layout": "start_map"
 					}
 				}
 			],

@@ -1,0 +1,330 @@
+{
+	"name": "start_map",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 835816785461269
+				}
+			],
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 842912528083186,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 840411743231155,
+					"parameters": {
+						"object-to-create": "ef",
+						"layer": "\"ef\"",
+						"x": "0",
+						"y": "0",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Спрайт26",
+					"sid": 295338484211887,
+					"parameters": {
+						"animation": "\"a2\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "tween-one-property",
+					"objectClass": "Спрайт26",
+					"sid": 167219207014936,
+					"behaviorType": "Твинанимация",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "offsetY",
+						"end-value": "300",
+						"time": "12",
+						"ease": "easeinoutsine",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 935500790220415,
+					"parameters": {
+						"seconds": "15"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Спрайт26",
+					"sid": 498332410941435,
+					"parameters": {
+						"animation": "\"a1\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 255202034293821,
+					"parameters": {
+						"layer": "\"ef\"",
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-layer-scale",
+					"objectClass": "System",
+					"sid": 284701385457531,
+					"parameters": {
+						"layer": "\"player\"",
+						"scale": "1.5"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 897932335576298,
+					"parameters": {
+						"seconds": "3"
+					}
+				},
+				{
+					"id": "set-layer-scale",
+					"objectClass": "System",
+					"sid": 133025078969744,
+					"parameters": {
+						"layer": "\"player\"",
+						"scale": "1"
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 955606748899193,
+					"parameters": {
+						"layer": "\"ef\"",
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Спрайт26",
+					"sid": 609857055295945,
+					"parameters": {
+						"animation": "\"a2\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 657825966514678,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "tween-one-property",
+					"objectClass": "Спрайт26",
+					"sid": 898487409621782,
+					"behaviorType": "Твинанимация",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "offsetY",
+						"end-value": "260",
+						"time": "2",
+						"ease": "easeinsine",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 350239403445276,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "set-effect-parameter",
+					"objectClass": "Спрайт25",
+					"sid": 239589747327639,
+					"parameters": {
+						"effect": "\"Пульс\"",
+						"parameter-index": "2",
+						"value": "3"
+					}
+				},
+				{
+					"id": "tween-one-property",
+					"objectClass": "Спрайт26",
+					"sid": 824867941315063,
+					"behaviorType": "Твинанимация",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "offsetY",
+						"end-value": "300",
+						"time": "1",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 204840802306701,
+					"parameters": {
+						"seconds": "3"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Спрайт26",
+					"sid": 515475023432566,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "Спрайт25",
+					"sid": 777166480889806,
+					"parameters": {
+						"width": "Спрайт25.Width+200",
+						"height": "Спрайт25.Height+200"
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 242144295814332,
+					"parameters": {
+						"object-to-create": "g1",
+						"layer": "0",
+						"x": "320",
+						"y": "240",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "g1",
+					"sid": 501309247977869,
+					"parameters": {
+						"width": "0",
+						"height": "0"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 205967956676852,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "tween-two-properties",
+					"objectClass": "g1",
+					"sid": 109790863959801,
+					"behaviorType": "Твинанимация",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "size",
+						"end-x": "100",
+						"end-y": "100",
+						"time": "8",
+						"ease": "easeinoutsine",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 721904658849354,
+					"parameters": {
+						"seconds": "5"
+					}
+				},
+				{
+					"id": "tween-one-property",
+					"objectClass": "9патч",
+					"sid": 377357500151784,
+					"behaviorType": "Твинанимация",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "offsetY",
+						"end-value": "368",
+						"time": "2",
+						"ease": "easeinoutsine",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				}
+			],
+			"sid": 547679044200277
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 552684175181295
+				}
+			],
+			"actions": [
+				{
+					"id": "pin-to-object-properties",
+					"objectClass": "Спрайт4",
+					"sid": 221828809765891,
+					"behaviorType": "Прикрепить",
+					"parameters": {
+						"pin-to": "9патч",
+						"x": true,
+						"y": true,
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				},
+				{
+					"id": "pin-to-object-properties",
+					"objectClass": "dialog",
+					"sid": 785328453030863,
+					"behaviorType": "Прикрепить",
+					"parameters": {
+						"pin-to": "9патч",
+						"x": true,
+						"y": true,
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				}
+			],
+			"sid": 911791621765534
+		}
+	],
+	"sid": 210503554013891
+}

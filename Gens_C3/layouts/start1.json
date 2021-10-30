@@ -1,5 +1,5 @@
 {
-	"name": "start",
+	"name": "start1",
 	"layers": [
 		{
 			"name": "Слой 0",
@@ -14,7 +14,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 4,
+					"uid": 427,
 					"instanceVariables": {},
 					"behaviors": {
 						"Угасание": {
@@ -67,7 +67,7 @@
 						"initially-visible": true,
 						"origin": "top-left"
 					},
-					"uid": 7,
+					"uid": 428,
 					"instanceVariables": {},
 					"behaviors": {
 						"Угасание": {
@@ -112,7 +112,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 8,
+					"uid": 429,
 					"instanceVariables": {
 						"s": 0
 					},
@@ -127,6 +127,11 @@
 								"step": false,
 								"enabled": false
 							}
+						},
+						"Твинанимация": {
+							"properties": {
+								"enabled": true
+							}
 						}
 					},
 					"world": {
@@ -134,8 +139,8 @@
 						"y": 160,
 						"width": 0,
 						"height": 0,
-						"originX": 0,
-						"originY": 0,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,
@@ -168,7 +173,7 @@
 						"initially-visible": true,
 						"origin": "top-left"
 					},
-					"uid": 2,
+					"uid": 474,
 					"instanceVariables": {},
 					"behaviors": {
 						"Твинанимация": {
@@ -195,7 +200,7 @@
 					}
 				}
 			],
-			"sid": 922288140309784,
+			"sid": 330879174427576,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"color": [
@@ -223,7 +228,7 @@
 			"global": false
 		}
 	],
-	"sid": 532180714876822,
+	"sid": 541245914346582,
 	"nonworld-instances": [],
 	"effectTypes": [],
 	"width": 640,

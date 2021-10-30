@@ -60,6 +60,11 @@
 								"step": false,
 								"enabled": false
 							}
+						},
+						"Твинанимация": {
+							"properties": {
+								"enabled": true
+							}
 						}
 					},
 					"world": {
@@ -67,8 +72,8 @@
 						"y": 160,
 						"width": 0,
 						"height": 0,
-						"originX": 0,
-						"originY": 0,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,
