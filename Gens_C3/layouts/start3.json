@@ -211,6 +211,11 @@
 							"properties": {
 								"enabled": true
 							}
+						},
+						"Прикрепить": {
+							"properties": {
+								"destroy": false
+							}
 						}
 					},
 					"world": {

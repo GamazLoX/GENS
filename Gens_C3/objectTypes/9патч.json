@@ -9,6 +9,11 @@
 			"behaviorId": "Tween",
 			"name": "Твинанимация",
 			"sid": 130711281577399
+		},
+		{
+			"behaviorId": "Pin",
+			"name": "Прикрепить",
+			"sid": 312148885842837
 		}
 	],
 	"effectTypes": [],

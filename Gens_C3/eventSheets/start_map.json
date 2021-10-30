@@ -2,6 +2,10 @@
 	"name": "start_map",
 	"events": [
 		{
+			"eventType": "include",
+			"includeSheet": "dialog"
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -11,6 +15,36 @@
 				}
 			],
 			"actions": [
+				{
+					"id": "pin-to-object-properties",
+					"objectClass": "Спрайт4",
+					"sid": 492269983843851,
+					"behaviorType": "Прикрепить",
+					"parameters": {
+						"pin-to": "9патч",
+						"x": true,
+						"y": true,
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": true
+					}
+				},
+				{
+					"id": "pin-to-object-properties",
+					"objectClass": "dialog",
+					"sid": 170091716252959,
+					"behaviorType": "Прикрепить",
+					"parameters": {
+						"pin-to": "9патч",
+						"x": true,
+						"y": true,
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": true
+					}
+				},
 				{
 					"id": "wait",
 					"objectClass": "System",
@@ -278,6 +312,32 @@
 						"loop": "no",
 						"ping-pong": "no"
 					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 377371495510357,
+					"parameters": {
+						"seconds": "3"
+					}
+				},
+				{
+					"callFunction": "TypeText",
+					"sid": 540843153073835,
+					"parameters": [
+						"\"Ей...\"",
+						"0.1",
+						"2",
+						"0"
+					]
+				},
+				{
+					"id": "wait-for-signal",
+					"objectClass": "System",
+					"sid": 330007818567211,
+					"parameters": {
+						"tag": "\"go\""
+					}
 				}
 			],
 			"sid": 547679044200277
@@ -291,38 +351,7 @@
 					"sid": 552684175181295
 				}
 			],
-			"actions": [
-				{
-					"id": "pin-to-object-properties",
-					"objectClass": "Спрайт4",
-					"sid": 221828809765891,
-					"behaviorType": "Прикрепить",
-					"parameters": {
-						"pin-to": "9патч",
-						"x": true,
-						"y": true,
-						"angle": true,
-						"width-type": "no",
-						"height-type": "no",
-						"z": false
-					}
-				},
-				{
-					"id": "pin-to-object-properties",
-					"objectClass": "dialog",
-					"sid": 785328453030863,
-					"behaviorType": "Прикрепить",
-					"parameters": {
-						"pin-to": "9патч",
-						"x": true,
-						"y": true,
-						"angle": true,
-						"width-type": "no",
-						"height-type": "no",
-						"z": false
-					}
-				}
-			],
+			"actions": [],
 			"sid": 911791621765534
 		}
 	],

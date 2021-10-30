@@ -11752,7 +11752,7 @@
 					},
 					"world": {
 						"x": 256,
-						"y": -448,
+						"y": -464,
 						"width": 128,
 						"height": 112,
 						"originX": 0,
@@ -12916,6 +12916,11 @@
 						"Твинанимация": {
 							"properties": {
 								"enabled": true
+							}
+						},
+						"Прикрепить": {
+							"properties": {
+								"destroy": false
 							}
 						}
 					},

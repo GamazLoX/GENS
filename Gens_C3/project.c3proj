@@ -88,16 +88,16 @@
 		},
 		{
 			"type": "behavior",
-			"id": "Bullet",
-			"name": "Пуля",
+			"id": "Pin",
+			"name": "Прикрепить",
 			"author": "Scirra",
 			"version": "r269",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
-			"id": "Pin",
-			"name": "Прикрепить",
+			"id": "Bullet",
+			"name": "Пуля",
 			"author": "Scirra",
 			"version": "r269",
 			"bundled": false
