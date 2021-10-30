@@ -348,11 +348,11 @@
 								{
 									"id": "play",
 									"objectClass": "Audio",
-									"sid": 111470200733321,
+									"sid": 201716807168326,
 									"parameters": {
 										"audio-file": "text2",
 										"loop": "not-looping",
-										"volume": "0",
+										"volume": "-15",
 										"tag-optional": "\"s2\""
 									}
 								}
@@ -423,9 +423,18 @@
 					}
 				},
 				{
+					"id": "compare-y",
+					"objectClass": "9патч",
+					"sid": 694642717048677,
+					"parameters": {
+						"comparison": 0,
+						"y-co-ordinate": "368"
+					}
+				},
+				{
 					"id": "compare-eventvar",
 					"objectClass": "System",
-					"sid": 707695964487530,
+					"sid": 146934559333972,
 					"parameters": {
 						"variable": "lol",
 						"comparison": 0,

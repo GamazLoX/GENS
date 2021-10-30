@@ -37,10 +37,10 @@
 						}
 					},
 					"world": {
-						"x": 320,
-						"y": 160,
-						"width": 0,
-						"height": 0,
+						"x": -96,
+						"y": 272,
+						"width": 32,
+						"height": 32,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -400,6 +400,67 @@
 				}
 			],
 			"sid": 115142095703147,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				1,
+				1,
+				1,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		},
+		{
+			"name": "ef2",
+			"overriden": 0,
+			"instances": [
+				{
+					"type": "Спрайт27",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 478,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": -96,
+						"y": 320,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 141214803755384,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"color": [

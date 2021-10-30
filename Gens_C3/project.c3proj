@@ -212,7 +212,8 @@
 			"3DФигуры5",
 			"Текст",
 			"Спрайт25",
-			"Спрайт26"
+			"Спрайт26",
+			"Спрайт27"
 		],
 		"subfolders": [
 			{
@@ -704,6 +705,36 @@
 					"name": "tragicheskaya_muzyka_-_svechi_(Gybka.com).webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 785376413607880
+				},
+				{
+					"name": "stuk_serdca_-_stuk_serdca_-_bystryy.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 757292261283966
+				},
+				{
+					"name": "stuk_serdca_-_zvuk_serdcebieniya.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 896016104846875
+				},
+				{
+					"name": "sdasd.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 948630407429229
+				},
+				{
+					"name": "sadsa.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 547089189553770
+				},
+				{
+					"name": "sdgfsdgdsg.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 948472305321430
+				},
+				{
+					"name": "no.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 885602641849436
 				}
 			],
 			"subfolders": [
