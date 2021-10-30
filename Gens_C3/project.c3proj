@@ -56,16 +56,16 @@
 		},
 		{
 			"type": "plugin",
-			"id": "Camera3D",
-			"name": "3D камера",
+			"id": "video",
+			"name": "Видео",
 			"author": "Scirra",
 			"version": "r269",
 			"bundled": false
 		},
 		{
 			"type": "plugin",
-			"id": "video",
-			"name": "Видео",
+			"id": "Camera3D",
+			"name": "3D камера",
 			"author": "Scirra",
 			"version": "r269",
 			"bundled": false
@@ -177,44 +177,7 @@
 	],
 	"uniqueId": "3319mv9k7e5",
 	"objectTypes": {
-		"items": [
-			"player",
-			"Спрайт",
-			"Спрайт2",
-			"a1",
-			"g1",
-			"a",
-			"map",
-			"treeanimation",
-			"TextSample",
-			"Спрайт3",
-			"Спрайт4",
-			"Спрайт5",
-			"a2",
-			"Названия",
-			"treeanimation2",
-			"Спрайт8",
-			"Спрайт11",
-			"Спрайт12",
-			"Спрайт13",
-			"Спрайт14",
-			"Спрайт15",
-			"Видео",
-			"elevatorscrips",
-			"elevatorscrips2",
-			"monster1",
-			"3DФигуры",
-			"3DФигуры2",
-			"Спрайт23",
-			"3DФигуры3",
-			"Спрайт24",
-			"3DФигуры4",
-			"3DФигуры5",
-			"Текст",
-			"Спрайт25",
-			"Спрайт26",
-			"Спрайт27"
-		],
+		"items": [],
 		"subfolders": [
 			{
 				"items": [
@@ -224,7 +187,7 @@
 					"rub"
 				],
 				"subfolders": [],
-				"name": "ui"
+				"name": "_ui"
 			},
 			{
 				"items": [
@@ -242,19 +205,21 @@
 				"items": [
 					"9патч",
 					"9патч2",
-					"dialog"
+					"dialog",
+					"Спрайт4"
 				],
 				"subfolders": [],
-				"name": "dialog"
+				"name": "_dialog"
 			},
 			{
 				"items": [
 					"Audio",
 					"Keyboard",
-					"Мышь"
+					"Мышь",
+					"Видео"
 				],
 				"subfolders": [],
-				"name": "system"
+				"name": "_system"
 			},
 			{
 				"items": [
@@ -284,7 +249,7 @@
 					"blocer4"
 				],
 				"subfolders": [],
-				"name": "blocer"
+				"name": "_blocer"
 			},
 			{
 				"items": [
@@ -395,10 +360,56 @@
 			{
 				"items": [
 					"3DCamera",
-					"pl1"
+					"pl1",
+					"3DФигуры",
+					"3DФигуры2",
+					"3DФигуры3",
+					"3DФигуры4",
+					"3DФигуры5"
 				],
 				"subfolders": [],
-				"name": "3d"
+				"name": "FPS"
+			},
+			{
+				"items": [
+					"player",
+					"g1",
+					"npc"
+				],
+				"subfolders": [],
+				"name": "npc"
+			},
+			{
+				"items": [
+					"a1",
+					"a2",
+					"elevatorscrips",
+					"elevatorscrips2",
+					"map",
+					"monster1",
+					"TextSample",
+					"treeanimation",
+					"treeanimation2",
+					"Названия",
+					"Спрайт",
+					"Спрайт11",
+					"Спрайт12",
+					"Спрайт13",
+					"Спрайт14",
+					"Спрайт15",
+					"Спрайт2",
+					"Спрайт23",
+					"Спрайт24",
+					"Спрайт25",
+					"Спрайт26",
+					"Спрайт27",
+					"Спрайт3",
+					"Спрайт5",
+					"Спрайт8",
+					"Текст"
+				],
+				"subfolders": [],
+				"name": "ot"
 			}
 		]
 	},
@@ -409,9 +420,7 @@
 		"subfolders": []
 	},
 	"layouts": {
-		"items": [
-			"story"
-		],
+		"items": [],
 		"subfolders": [
 			{
 				"items": [
@@ -420,8 +429,7 @@
 					"start3",
 					"start4",
 					"menu",
-					"FPS",
-					"start_map"
+					"FPS"
 				],
 				"subfolders": [],
 				"name": "start"
@@ -436,7 +444,8 @@
 			},
 			{
 				"items": [
-					"map1"
+					"map1",
+					"start_map"
 				],
 				"subfolders": [],
 				"name": "map"
@@ -447,14 +456,18 @@
 				],
 				"subfolders": [],
 				"name": "elevator"
+			},
+			{
+				"items": [
+					"story"
+				],
+				"subfolders": [],
+				"name": "story"
 			}
 		]
 	},
 	"eventSheets": {
-		"items": [
-			"rubs",
-			"Список событий 1"
-		],
+		"items": [],
 		"subfolders": [
 			{
 				"items": [
@@ -480,7 +493,8 @@
 					"blocer",
 					"dialog",
 					"keyb",
-					"rub"
+					"rub",
+					"rubs"
 				],
 				"subfolders": [],
 				"name": "system"
@@ -516,7 +530,8 @@
 			},
 			{
 				"items": [
-					"map1"
+					"map1",
+					"start_map"
 				],
 				"subfolders": [],
 				"name": "map"
@@ -532,10 +547,10 @@
 			},
 			{
 				"items": [
-					"start_map"
+					"FPS"
 				],
 				"subfolders": [],
-				"name": "start_map"
+				"name": "FPS"
 			}
 		]
 	},
