@@ -1,5 +1,5 @@
 {
-	"name": "start4",
+	"name": "start5",
 	"layers": [
 		{
 			"name": "Слой 0",
@@ -442,5 +442,5 @@
 	"vpX": 0.5,
 	"vpY": 0.5,
 	"projection": "perspective",
-	"eventSheet": "start4"
+	"eventSheet": "start5"
 }

@@ -427,9 +427,7 @@
 					"start1",
 					"start2",
 					"start3",
-					"start4",
-					"menu",
-					"FPS"
+					"start5"
 				],
 				"subfolders": [],
 				"name": "start"
@@ -463,6 +461,20 @@
 				],
 				"subfolders": [],
 				"name": "story"
+			},
+			{
+				"items": [
+					"FPS"
+				],
+				"subfolders": [],
+				"name": "FPS"
+			},
+			{
+				"items": [
+					"menu"
+				],
+				"subfolders": [],
+				"name": "menu"
 			}
 		]
 	},
@@ -523,7 +535,7 @@
 					"start",
 					"start2",
 					"start3",
-					"start4"
+					"start5"
 				],
 				"subfolders": [],
 				"name": "start"
