@@ -5,13 +5,13 @@
 	"isGlobal": false,
 	"instanceVariables": [
 		{
-			"name": "TypeSpeed",
+			"name": "Speed",
 			"type": "number",
 			"desc": "",
 			"sid": 667917268119578
 		},
 		{
-			"name": "TypeLen",
+			"name": "Pause",
 			"type": "number",
 			"desc": "",
 			"sid": 159666646774034
@@ -21,18 +21,6 @@
 			"type": "boolean",
 			"desc": "",
 			"sid": 329685273498946
-		},
-		{
-			"name": "d",
-			"type": "number",
-			"desc": "",
-			"sid": 415654979290018
-		},
-		{
-			"name": "TypingText",
-			"type": "string",
-			"desc": "",
-			"sid": 701427566472804
 		}
 	],
 	"behaviorTypes": [
@@ -43,7 +31,7 @@
 		},
 		{
 			"behaviorId": "skymen_Skymen_SpritefontDX",
-			"name": "АниматорТекста",
+			"name": "AnimatorText",
 			"sid": 761354746994795
 		}
 	],

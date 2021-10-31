@@ -2,19 +2,130 @@
 	"name": "dialog",
 	"events": [
 		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "speed",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "d_a2",
+							"sid": 300683398953385,
+							"parameters": {
+								"instance-variable": "Speed",
+								"comparison": 0,
+								"value": "0.02"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-tw-params",
+							"objectClass": "d_a2",
+							"sid": 624704385933352,
+							"behaviorType": "AnimatorText",
+							"parameters": {
+								"params": "\"duration type 0.02\""
+							}
+						}
+					],
+					"sid": 599437566288368
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "d_a2",
+							"sid": 646386454189852,
+							"parameters": {
+								"instance-variable": "Speed",
+								"comparison": 0,
+								"value": "0.1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-tw-params",
+							"objectClass": "d_a2",
+							"sid": 416785044089484,
+							"behaviorType": "AnimatorText",
+							"parameters": {
+								"params": "\"duration type 0.1\""
+							}
+						}
+					],
+					"sid": 991515438931760
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "d_a2",
+							"sid": 722757767148089,
+							"parameters": {
+								"instance-variable": "Speed",
+								"comparison": 0,
+								"value": "0.5"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-tw-params",
+							"objectClass": "d_a2",
+							"sid": 296461587019337,
+							"behaviorType": "AnimatorText",
+							"parameters": {
+								"params": "\"duration type 0.5\""
+							}
+						}
+					],
+					"sid": 271233004618569
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "d_a2",
+							"sid": 488706919262051,
+							"parameters": {
+								"instance-variable": "Speed",
+								"comparison": 0,
+								"value": "0.8"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-tw-params",
+							"objectClass": "d_a2",
+							"sid": 857969481800700,
+							"behaviorType": "AnimatorText",
+							"parameters": {
+								"params": "\"duration type 0.8\""
+							}
+						}
+					],
+					"sid": 825453561108608
+				}
+			],
+			"sid": 795091401866532
+		},
+		{
 			"functionName": "TypeText",
 			"functionDescription": "",
 			"functionCategory": "",
 			"functionReturnType": "none",
 			"functionIsAsync": false,
 			"functionParameters": [
-				{
-					"name": "Текст",
-					"type": "string",
-					"initialValue": "",
-					"comment": "",
-					"sid": 235608368273947
-				},
 				{
 					"name": "Скорость",
 					"type": "number",
@@ -23,18 +134,11 @@
 					"sid": 976390097216731
 				},
 				{
-					"name": "ДиалогПеременная",
-					"type": "number",
-					"initialValue": "0",
+					"name": "texttyping",
+					"type": "string",
+					"initialValue": "",
 					"comment": "",
-					"sid": 967420320747517
-				},
-				{
-					"name": "блокировка",
-					"type": "number",
-					"initialValue": "0",
-					"comment": "",
-					"sid": 711983536062172
+					"sid": 235608368273947
 				}
 			],
 			"eventType": "function-block",
@@ -43,37 +147,27 @@
 				{
 					"id": "set-instvar-value",
 					"objectClass": "d_a2",
-					"sid": 990872257378535,
+					"sid": 930814521801083,
 					"parameters": {
-						"instance-variable": "TypeLen",
-						"value": "1"
+						"instance-variable": "Speed",
+						"value": "Скорость"
 					}
 				},
 				{
-					"id": "set-instvar-value",
-					"objectClass": "d_a2",
-					"sid": 605082479999525,
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 438827867790765,
 					"parameters": {
-						"instance-variable": "d",
-						"value": "ДиалогПеременная"
-					}
-				},
-				{
-					"id": "set-instvar-value",
-					"objectClass": "d_a2",
-					"sid": 222638163248288,
-					"parameters": {
-						"instance-variable": "TypeSpeed",
-						"value": "\"duration\"&d_a2.TypeSpeed"
+						"seconds": "0"
 					}
 				},
 				{
 					"id": "typewrite",
 					"objectClass": "d_a2",
 					"sid": 930808898666446,
-					"behaviorType": "АниматорТекста",
+					"behaviorType": "AnimatorText",
 					"parameters": {
-						"text": "текст"
+						"text": "texttyping"
 					}
 				}
 			],
@@ -85,20 +179,41 @@
 				{
 					"id": "on-any-key-pressed",
 					"objectClass": "Key",
-					"sid": 224993771850583
+					"sid": 569494773237957
 				}
 			],
 			"actions": [
 				{
 					"id": "signal",
 					"objectClass": "System",
-					"sid": 663336609984922,
+					"sid": 689596872646379,
 					"parameters": {
 						"tag": "\"go\""
 					}
 				}
 			],
-			"sid": 189948187610778
+			"sid": 978989290516930
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 129688358432686
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "TypeText",
+					"sid": 822502930732602,
+					"parameters": [
+						"0.1",
+						"\"tset\""
+					]
+				}
+			],
+			"sid": 707616422315084
 		}
 	],
 	"sid": 364032950707502

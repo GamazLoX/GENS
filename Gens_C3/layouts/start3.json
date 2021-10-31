@@ -259,11 +259,9 @@
 					},
 					"uid": 18,
 					"instanceVariables": {
-						"TypeSpeed": 0.2,
-						"TypeLen": 1,
-						"IsTyping": false,
-						"d": 0,
-						"TypingText": ""
+						"Speed": 0,
+						"Pause": 0,
+						"IsTyping": false
 					},
 					"behaviors": {
 						"Прикрепить": {
@@ -271,7 +269,7 @@
 								"destroy": false
 							}
 						},
-						"АниматорТекста": {
+						"AnimatorText": {
 							"properties": {
 								"tw-params": "value offsety -10; duration type 0.1; duration fade 0.1",
 								"tw-easing": "linear",
@@ -398,11 +396,9 @@
 					},
 					"uid": 12,
 					"instanceVariables": {
-						"TypeSpeed": 0.2,
-						"TypeLen": 1,
-						"IsTyping": false,
-						"d": 0,
-						"TypingText": ""
+						"Speed": 0,
+						"Pause": 0,
+						"IsTyping": false
 					},
 					"behaviors": {
 						"Прикрепить": {
@@ -410,7 +406,7 @@
 								"destroy": false
 							}
 						},
-						"АниматорТекста": {
+						"AnimatorText": {
 							"properties": {
 								"tw-params": "value offsety -10; duration type 0.1; duration fade 0.1",
 								"tw-easing": "linear",
