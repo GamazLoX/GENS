@@ -27,6 +27,12 @@
 			"type": "number",
 			"desc": "",
 			"sid": 415654979290018
+		},
+		{
+			"name": "TypingText",
+			"type": "string",
+			"desc": "",
+			"sid": 701427566472804
 		}
 	],
 	"behaviorTypes": [
@@ -34,6 +40,11 @@
 			"behaviorId": "Pin",
 			"name": "Прикрепить",
 			"sid": 593385562241424
+		},
+		{
+			"behaviorId": "skymen_Skymen_SpritefontDX",
+			"name": "АниматорТекста",
+			"sid": 761354746994795
 		}
 	],
 	"effectTypes": []

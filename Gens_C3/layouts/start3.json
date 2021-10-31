@@ -262,12 +262,21 @@
 						"TypeSpeed": 0.2,
 						"TypeLen": 1,
 						"IsTyping": false,
-						"d": 0
+						"d": 0,
+						"TypingText": ""
 					},
 					"behaviors": {
 						"Прикрепить": {
 							"properties": {
 								"destroy": false
+							}
+						},
+						"АниматорТекста": {
+							"properties": {
+								"tw-params": "value offsety -10; duration type 0.1; duration fade 0.1",
+								"tw-easing": "linear",
+								"tw-custom-easing": "",
+								"enable-default-functions": true
 							}
 						}
 					},
@@ -392,12 +401,21 @@
 						"TypeSpeed": 0.2,
 						"TypeLen": 1,
 						"IsTyping": false,
-						"d": 0
+						"d": 0,
+						"TypingText": ""
 					},
 					"behaviors": {
 						"Прикрепить": {
 							"properties": {
 								"destroy": false
+							}
+						},
+						"АниматорТекста": {
+							"properties": {
+								"tw-params": "value offsety -10; duration type 0.1; duration fade 0.1",
+								"tw-easing": "linear",
+								"tw-custom-easing": "",
+								"enable-default-functions": true
 							}
 						}
 					},

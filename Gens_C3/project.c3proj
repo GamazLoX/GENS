@@ -104,6 +104,14 @@
 		},
 		{
 			"type": "behavior",
+			"id": "skymen_Skymen_SpritefontDX",
+			"name": "Аниматор Текста",
+			"author": "skymen",
+			"version": "1.0.3.5",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "Fade",
 			"name": "Угасание",
 			"author": "Scirra",
@@ -509,7 +517,7 @@
 					"rubs"
 				],
 				"subfolders": [],
-				"name": "system"
+				"name": "_system"
 			},
 			{
 				"items": [
