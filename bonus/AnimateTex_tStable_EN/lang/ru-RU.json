@@ -64,12 +64,12 @@
         },
         "aceCategories": {
           "general": "Общее",
-          "typewriter": "Печтаная машинка"
+          "typewriter": "Печатная машинка"
         },
         "conditions": {
           "is-typing": {
-            "list-name": "Если печатается",
-            "display-text": "{my}: печатается",
+            "list-name": "Если Текст печатается",
+            "display-text": "{my}: Текст печатается",
             "description": "Если текст печатается"
           },
           "on-letter-typed": {
@@ -93,7 +93,7 @@
             "description": "Если текст начал печтаться"
           },
           "on-tw-stop": {
-            "list-name": "Если тексто закончил печатаься",
+            "list-name": "Если тексты закончил печатаься",
             "display-text": "{my}: Текст закончил печтаться",
             "description": "Если текст закончил печататься"
           }
