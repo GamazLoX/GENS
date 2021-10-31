@@ -1269,7 +1269,7 @@
 					"objectClass": "Audio",
 					"sid": 308574644225103,
 					"parameters": {
-						"audio-file": "dr2",
+						"audio-file": "g1",
 						"loop": "not-looping",
 						"volume": "0",
 						"tag-optional": "\"s2\""

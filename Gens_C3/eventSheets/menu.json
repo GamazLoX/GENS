@@ -687,7 +687,7 @@
 					"objectClass": "Audio",
 					"sid": 489070347987965,
 					"parameters": {
-						"audio-file": "004",
+						"audio-file": "FPS004",
 						"loop": "not-looping",
 						"volume": "40",
 						"tag-optional": "\"\""

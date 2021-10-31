@@ -34,7 +34,7 @@
 					"objectClass": "Audio",
 					"sid": 968778754228052,
 					"parameters": {
-						"audio-file": "NKM-G-30-1585-2906851853-0-36523904-69-172-2-2898-46-0-1-101-1-161-34-202-35-504-87-308-571",
+						"audio-file": "elevator_mus4",
 						"loop": "looping",
 						"volume": "0",
 						"tag-optional": "\"s\""

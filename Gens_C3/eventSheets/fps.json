@@ -294,7 +294,7 @@
 					"objectClass": "Audio",
 					"sid": 851407845889272,
 					"parameters": {
-						"audio-file": "001",
+						"audio-file": "FPS007",
 						"loop": "not-looping",
 						"volume": "0",
 						"tag-optional": "\"\""
@@ -398,7 +398,7 @@
 					"objectClass": "Audio",
 					"sid": 446046918257050,
 					"parameters": {
-						"audio-file": "005",
+						"audio-file": "FPS005",
 						"loop": "not-looping",
 						"volume": "0",
 						"tag-optional": "\"\""
@@ -449,7 +449,7 @@
 					"objectClass": "Audio",
 					"sid": 946594128527754,
 					"parameters": {
-						"audio-file": "002",
+						"audio-file": "FPS002",
 						"loop": "not-looping",
 						"volume": "0",
 						"tag-optional": "\"\""
@@ -504,7 +504,7 @@
 					"objectClass": "Audio",
 					"sid": 649361524190888,
 					"parameters": {
-						"audio-file": "003",
+						"audio-file": "FPS003",
 						"loop": "not-looping",
 						"volume": "40",
 						"tag-optional": "\"\""
@@ -654,7 +654,7 @@
 					"objectClass": "Audio",
 					"sid": 978942221493475,
 					"parameters": {
-						"audio-file": "01854",
+						"audio-file": "FPS006",
 						"loop": "not-looping",
 						"volume": "40",
 						"tag-optional": "\"\""
