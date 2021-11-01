@@ -187,7 +187,8 @@
 	"objectTypes": {
 		"items": [
 			"Спрайт4",
-			"Текст2"
+			"Текст2",
+			"Спрайт6"
 		],
 		"subfolders": [
 			{
@@ -384,7 +385,8 @@
 				"items": [
 					"player",
 					"g1",
-					"npc"
+					"npc",
+					"player_pl"
 				],
 				"subfolders": [],
 				"name": "npc"
@@ -482,7 +484,8 @@
 			},
 			{
 				"items": [
-					"story"
+					"story",
+					"story2"
 				],
 				"subfolders": [],
 				"name": "story"
@@ -579,7 +582,8 @@
 			},
 			{
 				"items": [
-					"story"
+					"story",
+					"story2"
 				],
 				"subfolders": [],
 				"name": "story"

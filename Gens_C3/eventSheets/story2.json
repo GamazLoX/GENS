@@ -1,0 +1,234 @@
+{
+	"name": "story2",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 785565700401181
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 496277049739529,
+					"parameters": {
+						"audio-file": "ef",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 686006785959311,
+					"parameters": {
+						"object-to-create": "ef2",
+						"layer": "\"ef\"",
+						"x": "0",
+						"y": "0",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "set-fade-out-time",
+					"objectClass": "ef2",
+					"sid": 985945386846569,
+					"behaviorType": "Угасание",
+					"parameters": {
+						"fade-out-time": "0.8"
+					}
+				},
+				{
+					"id": "set-fade-in-time",
+					"objectClass": "ef2",
+					"sid": 265223951512602,
+					"behaviorType": "Угасание",
+					"parameters": {
+						"fade-in-time": "0"
+					}
+				},
+				{
+					"id": "restart-fade",
+					"objectClass": "ef2",
+					"sid": 903371320994178,
+					"behaviorType": "Угасание"
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 810273748425162,
+					"parameters": {
+						"seconds": "1"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "player_pl",
+					"sid": 885534680471172,
+					"behaviorType": "Физика",
+					"parameters": {
+						"mode": "enabled"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 560289902247192,
+					"parameters": {
+						"seconds": "8"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 724036963927486,
+					"parameters": {
+						"audio-file": "g1",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"s\""
+					}
+				},
+				{
+					"id": "set-playback-rate",
+					"objectClass": "Audio",
+					"sid": 253182577895272,
+					"parameters": {
+						"tag": "\"s\"",
+						"playback-rate": "0.2"
+					}
+				},
+				{
+					"id": "tween-one-property",
+					"objectClass": "g1",
+					"sid": 573276001718767,
+					"behaviorType": "Твинанимация",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "offsetX",
+						"end-value": "320",
+						"time": "5",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 324083803372690,
+					"parameters": {
+						"seconds": "5"
+					}
+				},
+				{
+					"id": "stop",
+					"objectClass": "Audio",
+					"sid": 265379413620001,
+					"parameters": {
+						"tag": "\"\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 540643771599393,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 151715838397872,
+					"parameters": {
+						"audio-file": "g1",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"s\""
+					}
+				},
+				{
+					"id": "set-playback-rate",
+					"objectClass": "Audio",
+					"sid": 176570110503114,
+					"parameters": {
+						"tag": "\"s\"",
+						"playback-rate": "0.5"
+					}
+				},
+				{
+					"id": "tween-one-property",
+					"objectClass": "g1",
+					"sid": 630424492502712,
+					"behaviorType": "Твинанимация",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "offsetY",
+						"end-value": "200",
+						"time": "1",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 255559727646850,
+					"parameters": {
+						"seconds": "1"
+					}
+				},
+				{
+					"id": "stop",
+					"objectClass": "Audio",
+					"sid": 186809209522922,
+					"parameters": {
+						"tag": "\"\""
+					}
+				}
+			],
+			"sid": 456589185851139
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "player_pl",
+					"sid": 668812717623773,
+					"parameters": {
+						"object": "Спрайт6"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "play-at-object",
+					"objectClass": "Audio",
+					"sid": 472097801091297,
+					"parameters": {
+						"audio-file": "bax",
+						"loop": "not-looping",
+						"volume": "0",
+						"object": "Спрайт6",
+						"inner-angle": "360",
+						"outer-angle": "360",
+						"outer-gain": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 522833071905564
+		}
+	],
+	"sid": 813200591784859
+}
