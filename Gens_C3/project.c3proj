@@ -185,7 +185,10 @@
 	],
 	"uniqueId": "3319mv9k7e5",
 	"objectTypes": {
-		"items": [],
+		"items": [
+			"Спрайт4",
+			"Текст2"
+		],
 		"subfolders": [
 			{
 				"items": [
@@ -471,6 +474,7 @@
 					"start1",
 					"start2",
 					"start3",
+					"start4",
 					"start5"
 				],
 				"subfolders": [],
@@ -540,8 +544,9 @@
 				"items": [
 					"start",
 					"start2",
-					"start3",
-					"start5"
+					"start4",
+					"start5",
+					"start3"
 				],
 				"subfolders": [],
 				"name": "start"
@@ -585,7 +590,13 @@
 			"subfolders": []
 		},
 		"sound": {
-			"items": [],
+			"items": [
+				{
+					"name": "mus_cymbal.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 208817115117831
+				}
+			],
 			"subfolders": [
 				{
 					"items": [

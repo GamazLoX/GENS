@@ -1,0 +1,15 @@
+{
+	"name": "Текст2",
+	"plugin-id": "Text",
+	"sid": 103048217840843,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "skymen_Skymen_SpritefontDX",
+			"name": "АниматорТекста",
+			"sid": 249128503687953
+		}
+	],
+	"effectTypes": []
+}

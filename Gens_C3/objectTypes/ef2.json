@@ -9,6 +9,11 @@
 			"behaviorId": "Fade",
 			"name": "Угасание",
 			"sid": 948689742087327
+		},
+		{
+			"behaviorId": "Tween",
+			"name": "Твинанимация",
+			"sid": 259014189444629
 		}
 	],
 	"effectTypes": [],

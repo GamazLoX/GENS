@@ -176,9 +176,12 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-any-key-pressed",
+					"id": "on-key-pressed",
 					"objectClass": "Key",
-					"sid": 569494773237957
+					"sid": 574118028557122,
+					"parameters": {
+						"key": 32
+					}
 				},
 				{
 					"id": "compare-instance-variable",
@@ -192,6 +195,15 @@
 				}
 			],
 			"actions": [
+				{
+					"id": "typewrite",
+					"objectClass": "d_a2",
+					"sid": 345034480587943,
+					"behaviorType": "AnimatorText",
+					"parameters": {
+						"text": "\"\""
+					}
+				},
 				{
 					"id": "wait-for-previous-actions",
 					"objectClass": "System",
@@ -475,18 +487,6 @@
 						}
 					],
 					"sid": 912508472854798
-				},
-				{
-					"eventType": "block",
-					"conditions": [],
-					"actions": [],
-					"sid": 231544332981165
-				},
-				{
-					"eventType": "block",
-					"conditions": [],
-					"actions": [],
-					"sid": 668559523661685
 				}
 			],
 			"sid": 340332877688071

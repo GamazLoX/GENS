@@ -55,6 +55,11 @@
 								"enabled": false,
 								"live-preview": false
 							}
+						},
+						"Твинанимация": {
+							"properties": {
+								"enabled": true
+							}
 						}
 					},
 					"world": {
@@ -728,6 +733,11 @@
 								"destroy": true,
 								"enabled": false,
 								"live-preview": false
+							}
+						},
+						"Твинанимация": {
+							"properties": {
+								"enabled": true
 							}
 						}
 					},
