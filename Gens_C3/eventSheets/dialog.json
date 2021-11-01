@@ -2,6 +2,85 @@
 	"name": "dialog",
 	"events": [
 		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 820731772358211
+				}
+			],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 225764261389188,
+					"parameters": {
+						"object-to-create": "d_a1",
+						"layer": "\"dialog\"",
+						"x": "0",
+						"y": "480",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 405489400820786,
+					"parameters": {
+						"object-to-create": "d_a2",
+						"layer": "\"dialog\"",
+						"x": "16",
+						"y": "496",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 172233106423772,
+					"parameters": {
+						"object-to-create": "d_a3",
+						"layer": "\"dialog\"",
+						"x": "528",
+						"y": "496",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "pin-to-object-properties",
+					"objectClass": "d_a2",
+					"sid": 210401352918103,
+					"behaviorType": "Прикрепить",
+					"parameters": {
+						"pin-to": "d_a1",
+						"x": true,
+						"y": true,
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				},
+				{
+					"id": "pin-to-object-properties",
+					"objectClass": "d_a3",
+					"sid": 827190987457857,
+					"behaviorType": "Прикрепить",
+					"parameters": {
+						"pin-to": "d_a1",
+						"x": true,
+						"y": true,
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				}
+			],
+			"sid": 599819862241646
+		},
+		{
 			"functionName": "TypeText",
 			"functionDescription": "",
 			"functionCategory": "",
@@ -79,7 +158,7 @@
 				{
 					"id": "wait-for-previous-actions",
 					"objectClass": "System",
-					"sid": 855492553328307
+					"sid": 702688932807371
 				},
 				{
 					"id": "typewrite",
@@ -113,15 +192,6 @@
 				}
 			],
 			"actions": [
-				{
-					"id": "typewrite",
-					"objectClass": "d_a2",
-					"sid": 631939773696032,
-					"behaviorType": "AnimatorText",
-					"parameters": {
-						"text": "\"\""
-					}
-				},
 				{
 					"id": "wait-for-previous-actions",
 					"objectClass": "System",
@@ -333,6 +403,93 @@
 				}
 			],
 			"sid": 478570096021417
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "pl2",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "d_a2",
+							"sid": 705972237781012,
+							"parameters": {
+								"instance-variable": "tween"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "tween-one-property",
+							"objectClass": "d_a1",
+							"sid": 670897850977485,
+							"behaviorType": "Твинанимация",
+							"parameters": {
+								"tags": "\"\"",
+								"property": "offsetY",
+								"end-value": "480",
+								"time": "0.1",
+								"ease": "default",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no"
+							}
+						}
+					],
+					"sid": 456551883173160
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "d_a2",
+							"sid": 308518758382402,
+							"parameters": {
+								"instance-variable": "tween"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "tween-one-property",
+							"objectClass": "d_a1",
+							"sid": 427153241625910,
+							"behaviorType": "Твинанимация",
+							"parameters": {
+								"tags": "\"\"",
+								"property": "offsetY",
+								"end-value": "368",
+								"time": "0.1",
+								"ease": "default",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no"
+							}
+						}
+					],
+					"sid": 912508472854798
+				},
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [],
+					"sid": 231544332981165
+				},
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [],
+					"sid": 668559523661685
+				}
+			],
+			"sid": 340332877688071
 		},
 		{
 			"eventType": "block",

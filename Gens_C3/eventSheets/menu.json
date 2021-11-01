@@ -165,12 +165,11 @@
 					}
 				},
 				{
-					"id": "set-layer-visible",
-					"objectClass": "System",
-					"sid": 864403905053381,
+					"id": "toggle-boolean-instvar",
+					"objectClass": "d_a2",
+					"sid": 565885914109974,
 					"parameters": {
-						"layer": "\"Dialog\"",
-						"visibility": "visible"
+						"instance-variable": "tween"
 					}
 				},
 				{
@@ -247,7 +246,7 @@
 				},
 				{
 					"callFunction": "TypeText",
-					"sid": 109059589763550,
+					"sid": 492292007899228,
 					"parameters": [
 						"0.1",
 						"0",
@@ -264,29 +263,27 @@
 					}
 				},
 				{
-					"id": "set-layer-visible",
-					"objectClass": "System",
-					"sid": 365498507928910,
+					"id": "toggle-boolean-instvar",
+					"objectClass": "d_a2",
+					"sid": 656977537244011,
 					"parameters": {
-						"layer": "\"Dialog\"",
-						"visibility": "invisible"
+						"instance-variable": "tween"
 					}
 				},
 				{
 					"id": "wait",
 					"objectClass": "System",
-					"sid": 809480124355898,
+					"sid": 401331762880743,
 					"parameters": {
-						"seconds": "0.2"
+						"seconds": "0.5"
 					}
 				},
 				{
-					"id": "set-layer-visible",
-					"objectClass": "System",
-					"sid": 175767499856315,
+					"id": "toggle-boolean-instvar",
+					"objectClass": "d_a2",
+					"sid": 140840130146594,
 					"parameters": {
-						"layer": "\"Dialog\"",
-						"visibility": "visible"
+						"instance-variable": "tween"
 					}
 				},
 				{
@@ -362,6 +359,30 @@
 					}
 				},
 				{
+					"id": "toggle-boolean-instvar",
+					"objectClass": "d_a2",
+					"sid": 630390900058269,
+					"parameters": {
+						"instance-variable": "tween"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 942773954945353,
+					"parameters": {
+						"seconds": "0.5"
+					}
+				},
+				{
+					"id": "toggle-boolean-instvar",
+					"objectClass": "d_a2",
+					"sid": 944487845052352,
+					"parameters": {
+						"instance-variable": "tween"
+					}
+				},
+				{
 					"callFunction": "TypeText",
 					"sid": 609926657128963,
 					"parameters": [
@@ -434,6 +455,30 @@
 					}
 				},
 				{
+					"id": "toggle-boolean-instvar",
+					"objectClass": "d_a2",
+					"sid": 990061401970720,
+					"parameters": {
+						"instance-variable": "tween"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 258231726498664,
+					"parameters": {
+						"seconds": "1"
+					}
+				},
+				{
+					"id": "toggle-boolean-instvar",
+					"objectClass": "d_a2",
+					"sid": 885915373430667,
+					"parameters": {
+						"instance-variable": "tween"
+					}
+				},
+				{
 					"callFunction": "TypeText",
 					"sid": 551030074484013,
 					"parameters": [
@@ -452,12 +497,11 @@
 					}
 				},
 				{
-					"id": "set-layer-visible",
-					"objectClass": "System",
-					"sid": 312436435707617,
+					"id": "toggle-boolean-instvar",
+					"objectClass": "d_a2",
+					"sid": 419300464754343,
 					"parameters": {
-						"layer": "\"Dialog\"",
-						"visibility": "invisible"
+						"instance-variable": "tween"
 					}
 				},
 				{

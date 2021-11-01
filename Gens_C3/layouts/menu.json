@@ -12850,98 +12850,6 @@
 			"overriden": 0,
 			"instances": [
 				{
-					"type": "a2",
-					"properties": {
-						"text": "Нажмите <<S>> чтобы пропустить",
-						"enable-bbcode": true,
-						"font": "Retro",
-						"size": 16,
-						"line-height": 0,
-						"bold": false,
-						"italic": false,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"horizontal-alignment": "right",
-						"vertical-alignment": "bottom",
-						"wrapping": "word",
-						"initially-visible": true,
-						"origin": "top-left"
-					},
-					"uid": 38,
-					"instanceVariables": {},
-					"behaviors": {
-						"Твинанимация": {
-							"properties": {
-								"enabled": true
-							}
-						}
-					},
-					"world": {
-						"x": 0,
-						"y": 448,
-						"width": 640,
-						"height": 32,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "d_a1",
-					"properties": {
-						"left-margin": 16,
-						"right-margin": 16,
-						"top-margin": 16,
-						"bottom-margin": 16,
-						"edges": "stretch",
-						"fill": "stretch",
-						"initially-visible": true,
-						"origin": "top-left",
-						"seams": "overlap"
-					},
-					"uid": 39,
-					"instanceVariables": {},
-					"behaviors": {
-						"Твинанимация": {
-							"properties": {
-								"enabled": true
-							}
-						},
-						"Прикрепить": {
-							"properties": {
-								"destroy": false
-							}
-						}
-					},
-					"world": {
-						"x": 0,
-						"y": 368,
-						"width": 640,
-						"height": 112,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "d_a2",
 					"properties": {
 						"text": "",
@@ -12968,7 +12876,8 @@
 						"Speed": 0,
 						"pl": 0,
 						"d": 0,
-						"IsTyping": false
+						"IsTyping": false,
+						"tween": false
 					},
 					"behaviors": {
 						"Прикрепить": {
@@ -13001,149 +12910,11 @@
 						"angle": 0,
 						"zElevation": 0
 					}
-				},
-				{
-					"type": "TextSample",
-					"properties": {
-						"text": "This is an example text",
-						"enable-bbcode": true,
-						"font": "Arial",
-						"size": 12,
-						"line-height": 0,
-						"bold": false,
-						"italic": false,
-						"color": [
-							0,
-							0,
-							0,
-							1
-						],
-						"horizontal-alignment": "left",
-						"vertical-alignment": "top",
-						"wrapping": "word",
-						"initially-visible": true,
-						"origin": "top-left"
-					},
-					"uid": 41,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 96,
-						"y": 512,
-						"width": 200,
-						"height": 30,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "d_a3",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "a3",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 42,
-					"instanceVariables": {},
-					"behaviors": {
-						"Прикрепить": {
-							"properties": {
-								"destroy": false
-							}
-						}
-					},
-					"world": {
-						"x": 528,
-						"y": 384,
-						"width": 96,
-						"height": 80,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "d_a2",
-					"properties": {
-						"text": "",
-						"enable-bbcode": true,
-						"font": "Arial",
-						"size": 12,
-						"line-height": 0,
-						"bold": true,
-						"italic": false,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"horizontal-alignment": "left",
-						"vertical-alignment": "top",
-						"wrapping": "word",
-						"initially-visible": true,
-						"origin": "top-left"
-					},
-					"uid": 43,
-					"instanceVariables": {
-						"Speed": 0,
-						"pl": 0,
-						"d": 0,
-						"IsTyping": false
-					},
-					"behaviors": {
-						"Прикрепить": {
-							"properties": {
-								"destroy": false
-							}
-						},
-						"AnimatorText": {
-							"properties": {
-								"tw-params": "",
-								"tw-easing": "linear",
-								"tw-custom-easing": "",
-								"enable-default-functions": true
-							}
-						}
-					},
-					"world": {
-						"x": 16,
-						"y": 384,
-						"width": 512,
-						"height": 80,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
 				}
 			],
 			"sid": 181104626913633,
 			"effectTypes": [],
-			"isInitiallyVisible": false,
+			"isInitiallyVisible": true,
 			"color": [
 				1,
 				1,

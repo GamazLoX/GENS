@@ -212,7 +212,8 @@
 						"Speed": 0,
 						"pl": 0,
 						"d": 0,
-						"IsTyping": false
+						"IsTyping": false,
+						"tween": false
 					},
 					"behaviors": {
 						"Прикрепить": {

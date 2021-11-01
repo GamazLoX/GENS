@@ -27,6 +27,12 @@
 			"type": "boolean",
 			"desc": "",
 			"sid": 329685273498946
+		},
+		{
+			"name": "tween",
+			"type": "boolean",
+			"desc": "",
+			"sid": 882418512515145
 		}
 	],
 	"behaviorTypes": [
