@@ -46,6 +46,10 @@
 			"includeSheet": "elevatorscrips"
 		},
 		{
+			"eventType": "include",
+			"includeSheet": "tree"
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{

@@ -35,7 +35,7 @@
 			"eventType": "variable",
 			"name": "menu_bl",
 			"type": "number",
-			"initialValue": "0",
+			"initialValue": "1",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,

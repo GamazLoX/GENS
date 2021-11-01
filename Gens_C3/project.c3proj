@@ -490,7 +490,9 @@
 		]
 	},
 	"eventSheets": {
-		"items": [],
+		"items": [
+			"tree"
+		],
 		"subfolders": [
 			{
 				"items": [

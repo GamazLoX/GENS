@@ -802,12 +802,12 @@
 				{
 					"id": "tween-one-property",
 					"objectClass": "g1",
-					"sid": 693707267603502,
+					"sid": 519065321058020,
 					"behaviorType": "Твинанимация",
 					"parameters": {
 						"tags": "\"s\"",
 						"property": "offsetX",
-						"end-value": "g1.X-200",
+						"end-value": "320",
 						"time": "2",
 						"ease": "default",
 						"destroy-on-complete": "no",
@@ -1039,12 +1039,12 @@
 				{
 					"id": "tween-one-property",
 					"objectClass": "g1",
-					"sid": 913101570712137,
+					"sid": 419599219602944,
 					"behaviorType": "Твинанимация",
 					"parameters": {
 						"tags": "\"s\"",
 						"property": "offsetX",
-						"end-value": "g1.X+200",
+						"end-value": "700",
 						"time": "5",
 						"ease": "default",
 						"destroy-on-complete": "no",

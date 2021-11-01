@@ -1,0 +1,50 @@
+{
+	"name": "tree",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-y",
+					"objectClass": "treeanimation",
+					"sid": 557558718034217,
+					"parameters": {
+						"comparison": 2,
+						"y-co-ordinate": "player.Y-20"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "move-to-bottom",
+					"objectClass": "treeanimation",
+					"sid": 690126155494720
+				}
+			],
+			"sid": 501652419650669
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-y",
+					"objectClass": "treeanimation",
+					"sid": 600655820098611,
+					"parameters": {
+						"comparison": 4,
+						"y-co-ordinate": "player.Y-20"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "move-to-top",
+					"objectClass": "treeanimation",
+					"sid": 520422692482443
+				}
+			],
+			"sid": 135591376319806
+		}
+	],
+	"sid": 313004257019232
+}
