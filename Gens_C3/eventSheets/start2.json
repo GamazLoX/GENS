@@ -68,9 +68,9 @@
 				{
 					"id": "go-to-layout",
 					"objectClass": "System",
-					"sid": 513393037820400,
+					"sid": 138667421277360,
 					"parameters": {
-						"layout": "start4"
+						"layout": "start3"
 					}
 				}
 			],
@@ -101,9 +101,9 @@
 				{
 					"id": "go-to-layout",
 					"objectClass": "System",
-					"sid": 717074640070728,
+					"sid": 226385509223831,
 					"parameters": {
-						"layout": "start4"
+						"layout": "start3"
 					}
 				}
 			],
