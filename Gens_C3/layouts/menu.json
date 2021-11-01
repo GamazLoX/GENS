@@ -12966,7 +12966,8 @@
 					"uid": 40,
 					"instanceVariables": {
 						"Speed": 0,
-						"Pause": 0,
+						"pl": 0,
+						"d": 0,
 						"IsTyping": false
 					},
 					"behaviors": {
@@ -13103,7 +13104,8 @@
 					"uid": 43,
 					"instanceVariables": {
 						"Speed": 0,
-						"Pause": 0,
+						"pl": 0,
+						"d": 0,
 						"IsTyping": false
 					},
 					"behaviors": {

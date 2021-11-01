@@ -11,7 +11,13 @@
 			"sid": 667917268119578
 		},
 		{
-			"name": "Pause",
+			"name": "pl",
+			"type": "number",
+			"desc": "",
+			"sid": 700642887233870
+		},
+		{
+			"name": "d",
 			"type": "number",
 			"desc": "",
 			"sid": 159666646774034
