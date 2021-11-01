@@ -88,11 +88,18 @@
 			"functionIsAsync": false,
 			"functionParameters": [
 				{
-					"name": "Скорость",
-					"type": "number",
-					"initialValue": "0",
+					"name": "Текст",
+					"type": "string",
+					"initialValue": "",
 					"comment": "",
-					"sid": 976390097216731
+					"sid": 235608368273947
+				},
+				{
+					"name": "Скорость",
+					"type": "string",
+					"initialValue": "\"0.02\"",
+					"comment": "",
+					"sid": 221150489263432
 				},
 				{
 					"name": "Герой",
@@ -107,13 +114,6 @@
 					"initialValue": "0",
 					"comment": "",
 					"sid": 971975203242996
-				},
-				{
-					"name": "texttyping",
-					"type": "string",
-					"initialValue": "",
-					"comment": "",
-					"sid": 235608368273947
 				}
 			],
 			"eventType": "function-block",
@@ -129,12 +129,12 @@
 					}
 				},
 				{
-					"id": "set-instvar-value",
+					"id": "set-tw-params",
 					"objectClass": "d_a2",
-					"sid": 930814521801083,
+					"sid": 491372004765299,
+					"behaviorType": "AnimatorText",
 					"parameters": {
-						"instance-variable": "Speed",
-						"value": "Скорость"
+						"params": "\"duration type \" & Скорость"
 					}
 				},
 				{
@@ -166,7 +166,7 @@
 					"sid": 930808898666446,
 					"behaviorType": "AnimatorText",
 					"parameters": {
-						"text": "texttyping"
+						"text": "Текст"
 					}
 				}
 			],
@@ -219,124 +219,6 @@
 				}
 			],
 			"sid": 978989290516930
-		},
-		{
-			"eventType": "group",
-			"disabled": false,
-			"title": "speed",
-			"description": "",
-			"isActiveOnStart": true,
-			"children": [
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-instance-variable",
-							"objectClass": "d_a2",
-							"sid": 699250946587932,
-							"parameters": {
-								"instance-variable": "Speed",
-								"comparison": 0,
-								"value": "0.02"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-tw-params",
-							"objectClass": "d_a2",
-							"sid": 136210498902656,
-							"behaviorType": "AnimatorText",
-							"parameters": {
-								"params": "\"duration type 0.02\""
-							}
-						}
-					],
-					"sid": 793835339031621
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-instance-variable",
-							"objectClass": "d_a2",
-							"sid": 824048394209189,
-							"parameters": {
-								"instance-variable": "Speed",
-								"comparison": 0,
-								"value": "0.1"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-tw-params",
-							"objectClass": "d_a2",
-							"sid": 241286969210672,
-							"behaviorType": "AnimatorText",
-							"parameters": {
-								"params": "\"duration type 0.1\""
-							}
-						}
-					],
-					"sid": 238681577340140
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-instance-variable",
-							"objectClass": "d_a2",
-							"sid": 360205984106696,
-							"parameters": {
-								"instance-variable": "Speed",
-								"comparison": 0,
-								"value": "0.5"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-tw-params",
-							"objectClass": "d_a2",
-							"sid": 732821989078392,
-							"behaviorType": "AnimatorText",
-							"parameters": {
-								"params": "\"duration type 0.5\""
-							}
-						}
-					],
-					"sid": 367798698213955
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-instance-variable",
-							"objectClass": "d_a2",
-							"sid": 658713962756945,
-							"parameters": {
-								"instance-variable": "Speed",
-								"comparison": 0,
-								"value": "0.8"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-tw-params",
-							"objectClass": "d_a2",
-							"sid": 919038307631100,
-							"behaviorType": "AnimatorText",
-							"parameters": {
-								"params": "\"duration type 0.8\""
-							}
-						}
-					],
-					"sid": 596382194806581
-				}
-			],
-			"sid": 645677944605144
 		},
 		{
 			"eventType": "group",
