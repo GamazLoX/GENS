@@ -61,6 +61,12 @@
 								"bullet": false,
 								"enabled": true
 							}
+						},
+						"Твердый": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
 						}
 					},
 					"world": {
@@ -104,6 +110,12 @@
 								"angular-damping": 0.01,
 								"bullet": false,
 								"enabled": true
+							}
+						},
+						"Твердый": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
 							}
 						}
 					},
@@ -149,6 +161,12 @@
 								"bullet": false,
 								"enabled": true
 							}
+						},
+						"Твердый": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
 						}
 					},
 					"world": {
@@ -192,6 +210,12 @@
 								"angular-damping": 0.01,
 								"bullet": false,
 								"enabled": true
+							}
+						},
+						"Твердый": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
 							}
 						}
 					},
@@ -237,6 +261,12 @@
 								"bullet": false,
 								"enabled": true
 							}
+						},
+						"Твердый": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
 						}
 					},
 					"world": {
@@ -280,6 +310,12 @@
 								"angular-damping": 0.01,
 								"bullet": false,
 								"enabled": true
+							}
+						},
+						"Твердый": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
 							}
 						}
 					},
@@ -325,6 +361,12 @@
 								"bullet": false,
 								"enabled": true
 							}
+						},
+						"Твердый": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
 						}
 					},
 					"world": {
@@ -368,6 +410,12 @@
 								"angular-damping": 0.01,
 								"bullet": false,
 								"enabled": true
+							}
+						},
+						"Твердый": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
 							}
 						}
 					},
@@ -413,6 +461,12 @@
 								"bullet": false,
 								"enabled": true
 							}
+						},
+						"Твердый": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
 						}
 					},
 					"world": {
@@ -456,6 +510,12 @@
 								"angular-damping": 0.01,
 								"bullet": false,
 								"enabled": true
+							}
+						},
+						"Твердый": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
 							}
 						}
 					},
@@ -501,6 +561,12 @@
 								"bullet": false,
 								"enabled": true
 							}
+						},
+						"Твердый": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
 						}
 					},
 					"world": {
@@ -544,6 +610,12 @@
 								"angular-damping": 0.01,
 								"bullet": false,
 								"enabled": true
+							}
+						},
+						"Твердый": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
 							}
 						}
 					},
@@ -589,6 +661,12 @@
 								"bullet": false,
 								"enabled": true
 							}
+						},
+						"Твердый": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
 						}
 					},
 					"world": {
@@ -632,6 +710,12 @@
 								"angular-damping": 0.01,
 								"bullet": false,
 								"enabled": true
+							}
+						},
+						"Твердый": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
 							}
 						}
 					},
@@ -677,6 +761,12 @@
 								"bullet": false,
 								"enabled": true
 							}
+						},
+						"Твердый": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
 						}
 					},
 					"world": {
@@ -720,6 +810,12 @@
 								"angular-damping": 0.01,
 								"bullet": false,
 								"enabled": true
+							}
+						},
+						"Твердый": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
 							}
 						}
 					},
@@ -765,6 +861,12 @@
 								"bullet": false,
 								"enabled": true
 							}
+						},
+						"Твердый": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
 						}
 					},
 					"world": {
@@ -808,6 +910,12 @@
 								"angular-damping": 0.01,
 								"bullet": false,
 								"enabled": true
+							}
+						},
+						"Твердый": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
 							}
 						}
 					},
@@ -853,6 +961,12 @@
 								"bullet": false,
 								"enabled": true
 							}
+						},
+						"Твердый": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
 						}
 					},
 					"world": {
@@ -896,6 +1010,12 @@
 								"angular-damping": 0.01,
 								"bullet": false,
 								"enabled": true
+							}
+						},
+						"Твердый": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
 							}
 						}
 					},
@@ -941,6 +1061,12 @@
 								"bullet": false,
 								"enabled": true
 							}
+						},
+						"Твердый": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
 						}
 					},
 					"world": {
@@ -984,6 +1110,12 @@
 								"angular-damping": 0.01,
 								"bullet": false,
 								"enabled": true
+							}
+						},
+						"Твердый": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
 							}
 						}
 					},
@@ -1029,6 +1161,12 @@
 								"bullet": false,
 								"enabled": true
 							}
+						},
+						"Твердый": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
 						}
 					},
 					"world": {
@@ -1072,6 +1210,12 @@
 								"angular-damping": 0.01,
 								"bullet": false,
 								"enabled": true
+							}
+						},
+						"Твердый": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
 							}
 						}
 					},
@@ -1117,6 +1261,12 @@
 								"bullet": false,
 								"enabled": true
 							}
+						},
+						"Твердый": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
 						}
 					},
 					"world": {
@@ -1160,6 +1310,12 @@
 								"angular-damping": 0.01,
 								"bullet": false,
 								"enabled": true
+							}
+						},
+						"Твердый": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
 							}
 						}
 					},
@@ -1205,6 +1361,12 @@
 								"bullet": false,
 								"enabled": true
 							}
+						},
+						"Твердый": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
 						}
 					},
 					"world": {
@@ -1248,6 +1410,12 @@
 								"angular-damping": 0.01,
 								"bullet": false,
 								"enabled": true
+							}
+						},
+						"Твердый": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
 							}
 						}
 					},
@@ -1293,6 +1461,12 @@
 								"bullet": false,
 								"enabled": true
 							}
+						},
+						"Твердый": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
 						}
 					},
 					"world": {
@@ -1336,6 +1510,12 @@
 								"angular-damping": 0.01,
 								"bullet": false,
 								"enabled": true
+							}
+						},
+						"Твердый": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
 							}
 						}
 					},
@@ -1381,6 +1561,12 @@
 								"bullet": false,
 								"enabled": true
 							}
+						},
+						"Твердый": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
 						}
 					},
 					"world": {
@@ -1424,6 +1610,12 @@
 								"angular-damping": 0.01,
 								"bullet": false,
 								"enabled": true
+							}
+						},
+						"Твердый": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
 							}
 						}
 					},
@@ -1469,6 +1661,12 @@
 								"bullet": false,
 								"enabled": true
 							}
+						},
+						"Твердый": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
 						}
 					},
 					"world": {
@@ -1512,6 +1710,12 @@
 								"angular-damping": 0.01,
 								"bullet": false,
 								"enabled": true
+							}
+						},
+						"Твердый": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
 							}
 						}
 					},
@@ -1557,6 +1761,12 @@
 								"bullet": false,
 								"enabled": true
 							}
+						},
+						"Твердый": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
 						}
 					},
 					"world": {
@@ -1600,6 +1810,12 @@
 								"angular-damping": 0.01,
 								"bullet": false,
 								"enabled": true
+							}
+						},
+						"Твердый": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
 							}
 						}
 					},
@@ -1645,6 +1861,12 @@
 								"bullet": false,
 								"enabled": true
 							}
+						},
+						"Твердый": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
 						}
 					},
 					"world": {
@@ -1688,6 +1910,12 @@
 								"angular-damping": 0.01,
 								"bullet": false,
 								"enabled": true
+							}
+						},
+						"Твердый": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
 							}
 						}
 					},
@@ -1733,6 +1961,12 @@
 								"bullet": false,
 								"enabled": true
 							}
+						},
+						"Твердый": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
 						}
 					},
 					"world": {
@@ -1776,6 +2010,12 @@
 								"angular-damping": 0.01,
 								"bullet": false,
 								"enabled": true
+							}
+						},
+						"Твердый": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
 							}
 						}
 					},
@@ -1845,7 +2085,7 @@
 								"max-fall-speed": 1000,
 								"double-jump": false,
 								"jump-sustain": 0,
-								"default-controls": true,
+								"default-controls": false,
 								"enabled": false
 							}
 						},
@@ -1868,24 +2108,24 @@
 								"directions": "dir-4",
 								"set-angle": "no",
 								"default-controls": true,
-								"enabled": true
+								"enabled": false
 							}
 						}
 					},
 					"world": {
-						"x": 160,
-						"y": -48,
+						"x": 256,
+						"y": -144,
 						"width": 80,
 						"height": 80,
-						"originX": 0,
-						"originY": 0,
+						"originX": 0.48484848484848486,
+						"originY": 0.5161290322580645,
 						"color": [
 							1,
 							1,
 							1,
 							1
 						],
-						"angle": 4.972345052249258,
+						"angle": 1.730880871766348,
 						"zElevation": 0
 					}
 				},
@@ -1956,7 +2196,7 @@
 						}
 					},
 					"world": {
-						"x": 736,
+						"x": -32,
 						"y": 32,
 						"width": 64,
 						"height": 64,
