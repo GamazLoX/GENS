@@ -34,6 +34,17 @@
 							"properties": {
 								"enabled": true
 							}
+						},
+						"8Направлений": {
+							"properties": {
+								"max-speed": 200,
+								"acceleration": 600,
+								"deceleration": 500,
+								"directions": "dir-8",
+								"set-angle": "no",
+								"default-controls": false,
+								"enabled": false
+							}
 						}
 					},
 					"world": {
@@ -206,6 +217,17 @@
 						"Твинанимация": {
 							"properties": {
 								"enabled": true
+							}
+						},
+						"8Направлений": {
+							"properties": {
+								"max-speed": 200,
+								"acceleration": 600,
+								"deceleration": 500,
+								"directions": "dir-8",
+								"set-angle": "no",
+								"default-controls": false,
+								"enabled": false
 							}
 						}
 					},

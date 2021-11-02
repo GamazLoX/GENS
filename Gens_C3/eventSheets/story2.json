@@ -6286,9 +6286,17 @@
 				{
 					"id": "wait",
 					"objectClass": "System",
-					"sid": 169064613694930,
+					"sid": 840049638195337,
 					"parameters": {
-						"seconds": "1"
+						"seconds": "5"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 429656479033982,
+					"parameters": {
+						"layout": "store3"
 					}
 				}
 			],

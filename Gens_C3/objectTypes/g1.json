@@ -21,6 +21,11 @@
 			"behaviorId": "Tween",
 			"name": "Твинанимация",
 			"sid": 264094933626577
+		},
+		{
+			"behaviorId": "EightDir",
+			"name": "8Направлений",
+			"sid": 535028451724724
 		}
 	],
 	"effectTypes": [],
