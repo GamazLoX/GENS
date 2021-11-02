@@ -6266,20 +6266,29 @@
 					}
 				},
 				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 917306297093249,
+					"parameters": {
+						"variable": "lol2",
+						"value": "0"
+					}
+				},
+				{
+					"id": "scroll-to-position",
+					"objectClass": "System",
+					"sid": 172762628579745,
+					"parameters": {
+						"x": "320",
+						"y": "240"
+					}
+				},
+				{
 					"id": "wait",
 					"objectClass": "System",
 					"sid": 169064613694930,
 					"parameters": {
 						"seconds": "1"
-					}
-				},
-				{
-					"id": "set-eventvar-value",
-					"objectClass": "System",
-					"sid": 460975243728117,
-					"parameters": {
-						"variable": "lol2",
-						"value": "0"
 					}
 				}
 			],
