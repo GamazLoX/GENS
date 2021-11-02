@@ -375,9 +375,25 @@
 					"eventType": "block",
 					"conditions": [
 						{
+							"id": "on-letter-typed",
+							"objectClass": "d_a2",
+							"sid": 421337358524165,
+							"behaviorType": "AnimatorText"
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 731075173145892,
+							"parameters": {
+								"first-value": "d_a2.AnimatorText.LastLetter",
+								"comparison": 1,
+								"second-value": "\" \""
+							}
+						},
+						{
 							"id": "compare-instance-variable",
 							"objectClass": "d_a2",
-							"sid": 944852778698133,
+							"sid": 421956515856074,
 							"parameters": {
 								"instance-variable": "pl",
 								"comparison": 0,
@@ -385,12 +401,49 @@
 							}
 						}
 					],
-					"actions": [],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 783882837281511,
+							"parameters": {
+								"audio-file": "text",
+								"loop": "not-looping",
+								"volume": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "d_a3",
+							"sid": 565119848483322,
+							"parameters": {
+								"animation": "\"a3\"",
+								"from": "beginning"
+							}
+						}
+					],
 					"sid": 774123878287309
 				},
 				{
 					"eventType": "block",
 					"conditions": [
+						{
+							"id": "on-letter-typed",
+							"objectClass": "d_a2",
+							"sid": 488457267631554,
+							"behaviorType": "AnimatorText"
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 217492436380309,
+							"parameters": {
+								"first-value": "d_a2.AnimatorText.LastLetter",
+								"comparison": 1,
+								"second-value": "\" \""
+							}
+						},
 						{
 							"id": "compare-instance-variable",
 							"objectClass": "d_a2",
@@ -402,12 +455,49 @@
 							}
 						}
 					],
-					"actions": [],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 132336527090008,
+							"parameters": {
+								"audio-file": "text3",
+								"loop": "not-looping",
+								"volume": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "d_a3",
+							"sid": 782045443417993,
+							"parameters": {
+								"animation": "\"a4\"",
+								"from": "beginning"
+							}
+						}
+					],
 					"sid": 475747784701554
 				},
 				{
 					"eventType": "block",
 					"conditions": [
+						{
+							"id": "on-letter-typed",
+							"objectClass": "d_a2",
+							"sid": 876705564761535,
+							"behaviorType": "AnimatorText"
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 286404284431619,
+							"parameters": {
+								"first-value": "d_a2.AnimatorText.LastLetter",
+								"comparison": 1,
+								"second-value": "\" \""
+							}
+						},
 						{
 							"id": "compare-instance-variable",
 							"objectClass": "d_a2",
@@ -425,6 +515,22 @@
 				{
 					"eventType": "block",
 					"conditions": [
+						{
+							"id": "on-letter-typed",
+							"objectClass": "d_a2",
+							"sid": 453403930734670,
+							"behaviorType": "AnimatorText"
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 725054688203211,
+							"parameters": {
+								"first-value": "d_a2.AnimatorText.LastLetter",
+								"comparison": 1,
+								"second-value": "\" \""
+							}
+						},
 						{
 							"id": "compare-instance-variable",
 							"objectClass": "d_a2",
@@ -519,37 +625,8 @@
 		},
 		{
 			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-letter-typed",
-					"objectClass": "d_a2",
-					"sid": 940449857208360,
-					"behaviorType": "AnimatorText"
-				},
-				{
-					"id": "compare-two-values",
-					"objectClass": "System",
-					"sid": 777845410276259,
-					"parameters": {
-						"first-value": "d_a2.AnimatorText.LastLetter",
-						"comparison": 1,
-						"second-value": "\" \""
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "play",
-					"objectClass": "Audio",
-					"sid": 553897087559447,
-					"parameters": {
-						"audio-file": "text",
-						"loop": "not-looping",
-						"volume": "0",
-						"tag-optional": "\"\""
-					}
-				}
-			],
+			"conditions": [],
+			"actions": [],
 			"sid": 767379033900251
 		}
 	],

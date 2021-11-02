@@ -2058,7 +2058,7 @@
 						},
 						"СледитьЗа": {
 							"properties": {
-								"enabled": true
+								"enabled": false
 							}
 						},
 						"Физика": {
@@ -2133,7 +2133,7 @@
 					"type": "g1",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Default",
+						"initial-animation": "a1",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -2181,7 +2181,7 @@
 					"type": "Спрайт7",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Animation 1",
+						"initial-animation": "a1",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -2192,6 +2192,20 @@
 						"Твинанимация": {
 							"properties": {
 								"enabled": true
+							}
+						},
+						"Синусоид": {
+							"properties": {
+								"movement": "vertical",
+								"wave": "sine",
+								"period": 1,
+								"period-random": 0,
+								"period-offset": 0,
+								"period-offset-random": 0,
+								"magnitude": 15,
+								"magnitude-random": 0,
+								"enabled": false,
+								"live-preview": false
 							}
 						}
 					},
@@ -2209,6 +2223,56 @@
 							1
 						],
 						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Спрайт9",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 109,
+					"instanceVariables": {},
+					"behaviors": {
+						"Физика": {
+							"properties": {
+								"immovable": false,
+								"collision-mask": "use-collision-polygon",
+								"prevent-rotation": false,
+								"density": 1,
+								"friction": 0.5,
+								"elasticity": 0.2,
+								"linear-damping": 0,
+								"angular-damping": 0.01,
+								"bullet": false,
+								"enabled": false
+							}
+						},
+						"Твердый": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"world": {
+						"x": 576,
+						"y": -144,
+						"width": 128,
+						"height": 96,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0.7672903521919818,
 						"zElevation": 0
 					}
 				}
@@ -2277,7 +2341,7 @@
 	"effectTypes": [],
 	"width": 640,
 	"height": 480,
-	"unboundedScrolling": false,
+	"unboundedScrolling": true,
 	"vpX": 0.5,
 	"vpY": 0.5,
 	"projection": "perspective",
