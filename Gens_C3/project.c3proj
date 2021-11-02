@@ -64,6 +64,14 @@
 		},
 		{
 			"type": "plugin",
+			"id": "Timeline",
+			"name": "Временная шкала",
+			"author": "Scirra",
+			"version": "r270",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "Camera3D",
 			"name": "3D камера",
 			"author": "Scirra",
@@ -229,7 +237,8 @@
 					"Audio",
 					"Key",
 					"mouse",
-					"video"
+					"video",
+					"timeline"
 				],
 				"subfolders": [],
 				"name": "_system"
@@ -487,7 +496,8 @@
 			{
 				"items": [
 					"story",
-					"story2"
+					"story2",
+					"store3"
 				],
 				"subfolders": [],
 				"name": "story"
@@ -585,7 +595,8 @@
 			{
 				"items": [
 					"story",
-					"story2"
+					"story2",
+					"story3"
 				],
 				"subfolders": [],
 				"name": "story"
@@ -603,6 +614,16 @@
 					"name": "mus_cymbal.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 208817115117831
+				},
+				{
+					"name": "TrickComposer_1.4_-_gr3m1cpyt3.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 402474417600578
+				},
+				{
+					"name": "TrickComposer_1.3_-_lz2x4.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 760381829586094
 				}
 			],
 			"subfolders": [
@@ -998,7 +1019,9 @@
 		}
 	},
 	"timelines": {
-		"items": [],
+		"items": [
+			"story3"
+		],
 		"subfolders": [
 			{
 				"items": [],
