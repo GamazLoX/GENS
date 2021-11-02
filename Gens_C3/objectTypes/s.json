@@ -9,6 +9,11 @@
 			"behaviorId": "Sin",
 			"name": "Синусоид",
 			"sid": 215133793875260
+		},
+		{
+			"behaviorId": "Tween",
+			"name": "Твинанимация",
+			"sid": 307557014600908
 		}
 	],
 	"effectTypes": [],

@@ -149,10 +149,10 @@
 				{
 					"id": "set-instvar-value",
 					"objectClass": "d_a2",
-					"sid": 970205109081337,
+					"sid": 184827778409383,
 					"parameters": {
 						"instance-variable": "d",
-						"value": "Герой"
+						"value": "Блокировка"
 					}
 				},
 				{
@@ -219,6 +219,150 @@
 				}
 			],
 			"sid": 978989290516930
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Key",
+					"sid": 550723882527383,
+					"parameters": {
+						"key": 87
+					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "d_a2",
+					"sid": 773732014271743,
+					"parameters": {
+						"instance-variable": "d",
+						"comparison": 0,
+						"value": "2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "typewrite",
+					"objectClass": "d_a2",
+					"sid": 258310876111761,
+					"behaviorType": "AnimatorText",
+					"parameters": {
+						"text": "\"\""
+					}
+				},
+				{
+					"id": "wait-for-previous-actions",
+					"objectClass": "System",
+					"sid": 988646730570176
+				},
+				{
+					"id": "signal",
+					"objectClass": "System",
+					"sid": 612151393273531,
+					"parameters": {
+						"tag": "\"go\""
+					}
+				}
+			],
+			"sid": 525911818937150
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Key",
+					"sid": 358792650248028,
+					"parameters": {
+						"key": 68
+					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "d_a2",
+					"sid": 782243611868012,
+					"parameters": {
+						"instance-variable": "d",
+						"comparison": 0,
+						"value": "3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "typewrite",
+					"objectClass": "d_a2",
+					"sid": 442937081910289,
+					"behaviorType": "AnimatorText",
+					"parameters": {
+						"text": "\"\""
+					}
+				},
+				{
+					"id": "wait-for-previous-actions",
+					"objectClass": "System",
+					"sid": 260799039931229
+				},
+				{
+					"id": "signal",
+					"objectClass": "System",
+					"sid": 187209784588939,
+					"parameters": {
+						"tag": "\"go\""
+					}
+				}
+			],
+			"sid": 755505321503759
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Key",
+					"sid": 810210083661136,
+					"parameters": {
+						"key": 65
+					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "d_a2",
+					"sid": 973153080145795,
+					"parameters": {
+						"instance-variable": "d",
+						"comparison": 0,
+						"value": "4"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "typewrite",
+					"objectClass": "d_a2",
+					"sid": 469982818349389,
+					"behaviorType": "AnimatorText",
+					"parameters": {
+						"text": "\"\""
+					}
+				},
+				{
+					"id": "wait-for-previous-actions",
+					"objectClass": "System",
+					"sid": 768349257721568
+				},
+				{
+					"id": "signal",
+					"objectClass": "System",
+					"sid": 719897089551478,
+					"parameters": {
+						"tag": "\"go\""
+					}
+				}
+			],
+			"sid": 156394279613142
 		},
 		{
 			"eventType": "group",

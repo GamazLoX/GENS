@@ -2,6 +2,10 @@
 	"name": "story2",
 	"events": [
 		{
+			"eventType": "include",
+			"includeSheet": "dialog"
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -228,6 +232,99 @@
 				}
 			],
 			"sid": 522833071905564
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-enabled",
+					"objectClass": "player_pl",
+					"sid": 720148041846915,
+					"behaviorType": "Платформер"
+				},
+				{
+					"id": "key-is-down",
+					"objectClass": "Key",
+					"sid": 752706579658734,
+					"parameters": {
+						"key": 87
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "player_pl",
+					"sid": 388525461030583,
+					"behaviorType": "Платформер",
+					"parameters": {
+						"control": "jump"
+					}
+				}
+			],
+			"sid": 517985045498773
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-enabled",
+					"objectClass": "player_pl",
+					"sid": 410764959556700,
+					"behaviorType": "Платформер"
+				},
+				{
+					"id": "key-is-down",
+					"objectClass": "Key",
+					"sid": 417385433515454,
+					"parameters": {
+						"key": 65
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "player_pl",
+					"sid": 559941472382545,
+					"behaviorType": "Платформер",
+					"parameters": {
+						"control": "left"
+					}
+				}
+			],
+			"sid": 981809539819893
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-enabled",
+					"objectClass": "player_pl",
+					"sid": 367869312542763,
+					"behaviorType": "Платформер"
+				},
+				{
+					"id": "key-is-down",
+					"objectClass": "Key",
+					"sid": 319329110284658,
+					"parameters": {
+						"key": 68
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "player_pl",
+					"sid": 898761179849435,
+					"behaviorType": "Платформер",
+					"parameters": {
+						"control": "right"
+					}
+				}
+			],
+			"sid": 685574505416034
 		}
 	],
 	"sid": 813200591784859

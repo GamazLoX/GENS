@@ -11781,6 +11781,11 @@
 								"enabled": true,
 								"live-preview": false
 							}
+						},
+						"Твинанимация": {
+							"properties": {
+								"enabled": true
+							}
 						}
 					},
 					"world": {
@@ -11824,6 +11829,11 @@
 								"magnitude-random": 0,
 								"enabled": true,
 								"live-preview": false
+							}
+						},
+						"Твинанимация": {
+							"properties": {
+								"enabled": true
 							}
 						}
 					},
@@ -11869,6 +11879,11 @@
 								"enabled": true,
 								"live-preview": false
 							}
+						},
+						"Твинанимация": {
+							"properties": {
+								"enabled": true
+							}
 						}
 					},
 					"world": {
@@ -11912,6 +11927,11 @@
 								"magnitude-random": 0,
 								"enabled": true,
 								"live-preview": false
+							}
+						},
+						"Твинанимация": {
+							"properties": {
+								"enabled": true
 							}
 						}
 					},

@@ -1922,7 +1922,42 @@
 					},
 					"world": {
 						"x": 672,
-						"y": 64,
+						"y": 32,
+						"width": 64,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Спрайт7",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 108,
+					"instanceVariables": {},
+					"behaviors": {
+						"Твинанимация": {
+							"properties": {
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 736,
+						"y": 32,
 						"width": 64,
 						"height": 64,
 						"originX": 0.5,
