@@ -173,7 +173,7 @@
 					"behaviors": {
 						"Пуля": {
 							"properties": {
-								"speed": 200,
+								"speed": 500,
 								"acceleration": 0,
 								"gravity": 0,
 								"bounce-off-solids": false,
