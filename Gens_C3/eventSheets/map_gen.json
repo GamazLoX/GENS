@@ -2,6 +2,10 @@
 	"name": "map_gen",
 	"events": [
 		{
+			"eventType": "include",
+			"includeSheet": "tree"
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -32,10 +36,10 @@
 				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 316043036571921,
+					"sid": 745785671364119,
 					"parameters": {
 						"object-to-create": "treeanimation",
-						"layer": "0",
+						"layer": "\"player\"",
 						"x": "random(1000)",
 						"y": "random(1000)",
 						"create-hierarchy": false
@@ -70,14 +74,6 @@
 					"sid": 620393129602579,
 					"parameters": {
 						"text": "\"Создаём деревья...\""
-					}
-				},
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 406493239558225,
-					"parameters": {
-						"seconds": "1"
 					}
 				},
 				{
@@ -164,14 +160,6 @@
 					}
 				},
 				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 695161419663224,
-					"parameters": {
-						"seconds": "1"
-					}
-				},
-				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
 					"sid": 967569839787818,
@@ -231,27 +219,196 @@
 						"instance-variable": "monster1",
 						"value": "1"
 					}
-				},
-				{
-					"id": "set-eventvar-value",
-					"objectClass": "System",
-					"sid": 306473478785694,
-					"parameters": {
-						"variable": "map_bl",
-						"value": "0"
-					}
-				},
-				{
-					"id": "set-eventvar-value",
-					"objectClass": "System",
-					"sid": 219183440736982,
-					"parameters": {
-						"variable": "map_bl",
-						"value": "0"
-					}
 				}
 			],
 			"sid": 919041386244298
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 775731012924240,
+					"parameters": {
+						"variable": "map_bl",
+						"comparison": 0,
+						"value": "3"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 395242179985180
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "map_loading",
+					"sid": 738408694786639,
+					"parameters": {
+						"text": "\"Генерируем монстров\""
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 320818507272035,
+					"parameters": {
+						"variable": "map_bl",
+						"value": "4"
+					}
+				}
+			],
+			"sid": 134481059412427
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 294017537357149,
+					"parameters": {
+						"variable": "map_bl",
+						"comparison": 0,
+						"value": "4"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 803351653044539
+				}
+			],
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 459632575387261,
+					"parameters": {
+						"seconds": "7"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "Спрайт16",
+					"sid": 107760630289159
+				}
+			],
+			"sid": 577832308737036
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 798914241283963,
+					"parameters": {
+						"variable": "map_bl",
+						"comparison": 0,
+						"value": "4"
+					}
+				},
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 468023448620371,
+					"parameters": {
+						"interval-seconds": "0.05"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "spawn-another-object",
+					"objectClass": "Спрайт16",
+					"sid": 460813116526145,
+					"parameters": {
+						"object": "Спрайт17",
+						"layer": "0",
+						"image-point": "0",
+						"create-hierarchy": false
+					}
+				}
+			],
+			"sid": 239582842660335
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 472484197595070,
+					"parameters": {
+						"variable": "map_bl",
+						"comparison": 0,
+						"value": "4"
+					}
+				},
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 935845526281342,
+					"parameters": {
+						"interval-seconds": "0.5"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-angle-of-motion",
+					"objectClass": "Спрайт16",
+					"sid": 636122181476345,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"angle": "Спрайт16.Angle+random(-5, 5)"
+					}
+				}
+			],
+			"sid": 392897877948455
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 687074204086079,
+					"parameters": {
+						"variable": "map_bl",
+						"comparison": 0,
+						"value": "4"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 723590510261960
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "map_loading",
+					"sid": 306415235716068,
+					"parameters": {
+						"text": "\"Генерируем дороги...\""
+					}
+				},
+				{
+					"id": "signal",
+					"objectClass": "System",
+					"sid": 702736424269589,
+					"parameters": {
+						"tag": "\"start\""
+					}
+				}
+			],
+			"sid": 543975365070634
 		}
 	],
 	"sid": 744938558512938
