@@ -1283,6 +1283,14 @@
 					"parameters": {
 						"seconds": "12"
 					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 648822291626900,
+					"parameters": {
+						"layout": "store4"
+					}
 				}
 			],
 			"sid": 599776964253358

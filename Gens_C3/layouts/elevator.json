@@ -238,6 +238,18 @@
 					"uid": 204,
 					"instanceVariables": {},
 					"behaviors": {},
+					"effects": {
+						"ДеформацияНаСцене": {
+							"parameters": {
+								"x-period": 60,
+								"y-period": 60,
+								"x-amplitude": 5,
+								"y-amplitude": 5,
+								"x-speed": 1,
+								"y-speed": 1
+							}
+						}
+					},
 					"world": {
 						"x": -12,
 						"y": -8,

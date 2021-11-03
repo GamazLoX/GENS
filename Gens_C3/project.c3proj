@@ -184,6 +184,14 @@
 		},
 		{
 			"type": "effect",
+			"id": "warplayout",
+			"name": "Деформация на сцене",
+			"author": "Scirra",
+			"version": "r270",
+			"bundled": false
+		},
+		{
+			"type": "effect",
 			"id": "pulse",
 			"name": "Пульс",
 			"author": "Danguafer/Silexars",
@@ -497,7 +505,8 @@
 				"items": [
 					"story",
 					"story2",
-					"store3"
+					"store3",
+					"store4"
 				],
 				"subfolders": [],
 				"name": "story"
@@ -596,7 +605,8 @@
 				"items": [
 					"story",
 					"story2",
-					"story3"
+					"story3",
+					"story4"
 				],
 				"subfolders": [],
 				"name": "story"
@@ -912,7 +922,13 @@
 			"subfolders": []
 		},
 		"video": {
-			"items": [],
+			"items": [
+				{
+					"name": "sss.mp4",
+					"type": "video/mp4",
+					"sid": 963313671551553
+				}
+			],
 			"subfolders": [
 				{
 					"items": [
