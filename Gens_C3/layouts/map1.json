@@ -140,6 +140,14 @@
 								"default-controls": true,
 								"enabled": true
 							}
+						},
+						"ПолеЗрения": {
+							"properties": {
+								"obstacles": "solids",
+								"range": 10000,
+								"cone-of-view": 360,
+								"use-collision-cells": true
+							}
 						}
 					},
 					"world": {
@@ -160,7 +168,7 @@
 					}
 				},
 				{
-					"type": "Спрайт16",
+					"type": "Спрайт18",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -168,8 +176,12 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 518,
-					"instanceVariables": {},
+					"uid": 524,
+					"instanceVariables": {
+						"rain1": 0,
+						"rain2": 0,
+						"rain3": 0
+					},
 					"behaviors": {
 						"Пуля": {
 							"properties": {
@@ -179,17 +191,17 @@
 								"bounce-off-solids": false,
 								"set-angle": true,
 								"step": false,
-								"enabled": true
+								"enabled": false
 							}
 						}
 					},
 					"world": {
-						"x": 16,
-						"y": 280,
+						"x": -80,
+						"y": -16,
 						"width": 16,
-						"height": 80,
-						"originX": 0.6875,
-						"originY": 0.78125,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,
@@ -201,7 +213,7 @@
 					}
 				},
 				{
-					"type": "Спрайт17",
+					"type": "Спрайт19",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -209,57 +221,16 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 519,
+					"uid": 525,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": -128,
-						"y": -88,
+						"x": -64,
+						"y": -48,
 						"width": 16,
-						"height": 80,
-						"originX": 0.6875,
-						"originY": 0.78125,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Спрайт16",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 520,
-					"instanceVariables": {},
-					"behaviors": {
-						"Пуля": {
-							"properties": {
-								"speed": 500,
-								"acceleration": 0,
-								"gravity": 0,
-								"bounce-off-solids": false,
-								"set-angle": true,
-								"step": false,
-								"enabled": true
-							}
-						}
-					},
-					"world": {
-						"x": 16,
-						"y": 384,
-						"width": 16,
-						"height": 80,
-						"originX": 0.6875,
-						"originY": 0.78125,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,

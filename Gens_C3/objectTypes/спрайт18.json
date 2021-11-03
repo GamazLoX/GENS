@@ -1,0 +1,62 @@
+{
+	"name": "Спрайт18",
+	"plugin-id": "Sprite",
+	"sid": 502721351881769,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "rain1",
+			"type": "number",
+			"desc": "",
+			"sid": 561848152444756
+		},
+		{
+			"name": "rain2",
+			"type": "number",
+			"desc": "",
+			"sid": 177174249098854
+		},
+		{
+			"name": "rain3",
+			"type": "number",
+			"desc": "",
+			"sid": 708371568158998
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Bullet",
+			"name": "Пуля",
+			"sid": 594990403128511
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3303255,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 831062932015780,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

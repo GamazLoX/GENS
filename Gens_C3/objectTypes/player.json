@@ -41,6 +41,11 @@
 			"behaviorId": "EightDir",
 			"name": "8Направлений",
 			"sid": 426997566100468
+		},
+		{
+			"behaviorId": "LOS",
+			"name": "ПолеЗрения",
+			"sid": 952269128846539
 		}
 	],
 	"effectTypes": [],

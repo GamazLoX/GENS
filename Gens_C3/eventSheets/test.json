@@ -1,0 +1,349 @@
+{
+	"name": "test",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "rain",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 679734431346280
+		},
+		{
+			"eventType": "variable",
+			"name": "rain2",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 718988754412773
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "has-los-to-object",
+					"objectClass": "player",
+					"sid": 147846921997540,
+					"behaviorType": "ПолеЗрения",
+					"parameters": {
+						"object": "Спрайт16",
+						"image-point": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Спрайт18",
+					"sid": 243275910997210
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Спрайт16",
+					"sid": 118466474309971,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "spawn-another-object",
+					"objectClass": "Спрайт16",
+					"sid": 523125253789985,
+					"parameters": {
+						"object": "Спрайт17",
+						"layer": "\"map\"",
+						"image-point": "0",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "set-angle-of-motion",
+					"objectClass": "Спрайт16",
+					"sid": 686654867097534,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"angle": "Спрайт16.Angle+random(-2, 2)"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 679868708739782,
+					"parameters": {
+						"variable": "rain",
+						"value": "floor(random(101))"
+					}
+				}
+			],
+			"sid": 682392817911935
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "has-los-to-object",
+					"objectClass": "player",
+					"sid": 858723655753057,
+					"behaviorType": "ПолеЗрения",
+					"parameters": {
+						"object": "Спрайт16",
+						"image-point": "0"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "Спрайт16",
+					"sid": 592323860474824,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"state": "disabled"
+					}
+				}
+			],
+			"sid": 973143574729353
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 910378923612243,
+					"parameters": {
+						"variable": "rain",
+						"comparison": 0,
+						"value": "100"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 830197901553711
+				}
+			],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 928447317540439,
+					"parameters": {
+						"object-to-create": "Спрайт18",
+						"layer": "\"rain\"",
+						"x": "Спрайт16.X",
+						"y": "Спрайт16.Y+50",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "set-angle",
+					"objectClass": "Спрайт18",
+					"sid": 136405397858985,
+					"parameters": {
+						"angle": "random(360)"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 946049912798062,
+					"parameters": {
+						"variable": "rain",
+						"value": "0"
+					}
+				}
+			],
+			"sid": 240496483600585
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "has-los-to-object",
+					"objectClass": "player",
+					"sid": 620134478470466,
+					"behaviorType": "ПолеЗрения",
+					"parameters": {
+						"object": "Спрайт18",
+						"image-point": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "spawn-another-object",
+					"objectClass": "Спрайт18",
+					"sid": 578506049505741,
+					"parameters": {
+						"object": "Спрайт19",
+						"layer": "\"rain\"",
+						"image-point": "0",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "set-angle-of-motion",
+					"objectClass": "Спрайт18",
+					"sid": 526128150661702,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"angle": "Спрайт18.Angle+random(-2, 2)"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Спрайт18",
+					"sid": 555555197352752,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 772352093560386,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Спрайт18",
+					"sid": 362063068793010,
+					"behaviorType": "Пуля",
+					"parameters": {
+						"state": "disabled"
+					}
+				}
+			],
+			"sid": 828234326908002
+		},
+		{
+			"eventType": "block",
+			"conditions": [],
+			"actions": [],
+			"sid": 555795313455624
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Спрайт17",
+					"sid": 490298969533779,
+					"parameters": {
+						"object": "Спрайт19"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Спрайт17",
+					"sid": 340284856497991,
+					"parameters": {
+						"animation": "\"a2\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 861056908069540
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-x",
+					"objectClass": "Спрайт17",
+					"sid": 747107884830598,
+					"parameters": {
+						"comparison": 3,
+						"x-co-ordinate": "player.X-1000"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Спрайт17",
+					"sid": 831387594701292
+				}
+			],
+			"sid": 590756195084109
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-x",
+					"objectClass": "Спрайт18",
+					"sid": 397526249180346,
+					"parameters": {
+						"comparison": 3,
+						"x-co-ordinate": "player.X-1000"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Спрайт18",
+					"sid": 161728702891398
+				}
+			],
+			"sid": 599004320762260
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-x",
+					"objectClass": "Спрайт19",
+					"sid": 555519867913406,
+					"parameters": {
+						"comparison": 3,
+						"x-co-ordinate": "player.X-1000"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Спрайт19",
+					"sid": 758709928023799
+				}
+			],
+			"sid": 812003679329548
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Key",
+					"sid": 257127416355455,
+					"parameters": {
+						"key": 82
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 491233810725430
+				}
+			],
+			"sid": 520193482363593
+		}
+	],
+	"sid": 577442641979503
+}

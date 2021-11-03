@@ -183,6 +183,14 @@
 			"bundled": false
 		},
 		{
+			"type": "behavior",
+			"id": "LOS",
+			"name": "Поле зрения",
+			"author": "Scirra",
+			"version": "r270",
+			"bundled": false
+		},
+		{
 			"type": "effect",
 			"id": "warplayout",
 			"name": "Деформация на сцене",
@@ -209,7 +217,9 @@
 			"Спрайт9",
 			"Спрайт10",
 			"Спрайт16",
-			"Спрайт17"
+			"Спрайт17",
+			"Спрайт18",
+			"Спрайт19"
 		],
 		"subfolders": [
 			{
@@ -499,7 +509,8 @@
 					"start2",
 					"start3",
 					"start4",
-					"start5"
+					"start5",
+					"test"
 				],
 				"subfolders": [],
 				"name": "start"
@@ -583,7 +594,8 @@
 			{
 				"items": [
 					"map1",
-					"start_map"
+					"start_map",
+					"test"
 				],
 				"subfolders": [],
 				"name": "map"
