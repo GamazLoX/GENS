@@ -1,4 +1,4 @@
-﻿![enter image description here](http://priscree.ru/img/c618fcaac5e895.png)
+﻿![enter image description here](https://i.mycdn.me/i?r=AzEPZsRbOZEKgBhR0XGMT1Rkc_13qxUfIzRNEy_M9sB47aaKTM5SRkZCeTgDn6uOyic&fn=sqr_288)
 
 Что это у нас сейчас тут вот тут вот происходит. А происходит то что **"Я"** будучи в нетр... Кхм... В трезвом видео думаю над тем как разморозить "**Холодильник"**. Да вы не ослышались... Разморозить именно "**Холодильник"**.
 
