@@ -348,14 +348,6 @@
 						"comparison": 0,
 						"value": "4"
 					}
-				},
-				{
-					"id": "every-x-seconds",
-					"objectClass": "System",
-					"sid": 935845526281342,
-					"parameters": {
-						"interval-seconds": "0.5"
-					}
 				}
 			],
 			"actions": [
