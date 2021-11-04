@@ -6,65 +6,6 @@
 			"overriden": 0,
 			"instances": [
 				{
-					"type": "g1",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "a1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 511,
-					"instanceVariables": {
-						"s": 0
-					},
-					"behaviors": {
-						"Пуля": {
-							"properties": {
-								"speed": 400,
-								"acceleration": 0,
-								"gravity": 0,
-								"bounce-off-solids": false,
-								"set-angle": true,
-								"step": false,
-								"enabled": false
-							}
-						},
-						"Твинанимация": {
-							"properties": {
-								"enabled": true
-							}
-						},
-						"8Направлений": {
-							"properties": {
-								"max-speed": 200,
-								"acceleration": 600,
-								"deceleration": 500,
-								"directions": "dir-8",
-								"set-angle": "no",
-								"default-controls": false,
-								"enabled": false
-							}
-						}
-					},
-					"world": {
-						"x": 320,
-						"y": 160,
-						"width": 0,
-						"height": 0,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "Спрайт10",
 					"properties": {
 						"initially-visible": true,
@@ -180,8 +121,8 @@
 						}
 					},
 					"world": {
-						"x": -64,
-						"y": 176,
+						"x": -48,
+						"y": 192,
 						"width": 64,
 						"height": 64,
 						"originX": 0.5,
@@ -261,7 +202,7 @@
 						}
 					},
 					"world": {
-						"x": 672,
+						"x": 688,
 						"y": 208,
 						"width": 64,
 						"height": 64,
