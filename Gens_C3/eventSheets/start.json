@@ -866,6 +866,14 @@
 					"sid": 368853409477276
 				},
 				{
+					"id": "append-text",
+					"objectClass": "a1",
+					"sid": 540334829805162,
+					"parameters": {
+						"text": "\"\n\n\"&projectname"
+					}
+				},
+				{
 					"id": "tween-one-property",
 					"objectClass": "a1",
 					"sid": 777666025678673,
@@ -1017,6 +1025,18 @@
 				}
 			],
 			"sid": 476979318496855
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 690649417144413
+				}
+			],
+			"actions": [],
+			"sid": 460281341585283
 		}
 	],
 	"sid": 378921878584294
