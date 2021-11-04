@@ -1083,9 +1083,9 @@
 				{
 					"id": "wait",
 					"objectClass": "System",
-					"sid": 897834767042342,
+					"sid": 991627623863088,
 					"parameters": {
-						"seconds": "3"
+						"seconds": "2"
 					}
 				},
 				{
@@ -1098,28 +1098,772 @@
 					}
 				},
 				{
-					"id": "wait",
+					"id": "set-group-active",
 					"objectClass": "System",
-					"sid": 126499533142750,
+					"sid": 704405415957223,
 					"parameters": {
-						"seconds": "1"
+						"group-name": "\"akt1\"",
+						"state": "toggle-active"
 					}
 				},
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 489109550084212,
+					"sid": 494613421287652,
 					"parameters": {
 						"variable": "story4_batte",
-						"value": "2"
+						"value": "choose(2, 3)"
 					}
 				},
 				{
 					"id": "wait-for-signal",
 					"objectClass": "System",
-					"sid": 339426877195402,
+					"sid": 423470452349940,
+					"parameters": {
+						"tag": "\"a1\""
+					}
+				},
+				{
+					"id": "set-active",
+					"objectClass": "Спрайт7",
+					"sid": 705211743612711,
+					"behaviorType": "Синусоид",
+					"parameters": {
+						"state": "inactive"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "g1",
+					"sid": 651926613550642,
+					"behaviorType": "8Направлений",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-paused",
+					"objectClass": "Audio",
+					"sid": 763932228485680,
+					"parameters": {
+						"tag": "\"a1\"",
+						"state": "pause"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 963389473060666,
+					"parameters": {
+						"audio-file": "no",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Спрайт7",
+					"sid": 958212031523226,
+					"parameters": {
+						"animation": "\"a2\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 877305684689703,
+					"parameters": {
+						"seconds": "1"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Спрайт7",
+					"sid": 499635537594202,
+					"parameters": {
+						"animation": "\"a1\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 300046949175073,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "toggle-boolean-instvar",
+					"objectClass": "d_a2",
+					"sid": 322637708259458,
+					"parameters": {
+						"instance-variable": "tween"
+					}
+				},
+				{
+					"callFunction": "TypeText",
+					"sid": 764830267074907,
+					"parameters": [
+						"\"АЙ!!!\"",
+						"\"0.5\"",
+						"1",
+						"1"
+					]
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 403229405388684,
+					"parameters": {
+						"seconds": "3"
+					}
+				},
+				{
+					"callFunction": "TypeText",
+					"sid": 289460999699209,
+					"parameters": [
+						"\"Это больно!!!\"",
+						"\"0.1\"",
+						"1",
+						"0"
+					]
+				},
+				{
+					"id": "wait-for-signal",
+					"objectClass": "System",
+					"sid": 643461431101012,
 					"parameters": {
 						"tag": "\"go\""
+					}
+				},
+				{
+					"id": "toggle-boolean-instvar",
+					"objectClass": "d_a2",
+					"sid": 188086770233766,
+					"parameters": {
+						"instance-variable": "tween"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 316119099864471,
+					"parameters": {
+						"seconds": "0.5"
+					}
+				},
+				{
+					"id": "toggle-boolean-instvar",
+					"objectClass": "d_a2",
+					"sid": 234482785363178,
+					"parameters": {
+						"instance-variable": "tween"
+					}
+				},
+				{
+					"callFunction": "TypeText",
+					"sid": 308839621459197,
+					"parameters": [
+						"\"Эй...\"",
+						"\"0.1\"",
+						"0",
+						"0"
+					]
+				},
+				{
+					"id": "wait-for-signal",
+					"objectClass": "System",
+					"sid": 383587928657249,
+					"parameters": {
+						"tag": "\"go\""
+					}
+				},
+				{
+					"callFunction": "TypeText",
+					"sid": 923409852830051,
+					"parameters": [
+						"\"Не делай глупостей...\"",
+						"\"0.1\"",
+						"0",
+						"0"
+					]
+				},
+				{
+					"id": "wait-for-signal",
+					"objectClass": "System",
+					"sid": 431563658784621,
+					"parameters": {
+						"tag": "\"go\""
+					}
+				},
+				{
+					"callFunction": "TypeText",
+					"sid": 391446674099149,
+					"parameters": [
+						"\"Успакойся и послушай меня!!!\"",
+						"\"0.1\"",
+						"0",
+						"0"
+					]
+				},
+				{
+					"id": "wait-for-signal",
+					"objectClass": "System",
+					"sid": 975225225247177,
+					"parameters": {
+						"tag": "\"go\""
+					}
+				},
+				{
+					"id": "toggle-boolean-instvar",
+					"objectClass": "d_a2",
+					"sid": 971737530411274,
+					"parameters": {
+						"instance-variable": "tween"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 597023631068402,
+					"parameters": {
+						"seconds": "0.5"
+					}
+				},
+				{
+					"id": "set-active",
+					"objectClass": "Спрайт7",
+					"sid": 547155655544048,
+					"behaviorType": "Синусоид",
+					"parameters": {
+						"state": "active"
+					}
+				},
+				{
+					"id": "set-paused",
+					"objectClass": "Audio",
+					"sid": 223107417906828,
+					"parameters": {
+						"tag": "\"a1\"",
+						"state": "resume"
+					}
+				},
+				{
+					"id": "toggle-boolean-instvar",
+					"objectClass": "d_a2",
+					"sid": 478075855386526,
+					"parameters": {
+						"instance-variable": "tween"
+					}
+				},
+				{
+					"callFunction": "TypeText",
+					"sid": 854893432263481,
+					"parameters": [
+						"\"Ни за что!\"",
+						"\"0.1\"",
+						"1",
+						"0"
+					]
+				},
+				{
+					"id": "wait-for-signal",
+					"objectClass": "System",
+					"sid": 667200255076798,
+					"parameters": {
+						"tag": "\"go\""
+					}
+				},
+				{
+					"id": "toggle-boolean-instvar",
+					"objectClass": "d_a2",
+					"sid": 969709802326771,
+					"parameters": {
+						"instance-variable": "tween"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "g1",
+					"sid": 764515774063386,
+					"behaviorType": "8Направлений",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 211706177289594,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 501856611569196,
+					"parameters": {
+						"variable": "story4_batte",
+						"value": "choose(2, 3)"
+					}
+				},
+				{
+					"id": "wait-for-signal",
+					"objectClass": "System",
+					"sid": 672856045130387,
+					"parameters": {
+						"tag": "\"a1\""
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 875850069899134,
+					"parameters": {
+						"audio-file": "no",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Спрайт7",
+					"sid": 807516862518038,
+					"parameters": {
+						"animation": "\"a2\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 490109229886136,
+					"parameters": {
+						"seconds": "1"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Спрайт7",
+					"sid": 903682533089220,
+					"parameters": {
+						"animation": "\"a1\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 625815534614612,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "toggle-boolean-instvar",
+					"objectClass": "d_a2",
+					"sid": 426495217936552,
+					"parameters": {
+						"instance-variable": "tween"
+					}
+				},
+				{
+					"callFunction": "TypeText",
+					"sid": 138388960977740,
+					"parameters": [
+						"\"АЙ!!!\"",
+						"\"0.1\"",
+						"1",
+						"0"
+					]
+				},
+				{
+					"id": "wait-for-signal",
+					"objectClass": "System",
+					"sid": 498493509178645,
+					"parameters": {
+						"tag": "\"go\""
+					}
+				},
+				{
+					"id": "toggle-boolean-instvar",
+					"objectClass": "d_a2",
+					"sid": 253938400434634,
+					"parameters": {
+						"instance-variable": "tween"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 221276294528317,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 612664969513013,
+					"parameters": {
+						"variable": "story4_batte",
+						"value": "choose(2, 3)"
+					}
+				},
+				{
+					"id": "wait-for-signal",
+					"objectClass": "System",
+					"sid": 888870043615059,
+					"parameters": {
+						"tag": "\"a1\""
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 852911953942210,
+					"parameters": {
+						"audio-file": "no",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Спрайт7",
+					"sid": 889194548814015,
+					"parameters": {
+						"animation": "\"a2\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 667589400219904,
+					"parameters": {
+						"seconds": "1"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Спрайт7",
+					"sid": 826311726470927,
+					"parameters": {
+						"animation": "\"a1\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 829366558832617,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "toggle-boolean-instvar",
+					"objectClass": "d_a2",
+					"sid": 112323181530526,
+					"parameters": {
+						"instance-variable": "tween"
+					}
+				},
+				{
+					"callFunction": "TypeText",
+					"sid": 662579783992737,
+					"parameters": [
+						"\"АЙЙЙЙ!!!\"",
+						"\"0.1\"",
+						"1",
+						"0"
+					]
+				},
+				{
+					"id": "wait-for-signal",
+					"objectClass": "System",
+					"sid": 918262595634520,
+					"parameters": {
+						"tag": "\"go\""
+					}
+				},
+				{
+					"callFunction": "TypeText",
+					"sid": 486563668272034,
+					"parameters": [
+						"\"Не трогайте меня!!!\"",
+						"\"0.1\"",
+						"1",
+						"0"
+					]
+				},
+				{
+					"id": "wait-for-signal",
+					"objectClass": "System",
+					"sid": 222438589410474,
+					"parameters": {
+						"tag": "\"go\""
+					}
+				},
+				{
+					"callFunction": "TypeText",
+					"sid": 272536164833017,
+					"parameters": [
+						"\"Вы все СЛОВОЧИ!!!\"",
+						"\"0.1\"",
+						"1",
+						"0"
+					]
+				},
+				{
+					"id": "wait-for-signal",
+					"objectClass": "System",
+					"sid": 857635824577158,
+					"parameters": {
+						"tag": "\"go\""
+					}
+				},
+				{
+					"id": "toggle-boolean-instvar",
+					"objectClass": "d_a2",
+					"sid": 833493897888660,
+					"parameters": {
+						"instance-variable": "tween"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 378965127435857,
+					"parameters": {
+						"variable": "story4_batte",
+						"value": "choose(2, 3)"
+					}
+				},
+				{
+					"id": "wait-for-signal",
+					"objectClass": "System",
+					"sid": 484960495114976,
+					"parameters": {
+						"tag": "\"a1\""
+					}
+				},
+				{
+					"id": "set-paused",
+					"objectClass": "Audio",
+					"sid": 538569484110297,
+					"parameters": {
+						"tag": "\"a1\"",
+						"state": "pause"
+					}
+				},
+				{
+					"id": "set-active",
+					"objectClass": "Спрайт7",
+					"sid": 886874875096483,
+					"behaviorType": "Синусоид",
+					"parameters": {
+						"state": "inactive"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "g1",
+					"sid": 535032573731274,
+					"behaviorType": "8Направлений",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 510100359754797,
+					"parameters": {
+						"variable": "lol2",
+						"value": "7"
+					}
+				},
+				{
+					"id": "set-time-scale",
+					"objectClass": "System",
+					"sid": 163287506642076,
+					"parameters": {
+						"time-scale": "0.5"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 433607708077885,
+					"parameters": {
+						"audio-file": "Single z_uk-padajuschij-lift-z_uk-potishe",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 605285090183707,
+					"parameters": {
+						"object-to-create": "ef2",
+						"layer": "\"ef\"",
+						"x": "0",
+						"y": "0",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "set-fade-out-time",
+					"objectClass": "ef2",
+					"sid": 695250403218865,
+					"behaviorType": "Угасание",
+					"parameters": {
+						"fade-out-time": "0.8"
+					}
+				},
+				{
+					"id": "set-fade-in-time",
+					"objectClass": "ef2",
+					"sid": 784044522471979,
+					"behaviorType": "Угасание",
+					"parameters": {
+						"fade-in-time": "0"
+					}
+				},
+				{
+					"id": "restart-fade",
+					"objectClass": "ef2",
+					"sid": 924589835350449,
+					"behaviorType": "Угасание"
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Спрайт7",
+					"sid": 336146893855168,
+					"parameters": {
+						"animation": "\"a2\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 327820209073819,
+					"parameters": {
+						"seconds": "3"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Спрайт7",
+					"sid": 726704435753796,
+					"parameters": {
+						"animation": "\"a1\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-time-scale",
+					"objectClass": "System",
+					"sid": 202397728694857,
+					"parameters": {
+						"time-scale": "1"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 242068577948607,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "toggle-boolean-instvar",
+					"objectClass": "d_a2",
+					"sid": 385350009658103,
+					"parameters": {
+						"instance-variable": "tween"
+					}
+				},
+				{
+					"callFunction": "TypeText",
+					"sid": 317050847016562,
+					"parameters": [
+						"\"...\"",
+						"\"0.5\"",
+						"1",
+						"0"
+					]
+				},
+				{
+					"id": "wait-for-signal",
+					"objectClass": "System",
+					"sid": 679279849703478,
+					"parameters": {
+						"tag": "\"go\""
+					}
+				},
+				{
+					"callFunction": "TypeText",
+					"sid": 577169344846951,
+					"parameters": [
+						"\"...\"",
+						"\"0.5\"",
+						"1",
+						"0"
+					]
+				},
+				{
+					"id": "wait-for-signal",
+					"objectClass": "System",
+					"sid": 561634673288824,
+					"parameters": {
+						"tag": "\"go\""
+					}
+				},
+				{
+					"callFunction": "TypeText",
+					"sid": 512077427391139,
+					"parameters": [
+						"\"...\"",
+						"\"0.5\"",
+						"1",
+						"0"
+					]
+				},
+				{
+					"id": "wait-for-signal",
+					"objectClass": "System",
+					"sid": 977236849322220,
+					"parameters": {
+						"tag": "\"go\""
+					}
+				},
+				{
+					"id": "toggle-boolean-instvar",
+					"objectClass": "d_a2",
+					"sid": 383038475800039,
+					"parameters": {
+						"instance-variable": "tween"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 401461743678254,
+					"parameters": {
+						"seconds": "1"
 					}
 				}
 			],
@@ -1427,529 +2171,787 @@
 			"sid": 948983234119308
 		},
 		{
-			"eventType": "block",
-			"conditions": [
+			"eventType": "group",
+			"disabled": false,
+			"title": "akt1",
+			"description": "",
+			"isActiveOnStart": false,
+			"children": [
 				{
-					"id": "compare-eventvar",
-					"objectClass": "System",
-					"sid": 824058507830971,
-					"parameters": {
-						"variable": "story4_batte",
-						"comparison": 0,
-						"value": "1"
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 628019789256430,
+							"parameters": {
+								"variable": "story4_batte",
+								"comparison": 0,
+								"value": "1"
+							}
+						},
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 632677730464955
+						}
+					],
+					"actions": [
+						{
+							"id": "set-active",
+							"objectClass": "Спрайт7",
+							"sid": 340220346871637,
+							"behaviorType": "Синусоид",
+							"parameters": {
+								"state": "active"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 217483827878823,
+							"parameters": {
+								"seconds": "4"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 665187002476115,
+							"parameters": {
+								"variable": "story4_batte",
+								"value": "choose(2, 3, 4, 4)"
+							}
+						}
+					],
+					"sid": 929362935428607
 				},
 				{
-					"id": "trigger-once-while-true",
-					"objectClass": "System",
-					"sid": 419074547093797
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 550699486854155,
+							"parameters": {
+								"variable": "story4_batte",
+								"comparison": 0,
+								"value": "2"
+							}
+						},
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 289558037838829
+						}
+					],
+					"actions": [
+						{
+							"id": "set-active",
+							"objectClass": "Спрайт7",
+							"sid": 423271570154506,
+							"behaviorType": "Синусоид",
+							"parameters": {
+								"state": "inactive"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 384560762330472,
+							"parameters": {
+								"seconds": "1"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 483383425645521,
+							"parameters": {
+								"audio-file": "ef",
+								"loop": "not-looping",
+								"volume": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "set-y",
+							"objectClass": "Спрайт7",
+							"sid": 366774029861979,
+							"parameters": {
+								"y": "random(480)"
+							}
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 644194431118521,
+							"parameters": {
+								"object-to-create": "ef2",
+								"layer": "\"ef\"",
+								"x": "0",
+								"y": "0",
+								"create-hierarchy": false
+							}
+						},
+						{
+							"id": "set-fade-out-time",
+							"objectClass": "ef2",
+							"sid": 761974152193375,
+							"behaviorType": "Угасание",
+							"parameters": {
+								"fade-out-time": "0.8"
+							}
+						},
+						{
+							"id": "set-fade-in-time",
+							"objectClass": "ef2",
+							"sid": 279107859039877,
+							"behaviorType": "Угасание",
+							"parameters": {
+								"fade-in-time": "0"
+							}
+						},
+						{
+							"id": "restart-fade",
+							"objectClass": "ef2",
+							"sid": 956267733754058,
+							"behaviorType": "Угасание"
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 542920156409200,
+							"parameters": {
+								"seconds": "1"
+							}
+						},
+						{
+							"id": "spawn-another-object",
+							"objectClass": "Спрайт7",
+							"sid": 452351999301607,
+							"parameters": {
+								"object": "Спрайт10",
+								"layer": "0",
+								"image-point": "1",
+								"create-hierarchy": false
+							}
+						},
+						{
+							"id": "set-angle-of-motion",
+							"objectClass": "Спрайт10",
+							"sid": 800159027416559,
+							"behaviorType": "Пуля",
+							"parameters": {
+								"angle": "180"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "Спрайт10",
+							"sid": 190356337998100,
+							"behaviorType": "Пуля",
+							"parameters": {
+								"state": "enabled"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 366583865000242,
+							"parameters": {
+								"seconds": "2"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 416381574170959,
+							"parameters": {
+								"audio-file": "ef",
+								"loop": "not-looping",
+								"volume": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "set-y",
+							"objectClass": "Спрайт7",
+							"sid": 965725089170640,
+							"parameters": {
+								"y": "208"
+							}
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 573511379490377,
+							"parameters": {
+								"object-to-create": "ef2",
+								"layer": "\"ef\"",
+								"x": "0",
+								"y": "0",
+								"create-hierarchy": false
+							}
+						},
+						{
+							"id": "set-fade-out-time",
+							"objectClass": "ef2",
+							"sid": 897481728800783,
+							"behaviorType": "Угасание",
+							"parameters": {
+								"fade-out-time": "0.8"
+							}
+						},
+						{
+							"id": "set-fade-in-time",
+							"objectClass": "ef2",
+							"sid": 164203713735547,
+							"behaviorType": "Угасание",
+							"parameters": {
+								"fade-in-time": "0"
+							}
+						},
+						{
+							"id": "restart-fade",
+							"objectClass": "ef2",
+							"sid": 988361142631287,
+							"behaviorType": "Угасание"
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 972108206608428,
+							"parameters": {
+								"variable": "story4_batte",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 582125836639225
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 807918959607655,
+							"parameters": {
+								"variable": "story4_batte",
+								"comparison": 0,
+								"value": "3"
+							}
+						},
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 764636962736109
+						}
+					],
+					"actions": [
+						{
+							"id": "set-active",
+							"objectClass": "Спрайт7",
+							"sid": 720088393723847,
+							"behaviorType": "Синусоид",
+							"parameters": {
+								"state": "inactive"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 502320457334096,
+							"parameters": {
+								"seconds": "1"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 976638759903737,
+							"parameters": {
+								"audio-file": "ef",
+								"loop": "not-looping",
+								"volume": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "set-y",
+							"objectClass": "Спрайт7",
+							"sid": 808717672541328,
+							"parameters": {
+								"y": "random(480)"
+							}
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 381120599050756,
+							"parameters": {
+								"object-to-create": "ef2",
+								"layer": "\"ef\"",
+								"x": "0",
+								"y": "0",
+								"create-hierarchy": false
+							}
+						},
+						{
+							"id": "set-fade-out-time",
+							"objectClass": "ef2",
+							"sid": 657440669408699,
+							"behaviorType": "Угасание",
+							"parameters": {
+								"fade-out-time": "0.8"
+							}
+						},
+						{
+							"id": "set-fade-in-time",
+							"objectClass": "ef2",
+							"sid": 163104954426913,
+							"behaviorType": "Угасание",
+							"parameters": {
+								"fade-in-time": "0"
+							}
+						},
+						{
+							"id": "restart-fade",
+							"objectClass": "ef2",
+							"sid": 785538369056424,
+							"behaviorType": "Угасание"
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 120503365385342,
+							"parameters": {
+								"seconds": "1"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 723898667946836,
+							"parameters": {
+								"audio-file": "ef",
+								"loop": "not-looping",
+								"volume": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "set-y",
+							"objectClass": "Спрайт7",
+							"sid": 994448848442252,
+							"parameters": {
+								"y": "random(480)"
+							}
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 647358130113857,
+							"parameters": {
+								"object-to-create": "ef2",
+								"layer": "\"ef\"",
+								"x": "0",
+								"y": "0",
+								"create-hierarchy": false
+							}
+						},
+						{
+							"id": "set-fade-out-time",
+							"objectClass": "ef2",
+							"sid": 381201893707722,
+							"behaviorType": "Угасание",
+							"parameters": {
+								"fade-out-time": "0.8"
+							}
+						},
+						{
+							"id": "set-fade-in-time",
+							"objectClass": "ef2",
+							"sid": 545487517184125,
+							"behaviorType": "Угасание",
+							"parameters": {
+								"fade-in-time": "0"
+							}
+						},
+						{
+							"id": "restart-fade",
+							"objectClass": "ef2",
+							"sid": 968341057822435,
+							"behaviorType": "Угасание"
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 560014507706785,
+							"parameters": {
+								"seconds": "1"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 626840498149828,
+							"parameters": {
+								"audio-file": "ef",
+								"loop": "not-looping",
+								"volume": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "set-y",
+							"objectClass": "Спрайт7",
+							"sid": 986669784775381,
+							"parameters": {
+								"y": "random(480)"
+							}
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 763292275591948,
+							"parameters": {
+								"object-to-create": "ef2",
+								"layer": "\"ef\"",
+								"x": "0",
+								"y": "0",
+								"create-hierarchy": false
+							}
+						},
+						{
+							"id": "set-fade-out-time",
+							"objectClass": "ef2",
+							"sid": 103438545801932,
+							"behaviorType": "Угасание",
+							"parameters": {
+								"fade-out-time": "0.8"
+							}
+						},
+						{
+							"id": "set-fade-in-time",
+							"objectClass": "ef2",
+							"sid": 340036036285225,
+							"behaviorType": "Угасание",
+							"parameters": {
+								"fade-in-time": "0"
+							}
+						},
+						{
+							"id": "restart-fade",
+							"objectClass": "ef2",
+							"sid": 441950411235449,
+							"behaviorType": "Угасание"
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 977789820026048,
+							"parameters": {
+								"seconds": "1"
+							}
+						},
+						{
+							"id": "spawn-another-object",
+							"objectClass": "Спрайт7",
+							"sid": 589161520317124,
+							"parameters": {
+								"object": "Спрайт10",
+								"layer": "0",
+								"image-point": "1",
+								"create-hierarchy": false
+							}
+						},
+						{
+							"id": "set-angle-of-motion",
+							"objectClass": "Спрайт10",
+							"sid": 845719211844010,
+							"behaviorType": "Пуля",
+							"parameters": {
+								"angle": "180"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "Спрайт10",
+							"sid": 720577918268586,
+							"behaviorType": "Пуля",
+							"parameters": {
+								"state": "enabled"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 693045173015592,
+							"parameters": {
+								"seconds": "2"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 638290859299210,
+							"parameters": {
+								"audio-file": "ef",
+								"loop": "not-looping",
+								"volume": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "set-y",
+							"objectClass": "Спрайт7",
+							"sid": 110536554161742,
+							"parameters": {
+								"y": "208"
+							}
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 755578917102249,
+							"parameters": {
+								"object-to-create": "ef2",
+								"layer": "\"ef\"",
+								"x": "0",
+								"y": "0",
+								"create-hierarchy": false
+							}
+						},
+						{
+							"id": "set-fade-out-time",
+							"objectClass": "ef2",
+							"sid": 205662707743095,
+							"behaviorType": "Угасание",
+							"parameters": {
+								"fade-out-time": "0.8"
+							}
+						},
+						{
+							"id": "set-fade-in-time",
+							"objectClass": "ef2",
+							"sid": 232318855819779,
+							"behaviorType": "Угасание",
+							"parameters": {
+								"fade-in-time": "0"
+							}
+						},
+						{
+							"id": "restart-fade",
+							"objectClass": "ef2",
+							"sid": 588507010127606,
+							"behaviorType": "Угасание"
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 137826905957218,
+							"parameters": {
+								"variable": "story4_batte",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 102108248313539
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 893300064009065,
+							"parameters": {
+								"variable": "story4_batte",
+								"comparison": 0,
+								"value": "4"
+							}
+						},
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 904300174942973
+						}
+					],
+					"actions": [
+						{
+							"id": "toggle-boolean-instvar",
+							"objectClass": "d_a2",
+							"sid": 239699604887237,
+							"parameters": {
+								"instance-variable": "tween"
+							}
+						},
+						{
+							"callFunction": "TypeText",
+							"sid": 379737122984830,
+							"parameters": [
+								"\"Давай проучим её. СТРЕЛЯЙ\"",
+								"\"0.1\"",
+								"0",
+								"12"
+							]
+						},
+						{
+							"id": "wait-for-signal",
+							"objectClass": "System",
+							"sid": 773943476786487,
+							"parameters": {
+								"tag": "\"bu\""
+							}
+						},
+						{
+							"id": "toggle-boolean-instvar",
+							"objectClass": "d_a2",
+							"sid": 373900117842199,
+							"parameters": {
+								"instance-variable": "tween"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 316902567432834,
+							"parameters": {
+								"variable": "story4_batte",
+								"value": "0"
+							}
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 372672332912447,
+							"parameters": {
+								"object-to-create": "Спрайт5",
+								"layer": "0",
+								"x": "g1.X+16",
+								"y": "g1.Y",
+								"create-hierarchy": false
+							}
+						},
+						{
+							"id": "set-speed",
+							"objectClass": "Спрайт5",
+							"sid": 423514349595805,
+							"behaviorType": "Пуля",
+							"parameters": {
+								"speed": "200"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "Спрайт5",
+							"sid": 383628140752648,
+							"behaviorType": "Пуля",
+							"parameters": {
+								"state": "enabled"
+							}
+						}
+					],
+					"sid": 806534207963900
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Key",
+							"sid": 944256018969892,
+							"parameters": {
+								"key": 90
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 240067017123354,
+							"parameters": {
+								"variable": "story4_batte",
+								"comparison": 0,
+								"value": "4"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "signal",
+							"objectClass": "System",
+							"sid": 694396313253124,
+							"parameters": {
+								"tag": "\"bu\""
+							}
+						}
+					],
+					"sid": 387408837083176
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-x",
+							"objectClass": "Спрайт5",
+							"sid": 851655314063569,
+							"parameters": {
+								"comparison": 5,
+								"x-co-ordinate": "800"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "Спрайт5",
+							"sid": 632582258420573
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 627743970790643,
+							"parameters": {
+								"variable": "story4_batte",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 491298411928060
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Спрайт5",
+							"sid": 619871224678725,
+							"parameters": {
+								"object": "Спрайт7"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "Спрайт5",
+							"sid": 368587323898296
+						},
+						{
+							"id": "signal",
+							"objectClass": "System",
+							"sid": 528094230899162,
+							"parameters": {
+								"tag": "\"a1\""
+							}
+						}
+					],
+					"sid": 650808156423145
 				}
 			],
-			"actions": [
-				{
-					"id": "set-active",
-					"objectClass": "Спрайт7",
-					"sid": 609817016683141,
-					"behaviorType": "Синусоид",
-					"parameters": {
-						"state": "active"
-					}
-				},
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 830210822635810,
-					"parameters": {
-						"seconds": "4"
-					}
-				},
-				{
-					"id": "set-active",
-					"objectClass": "Спрайт7",
-					"sid": 307222726213255,
-					"behaviorType": "Синусоид",
-					"parameters": {
-						"state": "inactive"
-					}
-				},
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 574810799317706,
-					"parameters": {
-						"seconds": "1"
-					}
-				},
-				{
-					"id": "set-eventvar-value",
-					"objectClass": "System",
-					"sid": 641183925637850,
-					"parameters": {
-						"variable": "story4_batte",
-						"value": "2"
-					}
-				}
-			],
-			"sid": 602687386246898
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-eventvar",
-					"objectClass": "System",
-					"sid": 313689193087642,
-					"parameters": {
-						"variable": "story4_batte",
-						"comparison": 0,
-						"value": "2"
-					}
-				},
-				{
-					"id": "trigger-once-while-true",
-					"objectClass": "System",
-					"sid": 181681436190954
-				}
-			],
-			"actions": [
-				{
-					"id": "play",
-					"objectClass": "Audio",
-					"sid": 964164608618372,
-					"parameters": {
-						"audio-file": "ef",
-						"loop": "not-looping",
-						"volume": "0",
-						"tag-optional": "\"\""
-					}
-				},
-				{
-					"id": "set-y",
-					"objectClass": "Спрайт7",
-					"sid": 430060023323592,
-					"parameters": {
-						"y": "random(480)"
-					}
-				},
-				{
-					"id": "create-object",
-					"objectClass": "System",
-					"sid": 709768929347666,
-					"parameters": {
-						"object-to-create": "ef2",
-						"layer": "\"ef\"",
-						"x": "0",
-						"y": "0",
-						"create-hierarchy": false
-					}
-				},
-				{
-					"id": "set-fade-out-time",
-					"objectClass": "ef2",
-					"sid": 232578692140138,
-					"behaviorType": "Угасание",
-					"parameters": {
-						"fade-out-time": "0.8"
-					}
-				},
-				{
-					"id": "set-fade-in-time",
-					"objectClass": "ef2",
-					"sid": 131516677133506,
-					"behaviorType": "Угасание",
-					"parameters": {
-						"fade-in-time": "0"
-					}
-				},
-				{
-					"id": "restart-fade",
-					"objectClass": "ef2",
-					"sid": 575822331398196,
-					"behaviorType": "Угасание"
-				},
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 245441939095878,
-					"parameters": {
-						"seconds": "1"
-					}
-				},
-				{
-					"id": "spawn-another-object",
-					"objectClass": "Спрайт7",
-					"sid": 909592821501209,
-					"parameters": {
-						"object": "Спрайт10",
-						"layer": "0",
-						"image-point": "1",
-						"create-hierarchy": false
-					}
-				},
-				{
-					"id": "set-angle-of-motion",
-					"objectClass": "Спрайт10",
-					"sid": 744771692870907,
-					"behaviorType": "Пуля",
-					"parameters": {
-						"angle": "180"
-					}
-				},
-				{
-					"id": "set-enabled",
-					"objectClass": "Спрайт10",
-					"sid": 147485717463699,
-					"behaviorType": "Пуля",
-					"parameters": {
-						"state": "enabled"
-					}
-				},
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 373419437999666,
-					"parameters": {
-						"seconds": "2"
-					}
-				},
-				{
-					"id": "play",
-					"objectClass": "Audio",
-					"sid": 491360027727220,
-					"parameters": {
-						"audio-file": "ef",
-						"loop": "not-looping",
-						"volume": "0",
-						"tag-optional": "\"\""
-					}
-				},
-				{
-					"id": "set-y",
-					"objectClass": "Спрайт7",
-					"sid": 270834415453326,
-					"parameters": {
-						"y": "208"
-					}
-				},
-				{
-					"id": "create-object",
-					"objectClass": "System",
-					"sid": 525675963668462,
-					"parameters": {
-						"object-to-create": "ef2",
-						"layer": "\"ef\"",
-						"x": "0",
-						"y": "0",
-						"create-hierarchy": false
-					}
-				},
-				{
-					"id": "set-fade-out-time",
-					"objectClass": "ef2",
-					"sid": 572621856546319,
-					"behaviorType": "Угасание",
-					"parameters": {
-						"fade-out-time": "0.8"
-					}
-				},
-				{
-					"id": "set-fade-in-time",
-					"objectClass": "ef2",
-					"sid": 777415628011691,
-					"behaviorType": "Угасание",
-					"parameters": {
-						"fade-in-time": "0"
-					}
-				},
-				{
-					"id": "restart-fade",
-					"objectClass": "ef2",
-					"sid": 557494507486059,
-					"behaviorType": "Угасание"
-				},
-				{
-					"id": "set-eventvar-value",
-					"objectClass": "System",
-					"sid": 403903795501244,
-					"parameters": {
-						"variable": "story4_batte",
-						"value": "1"
-					}
-				}
-			],
-			"sid": 121889840404385
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-eventvar",
-					"objectClass": "System",
-					"sid": 835334045601114,
-					"parameters": {
-						"variable": "story4_batte",
-						"comparison": 0,
-						"value": "3"
-					}
-				},
-				{
-					"id": "trigger-once-while-true",
-					"objectClass": "System",
-					"sid": 868958666428244
-				}
-			],
-			"actions": [
-				{
-					"id": "play",
-					"objectClass": "Audio",
-					"sid": 271539589825342,
-					"parameters": {
-						"audio-file": "ef",
-						"loop": "not-looping",
-						"volume": "0",
-						"tag-optional": "\"\""
-					}
-				},
-				{
-					"id": "set-x",
-					"objectClass": "Спрайт7",
-					"sid": 571730034251670,
-					"parameters": {
-						"x": "random(640)"
-					}
-				},
-				{
-					"id": "create-object",
-					"objectClass": "System",
-					"sid": 404750916141584,
-					"parameters": {
-						"object-to-create": "ef2",
-						"layer": "\"ef\"",
-						"x": "0",
-						"y": "0",
-						"create-hierarchy": false
-					}
-				},
-				{
-					"id": "set-fade-out-time",
-					"objectClass": "ef2",
-					"sid": 498611206859687,
-					"behaviorType": "Угасание",
-					"parameters": {
-						"fade-out-time": "0.8"
-					}
-				},
-				{
-					"id": "set-fade-in-time",
-					"objectClass": "ef2",
-					"sid": 794787835841877,
-					"behaviorType": "Угасание",
-					"parameters": {
-						"fade-in-time": "0"
-					}
-				},
-				{
-					"id": "restart-fade",
-					"objectClass": "ef2",
-					"sid": 166224628107405,
-					"behaviorType": "Угасание"
-				},
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 168757778654783,
-					"parameters": {
-						"seconds": "lol2"
-					}
-				},
-				{
-					"id": "play",
-					"objectClass": "Audio",
-					"sid": 192572988573010,
-					"parameters": {
-						"audio-file": "ef",
-						"loop": "not-looping",
-						"volume": "0",
-						"tag-optional": "\"\""
-					}
-				},
-				{
-					"id": "set-x",
-					"objectClass": "Спрайт7",
-					"sid": 756581478607177,
-					"parameters": {
-						"x": "random(640)"
-					}
-				},
-				{
-					"id": "create-object",
-					"objectClass": "System",
-					"sid": 752316021489620,
-					"parameters": {
-						"object-to-create": "ef2",
-						"layer": "\"ef\"",
-						"x": "0",
-						"y": "0",
-						"create-hierarchy": false
-					}
-				},
-				{
-					"id": "set-fade-out-time",
-					"objectClass": "ef2",
-					"sid": 285923502725046,
-					"behaviorType": "Угасание",
-					"parameters": {
-						"fade-out-time": "0.8"
-					}
-				},
-				{
-					"id": "set-fade-in-time",
-					"objectClass": "ef2",
-					"sid": 763055205542684,
-					"behaviorType": "Угасание",
-					"parameters": {
-						"fade-in-time": "0"
-					}
-				},
-				{
-					"id": "restart-fade",
-					"objectClass": "ef2",
-					"sid": 449004902227382,
-					"behaviorType": "Угасание"
-				},
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 750902057235651,
-					"parameters": {
-						"seconds": "lol2"
-					}
-				},
-				{
-					"id": "play",
-					"objectClass": "Audio",
-					"sid": 377271666230383,
-					"parameters": {
-						"audio-file": "ef",
-						"loop": "not-looping",
-						"volume": "0",
-						"tag-optional": "\"\""
-					}
-				},
-				{
-					"id": "set-x",
-					"objectClass": "Спрайт7",
-					"sid": 772189835061135,
-					"parameters": {
-						"x": "random(640)"
-					}
-				},
-				{
-					"id": "create-object",
-					"objectClass": "System",
-					"sid": 603344349669570,
-					"parameters": {
-						"object-to-create": "ef2",
-						"layer": "\"ef\"",
-						"x": "0",
-						"y": "0",
-						"create-hierarchy": false
-					}
-				},
-				{
-					"id": "set-fade-out-time",
-					"objectClass": "ef2",
-					"sid": 854392636373404,
-					"behaviorType": "Угасание",
-					"parameters": {
-						"fade-out-time": "0.8"
-					}
-				},
-				{
-					"id": "set-fade-in-time",
-					"objectClass": "ef2",
-					"sid": 100187518106251,
-					"behaviorType": "Угасание",
-					"parameters": {
-						"fade-in-time": "0"
-					}
-				},
-				{
-					"id": "restart-fade",
-					"objectClass": "ef2",
-					"sid": 745701164827308,
-					"behaviorType": "Угасание"
-				},
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 116864075999710,
-					"parameters": {
-						"seconds": "lol2"
-					}
-				},
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 506126203305992,
-					"parameters": {
-						"seconds": "0.5"
-					}
-				},
-				{
-					"id": "tween-one-property",
-					"objectClass": "Спрайт7",
-					"sid": 289692690852263,
-					"behaviorType": "Твинанимация",
-					"parameters": {
-						"tags": "\"\"",
-						"property": "offsetY",
-						"end-value": "384",
-						"time": "0.5",
-						"ease": "default",
-						"destroy-on-complete": "no",
-						"loop": "no",
-						"ping-pong": "no"
-					}
-				},
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 406731808601586,
-					"parameters": {
-						"seconds": "0.5"
-					}
-				},
-				{
-					"id": "play",
-					"objectClass": "Audio",
-					"sid": 236891218912403,
-					"parameters": {
-						"audio-file": "no",
-						"loop": "not-looping",
-						"volume": "0",
-						"tag-optional": "\"\""
-					}
-				},
-				{
-					"id": "signal",
-					"objectClass": "System",
-					"sid": 470038005286298,
-					"parameters": {
-						"tag": "\"go\""
-					}
-				},
-				{
-					"id": "set-eventvar-value",
-					"objectClass": "System",
-					"sid": 518241822624166,
-					"parameters": {
-						"variable": "lol",
-						"value": "0"
-					}
-				}
-			],
-			"sid": 735689360206765
+			"sid": 505892594493747
 		}
 	],
 	"sid": 677031043586555
