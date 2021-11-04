@@ -265,7 +265,7 @@
 						"y": 208,
 						"width": 64,
 						"height": 64,
-						"originX": 0.0625,
+						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
 							1,

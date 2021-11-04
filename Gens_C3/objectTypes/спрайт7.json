@@ -24,7 +24,7 @@
 					{
 						"width": 32,
 						"height": 32,
-						"originX": 0.0625,
+						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "png",
@@ -51,6 +51,13 @@
 							]
 						},
 						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Точка спрайта 1",
+								"x": 0.0625,
+								"y": 0.5
+							}
+						],
 						"duration": 1
 					}
 				],
