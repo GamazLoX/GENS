@@ -16,7 +16,13 @@
 					},
 					"uid": 63,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Твинанимация": {
+							"properties": {
+								"enabled": true
+							}
+						}
+					},
 					"world": {
 						"x": 320,
 						"y": 192,

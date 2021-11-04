@@ -4,7 +4,13 @@
 	"sid": 738910143542208,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Tween",
+			"name": "Твинанимация",
+			"sid": 848004684710457
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [

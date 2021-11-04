@@ -1817,21 +1817,29 @@
 					}
 				},
 				{
-					"id": "set-layer-visible",
-					"objectClass": "System",
-					"sid": 905336009814781,
+					"id": "tween-two-properties",
+					"objectClass": "PlayerStory",
+					"sid": 108403502655695,
+					"behaviorType": "Твинанимация",
 					"parameters": {
-						"layer": "\"002\"",
-						"visibility": "invisible"
+						"tags": "\"\"",
+						"property": "size",
+						"end-x": "500",
+						"end-y": "500",
+						"time": "12",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
 					}
 				},
 				{
-					"id": "set-eventvar-value",
+					"id": "set-layer-visible",
 					"objectClass": "System",
-					"sid": 963939893867063,
+					"sid": 768534051643875,
 					"parameters": {
-						"variable": "storelol",
-						"value": "2"
+						"layer": "\"002\"",
+						"visibility": "invisible"
 					}
 				},
 				{
@@ -1973,12 +1981,20 @@
 					}
 				},
 				{
-					"id": "set-eventvar-value",
-					"objectClass": "System",
-					"sid": 117343799548174,
+					"id": "tween-two-properties",
+					"objectClass": "PlayerStory",
+					"sid": 730216053626381,
+					"behaviorType": "Твинанимация",
 					"parameters": {
-						"variable": "storelol",
-						"value": "3"
+						"tags": "\"\"",
+						"property": "size",
+						"end-x": "0",
+						"end-y": "0",
+						"time": "20",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
 					}
 				},
 				{
@@ -2097,9 +2113,70 @@
 				{
 					"id": "wait",
 					"objectClass": "System",
-					"sid": 503563973283341,
+					"sid": 566004777370582,
 					"parameters": {
-						"seconds": "0.2"
+						"seconds": "5"
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 292500376684872,
+					"parameters": {
+						"object-to-create": "ef2",
+						"layer": "\"ef\"",
+						"x": "0",
+						"y": "0",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "set-fade-out-time",
+					"objectClass": "ef2",
+					"sid": 667602665543375,
+					"behaviorType": "Угасание",
+					"parameters": {
+						"fade-out-time": "0"
+					}
+				},
+				{
+					"id": "set-wait-time",
+					"objectClass": "ef2",
+					"sid": 578114204712820,
+					"behaviorType": "Угасание",
+					"parameters": {
+						"wait-time": "0"
+					}
+				},
+				{
+					"id": "set-fade-in-time",
+					"objectClass": "ef2",
+					"sid": 955348673475728,
+					"behaviorType": "Угасание",
+					"parameters": {
+						"fade-in-time": "12"
+					}
+				},
+				{
+					"id": "restart-fade",
+					"objectClass": "ef2",
+					"sid": 845074423220051,
+					"behaviorType": "Угасание"
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 561394330754630,
+					"parameters": {
+						"seconds": "13"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 588707036268643,
+					"parameters": {
+						"layout": "story2"
 					}
 				}
 			],
@@ -2139,188 +2216,6 @@
 				}
 			],
 			"sid": 927343450254209
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-eventvar",
-					"objectClass": "System",
-					"sid": 884196177636249,
-					"parameters": {
-						"variable": "storelol",
-						"comparison": 0,
-						"value": "2"
-					}
-				},
-				{
-					"id": "every-x-seconds",
-					"objectClass": "System",
-					"sid": 213153638001024,
-					"parameters": {
-						"interval-seconds": "0.01"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-size",
-					"objectClass": "PlayerStory",
-					"sid": 128290270465107,
-					"parameters": {
-						"width": "Self.Width+0.3",
-						"height": "Self.Height+0.3"
-					}
-				}
-			],
-			"sid": 630517521030381
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-eventvar",
-					"objectClass": "System",
-					"sid": 910378887904264,
-					"parameters": {
-						"variable": "storelol",
-						"comparison": 0,
-						"value": "3"
-					}
-				},
-				{
-					"id": "every-x-seconds",
-					"objectClass": "System",
-					"sid": 687284746902326,
-					"parameters": {
-						"interval-seconds": "0.01"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-size",
-					"objectClass": "PlayerStory",
-					"sid": 774418394830276,
-					"parameters": {
-						"width": "Self.Width-0.3",
-						"height": "Self.Height-0.3"
-					}
-				}
-			],
-			"sid": 376485897334876
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-height",
-					"objectClass": "PlayerStory",
-					"sid": 798300491827428,
-					"parameters": {
-						"comparison": 2,
-						"height": "0"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-eventvar-value",
-					"objectClass": "System",
-					"sid": 523485276375822,
-					"parameters": {
-						"variable": "storelol",
-						"value": "4"
-					}
-				},
-				{
-					"id": "set-size",
-					"objectClass": "PlayerStory",
-					"sid": 903355918632395,
-					"parameters": {
-						"width": "0",
-						"height": "0"
-					}
-				}
-			],
-			"sid": 968788562445067
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-width",
-					"objectClass": "PlayerStory",
-					"sid": 357101853671044,
-					"parameters": {
-						"comparison": 2,
-						"width": "0"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-eventvar-value",
-					"objectClass": "System",
-					"sid": 361015900903226,
-					"parameters": {
-						"variable": "storelol",
-						"value": "4"
-					}
-				},
-				{
-					"id": "set-size",
-					"objectClass": "PlayerStory",
-					"sid": 624932519652694,
-					"parameters": {
-						"width": "0",
-						"height": "0"
-					}
-				}
-			],
-			"sid": 480916410965945
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-eventvar",
-					"objectClass": "System",
-					"sid": 864278463242984,
-					"parameters": {
-						"variable": "storelol",
-						"comparison": 0,
-						"value": "4"
-					}
-				},
-				{
-					"id": "every-x-seconds",
-					"objectClass": "System",
-					"sid": 565319578380700,
-					"parameters": {
-						"interval-seconds": "0.03"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-layout-scale",
-					"objectClass": "System",
-					"sid": 157007064031527,
-					"parameters": {
-						"scale": "LayoutScale+0.01"
-					}
-				},
-				{
-					"id": "scroll-to-y",
-					"objectClass": "System",
-					"sid": 996225874530952,
-					"parameters": {
-						"y": "scrolly-0.4"
-					}
-				}
-			],
-			"sid": 497964954699879
 		}
 	],
 	"sid": 951812617417266
