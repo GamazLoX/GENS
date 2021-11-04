@@ -9,6 +9,11 @@
 			"behaviorId": "Car",
 			"name": "Машина",
 			"sid": 778006823282013
+		},
+		{
+			"behaviorId": "LOS",
+			"name": "ПолеЗрения",
+			"sid": 128535093466281
 		}
 	],
 	"effectTypes": [],

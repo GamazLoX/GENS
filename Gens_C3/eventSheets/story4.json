@@ -3378,10 +3378,10 @@
 						{
 							"id": "set-eventvar-value",
 							"objectClass": "System",
-							"sid": 945509543000371,
+							"sid": 131931357045921,
 							"parameters": {
 								"variable": "story4_batte",
-								"value": "choose(2, 3)"
+								"value": "choose(2, 3, 4)"
 							}
 						}
 					],
@@ -3517,9 +3517,9 @@
 						{
 							"id": "wait",
 							"objectClass": "System",
-							"sid": 185376229921161,
+							"sid": 372929630524819,
 							"parameters": {
-								"seconds": "20"
+								"seconds": "9"
 							}
 						},
 						{
@@ -3820,16 +3820,257 @@
 						{
 							"id": "compare-eventvar",
 							"objectClass": "System",
-							"sid": 470841191494526,
+							"sid": 710431353322120,
 							"parameters": {
 								"variable": "story4_batte",
 								"comparison": 0,
 								"value": "4"
 							}
+						},
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 782609700896421
 						}
 					],
-					"actions": [],
-					"sid": 899570337741980
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 159968260968403,
+							"parameters": {
+								"audio-file": "sound",
+								"loop": "not-looping",
+								"volume": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 728719194143214,
+							"parameters": {
+								"audio-file": "sound2",
+								"loop": "looping",
+								"volume": "0",
+								"tag-optional": "\"av\""
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 398907334696631,
+							"parameters": {
+								"seconds": "20"
+							}
+						},
+						{
+							"id": "stop",
+							"objectClass": "Audio",
+							"sid": 220528607193663,
+							"parameters": {
+								"tag": "\"av\""
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 402185835507251,
+							"parameters": {
+								"audio-file": "ef",
+								"loop": "not-looping",
+								"volume": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 780462029330778,
+							"parameters": {
+								"object-to-create": "ef2",
+								"layer": "\"ef\"",
+								"x": "0",
+								"y": "0",
+								"create-hierarchy": false
+							}
+						},
+						{
+							"id": "set-fade-out-time",
+							"objectClass": "ef2",
+							"sid": 142669323654036,
+							"behaviorType": "Угасание",
+							"parameters": {
+								"fade-out-time": "0.8"
+							}
+						},
+						{
+							"id": "set-fade-in-time",
+							"objectClass": "ef2",
+							"sid": 280819845215948,
+							"behaviorType": "Угасание",
+							"parameters": {
+								"fade-in-time": "0"
+							}
+						},
+						{
+							"id": "restart-fade",
+							"objectClass": "ef2",
+							"sid": 246401538729791,
+							"behaviorType": "Угасание"
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 841446875118502,
+							"parameters": {
+								"variable": "story4_batte",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 456010763077004
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 177428289046011,
+							"parameters": {
+								"variable": "story4_batte",
+								"comparison": 0,
+								"value": "4"
+							}
+						},
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 948047262462125,
+							"parameters": {
+								"interval-seconds": "0.03"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "spawn-another-object",
+							"objectClass": "Спрайт7",
+							"sid": 510907581872999,
+							"parameters": {
+								"object": "Спрайт10",
+								"layer": "0",
+								"image-point": "1",
+								"create-hierarchy": false
+							}
+						},
+						{
+							"id": "set-angle-of-motion",
+							"objectClass": "Спрайт10",
+							"sid": 209780964879327,
+							"behaviorType": "Пуля",
+							"parameters": {
+								"angle": "Спрайт7.Angle+180"
+							}
+						},
+						{
+							"id": "set-speed",
+							"objectClass": "Спрайт10",
+							"sid": 821126137341191,
+							"behaviorType": "Пуля",
+							"parameters": {
+								"speed": "300"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "Спрайт10",
+							"sid": 564266506437375,
+							"behaviorType": "Пуля",
+							"parameters": {
+								"state": "enabled"
+							}
+						}
+					],
+					"sid": 762485153591917
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 190920445764721,
+							"parameters": {
+								"variable": "story4_batte",
+								"comparison": 0,
+								"value": "4"
+							}
+						},
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 497013771149068,
+							"parameters": {
+								"interval-seconds": "0.03"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "rotate-clockwise",
+							"objectClass": "Спрайт7",
+							"sid": 333275451625809,
+							"parameters": {
+								"degrees": "random(9)"
+							}
+						}
+					],
+					"sid": 175684784347146
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 137800818102929,
+							"parameters": {
+								"variable": "story4_batte",
+								"comparison": 0,
+								"value": "4"
+							}
+						},
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 717240446394549,
+							"parameters": {
+								"interval-seconds": "4"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "tween-two-properties",
+							"objectClass": "Спрайт7",
+							"sid": 814193133771510,
+							"behaviorType": "Твинанимация",
+							"parameters": {
+								"tags": "\"ssss\"",
+								"property": "position",
+								"end-x": "random(640)",
+								"end-y": "random(480)",
+								"time": "random(0.5, 2.0)",
+								"ease": "easeinoutsine",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no"
+							}
+						}
+					],
+					"sid": 634452133849108
 				}
 			],
 			"sid": 579460447083525

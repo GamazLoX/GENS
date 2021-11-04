@@ -152,6 +152,14 @@
 		},
 		{
 			"type": "behavior",
+			"id": "LOS",
+			"name": "Поле зрения",
+			"author": "Scirra",
+			"version": "r270",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "scrollto",
 			"name": "Следить за",
 			"author": "Scirra",
@@ -178,14 +186,6 @@
 			"type": "behavior",
 			"id": "EightDir",
 			"name": "8 Направлений",
-			"author": "Scirra",
-			"version": "r270",
-			"bundled": false
-		},
-		{
-			"type": "behavior",
-			"id": "LOS",
-			"name": "Поле зрения",
 			"author": "Scirra",
 			"version": "r270",
 			"bundled": false

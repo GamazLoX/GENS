@@ -261,14 +261,6 @@
 			],
 			"actions": [
 				{
-					"id": "set-cursor-style",
-					"objectClass": "mouse",
-					"sid": 655210980198475,
-					"parameters": {
-						"cursor-style": "none"
-					}
-				},
-				{
 					"id": "set-enabled",
 					"objectClass": "pl1",
 					"sid": 772720833521485,
@@ -348,14 +340,6 @@
 					"parameters": {
 						"state": "enabled"
 					}
-				},
-				{
-					"id": "set-cursor-style",
-					"objectClass": "mouse",
-					"sid": 682636274429238,
-					"parameters": {
-						"cursor-style": "crosshair"
-					}
 				}
 			],
 			"sid": 384893271170350
@@ -364,19 +348,19 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-object-clicked",
-					"objectClass": "mouse",
-					"sid": 191780262474130,
+					"id": "has-los-to-object",
+					"objectClass": "pl1",
+					"sid": 548782470556936,
+					"behaviorType": "ПолеЗрения",
 					"parameters": {
-						"mouse-button": "left",
-						"click-type": "clicked",
-						"object-clicked": "3DФигуры5"
+						"object": "3DФигуры5",
+						"image-point": "0"
 					}
 				},
 				{
 					"id": "compare-eventvar",
 					"objectClass": "System",
-					"sid": 858827464897645,
+					"sid": 690146519723443,
 					"parameters": {
 						"variable": "end",
 						"comparison": 0,
@@ -386,17 +370,98 @@
 			],
 			"actions": [
 				{
-					"id": "set-cursor-style",
-					"objectClass": "mouse",
-					"sid": 306440573513642,
+					"id": "set-text",
+					"objectClass": "a2",
+					"sid": 108851129560390,
 					"parameters": {
-						"cursor-style": "none"
+						"text": "\"Нажмите <<E>>\""
+					}
+				}
+			],
+			"sid": 332909136259099
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "has-los-to-object",
+					"objectClass": "pl1",
+					"sid": 960940304917215,
+					"behaviorType": "ПолеЗрения",
+					"parameters": {
+						"object": "3DФигуры5",
+						"image-point": "0"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 786293931417352,
+					"parameters": {
+						"variable": "end",
+						"comparison": 0,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "a2",
+					"sid": 109765822789555,
+					"parameters": {
+						"text": "\"\""
+					}
+				}
+			],
+			"sid": 913899819102802
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Key",
+					"sid": 599500061432220,
+					"parameters": {
+						"key": 69
+					}
+				},
+				{
+					"id": "has-los-to-object",
+					"objectClass": "pl1",
+					"sid": 109535043618945,
+					"behaviorType": "ПолеЗрения",
+					"parameters": {
+						"object": "3DФигуры5",
+						"image-point": "0"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 302867040900551,
+					"parameters": {
+						"variable": "end",
+						"comparison": 0,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "a2",
+					"sid": 772015588228675,
+					"parameters": {
+						"text": "\"\""
 					}
 				},
 				{
 					"id": "play",
 					"objectClass": "Audio",
-					"sid": 446046918257050,
+					"sid": 964777641831110,
 					"parameters": {
 						"audio-file": "FPS005",
 						"loop": "not-looping",
@@ -407,14 +472,14 @@
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 835184489804556,
+					"sid": 693785997678554,
 					"parameters": {
 						"variable": "end",
 						"value": "1"
 					}
 				}
 			],
-			"sid": 332909136259099
+			"sid": 976962503044215
 		},
 		{
 			"eventType": "block",
