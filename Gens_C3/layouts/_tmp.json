@@ -840,9 +840,9 @@
 				{
 					"type": "d_a2",
 					"properties": {
-						"text": "",
+						"text": "1\n2\n3\n4",
 						"enable-bbcode": true,
-						"font": "Arial",
+						"font": "Retro",
 						"size": 12,
 						"line-height": 0,
 						"bold": true,

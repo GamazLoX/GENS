@@ -1018,9 +1018,9 @@
 				{
 					"id": "go-to-layout",
 					"objectClass": "System",
-					"sid": 939437667843775,
+					"sid": 509260685960294,
 					"parameters": {
-						"layout": "story"
+						"layout": "start2"
 					}
 				}
 			],
