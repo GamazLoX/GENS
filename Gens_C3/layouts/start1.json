@@ -48,9 +48,9 @@
 					},
 					"world": {
 						"x": 0,
-						"y": -304,
+						"y": -320,
 						"width": 640,
-						"height": 304,
+						"height": 320,
 						"originX": 0,
 						"originY": 0,
 						"color": [
