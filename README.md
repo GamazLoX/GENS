@@ -4,7 +4,7 @@
 
 ===========================================================
 
-GensSoryDEMO -  https://gamazgenii.github.io/GENS/file/GensSoryDEMO
+GensSoryDEMO -  https://gamazgenii.github.io/GENS/file/GensStoryDEMO
 
 ===========================================================
 
