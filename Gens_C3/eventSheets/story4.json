@@ -1874,6 +1874,24 @@
 					}
 				},
 				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 548458473348170,
+					"parameters": {
+						"variable": "lol2",
+						"value": "0"
+					}
+				},
+				{
+					"id": "scroll-to-position",
+					"objectClass": "System",
+					"sid": 236860928027325,
+					"parameters": {
+						"x": "320",
+						"y": "240"
+					}
+				},
+				{
 					"id": "tween-one-property",
 					"objectClass": "boss",
 					"sid": 852973852379708,
