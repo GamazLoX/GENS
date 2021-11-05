@@ -4,7 +4,7 @@
 
 ===========================================================
 
-0.020a -  [https://gamazgenii.github.io/GENS/file/GENS_0.020a](https://gamazgenii.github.io/GENS/file/GensSoryDEMO)
+GensSoryDEMO -  [(https://gamazgenii.github.io/GENS/file/GensSoryDEMO)](https://gamazgenii.github.io/GENS/file/GensSoryDEMO)
 
 ===========================================================
 
