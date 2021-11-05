@@ -1,7 +1,7 @@
 {
 	"projectFormatVersion": 1,
 	"savedWithRelease": 27000,
-	"name": "GENS 0.031",
+	"name": "GensStoryDEMO",
 	"runtime": "c3",
 	"useWorker": "auto",
 	"bundleAddons": false,
@@ -229,7 +229,9 @@
 			"Спрайт18",
 			"Спрайт19",
 			"Индикатор",
-			"Спрайт20"
+			"Спрайт20",
+			"Спрайт22",
+			"Спрайт28"
 		],
 		"subfolders": [
 			{
@@ -520,6 +522,7 @@
 					"start3",
 					"start4",
 					"start5",
+					"start6",
 					"test"
 				],
 				"subfolders": [],
@@ -597,7 +600,8 @@
 					"start2",
 					"start4",
 					"start5",
-					"start3"
+					"start3",
+					"start6"
 				],
 				"subfolders": [],
 				"name": "start"

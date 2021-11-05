@@ -876,12 +876,12 @@
 				{
 					"id": "tween-one-property",
 					"objectClass": "a1",
-					"sid": 777666025678673,
+					"sid": 156911654790082,
 					"behaviorType": "Твинанимация",
 					"parameters": {
 						"tags": "\"\"",
 						"property": "offsetY",
-						"end-value": "140",
+						"end-value": "75",
 						"time": "4",
 						"ease": "easeoutelastic",
 						"destroy-on-complete": "no",
@@ -1018,9 +1018,9 @@
 				{
 					"id": "go-to-layout",
 					"objectClass": "System",
-					"sid": 141657008954908,
+					"sid": 939437667843775,
 					"parameters": {
-						"layout": "start2"
+						"layout": "story"
 					}
 				}
 			],

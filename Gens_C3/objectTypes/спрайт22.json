@@ -1,0 +1,68 @@
+{
+	"name": "Спрайт22",
+	"plugin-id": "Sprite",
+	"sid": 364799963702699,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Sin",
+			"name": "Синусоид",
+			"sid": 888903346763947
+		},
+		{
+			"behaviorId": "Tween",
+			"name": "Твинанимация",
+			"sid": 184060593590981
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 32,
+						"height": 32,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4072652,
+						"collisionPoly": {
+							"points": [
+								0.11046990931574609,
+								0.1420996818663839,
+								0.5,
+								0.28525980911983034,
+								0.8887056883759274,
+								0.1420996818663839,
+								0.9991755976916735,
+								0.5,
+								0.7774113767518549,
+								0.7136797454931071,
+								0.5,
+								0.9989395546129375,
+								0.22176422093981862,
+								0.7136797454931071,
+								0,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 477486306252318,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

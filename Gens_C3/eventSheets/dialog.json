@@ -509,7 +509,37 @@
 							}
 						}
 					],
-					"actions": [],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 385801957239980,
+							"parameters": {
+								"audio-file": "text3",
+								"loop": "not-looping",
+								"volume": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "set-playback-rate",
+							"objectClass": "Audio",
+							"sid": 732402870980463,
+							"parameters": {
+								"tag": "\"\"",
+								"playback-rate": "1.5"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "d_a3",
+							"sid": 451993580026108,
+							"parameters": {
+								"animation": "\"a5\"",
+								"from": "beginning"
+							}
+						}
+					],
 					"sid": 542256485209901
 				},
 				{
