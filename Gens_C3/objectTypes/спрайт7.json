@@ -143,6 +143,81 @@
 				"repeatCount": 1,
 				"repeatTo": 0,
 				"speed": 15
+			},
+			{
+				"frames": [
+					{
+						"width": 32,
+						"height": 32,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 486013,
+						"collisionPoly": {
+							"points": [
+								0.1875,
+								0.1875,
+								0.5,
+								0.0625,
+								0.78125,
+								0.1875,
+								0.9375,
+								0.5,
+								0.8125,
+								0.8125,
+								0.5,
+								0.9375,
+								0.1875,
+								0.78125,
+								0.0625,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 32,
+						"height": 32,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9771250,
+						"collisionPoly": {
+							"points": [
+								0.1875,
+								0.1875,
+								0.5,
+								0.0625,
+								0.78125,
+								0.1875,
+								0.9375,
+								0.5,
+								0.8125,
+								0.8125,
+								0.5,
+								0.9375,
+								0.1875,
+								0.78125,
+								0.0625,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 839931911449390,
+				"name": "a3",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 25
 			}
 		],
 		"subfolders": []
