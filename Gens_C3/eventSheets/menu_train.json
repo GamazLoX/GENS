@@ -1599,47 +1599,11 @@
 			],
 			"actions": [
 				{
-					"id": "set-angle-of-motion",
-					"objectClass": "9патч2",
-					"sid": 876475607648908,
-					"behaviorType": "Пуля",
-					"parameters": {
-						"angle": "0"
-					}
-				},
-				{
-					"id": "set-speed",
-					"objectClass": "9патч2",
-					"sid": 891821399445858,
-					"behaviorType": "Пуля",
-					"parameters": {
-						"speed": "900"
-					}
-				},
-				{
-					"id": "set-enabled",
-					"objectClass": "9патч2",
-					"sid": 127444509583568,
-					"behaviorType": "Пуля",
-					"parameters": {
-						"state": "enabled"
-					}
-				},
-				{
 					"id": "wait",
 					"objectClass": "System",
 					"sid": 485008527839873,
 					"parameters": {
 						"seconds": "0.5"
-					}
-				},
-				{
-					"id": "set-enabled",
-					"objectClass": "9патч2",
-					"sid": 279083323762718,
-					"behaviorType": "Пуля",
-					"parameters": {
-						"state": "disabled"
 					}
 				},
 				{
@@ -1662,33 +1626,6 @@
 					}
 				},
 				{
-					"id": "set-angle-of-motion",
-					"objectClass": "9патч2",
-					"sid": 910764928211653,
-					"behaviorType": "Пуля",
-					"parameters": {
-						"angle": "0"
-					}
-				},
-				{
-					"id": "set-speed",
-					"objectClass": "9патч2",
-					"sid": 716892858761221,
-					"behaviorType": "Пуля",
-					"parameters": {
-						"speed": "900"
-					}
-				},
-				{
-					"id": "set-enabled",
-					"objectClass": "9патч2",
-					"sid": 529780964393518,
-					"behaviorType": "Пуля",
-					"parameters": {
-						"state": "enabled"
-					}
-				},
-				{
 					"id": "wait",
 					"objectClass": "System",
 					"sid": 325303048930703,
@@ -1697,17 +1634,8 @@
 					}
 				},
 				{
-					"id": "set-enabled",
-					"objectClass": "9патч2",
-					"sid": 287352325867581,
-					"behaviorType": "Пуля",
-					"parameters": {
-						"state": "disabled"
-					}
-				},
-				{
 					"id": "set-position",
-					"objectClass": "9патч2",
+					"objectClass": "boss",
 					"sid": 696134869525044,
 					"parameters": {
 						"x": "-272",

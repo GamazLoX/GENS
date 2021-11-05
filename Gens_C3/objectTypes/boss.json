@@ -1,14 +1,14 @@
 {
-	"name": "9патч2",
+	"name": "boss",
 	"plugin-id": "NinePatch",
 	"sid": 927045171771905,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{
-			"behaviorId": "Bullet",
-			"name": "Пуля",
-			"sid": 439310612879334
+			"behaviorId": "Tween",
+			"name": "Твинанимация",
+			"sid": 596442255935704
 		}
 	],
 	"effectTypes": [],
@@ -20,7 +20,7 @@
 		"originalSource": "",
 		"exportFormat": "png",
 		"exportQuality": 0.8,
-		"imageSpriteId": 278350,
+		"imageSpriteId": 5723021,
 		"useCollisionPoly": true
 	}
 }

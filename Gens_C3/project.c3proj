@@ -87,6 +87,14 @@
 			"bundled": false
 		},
 		{
+			"type": "plugin",
+			"id": "progressbar",
+			"name": "Индикатор",
+			"author": "Scirra",
+			"version": "r270",
+			"bundled": false
+		},
+		{
 			"type": "behavior",
 			"id": "Tween",
 			"name": "Твин-анимация",
@@ -98,14 +106,6 @@
 			"type": "behavior",
 			"id": "Pin",
 			"name": "Прикрепить",
-			"author": "Scirra",
-			"version": "r270",
-			"bundled": false
-		},
-		{
-			"type": "behavior",
-			"id": "Bullet",
-			"name": "Пуля",
 			"author": "Scirra",
 			"version": "r270",
 			"bundled": false
@@ -146,6 +146,14 @@
 			"type": "behavior",
 			"id": "Car",
 			"name": "Машина",
+			"author": "Scirra",
+			"version": "r270",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Bullet",
+			"name": "Пуля",
 			"author": "Scirra",
 			"version": "r270",
 			"bundled": false
@@ -219,7 +227,9 @@
 			"Спрайт16",
 			"Спрайт17",
 			"Спрайт18",
-			"Спрайт19"
+			"Спрайт19",
+			"Индикатор",
+			"Спрайт20"
 		],
 		"subfolders": [
 			{
@@ -246,7 +256,7 @@
 			{
 				"items": [
 					"d_a1",
-					"9патч2",
+					"boss",
 					"d_a2",
 					"d_a3"
 				],
@@ -557,7 +567,8 @@
 					"dialog",
 					"keyb",
 					"rub",
-					"rubs"
+					"rubs",
+					"boos"
 				],
 				"subfolders": [],
 				"name": "_system"

@@ -1,0 +1,58 @@
+{
+	"name": "boos",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 652216244739324
+				}
+			],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 275604006634285,
+					"parameters": {
+						"object-to-create": "boss",
+						"layer": "\"boss\"",
+						"x": "0",
+						"y": "-48",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 103593975635610,
+					"parameters": {
+						"object-to-create": "Спрайт20",
+						"layer": "\"boss\"",
+						"x": "16",
+						"y": "-32",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "pin-to-object-properties",
+					"objectClass": "Спрайт20",
+					"sid": 221683852964788,
+					"behaviorType": "Прикрепить",
+					"parameters": {
+						"pin-to": "boss",
+						"x": true,
+						"y": true,
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				}
+			],
+			"sid": 692507599620023
+		}
+	],
+	"sid": 685176369242379
+}
