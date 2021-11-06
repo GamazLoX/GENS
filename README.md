@@ -2,7 +2,7 @@
 
 ===========================================================
 
-GensSoryDEMO -  https://gamazgenii.github.io/GENS/file/GensStoryDEMO **ВРЕМЕННО НЕ РАБОТАЕТ**
+GensStoryDEMO -  https://gamazgenii.github.io/GENS/file/GensStoryDEMO **ВРЕМЕННО НЕ РАБОТАЕТ**
 
 ===========================================================
 
