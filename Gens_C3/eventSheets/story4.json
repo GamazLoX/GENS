@@ -332,213 +332,10 @@
 					}
 				},
 				{
-					"id": "toggle-boolean-instvar",
-					"objectClass": "d_a2",
-					"sid": 251313386071542,
-					"parameters": {
-						"instance-variable": "tween"
-					}
-				},
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 504209975307032,
-					"parameters": {
-						"seconds": "1"
-					}
-				},
-				{
-					"id": "fade-volume",
-					"objectClass": "Audio",
-					"sid": 778365633841766,
-					"parameters": {
-						"tag": "\"a1\"",
-						"db": "-100",
-						"duration": "6",
-						"ending": "stop"
-					}
-				},
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 892293480468874,
-					"parameters": {
-						"seconds": "2"
-					}
-				},
-				{
-					"id": "create-object",
-					"objectClass": "System",
-					"sid": 338159254604535,
-					"parameters": {
-						"object-to-create": "ef2",
-						"layer": "\"ef\"",
-						"x": "0",
-						"y": "0",
-						"create-hierarchy": false
-					}
-				},
-				{
-					"id": "set-fade-out-time",
-					"objectClass": "ef2",
-					"sid": 733152786510320,
-					"behaviorType": "Угасание",
-					"parameters": {
-						"fade-out-time": "2"
-					}
-				},
-				{
-					"id": "set-wait-time",
-					"objectClass": "ef2",
-					"sid": 158772697237023,
-					"behaviorType": "Угасание",
-					"parameters": {
-						"wait-time": "2"
-					}
-				},
-				{
-					"id": "set-fade-in-time",
-					"objectClass": "ef2",
-					"sid": 523625615810762,
-					"behaviorType": "Угасание",
-					"parameters": {
-						"fade-in-time": "1"
-					}
-				},
-				{
-					"id": "restart-fade",
-					"objectClass": "ef2",
-					"sid": 706104441440227,
-					"behaviorType": "Угасание"
-				},
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 184934953835727,
-					"parameters": {
-						"seconds": "2"
-					}
-				},
-				{
-					"id": "set-layer-visible",
-					"objectClass": "System",
-					"sid": 850916649349836,
-					"parameters": {
-						"layer": "\"ef2\"",
-						"visibility": "visible"
-					}
-				},
-				{
-					"id": "set-source",
-					"objectClass": "video",
-					"sid": 793633103348658,
-					"parameters": {
-						"webm-source": "\"\"",
-						"ogg-theora-source": "\"\"",
-						"h264-source": "\"sss.mp4\""
-					}
-				},
-				{
-					"id": "play",
-					"objectClass": "video",
-					"sid": 158083331682297
-				},
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 396019836397319,
-					"parameters": {
-						"seconds": "5"
-					}
-				},
-				{
-					"id": "create-object",
-					"objectClass": "System",
-					"sid": 466878348877250,
-					"parameters": {
-						"object-to-create": "ef2",
-						"layer": "\"ef\"",
-						"x": "0",
-						"y": "0",
-						"create-hierarchy": false
-					}
-				},
-				{
-					"id": "set-fade-out-time",
-					"objectClass": "ef2",
-					"sid": 599684630715642,
-					"behaviorType": "Угасание",
-					"parameters": {
-						"fade-out-time": "0.5"
-					}
-				},
-				{
-					"id": "set-wait-time",
-					"objectClass": "ef2",
-					"sid": 900250912553331,
-					"behaviorType": "Угасание",
-					"parameters": {
-						"wait-time": "2"
-					}
-				},
-				{
-					"id": "set-fade-in-time",
-					"objectClass": "ef2",
-					"sid": 125491388470176,
-					"behaviorType": "Угасание",
-					"parameters": {
-						"fade-in-time": "3"
-					}
-				},
-				{
-					"id": "restart-fade",
-					"objectClass": "ef2",
-					"sid": 947954961670006,
-					"behaviorType": "Угасание"
-				},
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 782103010839826,
-					"parameters": {
-						"seconds": "5"
-					}
-				},
-				{
-					"id": "destroy",
-					"objectClass": "video",
-					"sid": 470232873437035
-				},
-				{
-					"id": "set-layer-visible",
-					"objectClass": "System",
-					"sid": 558750157185388,
-					"parameters": {
-						"layer": "\"ef2\"",
-						"visibility": "invisible"
-					}
-				},
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 341184118670433,
-					"parameters": {
-						"seconds": "2"
-					}
-				},
-				{
-					"id": "toggle-boolean-instvar",
-					"objectClass": "d_a2",
-					"sid": 350269141251341,
-					"parameters": {
-						"instance-variable": "tween"
-					}
-				},
-				{
 					"callFunction": "TypeText",
-					"sid": 530703028131833,
+					"sid": 666044649988411,
 					"parameters": [
-						"\"Но ты ничего даже не сказал...\"",
+						"\"Я посмотрел кое что...\"",
 						"\"0.1\"",
 						"0",
 						"0"
@@ -554,9 +351,45 @@
 				},
 				{
 					"callFunction": "TypeText",
-					"sid": 531309365207514,
+					"sid": 590921190168608,
 					"parameters": [
-						"\"А она только стукалась как ДУРА\"",
+						"\"У меня есть одна система. Она отслеживает всё...\"",
+						"\"0.1\"",
+						"0",
+						"0"
+					]
+				},
+				{
+					"id": "wait-for-signal",
+					"objectClass": "System",
+					"sid": 202817229018677,
+					"parameters": {
+						"tag": "\"go\""
+					}
+				},
+				{
+					"callFunction": "TypeText",
+					"sid": 707526686730394,
+					"parameters": [
+						"\"Ты реально ничего не делал и молчал... А она психанула...\"",
+						"\"0.1\"",
+						"0",
+						"0"
+					]
+				},
+				{
+					"id": "wait-for-signal",
+					"objectClass": "System",
+					"sid": 914412229699715,
+					"parameters": {
+						"tag": "\"go\""
+					}
+				},
+				{
+					"callFunction": "TypeText",
+					"sid": 476004240399560,
+					"parameters": [
+						"\"И она только стукалась как ДУРА\"",
 						"\"0.1\"",
 						"0",
 						"0"
