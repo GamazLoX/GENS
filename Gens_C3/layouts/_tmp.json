@@ -192,8 +192,8 @@
 						}
 					},
 					"world": {
-						"x": 624,
-						"y": -16,
+						"x": 632,
+						"y": -152,
 						"width": 32,
 						"height": 32,
 						"originX": 0.5,
@@ -221,8 +221,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 592,
-						"y": -16,
+						"x": 600,
+						"y": -152,
 						"width": 32,
 						"height": 32,
 						"originX": 0.5,
@@ -250,8 +250,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 560,
-						"y": -16,
+						"x": 568,
+						"y": -152,
 						"width": 32,
 						"height": 32,
 						"originX": 0.5,
@@ -279,8 +279,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 560,
-						"y": -80,
+						"x": 568,
+						"y": -216,
 						"width": 32,
 						"height": 32,
 						"originX": 0.5,
@@ -308,8 +308,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 624,
-						"y": -48,
+						"x": 632,
+						"y": -184,
 						"width": 32,
 						"height": 32,
 						"originX": 0.5,
@@ -337,8 +337,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 560,
-						"y": -48,
+						"x": 568,
+						"y": -184,
 						"width": 32,
 						"height": 32,
 						"originX": 0.5,
@@ -366,8 +366,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 592,
-						"y": -48,
+						"x": 600,
+						"y": -184,
 						"width": 32,
 						"height": 32,
 						"originX": 0.5,
@@ -395,8 +395,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 592,
-						"y": -80,
+						"x": 600,
+						"y": -216,
 						"width": 32,
 						"height": 32,
 						"originX": 0.5,
@@ -923,9 +923,9 @@
 					},
 					"world": {
 						"x": 0,
-						"y": -48,
-						"width": 328,
-						"height": 48,
+						"y": -24,
+						"width": 200,
+						"height": 24,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -958,9 +958,88 @@
 					},
 					"world": {
 						"x": 16,
-						"y": -32,
-						"width": 296,
-						"height": 16,
+						"y": -16,
+						"width": 168,
+						"height": 8,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "pl_h",
+					"properties": {
+						"left-margin": 16,
+						"right-margin": 16,
+						"top-margin": 16,
+						"bottom-margin": 16,
+						"edges": "stretch",
+						"fill": "stretch",
+						"initially-visible": true,
+						"origin": "top-left",
+						"seams": "overlap"
+					},
+					"uid": 551,
+					"instanceVariables": {},
+					"behaviors": {
+						"Твинанимация": {
+							"properties": {
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 440,
+						"y": -24,
+						"width": 200,
+						"height": 24,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "pl_h1",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 552,
+					"instanceVariables": {},
+					"behaviors": {
+						"Прикрепить": {
+							"properties": {
+								"destroy": false
+							}
+						},
+						"Твинанимация": {
+							"properties": {
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 456,
+						"y": -16,
+						"width": 168,
+						"height": 8,
 						"originX": 0,
 						"originY": 0,
 						"color": [

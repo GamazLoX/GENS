@@ -1,0 +1,110 @@
+{
+	"name": "boss",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 652216244739324
+				}
+			],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 326288015780318,
+					"parameters": {
+						"object-to-create": "boss",
+						"layer": "\"boss\"",
+						"x": "0",
+						"y": "-24",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 741494788019696,
+					"parameters": {
+						"object-to-create": "Спрайт20",
+						"layer": "\"boss\"",
+						"x": "16",
+						"y": "-16",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "pin-to-object-properties",
+					"objectClass": "Спрайт20",
+					"sid": 221683852964788,
+					"behaviorType": "Прикрепить",
+					"parameters": {
+						"pin-to": "boss",
+						"x": true,
+						"y": true,
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				}
+			],
+			"sid": 692507599620023
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 457835092927105
+				}
+			],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 640794636206641,
+					"parameters": {
+						"object-to-create": "pl_h",
+						"layer": "\"boss\"",
+						"x": "440",
+						"y": "-24",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 764131438921192,
+					"parameters": {
+						"object-to-create": "pl_h1",
+						"layer": "\"boss\"",
+						"x": "456",
+						"y": "-16",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "pin-to-object-properties",
+					"objectClass": "pl_h1",
+					"sid": 494009332610201,
+					"behaviorType": "Прикрепить",
+					"parameters": {
+						"pin-to": "pl_h",
+						"x": true,
+						"y": true,
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				}
+			],
+			"sid": 537859906188838
+		}
+	],
+	"sid": 685176369242379
+}

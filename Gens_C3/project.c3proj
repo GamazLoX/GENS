@@ -231,7 +231,8 @@
 			"Индикатор",
 			"Спрайт20",
 			"Спрайт22",
-			"Спрайт28"
+			"Спрайт28",
+			"pl_h1"
 		],
 		"subfolders": [
 			{
@@ -260,7 +261,8 @@
 					"d_a1",
 					"boss",
 					"d_a2",
-					"d_a3"
+					"d_a3",
+					"pl_h"
 				],
 				"subfolders": [],
 				"name": "_dialog"
@@ -571,7 +573,7 @@
 					"keyb",
 					"rub",
 					"rubs",
-					"boos"
+					"boss"
 				],
 				"subfolders": [],
 				"name": "_system"
